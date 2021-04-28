@@ -1,5 +1,5 @@
 Object中提供了一系列可以Overwrite的方法, 例如
-```
+```java
 
 // hashcode
 public native int hashCode();

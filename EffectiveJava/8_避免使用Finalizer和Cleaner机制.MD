@@ -1,4 +1,4 @@
->Java规范不能保证Finalizer和Cleaner机制能及时运行, 甚至不能能保证它们一定会运行。[JLS，12.6]。
+> Java规范不能保证Finalizer和Cleaner机制能及时运行, 甚至不能能保证它们一定会运行。[JLS，12.6]。
 ##1.Finalizer机制
 `finalize`是Object类中的一个方法, 当一个对象被销毁前jvm会去调用该对象的`finalize`方法。
 ```
@@ -41,9 +41,9 @@ public class SocketOperator {
 
 >Finalizer机制线程的运行优先级低于其他应用程序线程，所以对象被回收的速度低于进入队列的速度。语言规范并不保证哪个线程执行Finalizer机制，因此除了避免使用Finalizer机制之外，没有轻便的方法来防止这类问题。
 
-##2.Cleaner机制
+## 2.Cleaner机制
 Cleaner机制使用起来有点棘手。下面是演示该功能的一个简单的Room类。假设Room对象必须在被回收前清理干净。Room类实现AutoCloseable接口；它的自动清理安全网使用的是一个Cleaner机制，这仅仅是一个实现细节。与Finalizer机制不同，Cleaner机制不污染一个类的公共API：
-```
+```java
 // An autocloseable class using a cleaner as a safety net
 public class Room implements AutoCloseable {
     private static final Cleaner cleaner = Cleaner.create();
@@ -109,22 +109,22 @@ public class Teenager {
 
 
 ##总结
->1.不要相信System.gc和System.runFinalization方法。 
+> 1.不要相信System.gc和System.runFinalization方法。 
 
 他们可能会增加Finalizer和Cleaner机制被执行的几率，但不能保证一定会执行。 曾经声称做出这种保证的两个方法：System.runFinalizersOnExit和它的孪生兄弟Runtime.runFinalizersOnExit，包含致命的缺陷，并已被弃用了几十年[ThreadStop]。
 
->2.在执行Finalizer机制过程中，未捕获的异常会被忽略，并且该对象的Finalizer机制也会终止 [JLS, 12.6]。
+> 2.在执行Finalizer机制过程中，未捕获的异常会被忽略，并且该对象的Finalizer机制也会终止 [JLS, 12.6]。
 
 未捕获的异常会使其他对象陷入一种损坏的状态（corrupt state）。如果另一个线程试图使用这样一个损坏的对象，可能会导致任意不确定的行为。通常情况下，未捕获的异常将终止线程并打印堆栈跟踪（ stacktrace），但如果发生在Finalizer机制中，则不会发出警告。Cleaner机制没有这个问题，因为使用Cleaner机制的类库可以控制其线程。
 
->3.使用finalizer和cleaner机制会导致严重的性能损失。
+> 3.使用finalizer和cleaner机制会导致严重的性能损失。
 
 使用finalizer机制创建和销毁对象的速度要慢50倍。 这主要是因为finalizer机制会阻碍有效的垃圾收集。 如果使用它们来清理类的所有实例，那么cleaner机制的速度与finalizer机制的速度相当，但是如果仅将它们用作安全网（ safety net），则cleaner机制要快得多。
 
->4.Finalizer和Cleaner机制有什么好处呢？
+> 4.Finalizer和Cleaner机制有什么好处呢？
 
 一个是作为一个安全网（safety net），以防资源的拥有者忽略了它的close方法。虽然不能保证Finalizer和Cleaner机制会迅速运行(或者根本就没有运行)，最好是把资源释放晚点出来，也要好过客户端没有这样做。
 第二种合理使用Cleaner机制的方法与本地对等类（native peers）有关。本地对等类是一个由普通对象委托的本地(非Java)对象。由于本地对等类不是普通的 Java对象，所以垃圾收集器并不知道它，当它的Java对等对象被回收时，本地对等类也不会回收。
 
->总之，除了作为一个安全网或者终止非关键的本地资源，不要使用Cleaner机制，或者是在Java 9发布之前的finalizers机制。即使是这样，也要当心不确定性和性能影响。
+> 总之，除了作为一个安全网或者终止非关键的本地资源，不要使用Cleaner机制，或者是在Java 9发布之前的finalizers机制。即使是这样，也要当心不确定性和性能影响。
 
