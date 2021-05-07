@@ -1,5 +1,5 @@
 [toc]
-# 怎样准备sprint计划
+# 准备sprint计划
 
 
 
