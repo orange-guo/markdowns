@@ -1,53 +1,61 @@
 [toc]
+
 # Architectures
 
-## Application Services
+## 1. Application Services
+
 ### 定义
+
 - 无状态
 - 负责实现任何类型的逻辑
+
 ### 注意的点
+
 - 设计服务时考虑松散耦合和高内聚是重要的
 - 服务应该尽可能独立
 - 分布式系统很复杂，所以在设计阶段应该格外小心。服务数量的增加会导致问题数量的增加。
 - 使用云提供商提供的一些服务
 
-## Data Services
+## 2. Data Services
+
 ### 定义
+
 有状态的, 负责存储任何类型的状态
+
 ### 例子
+
 - Amazon DynamoDB
 - RabbitMQ
 - Redis
 - PostgresSQL
+
 ### 相关问题
-集群
-副本
-一致性
-分布式事务
 
-## Interactions
-云原生服务相互通信以满足系统的要求
-e.g. synchronous HTTP call, message streamed through RabbitMQ
+集群 副本 一致性 分布式事务
 
-## Monolith Vs Microservices
+## 3. Interactions
+
+云原生服务相互通信以满足系统的要求 e.g. synchronous HTTP call, message streamed through RabbitMQ
+
+## 4. Monolith Vs Microservices
+
 应用程序分解方式
+
 - 单片应用程序与使用三个大层相关联。
 - 基于微服务的应用程序与许多组件相关联，每个组件仅实现一项功能。
 
-## 架构风格的未来
-- macroservices
-- citadel architectural style
-由一个被微服务包围的中央单体组成
+## 5. 架构风格的未来
+
+- Macro Services
+- Citadel Architectural Style(由一个被微服务包围的中央单体组成)
 - 以模块化单体的形式回归单体应用程序
 
-## 面向云原生应用的基于服务的架构
-### 架构的两个元素
-#### 服务
-为另一个组件提供任何类型服务的组件
-#### 交互
-服务之间的通信以完成系统的要求
+## 6. 架构的两个元素
+- 服务(为另一个组件提供任何类型服务的组件)
+- 交互(服务之间的通信以完成系统的要求)
 
-## 总结(Summary)
+## 7. 总结(Summary)
+
 - 云是在计算、存储和网络资源方面作为商品提供的 IT 基础设施。用户只需为他们使用的实际资源付费
 - 云原生应用程序是高度分布式的系统，专门为云设计并存在于云中
 - 云提供商在不同的抽象级别提供服务：基础设施 (IaaS)、容器 (CaaS)、平台 (PaaS)、功能 (FaaS) 或软件 (SaaS)

@@ -1,4 +1,4 @@
-![logo](_media/icon.svg)
+![logo](/assets/images/icon.svg)
 
 # Book Markdown <small>3.5</small>
 
@@ -8,4 +8,4 @@
 - Write by markdown
 
 [GitHub](https://github.com/orange-guo)
-[Get Started](/README.md)
+[Get Started](#main)
