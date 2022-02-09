@@ -1,4 +1,4 @@
-- Introduction
-  - [README](/)
+- [README](/)
 - Books
-  - [Cloud Native](/mdsets/cloud_native/)
+    - [Cloud Native](/mdsets/cloud_native/)
+    - [硝烟中的Scrum和XP](/mdsets/硝烟中的Scrum和XP/)
