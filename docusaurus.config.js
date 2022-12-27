@@ -8,7 +8,7 @@ module.exports = {
 	title: 'markdowns',
 	tagline: 'Dinosaurs are cool',
 	url: 'https://orange-guo.github.io',
-	baseUrl: '/',
+	baseUrl: '/book-markdown/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
