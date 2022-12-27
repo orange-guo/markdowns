@@ -1,0 +1,8 @@
+e2e/**
+mock/**
+node_modules/**
+node/**
+src/**
+target/**
+*.json
+*.sh

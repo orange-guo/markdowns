@@ -1,5 +1,0 @@
-- [README](/)
-- Books
-    - [Cloud Native](/mdsets/cloud_native/)
-    - [硝烟中的Scrum和XP](/mdsets/硝烟中的Scrum和XP/)
-    - [函数响应式领域建模](/mdsets/函数响应式领域建模/)
