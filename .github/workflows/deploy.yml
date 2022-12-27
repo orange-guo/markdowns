@@ -17,11 +17,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-
-      - name: Install dependencies
-        run: npm ci && npm install @cmfcmf/docusaurus-search-local
-      - name: Build website
-        run: npm run build
+      - run: npm config set registry https://registry.npm.taobao.org
+      - run: npm ci
+      - run: npm install @cmfcmf/docusaurus-search-local
+      - run: npm run build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
