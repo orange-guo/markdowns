@@ -18,7 +18,7 @@ jobs:
           node-version: 18
           cache: npm
       - run: npm config set registry https://registry.npm.taobao.org
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
       # Popular action to deploy to GitHub Pages:
