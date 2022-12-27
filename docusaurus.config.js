@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
 	title: 'markdowns',
 	tagline: 'Dinosaurs are cool',
-	url: 'https://github.com',
-	baseUrl: '/book-markdown',
+	url: 'https://orange-guo.github.io',
+	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
