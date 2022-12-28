@@ -1,6 +1,6 @@
 {
-	"label": "常见问题",
-	"position": 5,
+	"label": "收藏链接",
+	"position": 3,
 	"link": {
 		"type": "generated-index"
 	}

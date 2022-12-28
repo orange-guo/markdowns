@@ -1,8 +1,0 @@
-- [What is Cloud Native](/mdsets/cloud_native/README.md)
-- Six main areas
-	- [The Cloud](/mdsets/cloud_native/six_main_areas/the_cloud.md)
-	- [Application Properties](/mdsets/cloud_native/six_main_areas/application_properties.md)
-	- [Architectures](/mdsets/cloud_native/six_main_areas/architectures.md)
-	- [Goals](/mdsets/cloud_native/six_main_areas/goals.md)
-	- [Practices](/mdsets/cloud_native/six_main_areas/practices.md)
-	- [Topologies](/mdsets/cloud_native/six_main_areas/topologies.md)

@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# 简介
 
 This is my first page

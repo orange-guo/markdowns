@@ -1,4 +1,4 @@
-# 架构链接
+# 架构
 
 ## Architecture Center
 

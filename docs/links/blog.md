@@ -1,3 +1,3 @@
-# 博客链接
+# 博客
 
 - [martinfowler.com](martinfowler.com)

@@ -1,4 +1,4 @@
-# 技术链接
+# 技术
 
 ## Technology Radar
 
