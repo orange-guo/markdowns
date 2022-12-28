@@ -4,11 +4,15 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const gitPagesUrl = 'https://orange-guo.github.io'
+const githubUrl = "https://github.com/orange-guo"
+const editUrl = `${githubUrl}/markdowns/tree/master`
+
 module.exports = {
 	title: 'markdowns',
 	tagline: 'Dinosaurs are cool',
-	url: 'https://orange-guo.github.io',
-	baseUrl: '/book-markdown/',
+	url: gitPagesUrl,
+	baseUrl: '/markdowns/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
@@ -28,7 +32,7 @@ module.exports = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					editUrl: 'https://github.com/orange-guo/book-markdown',
+					editUrl: editUrl,
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true
 				},
@@ -54,7 +58,7 @@ module.exports = {
 					label: 'Docs',
 				},
 				{
-					href: 'https://github.com/orange-guo',
+					href: githubUrl,
 					label: 'Github',
 					position: 'right',
 				},
@@ -98,12 +102,12 @@ module.exports = {
 						},
 						{
 							label: 'Github',
-							href: 'https://github.com/orange-guo',
+							href: githubUrl,
 						},
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} Xiangcheng.Kuo, Inc. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()}, Inc. Built with Docusaurus.`,
 		},
 		prism: {
 			theme: lightCodeTheme,
