@@ -2,6 +2,8 @@
 
 ## openldap中锁定posix用户
 
+### 现象
+
 目前锁定用户能够达成的效果是禁止用户在portal中登录, 但是用户仍然可以在linux中进行登录.<br/>
 调研一下`AccountDisable`属性
 
