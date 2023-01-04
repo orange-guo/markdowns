@@ -75,7 +75,7 @@ BUILD FAILED in 4s
 
 ### 解决方案
 
-在gradle中目前还没找到好的办法, maven中可以通过`<includes>`来指定需要编译的文件, 但是gradle中没有类似的配置
+maven中可以通过`<includes>`来指定需要编译的文件, 但是gradle中没有类似的配置
 
 ### 备注
 - [:generateProto fails with directory not found when importing other proto definitions](https://github.com/google/protobuf-gradle-plugin/issues/405)
