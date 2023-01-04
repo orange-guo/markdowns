@@ -87,6 +87,9 @@ dependencies {
 
 上面两行表示导入目录, 下面一行表示导入匹配的`proto`文件
 
+### 备注
+- [:generateProto fails with directory not found when importing other proto definitions](https://github.com/google/protobuf-gradle-plugin/issues/405)
+
 ## protobuf生成的java代码编译报错找不到symbol
 
 ### 现象
