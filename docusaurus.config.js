@@ -122,6 +122,13 @@ module.exports = {
 					dark: 'rgb(50, 50, 50)'
 				}
 			}
+		},
+		liveCodeBlock: {
+			/**
+			 * The position of the live playground, above or under the editor
+			 * Possible values: "top" | "bottom"
+			 */
+			playgroundPosition: 'bottom',
 		}
 	}),
 	themes: [
@@ -140,5 +147,5 @@ module.exports = {
 			}),
 		],
 	],
-	plugins: [require.resolve("docusaurus-plugin-image-zoom")]
+	plugins: [require.resolve("docusaurus-plugin-image-zoom"), '@docusaurus/theme-live-codeblock']
 };
