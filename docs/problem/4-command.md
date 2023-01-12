@@ -65,3 +65,4 @@ ssh -oHostKeyAlgorithms=+ssh-dss
 # The latest OpenSSH version disables RSA, if you run into the error now, you should use +ssh-rsa instead of +ssh-dss
 ssh -oHostKeyAlgorithms=+ssh-rsa 
 ```
+- [SSH returns: no matching host key type found. Their offer: ssh-dss](https://askubuntu.com/questions/836048/ssh-returns-no-matching-host-key-type-found-their-offer-ssh-dss)
