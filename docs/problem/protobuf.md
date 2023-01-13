@@ -71,11 +71,37 @@ BUILD FAILED in 4s
 
 ### 原因
 
-由于该目录下的proto文件之间存在`import`, 需要将文件分别导入而不是只导入其父目录
+对于存在import的proto文件, 需要确保其在同一个目录下这样生成出的路径才是正确的, 但是由于根目录并不是所有的文件都是我们关心的, 我们需要只导入特定的文件
 
 ### 解决方案
 
-maven中可以通过`<includes>`来指定需要编译的文件, 但是gradle中没有类似的配置
+maven中可以通过`<includes>`来指定需要编译的文件
+gradle中的解决方案如下, protobuf编译前将原始的`protobuf`文件拷贝到一个临时目录, 拷贝的时候只copy特定文件, 然后再编译
+
+```kotlin
+sourceSets {
+	// make sure the protobuf files we specified are right
+	val sourceProtobufPath = "${rootProject.rootDir}/api-contract/protobuf"
+	val targetPath = "$buildDir/protobuf"
+	copy {
+		from(sourceProtobufPath) {
+			include("nott/v1/nottd/*.proto")
+			include("nott/v1/nottm/*.proto")
+		}
+		into(targetPath)
+	}
+	main {
+		proto {
+			srcDir(targetPath)
+		}
+	}
+	test {
+		proto {
+			srcDir(targetPath)
+		}
+	}
+}
+```
 
 ### 备注
 - [:generateProto fails with directory not found when importing other proto definitions](https://github.com/google/protobuf-gradle-plugin/issues/405)
