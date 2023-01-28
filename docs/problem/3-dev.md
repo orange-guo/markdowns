@@ -715,3 +715,25 @@ Caused by: org.springframework.dao.DataAccessResourceFailureException: Unable to
 	at com.fastonetech.lib.core.exception.BusinessExceptionKt.catchAsBusinessException(BusinessException.kt:15) ~[fastone-core-0.1.0-SNAPSHOT.jar:na]
 com.fastonetech.lib.core.exception.BusinessException: 未知错误
 ```
+
+## fastone-api服务升级spring-boot3后使用Token请求保护资源报错
+
+### 现象
+
+使用Token请求保护资源报错401
+
+### 解决方案
+
+1. `http.securityContext().requireExplicitSave(false).and()`
+2. `http.securityContext().securityContextRepository(new HttpSessionSecurityContextRepository()).and()`
+
+### 备注
+
+> spring6之后SecurityContextHolderFilter替换了SecurityContextPersistenceFilter<br/>
+> SecurityContextRepository默认实现也变了<br/>
+> (HttpSessionSecurityContextRepository) -> (RequestAttributeSecurityContextRepository)<br/>
+
+#### 参考
+
+- [Spring Security 6 CustomAuthenticationFilter(intend to replace the UsernamePasswordAuthenticationFilter) does not work](https://stackoverflow.com/questions/74629234/spring-security-6-customauthenticationfilterintend-to-replace-the-usernamepassw)
+- [Default to SecurityContextHolderFilter instead of SecurityContextPersistenceFilter #11110](https://github.com/spring-projects/spring-security/issues/11110)
