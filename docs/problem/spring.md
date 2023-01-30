@@ -404,3 +404,34 @@ class BillingSyncApplication
 
 - [Annotation Interface Reflective](https://docs.spring.io/spring-framework/docs/current/javadoc-api//org/springframework/aot/hint/annotation/Reflective.html)
 - [Annotation Interface ImportRuntimeHints](https://docs.spring.io/spring-framework/docs/current/javadoc-api//org/springframework/context/annotation/ImportRuntimeHints.html)
+
+### 构建出的镜像不是native
+
+#### 原始配置
+```kotlin
+mapOf("SERVICE_BINDING_ROOT" to "/bindings").plus(
+	when (labels) {
+		null -> emptyMap()
+		else -> mapOf("BP_IMAGE_LABELS" to labels)
+	}
+).let {
+	environment.set(it) // ensure BP_NATIVE_IMAGE exists, and it's value is true
+}
+```
+#### 解决方案
+
+由于environment.set会覆盖原有的环境变量, 所以需要显式声明`BP_NATIVE_IMAGE`
+
+```kotlin
+mapOf("SERVICE_BINDING_ROOT" to "/bindings", "BP_NATIVE_IMAGE" to "true").plus(
+	when (labels) {
+		null -> emptyMap()
+		else -> mapOf("BP_IMAGE_LABELS" to labels)
+	}
+).let {
+	environment.set(it) // ensure BP_NATIVE_IMAGE exists, and it's value is true
+}
+```
+
+#### 参考
+- [5.3. Image Customizations下的environment默认值介绍](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/)
