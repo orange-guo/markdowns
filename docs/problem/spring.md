@@ -650,7 +650,7 @@ if (matchResult.isMatch()) {
 
 ### 原因
 
-`triggerStrategy`字段对应的java中的类型是`interface`, 需要为spring-aot进行配置, 以便在运行时能够正确的反序列化
+`triggerStrategy`字段对应的java中的类型是`interface`, 需要为spring-aot进行配置, 以便在运行时能够正确的序列化
 
 ### 解决方案
 
