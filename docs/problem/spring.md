@@ -622,7 +622,7 @@ if (matchResult.isMatch()) {
 }
 ```
 
-## 调用billing-sync服务获取taskDefinition返回的`triggerStrategy`字段是空`json`对象
+## 调用`billing-sync`服务的`taskDefinition`接口返回的结果中的`triggerStrategy`字段的值为`{}`
 
 ### 现象
 
