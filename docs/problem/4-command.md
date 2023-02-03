@@ -30,3 +30,7 @@ lsof|grep FIFO
 ```
 ldd --version
 ```
+
+## Transport endpoint is not connected
+
+- [Transport endpoint is not connected](https://stackoverflow.com/questions/24966676/transport-endpoint-is-not-connected)
