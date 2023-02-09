@@ -785,271 +785,271 @@ test
 
 ```json
 [
-  {
-    "Id": "664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a",
-    "Created": "2023-02-07T04:02:21.790326525Z",
-    "Path": "java",
-    "Args": [
-      "-cp",
-      "/app/resources:/app/classes:/app/libs/*",
-      "com.fastonetech.scheduler.SchedulerApplication"
-    ],
-    "State": {
-      "Status": "running",
-      "Running": true,
-      "Paused": false,
-      "Restarting": false,
-      "OOMKilled": false,
-      "Dead": false,
-      "Pid": 11614,
-      "ExitCode": 0,
-      "Error": "",
-      "StartedAt": "2023-02-07T04:02:22.053512527Z",
-      "FinishedAt": "0001-01-01T00:00:00Z"
-    },
-    "Image": "sha256:390bb12d9d07facd4ecf8987ccc0f1de6484d1f88dfeca239b3e234dbefd6acf",
-    "ResolvConfPath": "/etc/resolv.conf",
-    "HostnamePath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/hostname",
-    "HostsPath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/hosts",
-    "LogPath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a-json.log",
-    "Name": "/fastone-scheduler",
-    "RestartCount": 0,
-    "Driver": "overlay2",
-    "Platform": "linux",
-    "MountLabel": "",
-    "ProcessLabel": "",
-    "AppArmorProfile": "docker-default",
-    "ExecIDs": null,
-    "HostConfig": {
-      "Binds": [
-        "/var/run/munge:/var/run/munge:ro",
-        "/var/run/docker.sock:/var/run/docker.sock:ro",
-        "/home/fastone/.ssh/id_rsa:/home/fastone/.ssh/id_rsa:ro",
-        "/fastone:/fastone",
-        "/etc/fastone/scheduler:/etc/fastone/scheduler",
-        "/etc/resolv.conf:/etc/resolv.conf:ro"
-      ],
-      "ContainerIDFile": "",
-      "LogConfig": {
-        "Type": "json-file",
-        "Config": {}
-      },
-      "NetworkMode": "host",
-      "PortBindings": {},
-      "RestartPolicy": {
-        "Name": "always",
-        "MaximumRetryCount": 0
-      },
-      "AutoRemove": false,
-      "VolumeDriver": "",
-      "VolumesFrom": null,
-      "CapAdd": null,
-      "CapDrop": null,
-      "CgroupnsMode": "host",
-      "Dns": [],
-      "DnsOptions": [],
-      "DnsSearch": [],
-      "ExtraHosts": null,
-      "GroupAdd": null,
-      "IpcMode": "private",
-      "Cgroup": "",
-      "Links": null,
-      "OomScoreAdj": 0,
-      "PidMode": "",
-      "Privileged": false,
-      "PublishAllPorts": false,
-      "ReadonlyRootfs": false,
-      "SecurityOpt": null,
-      "UTSMode": "",
-      "UsernsMode": "",
-      "ShmSize": 67108864,
-      "Runtime": "runc",
-      "ConsoleSize": [
-        0,
-        0
-      ],
-      "Isolation": "",
-      "CpuShares": 0,
-      "Memory": 0,
-      "NanoCpus": 0,
-      "CgroupParent": "",
-      "BlkioWeight": 0,
-      "BlkioWeightDevice": [],
-      "BlkioDeviceReadBps": null,
-      "BlkioDeviceWriteBps": null,
-      "BlkioDeviceReadIOps": null,
-      "BlkioDeviceWriteIOps": null,
-      "CpuPeriod": 0,
-      "CpuQuota": 0,
-      "CpuRealtimePeriod": 0,
-      "CpuRealtimeRuntime": 0,
-      "CpusetCpus": "",
-      "CpusetMems": "",
-      "Devices": [],
-      "DeviceCgroupRules": null,
-      "DeviceRequests": null,
-      "KernelMemory": 0,
-      "KernelMemoryTCP": 0,
-      "MemoryReservation": 0,
-      "MemorySwap": 0,
-      "MemorySwappiness": null,
-      "OomKillDisable": false,
-      "PidsLimit": null,
-      "Ulimits": null,
-      "CpuCount": 0,
-      "CpuPercent": 0,
-      "IOMaximumIOps": 0,
-      "IOMaximumBandwidth": 0,
-      "MaskedPaths": [
-        "/proc/asound",
-        "/proc/acpi",
-        "/proc/kcore",
-        "/proc/keys",
-        "/proc/latency_stats",
-        "/proc/timer_list",
-        "/proc/timer_stats",
-        "/proc/sched_debug",
-        "/proc/scsi",
-        "/sys/firmware"
-      ],
-      "ReadonlyPaths": [
-        "/proc/bus",
-        "/proc/fs",
-        "/proc/irq",
-        "/proc/sys",
-        "/proc/sysrq-trigger"
-      ]
-    },
-    "GraphDriver": {
-      "Data": {
-        "LowerDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27-init/diff:/var/lib/docker/overlay2/c110304affe06c98c093f5c61ce7e9877fbd2b865efde5f1fb59b23de47c83d0/diff:/var/lib/docker/overlay2/a962a99e8ea6b2d0e609e1d7e18e01c9d6b635ac3d3f0c4114c2260a774c502f/diff:/var/lib/docker/overlay2/5ebd33136f9384c49c21a5d09742a798ccb3ee73d2a022370ca10af95b426e4d/diff:/var/lib/docker/overlay2/b1e9ac16c1d694e57e3c3dbf07159943d4f8952f00922b9f3f975da5a6ea82de/diff:/var/lib/docker/overlay2/5fc2b15bb0e0164ef375185c04a5a62047801c3ae1fb1432f599de0dc633192d/diff:/var/lib/docker/overlay2/8ebe08e114672a8939b3fffd3bef39817d8b8809f31a1c7dfda0a732f372b239/diff:/var/lib/docker/overlay2/cf300a36b69d34dcaa0c1e20d33b47714031b4f320545bdc68abb7e5ea0d6a5a/diff:/var/lib/docker/overlay2/aab22cfe1a0cb9fae8a66e9d6be2e91937f2740e68ea86aad51905fb7de3fed3/diff",
-        "MergedDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/merged",
-        "UpperDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/diff",
-        "WorkDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/work"
-      },
-      "Name": "overlay2"
-    },
-    "Mounts": [
-      {
-        "Type": "bind",
-        "Source": "/fastone",
-        "Destination": "/fastone",
-        "Mode": "",
-        "RW": true,
-        "Propagation": "rprivate"
-      },
-      {
-        "Type": "bind",
-        "Source": "/etc/fastone/scheduler",
-        "Destination": "/etc/fastone/scheduler",
-        "Mode": "",
-        "RW": true,
-        "Propagation": "rprivate"
-      },
-      {
-        "Type": "bind",
-        "Source": "/etc/resolv.conf",
-        "Destination": "/etc/resolv.conf",
-        "Mode": "ro",
-        "RW": false,
-        "Propagation": "rprivate"
-      },
-      {
-        "Type": "bind",
-        "Source": "/var/run/munge",
-        "Destination": "/var/run/munge",
-        "Mode": "ro",
-        "RW": false,
-        "Propagation": "rprivate"
-      },
-      {
-        "Type": "bind",
-        "Source": "/var/run/docker.sock",
-        "Destination": "/var/run/docker.sock",
-        "Mode": "ro",
-        "RW": false,
-        "Propagation": "rprivate"
-      },
-      {
-        "Type": "bind",
-        "Source": "/home/fastone/.ssh/id_rsa",
-        "Destination": "/home/fastone/.ssh/id_rsa",
-        "Mode": "ro",
-        "RW": false,
-        "Propagation": "rprivate"
-      }
-    ],
-    "Config": {
-      "Hostname": "head-1",
-      "Domainname": "",
-      "User": "",
-      "AttachStdin": false,
-      "AttachStdout": false,
-      "AttachStderr": false,
-      "Tty": false,
-      "OpenStdin": false,
-      "StdinOnce": false,
-      "Env": [
-        "scheduler.pam=true",
-        "scheduler.systems[0]=SLURM",
-        "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-        "LANGUAGE=en_US:en",
-        "LC_ALL=en_US.UTF-8",
-        "JAVA_HOME=/opt/java/openjdk",
-        "JAVA_VERSION=jdk-11.0.11+9",
-        "LANG=en_US.UTF-8",
-        "spring.profiles.active=prod"
-      ],
-      "Cmd": null,
-      "Image": "r.fastonetech.com:5000/fastone-scheduler:latest",
-      "Volumes": {},
-      "WorkingDir": "",
-      "Entrypoint": [
-        "java",
-        "-cp",
-        "/app/resources:/app/classes:/app/libs/*",
-        "com.fastonetech.scheduler.SchedulerApplication"
-      ],
-      "OnBuild": null,
-      "Labels": {}
-    },
-    "NetworkSettings": {
-      "Bridge": "",
-      "SandboxID": "03fb455a1a1a89fcbbed005b85e823a344c59598b00de720f369ff7148607108",
-      "HairpinMode": false,
-      "LinkLocalIPv6Address": "",
-      "LinkLocalIPv6PrefixLen": 0,
-      "Ports": {},
-      "SandboxKey": "/var/run/docker/netns/default",
-      "SecondaryIPAddresses": null,
-      "SecondaryIPv6Addresses": null,
-      "EndpointID": "",
-      "Gateway": "",
-      "GlobalIPv6Address": "",
-      "GlobalIPv6PrefixLen": 0,
-      "IPAddress": "",
-      "IPPrefixLen": 0,
-      "IPv6Gateway": "",
-      "MacAddress": "",
-      "Networks": {
-        "host": {
-          "IPAMConfig": null,
-          "Links": null,
-          "Aliases": null,
-          "NetworkID": "c458a4e224d2abf50c989f2110f780e1b7e55197b2e97e2c488f29d11d8ef785",
-          "EndpointID": "3a4928fd34531d2a70506559be444ebd61fca6df4d977a97d9906fb265730322",
-          "Gateway": "",
-          "IPAddress": "",
-          "IPPrefixLen": 0,
-          "IPv6Gateway": "",
-          "GlobalIPv6Address": "",
-          "GlobalIPv6PrefixLen": 0,
-          "MacAddress": "",
-          "DriverOpts": null
-        }
-      }
-    }
-  }
+	{
+		"Id": "664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a",
+		"Created": "2023-02-07T04:02:21.790326525Z",
+		"Path": "java",
+		"Args": [
+			"-cp",
+			"/app/resources:/app/classes:/app/libs/*",
+			"com.fastonetech.scheduler.SchedulerApplication"
+		],
+		"State": {
+			"Status": "running",
+			"Running": true,
+			"Paused": false,
+			"Restarting": false,
+			"OOMKilled": false,
+			"Dead": false,
+			"Pid": 11614,
+			"ExitCode": 0,
+			"Error": "",
+			"StartedAt": "2023-02-07T04:02:22.053512527Z",
+			"FinishedAt": "0001-01-01T00:00:00Z"
+		},
+		"Image": "sha256:390bb12d9d07facd4ecf8987ccc0f1de6484d1f88dfeca239b3e234dbefd6acf",
+		"ResolvConfPath": "/etc/resolv.conf",
+		"HostnamePath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/hostname",
+		"HostsPath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/hosts",
+		"LogPath": "/var/lib/docker/containers/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a/664cff406bd27e6406b6f356b914f726a5b7ed9d6be37ac1242a2730e344118a-json.log",
+		"Name": "/fastone-scheduler",
+		"RestartCount": 0,
+		"Driver": "overlay2",
+		"Platform": "linux",
+		"MountLabel": "",
+		"ProcessLabel": "",
+		"AppArmorProfile": "docker-default",
+		"ExecIDs": null,
+		"HostConfig": {
+			"Binds": [
+				"/var/run/munge:/var/run/munge:ro",
+				"/var/run/docker.sock:/var/run/docker.sock:ro",
+				"/home/fastone/.ssh/id_rsa:/home/fastone/.ssh/id_rsa:ro",
+				"/fastone:/fastone",
+				"/etc/fastone/scheduler:/etc/fastone/scheduler",
+				"/etc/resolv.conf:/etc/resolv.conf:ro"
+			],
+			"ContainerIDFile": "",
+			"LogConfig": {
+				"Type": "json-file",
+				"Config": {}
+			},
+			"NetworkMode": "host",
+			"PortBindings": {},
+			"RestartPolicy": {
+				"Name": "always",
+				"MaximumRetryCount": 0
+			},
+			"AutoRemove": false,
+			"VolumeDriver": "",
+			"VolumesFrom": null,
+			"CapAdd": null,
+			"CapDrop": null,
+			"CgroupnsMode": "host",
+			"Dns": [],
+			"DnsOptions": [],
+			"DnsSearch": [],
+			"ExtraHosts": null,
+			"GroupAdd": null,
+			"IpcMode": "private",
+			"Cgroup": "",
+			"Links": null,
+			"OomScoreAdj": 0,
+			"PidMode": "",
+			"Privileged": false,
+			"PublishAllPorts": false,
+			"ReadonlyRootfs": false,
+			"SecurityOpt": null,
+			"UTSMode": "",
+			"UsernsMode": "",
+			"ShmSize": 67108864,
+			"Runtime": "runc",
+			"ConsoleSize": [
+				0,
+				0
+			],
+			"Isolation": "",
+			"CpuShares": 0,
+			"Memory": 0,
+			"NanoCpus": 0,
+			"CgroupParent": "",
+			"BlkioWeight": 0,
+			"BlkioWeightDevice": [],
+			"BlkioDeviceReadBps": null,
+			"BlkioDeviceWriteBps": null,
+			"BlkioDeviceReadIOps": null,
+			"BlkioDeviceWriteIOps": null,
+			"CpuPeriod": 0,
+			"CpuQuota": 0,
+			"CpuRealtimePeriod": 0,
+			"CpuRealtimeRuntime": 0,
+			"CpusetCpus": "",
+			"CpusetMems": "",
+			"Devices": [],
+			"DeviceCgroupRules": null,
+			"DeviceRequests": null,
+			"KernelMemory": 0,
+			"KernelMemoryTCP": 0,
+			"MemoryReservation": 0,
+			"MemorySwap": 0,
+			"MemorySwappiness": null,
+			"OomKillDisable": false,
+			"PidsLimit": null,
+			"Ulimits": null,
+			"CpuCount": 0,
+			"CpuPercent": 0,
+			"IOMaximumIOps": 0,
+			"IOMaximumBandwidth": 0,
+			"MaskedPaths": [
+				"/proc/asound",
+				"/proc/acpi",
+				"/proc/kcore",
+				"/proc/keys",
+				"/proc/latency_stats",
+				"/proc/timer_list",
+				"/proc/timer_stats",
+				"/proc/sched_debug",
+				"/proc/scsi",
+				"/sys/firmware"
+			],
+			"ReadonlyPaths": [
+				"/proc/bus",
+				"/proc/fs",
+				"/proc/irq",
+				"/proc/sys",
+				"/proc/sysrq-trigger"
+			]
+		},
+		"GraphDriver": {
+			"Data": {
+				"LowerDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27-init/diff:/var/lib/docker/overlay2/c110304affe06c98c093f5c61ce7e9877fbd2b865efde5f1fb59b23de47c83d0/diff:/var/lib/docker/overlay2/a962a99e8ea6b2d0e609e1d7e18e01c9d6b635ac3d3f0c4114c2260a774c502f/diff:/var/lib/docker/overlay2/5ebd33136f9384c49c21a5d09742a798ccb3ee73d2a022370ca10af95b426e4d/diff:/var/lib/docker/overlay2/b1e9ac16c1d694e57e3c3dbf07159943d4f8952f00922b9f3f975da5a6ea82de/diff:/var/lib/docker/overlay2/5fc2b15bb0e0164ef375185c04a5a62047801c3ae1fb1432f599de0dc633192d/diff:/var/lib/docker/overlay2/8ebe08e114672a8939b3fffd3bef39817d8b8809f31a1c7dfda0a732f372b239/diff:/var/lib/docker/overlay2/cf300a36b69d34dcaa0c1e20d33b47714031b4f320545bdc68abb7e5ea0d6a5a/diff:/var/lib/docker/overlay2/aab22cfe1a0cb9fae8a66e9d6be2e91937f2740e68ea86aad51905fb7de3fed3/diff",
+				"MergedDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/merged",
+				"UpperDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/diff",
+				"WorkDir": "/var/lib/docker/overlay2/3904d677bc7e22664ba5537749ead6826c9b0fd345f0845bfb162ed5175a3d27/work"
+			},
+			"Name": "overlay2"
+		},
+		"Mounts": [
+			{
+				"Type": "bind",
+				"Source": "/fastone",
+				"Destination": "/fastone",
+				"Mode": "",
+				"RW": true,
+				"Propagation": "rprivate"
+			},
+			{
+				"Type": "bind",
+				"Source": "/etc/fastone/scheduler",
+				"Destination": "/etc/fastone/scheduler",
+				"Mode": "",
+				"RW": true,
+				"Propagation": "rprivate"
+			},
+			{
+				"Type": "bind",
+				"Source": "/etc/resolv.conf",
+				"Destination": "/etc/resolv.conf",
+				"Mode": "ro",
+				"RW": false,
+				"Propagation": "rprivate"
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/run/munge",
+				"Destination": "/var/run/munge",
+				"Mode": "ro",
+				"RW": false,
+				"Propagation": "rprivate"
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/run/docker.sock",
+				"Destination": "/var/run/docker.sock",
+				"Mode": "ro",
+				"RW": false,
+				"Propagation": "rprivate"
+			},
+			{
+				"Type": "bind",
+				"Source": "/home/fastone/.ssh/id_rsa",
+				"Destination": "/home/fastone/.ssh/id_rsa",
+				"Mode": "ro",
+				"RW": false,
+				"Propagation": "rprivate"
+			}
+		],
+		"Config": {
+			"Hostname": "head-1",
+			"Domainname": "",
+			"User": "",
+			"AttachStdin": false,
+			"AttachStdout": false,
+			"AttachStderr": false,
+			"Tty": false,
+			"OpenStdin": false,
+			"StdinOnce": false,
+			"Env": [
+				"scheduler.pam=true",
+				"scheduler.systems[0]=SLURM",
+				"PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+				"LANGUAGE=en_US:en",
+				"LC_ALL=en_US.UTF-8",
+				"JAVA_HOME=/opt/java/openjdk",
+				"JAVA_VERSION=jdk-11.0.11+9",
+				"LANG=en_US.UTF-8",
+				"spring.profiles.active=prod"
+			],
+			"Cmd": null,
+			"Image": "r.fastonetech.com:5000/fastone-scheduler:latest",
+			"Volumes": {},
+			"WorkingDir": "",
+			"Entrypoint": [
+				"java",
+				"-cp",
+				"/app/resources:/app/classes:/app/libs/*",
+				"com.fastonetech.scheduler.SchedulerApplication"
+			],
+			"OnBuild": null,
+			"Labels": {}
+		},
+		"NetworkSettings": {
+			"Bridge": "",
+			"SandboxID": "03fb455a1a1a89fcbbed005b85e823a344c59598b00de720f369ff7148607108",
+			"HairpinMode": false,
+			"LinkLocalIPv6Address": "",
+			"LinkLocalIPv6PrefixLen": 0,
+			"Ports": {},
+			"SandboxKey": "/var/run/docker/netns/default",
+			"SecondaryIPAddresses": null,
+			"SecondaryIPv6Addresses": null,
+			"EndpointID": "",
+			"Gateway": "",
+			"GlobalIPv6Address": "",
+			"GlobalIPv6PrefixLen": 0,
+			"IPAddress": "",
+			"IPPrefixLen": 0,
+			"IPv6Gateway": "",
+			"MacAddress": "",
+			"Networks": {
+				"host": {
+					"IPAMConfig": null,
+					"Links": null,
+					"Aliases": null,
+					"NetworkID": "c458a4e224d2abf50c989f2110f780e1b7e55197b2e97e2c488f29d11d8ef785",
+					"EndpointID": "3a4928fd34531d2a70506559be444ebd61fca6df4d977a97d9906fb265730322",
+					"Gateway": "",
+					"IPAddress": "",
+					"IPPrefixLen": 0,
+					"IPv6Gateway": "",
+					"GlobalIPv6Address": "",
+					"GlobalIPv6PrefixLen": 0,
+					"MacAddress": "",
+					"DriverOpts": null
+				}
+			}
+		}
+	}
 ]
 ```
 
@@ -1252,5 +1252,60 @@ r.fastonetech.com:5000/fastone-scheduler:latest
 > 2023-02-07 04:02:24.874
 
 ### 参考
+
 - [Docker bind propagation](https://docs.docker.com/storage/bind-mounts/#configure-bind-propagation)
 - [Juicefs mount](https://juicefs.com/docs/cloud/reference/commands_reference/#mount)
+
+## cluster-scheduler请求审计服务失败后导致后续请求一直失败, 且报错信息相同
+
+### 原因
+
+`AsyncAuditService`中的`asyncAudit`方法复用了CoroutineScope, 导致后续请求失败后, 该CoroutineScope被取消, 从而导致后续请求一直失败
+该代码如下
+
+```kotlin
+class AsyncAuditService(private val auditService: AuditService) : AuditService, LogCapability {
+
+	private val coroutineScope = CoroutineScope(Dispatchers.IO)
+
+	private fun asyncAudit(
+		successLog: String,
+		failureLog: String,
+		doAudit: suspend CoroutineScope.() -> Unit,
+	) {
+		coroutineScope.launch { doAudit() }.invokeOnCompletion {
+			if (it != null)
+				logger.warn(failureLog, it)
+			else
+				logger.info(successLog)
+		}
+	}
+
+}
+```
+
+### 解决方案
+
+为每个请求创建一个CoroutineScope, 修改后的代码如下
+```kotlin
+class AsyncAuditService(private val auditService: AuditService) : AuditService, LogCapability {
+
+	private fun asyncAudit(
+		successLog: String,
+		failureLog: String,
+		doAudit: suspend CoroutineScope.() -> Unit,
+	) {
+    CoroutineScope(Dispatchers.IO).launch { doAudit() }.invokeOnCompletion {
+			if (it != null)
+				logger.warn(failureLog, it)
+			else
+				logger.info(successLog)
+		}
+	}
+
+}
+```
+
+### 参考
+- [CoroutineScope](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-scope/)
+- [CoroutineScope cannot be reused after an exception thrown](https://stackoverflow.com/questions/59996928/coroutinescope-cannot-be-reused-after-an-exception-thrown)
