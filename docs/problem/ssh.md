@@ -26,6 +26,7 @@ ssh -o StrictHostKeyChecking=no
 ```
 
 - [how to avoid ssh asking permission?](https://unix.stackexchange.com/questions/33271/how-to-avoid-ssh-asking-permission)
+- [How to accept 'yes' from shell script "Are you sure you want to continue connecting (yes/no)?" using ssh. Without using StrictHostKeyChecking=no](https://stackoverflow.com/questions/64449495/how-to-accept-yes-from-shell-script-are-you-sure-you-want-to-continue-connect)
 
 ## no matching host key type found. Their offer: ssh-rsa,ssh-dss
 
