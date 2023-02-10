@@ -1287,6 +1287,7 @@ class AsyncAuditService(private val auditService: AuditService) : AuditService, 
 ### 解决方案
 
 为每个请求创建一个CoroutineScope, 修改后的代码如下
+
 ```kotlin
 class AsyncAuditService(private val auditService: AuditService) : AuditService, LogCapability {
 
@@ -1295,7 +1296,7 @@ class AsyncAuditService(private val auditService: AuditService) : AuditService, 
 		failureLog: String,
 		doAudit: suspend CoroutineScope.() -> Unit,
 	) {
-    CoroutineScope(Dispatchers.IO).launch { doAudit() }.invokeOnCompletion {
+		CoroutineScope(Dispatchers.IO).launch { doAudit() }.invokeOnCompletion {
 			if (it != null)
 				logger.warn(failureLog, it)
 			else
@@ -1307,5 +1308,154 @@ class AsyncAuditService(private val auditService: AuditService) : AuditService, 
 ```
 
 ### 参考
+
 - [CoroutineScope](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-scope/)
 - [CoroutineScope cannot be reused after an exception thrown](https://stackoverflow.com/questions/59996928/coroutinescope-cannot-be-reused-after-an-exception-thrown)
+
+## remote-access服务的websocket无法连接显示401
+
+### 现象
+
+调用对用接口时显示401, 本地尝试复现时输出如下
+
+```bash
+orange@orange:~/Documents/Dev/Project/Fastone/fastone/services$ curl -I 'http://localhost:2000/vdi/ws-tunnel?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3IiwibGludXhHaWQiOjIwMDEsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiZGlzYWJsZVBhc3RlIjpmYWxzZSwidXNlcklkIjo3LCJ2ZXJzaW9uIjoiMy5tYXN0ZXIuMTEzODI4IiwiZmFzdG9uZVNjZW5hcmlvIjoiRkNDRV9QVUJMSUMiLCJsaW51eFVpZCI6MjAwMSwibmFtZSI6ImFkbWluIiwidXNlclR5cGUiOiJMT0NBTCIsImV4cCI6MTY3NTk2MjEzMiwiaWF0IjoxNjc1OTE4OTMyLCJ1c2VybmFtZSI6ImFkbWluIiwiZGlzYWJsZUNvcHkiOmZhbHNlfQ.CAHWjkipa01xnZHwrm0Gh1E4kE0TWRyg4zvUFCi0WqdHg0mAlolgvw2F6qyiqX6t73Ne6n0dVGNesEohPhAOdQ&hostname=10.0.17.26&protocol=SSH&width=659&height=707&dpi=96'
+
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: SAMEORIGIN
+Content-Length: 0
+Date: Fri, 10 Feb 2023 02:17:05 GMT
+```
+
+### 原因
+
+目前`spring-boot3`使用的是`jakarta.websocket`,而`guacamole`实现方案是基于`javax.websocket`, 这两者不兼容。
+`remote-access`服务的`web-socket`的入口代码类如下
+
+```kotlin
+class RemoteAccessEndpoint : GuacamoleWebSocketTunnelEndpoint() {}
+
+abstract class GuacamoleWebSocketTunnelEndpoint : javax.websocket.Endpoint {}
+```
+
+### 解决方案
+
+首先查看其Github仓库查看`guacamole-common`最新的代码, 其最新版本为1.5.0, 但是该版本仍然使用的是`javax.websocket`。
+
+```xml title="pom.xml"
+
+<dependency>
+	<groupId>javax.websocket</groupId>
+	<artifactId>javax.websocket-api</artifactId>
+	<version>1.0</version>
+	<scope>provided</scope>
+</dependency>
+```
+
+为了能够支持`jakarta.websocket`, 需要copy相应依赖的代码到项目中, 其license为Apache License 2.0, 可以直接copy。
+
+### 参考
+
+- [GUACAMOLE-1325](https://issues.apache.org/jira/browse/GUACAMOLE-1325)
+- [guacamole-client](https://github.com/apache/guacamole-client)
+
+## cc环境北一区的集群无法通过`SSH/VNC`连接
+
+### 现象
+
+在北一区开启集群后, `SSH/VNC`均无法连接, 查看`remote-access`对应日志发现`Auth fail`
+
+### 原因
+
+`fastone`用户密码过期, 因为`remote-access`服务使用的是`fastone`用户, 密码过期后使用ssh无法连接.
+
+### 解决方案
+
+修改`ansible`中的`fs-base.yml`相关代码如下
+
+```yaml
+- name: unlock and set fastone user never expire
+  hosts: all
+  become: yes
+  gather_facts: no
+  any_errors_fatal: no
+  tasks:
+    - name: unlock and set fastone user never expire
+      user:
+        name: fastone
+        password: 'xxx'
+        update_password: always
+        expires: -1
+    - name: set max expire to 100 years
+      shell: chage -M 36500 fastone
+```
+
+### 排查步骤
+
+使用云厂商提供的`login user`登录到对应头节点尝试使用fastone用户进行ssh连接, 发现无法连接, 报错提示密码过期<br/>
+
+```bash
+sudo ssh -i /home/fastone/.ssh/id_rsa fastone@localhost
+```
+
+排查deploy对应关于账户的配置代码, 其是实现是基于`ansible`的`user`模块完成的, 相应代码如下<br/>
+
+```yml
+- name: unlock and set fastone user never expire
+  hosts: all
+  become: yes
+  gather_facts: no
+  any_errors_fatal: no
+  tasks:
+    - name: unlock and set fastone user never expire
+      user:
+        name: fastone
+        password: ''
+        update_password: always
+        expires: -1
+```
+
+其中`expires`设置为了-1, 这个只能改变账户的过期时间而不会改变密码过期时间, 需要查看user模块的文档来查看对应的参数<br/>
+
+在ansible的文档中提供了对应参数, 参数如下<br/>
+
+```text
+password_expire_max | added in ansible-core 2.11 | Maximum number of days between password change. Supported on Linux only.
+password_expire_min | added in ansible-core 2.11 | Minimum number of days between password change. Supported on Linux only.
+```
+
+由于我们的`ansible`版本为`2.10`, 无法使用这两个参数, 所以需要另一种方式来解决这个问题<br/>
+目前最快的解决办法是新建一个task, 通过`shell`模块来执行`chage`命令来修改密码过期时间, 代码如下<br/>
+
+```yaml
+- name: unlock and set fastone user never expire
+  hosts: all
+  become: yes
+  gather_facts: no
+  any_errors_fatal: no
+  tasks:
+    - name: unlock and set fastone user never expire
+      user:
+        name: fastone
+        password: 'xxx'
+        update_password: always
+        expires: -1
+    - name: set max expire to 100 years
+      shell: chage -M 36500 fastone
+```
+
+### 参考
+
+- [ansible.builtin.user module – Manage user accounts](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html)
+- [User password expiration - Ansible module user](https://www.ansiblepilot.com/articles/user-password-expiration-ansible-module-user/)
+- [Linux: Set Password to NEVER Expire](https://www.shellhacks.com/linux-set-password-to-never-expire/)
+- [Ansible User Module Tutorial](https://linuxhint.com/ansible-user-module-tutorial/)
+- [Strong Password Generator](https://delinea.com/resources/password-generator-it-tool)
