@@ -50,6 +50,13 @@ https://www.thoughtworks.com/radar/languages-and-frameworks
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
 - [joker](https://joker-lang.org/)
   <br/>Joker is a small interpreted dialect of Clojure written in Go. It is also a Clojure(Script) linter.
+- [planck](https://planck-repl.org/)
+  <br/>Planck is a stand-alone ClojureScript REPL for macOS and Linux. <br/>
+  Planck launches instantly and is useful for scripting.
+- [closh](https://github.com/dundalek/closh)
+  <br/>Bash-like shell based on Clojure
+- [lumo](https://github.com/anmonteiro/lumo)
+  <br/>Fast, cross-platform, standalone ClojureScript environment
 - [ring](https://github.com/ring-clojure/ring)
   <br/>Clojure HTTP server abstraction
 - [cheshire](https://github.com/dakrone/cheshire)
