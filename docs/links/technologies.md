@@ -4,14 +4,14 @@
 
 https://www.thoughtworks.com/radar/languages-and-frameworks
 
-## Build
+## build
 
 - [paketo](https://paketo.io/)
   <br/>Your app,<br/>
   in your favorite language,<br/>
   ready to run in the cloud<br/>
 
-## Kotlin
+## kotlin
 
 - [ktor](https://ktor.io/)
 - [ktorm](https://www.ktorm.org/)
@@ -20,21 +20,23 @@ https://www.thoughtworks.com/radar/languages-and-frameworks
 - [mockk](https://mockk.io/)
 - [exposed](https://github.com/JetBrains/Exposed)
 - [kotlin.link](https://kotlin.link/)
-<br/>Kotlin SQL Framework
+  <br/>Kotlin SQL Framework
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
-<br/>A curated list of awesome Kotlin related stuff Inspired by awesome-java.
+  <br/>A curated list of awesome Kotlin related stuff Inspired by awesome-java.
 
-## Python
+## python
+
 - [awesome-python](https://github.com/vinta/awesome-python)
-<br/>A curated list of awesome Python frameworks, libraries, software and resources.
+  <br/>A curated list of awesome Python frameworks, libraries, software and resources.
 - [fastapi](https://fastapi.tiangolo.com/)
 - [typer](https://typer.tiangolo.com/)
 - [flask](https://github.com/pallets/flask) The Python micro framework for building web applications.
 - [jinja](https://github.com/pallets/jinja) A very fast and expressive template engine.
 
-## Java
+## java
+
 - [awesome-java](https://github.com/akullpp/awesome-java)
-<br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
+  <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
 - [approval-tests](https://approvaltests.com/)
 - [helidon](https://helidon.io/)
 - [micronaut](https://micronaut.io/)
@@ -42,20 +44,39 @@ https://www.thoughtworks.com/radar/languages-and-frameworks
 - [quarkus](https://quarkus.io/)
 - [spring-modulith](https://spring.io/projects/spring-modulith)
 
-## Clojure
+## clojure
 
-- [joker](https://joker-lang.org/)
-- [ring](https://github.com/ring-clojure/ring)
-- [cheshire](https://github.com/dakrone/cheshire)
-- [hugsql](https://www.hugsql.org/)
-- [honeysql](https://github.com/seancorfield/honeysql)
-- [toucan](https://github.com/metabase/toucan)
-- [leiningen](https://github.com/technomancy/leiningen)
-- [clj-ldap](https://github.com/pauldorman/clj-ldap)
-- [tools.cli](https://github.com/clojure/tools.cli)
-- [CLJ Easy](https://github.com/clj-easy)
-- [Graalvm](https://www.innoq.com/en/blog/native-clojure-and-graalvm/)
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
+  <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
+- [joker](https://joker-lang.org/)
+  <br/>Joker is a small interpreted dialect of Clojure written in Go. It is also a Clojure(Script) linter.
+- [ring](https://github.com/ring-clojure/ring)
+  <br/>Clojure HTTP server abstraction
+- [cheshire](https://github.com/dakrone/cheshire)
+  <br/>Clojure JSON and JSON SMILE (binary json format) encoding/decoding
+- [hugsql](https://www.hugsql.org/)
+  <br/>HugSQL is a Clojure library for embracing SQL.
+- [honeysql](https://github.com/seancorfield/honeysql)
+  <br/>Turn Clojure data structures into SQL
+- [toucan](https://github.com/metabase/toucan)
+  <br/>A classy high-level Clojure library for defining application models and retrieving them from a DB
+- [leiningen](https://codeberg.org/leiningen/leiningen)
+  <br/>Moved to Codeberg; this is a convenience mirror
+- [clj-ldap](https://github.com/pauldorman/clj-ldap)
+  <br/>Clojure LDAP client
+- [tools.cli](https://github.com/clojure/tools.cli)
+  <br/>Command-line processing
+- [CLJ Easy](https://github.com/clj-easy)
+  <br/>This organization was created to collaborate on small utilities or documentation projects that are of general
+  use<br/>
+  for the Clojure community and aren't large enough to be hosted in a separate organization like babashka or
+  clj-kondo.<br/>
+  Typical examples:<br/>
+  graal-docs<br/>
+  graal-build-time<br/>
+  graal-config<br/>
+- [Graalvm](https://www.innoq.com/en/blog/native-clojure-and-graalvm/)
+- [babashka](https://babashka.org/)
 
 ## Filesystem
 
