@@ -95,3 +95,7 @@ sed -n '3p' file
 # 获取第三行到第五行
 sed -n '3,5p' file
 ```
+
+## Bash if..else Statement
+
+- [Bash if..else Statement](https://linuxize.com/post/bash-if-else-statement/)
