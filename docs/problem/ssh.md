@@ -56,3 +56,7 @@ ssh -t user@host "cd /path/to/dir && command"
 > which can be very useful, e.g. when implementing menu services.
 
 - [How can I ssh directly to a particular directory?](https://stackoverflow.com/questions/626533/how-can-i-ssh-directly-to-a-particular-directory)
+
+## How to Keep Alive SSH Sessions
+
+- [How to Keep Alive SSH Sessions](https://patrickmn.com/aside/how-to-keep-alive-ssh-sessions/)

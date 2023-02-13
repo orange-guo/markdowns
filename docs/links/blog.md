@@ -8,3 +8,4 @@
 - [idesign](https://www.idesign.net/)
 - [rightingsoftware](https://rightingsoftware.org/)
 - [alisoftware](https://alisoftware.github.io/)
+- [patrickmn](https://patrickmn.com/)
