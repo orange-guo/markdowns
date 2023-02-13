@@ -11,3 +11,18 @@
 - [Software versioning](https://en.wikipedia.org/wiki/Software_versioning)
 - [Software Versioning Best Practices](https://cpl.thalesgroup.com/software-monetization/software-versioning-basics)
 - [Semantic Versioning](https://semver.org/)
+
+## ADR
+
+- https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html
+- https://adr.github.io/
+- https://engineering.atspotify.com/2020/04/when-should-i-write-an-architecture-decision-record/
+
+## C4 model
+
+- https://www.infoq.cn/article/C4-architecture-model/
+- https://c4model.com/
+
+## The Twelve-Factor App
+
+- https://12factor.net/

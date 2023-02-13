@@ -8,25 +8,6 @@
 - [AWS](https://aws.amazon.com/blogs/architecture/redesigned-architecture-center/)
 - [IBM](https://www.ibm.com/cloud/architecture)
 
-## C4 model
-
-- https://www.infoq.cn/article/C4-architecture-model/
-- https://c4model.com/
-
-## The Twelve-Factor App
-
-- https://12factor.net/
-
-## Semantic Versioning
-
-- https://semver.org/
-
-## ADR
-
-- https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html
-- https://adr.github.io/
-- https://engineering.atspotify.com/2020/04/when-should-i-write-an-architecture-decision-record/
-
 ## Reference
 
 - [Communication between microservices - distinguishing internal calls safely](https://softwareengineering.stackexchange.com/questions/314227/communication-between-microservices-distinguishing-internal-calls-safely)
