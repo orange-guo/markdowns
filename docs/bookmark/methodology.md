@@ -36,3 +36,22 @@
 
 - [What are microservices?](https://microservices.io/)
 - [What are Microservices?](https://aws.amazon.com/microservices/)
+
+## DevOps
+
+- [DevOps](https://en.wikipedia.org/wiki/DevOps)
+- [What Is DevOps?](https://www.atlassian.com/devops)
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)
+
+## Continuous delivery
+
+- [Continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery)
+
+## Extreme programming(XP)
+
+- [Extreme programming](https://en.wikipedia.org/wiki/Extreme_programming)
+
+## Agile software development
+
+- [What is Agile?](https://www.atlassian.com/agile)
+- [Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)
