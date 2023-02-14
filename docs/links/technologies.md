@@ -1,4 +1,4 @@
-# 技术
+# Technology
 
 ## Radar
 
@@ -18,7 +18,8 @@
 - [ktor](https://ktor.io/)
 - [ktorm](https://www.ktorm.org/)
 - [koin](https://insert-koin.io/)
-- [arrow-kt](https://arrow-kt.io/)
+- [arrow](https://arrow-kt.io/)
+  <br/>Functional companion to Kotlin's Standard Library
 - [mockk](https://mockk.io/)
 - [exposed](https://github.com/JetBrains/Exposed)
 - [kotlin.link](https://kotlin.link/)
@@ -26,9 +27,20 @@
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
   <br/>A curated list of awesome Kotlin related stuff Inspired by awesome-java.
 - [kotest](https://kotest.io/)
-  <br/>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and integrated property testing
+  <br/>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and
+  integrated property testing
 - [MockK](https://mockk.io/)
   <br/>mocking library for Kotlin
+- [kotlinx-cli](https://github.com/Kotlin/kotlinx-cli)
+  <br/>Pure Kotlin implementation of a generic CLI parser.
+- [Koin](https://insert-koin.io/)
+  <br/>The pragmatic Kotlin dependency injection framework
+- [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
+  <br/>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin
+- [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
+  <br/>Library support for Kotlin coroutines
+- [Kodein](https://kosi-libs.org/)
+  <br/>Painless Kotlin Dependency Injection
 
 ## python
 
@@ -46,9 +58,14 @@
 - [approval-tests](https://approvaltests.com/)
 - [helidon](https://helidon.io/)
 - [micronaut](https://micronaut.io/)
+  <br/>A MODERN, JVM-BASED, FULL-STACK FRAMEWORK FOR BUILDING MODULAR, EASILY TESTABLE MICROSERVICE AND SERVERLESS APPLICATIONS
 - [vert.x](https://vertx.io/)
 - [quarkus](https://quarkus.io/)
+  <br/>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.
 - [spring-modulith](https://spring.io/projects/spring-modulith)
+- [Testcontainers](https://www.testcontainers.org/)
+  <br/>Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common
+  databases, Selenium web browsers, or anything else that can run in a Docker container.
 
 ## clojure
 
@@ -65,10 +82,13 @@
   <br/>Fast, cross-platform, standalone ClojureScript environment
 - [ring](https://github.com/ring-clojure/ring)
   <br/>Clojure HTTP server abstraction
+- [ring-middleware](https://github.com/puppetlabs/ring-middleware)
+- [ring-json](https://github.com/ring-clojure/ring-json)
+  <br/>Ring middleware for handling JSON
 - [cheshire](https://github.com/dakrone/cheshire)
   <br/>Clojure JSON and JSON SMILE (binary json format) encoding/decoding
 - [hugsql](https://www.hugsql.org/)
-  <br/>HugSQL is a Clojure library for embracing SQL.
+  <br/>A Clojure library for embracing SQL.
 - [honeysql](https://github.com/seancorfield/honeysql)
   <br/>Turn Clojure data structures into SQL
 - [toucan](https://github.com/metabase/toucan)
@@ -88,6 +108,8 @@
   graal-docs<br/>
   graal-build-time<br/>
   graal-config<br/>
+- [graal-build-time](https://github.com/clj-easy/graal-build-time)
+  <br/>Library to initialize Clojure packages at build time with GraalVM native-image.
 - [Graalvm](https://www.innoq.com/en/blog/native-clojure-and-graalvm/)
 - [babashka](https://babashka.org/)
 
@@ -113,5 +135,15 @@
 - [casbin](https://casbin.org/)
 - [consul](https://www.consul.io/)
 - [etcd](https://etcd.io/)
+  <br/>A distributed, reliable key-value store for the most critical data of a distributed system
 - [skill-map](https://github.com/TeamStuQ/skill-map)
 - [kubernetes-handbook](https://github.com/feiskyer/kubernetes-handbook)
+- [open-radiant](https://github.com/JetBrains/open-radiant)
+  <br/>JetBrains Branded Art Generator
+- [graalvm](https://www.graalvm.org/)
+- [Jython](https://www.jython.org/)
+  <br/>Python for the Java Platform
+
+## node.js
+- [nvm](https://github.com/nvm-sh/nvm)
+  <br/>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions

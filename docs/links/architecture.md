@@ -7,6 +7,8 @@
 - [Oracle](https://docs.oracle.com/solutions/)
 - [AWS](https://aws.amazon.com/blogs/architecture/redesigned-architecture-center/)
 - [IBM](https://www.ibm.com/cloud/architecture)
+- [Alibaba](https://www.alibabacloud.com/zh/architecture/index)
+- [Tencent](https://www.tencentcloud.com/solutions/architecture-center)
 
 ## Reference
 
