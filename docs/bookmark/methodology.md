@@ -55,3 +55,7 @@
 
 - [What is Agile?](https://www.atlassian.com/agile)
 - [Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)
+
+## Infrastructure as code
+
+- [Infrastructure as code](https://en.wikipedia.org/wiki/Infrastructure_as_code)
