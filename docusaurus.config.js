@@ -53,9 +53,21 @@ module.exports = {
 			items: [
 				{
 					type: 'doc',
-					docId: 'introduction',
 					position: 'left',
-					label: 'Docs',
+					label: 'Book Mark',
+					docId: 'bookmark/introduction'
+				},
+				{
+					type: 'doc',
+					position: 'left',
+					label: 'Book Note',
+					docId: 'booknote/introduction',
+				},
+				{
+					type: 'doc',
+					position: 'left',
+					label: 'Problem',
+					docId: 'problem/introduction',
 				},
 				{
 					href: githubUrl,

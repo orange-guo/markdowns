@@ -1,4 +1,4 @@
-# Approach
+# Methodology
 
 ## Let it Crash
 
@@ -26,3 +26,13 @@
 ## The Twelve-Factor App
 
 - https://12factor.net/
+
+## Cloud Native
+
+- [What Is Cloud Native?](https://aws.amazon.com/what-is/cloud-native/)
+- [What is Cloud Native?](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/definition)
+
+## Microservices
+
+- [What are microservices?](https://microservices.io/)
+- [What are Microservices?](https://aws.amazon.com/microservices/)
