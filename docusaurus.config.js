@@ -45,7 +45,7 @@ module.exports = {
 
 	themeConfig: ({
 		navbar: {
-			title: 'markdowns',
+			title: 'Markdowns',
 			logo: {
 				alt: 'My Site Logo',
 				src: 'img/logo.svg',
