@@ -60,6 +60,7 @@
 - [micronaut](https://micronaut.io/)
   <br/>A MODERN, JVM-BASED, FULL-STACK FRAMEWORK FOR BUILDING MODULAR, EASILY TESTABLE MICROSERVICE AND SERVERLESS APPLICATIONS
 - [vert.x](https://vertx.io/)
+  <br/>Vert.x is a tool-kit for building reactive applications on the JVM
 - [quarkus](https://quarkus.io/)
   <br/>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.
 - [spring-modulith](https://spring.io/projects/spring-modulith)
