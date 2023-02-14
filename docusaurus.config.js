@@ -60,8 +60,8 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Book Note',
-					docId: 'booknote/introduction',
+					label: 'Problem',
+					docId: 'problem/introduction',
 				},
 				{
 					type: 'doc',
@@ -72,8 +72,8 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Problem',
-					docId: 'problem/introduction',
+					label: 'Book Note',
+					docId: 'booknote/introduction',
 				},
 				{
 					href: githubUrl,
