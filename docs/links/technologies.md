@@ -1,8 +1,10 @@
 # 技术
 
-## Technology Radar
+## Radar
 
-https://www.thoughtworks.com/radar/languages-and-frameworks
+- [thoughtworks](https://www.thoughtworks.com/radar)
+- [oreilly](https://www.oreilly.com/radar/)
+- [zalando](https://opensource.zalando.com/tech-radar/)
 
 ## build
 
@@ -93,6 +95,12 @@ https://www.thoughtworks.com/radar/languages-and-frameworks
 - [juicefs](https://github.com/juicedata/juicefs)<br/>
   JuiceFS is a distributed POSIX file system built on top of Redis and S3.
 
+## Architecture
+
+- [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
+  <br/>A curated list of awesome articles, videos, and other resources to learn and practice software architecture,
+  patterns, and principles.
+
 ## Others
 
 - [elixir](https://elixir-lang.org/)
@@ -101,3 +109,5 @@ https://www.thoughtworks.com/radar/languages-and-frameworks
 - [casbin](https://casbin.org/)
 - [consul](https://www.consul.io/)
 - [etcd](https://etcd.io/)
+- [skill-map](https://github.com/TeamStuQ/skill-map)
+- [kubernetes-handbook](https://github.com/feiskyer/kubernetes-handbook)
