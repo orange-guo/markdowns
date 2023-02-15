@@ -54,6 +54,12 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
+					label: 'Introduction',
+					docId: 'introduction/introduction'
+				},
+				{
+					type: 'doc',
+					position: 'left',
 					label: 'Book Mark',
 					docId: 'bookmark/introduction'
 				},
@@ -76,9 +82,16 @@ module.exports = {
 					docId: 'booknote/introduction',
 				},
 				{
-					href: githubUrl,
+					to: 'blog',
+					label: 'Blog',
+					position: 'left'
+				},
+				{
 					label: 'Github',
+					href: githubUrl,
 					position: 'right',
+					className: 'header-github-link',
+					'aria-label': 'GitHub repository',
 				},
 			],
 		},
@@ -92,6 +105,22 @@ module.exports = {
 							label: 'Introduction',
 							to: '/docs/introduction',
 						},
+						{
+							label: 'Book Mark',
+							to: '/docs/bookmark/introduction',
+						},
+						{
+							label: 'Problem',
+							to: '/docs/problem/introduction',
+						},
+						{
+							label: 'Note',
+							to: '/docs/note/introduction',
+						},
+						{
+							label: 'Book Note',
+							to: '/docs/booknote/introduction',
+						}
 					],
 				},
 				{
@@ -124,7 +153,35 @@ module.exports = {
 						},
 					],
 				},
+				{
+					title: 'Legal',
+					// Please don't remove the privacy and terms, it's a legal
+					// requirement.
+					items: [
+						{
+							label: 'Privacy',
+							href: 'https://opensource.facebook.com/legal/privacy/',
+						},
+						{
+							label: 'Terms',
+							href: 'https://opensource.facebook.com/legal/terms/',
+						},
+						{
+							label: 'Data Policy',
+							href: 'https://opensource.facebook.com/legal/data-policy/',
+						},
+						{
+							label: 'Cookie Policy',
+							href: 'https://opensource.facebook.com/legal/cookie-policy/',
+						},
+					],
+				}
 			],
+			// logo: {
+			// 	alt: 'Meta Open Source Logo',
+			// 	src: '/img/meta_opensource_logo_negative.svg',
+			// 	href: 'https://opensource.fb.com',
+			// },
 			copyright: `Copyright © ${new Date().getFullYear()}, Inc. Built with Docusaurus.`,
 		},
 		prism: {
