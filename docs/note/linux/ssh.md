@@ -1,4 +1,4 @@
-# SSH
+# ssh
 
 ## ssh-keygen
 

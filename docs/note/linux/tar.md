@@ -1,4 +1,4 @@
-# TAR
+# tar
 
 ## Extract files to another directory
 
