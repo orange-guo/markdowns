@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[8230],{227:s=>{s.exports=JSON.parse('[{"label":"first","permalink":"/markdowns/blog/tags/first","count":1}]')}}]);
