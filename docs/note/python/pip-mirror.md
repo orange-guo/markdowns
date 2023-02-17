@@ -19,6 +19,6 @@ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 内容如下
 ```bash
 [global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
