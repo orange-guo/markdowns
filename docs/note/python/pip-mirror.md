@@ -13,7 +13,7 @@
 pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-### 永久修改
+## 永久修改
 
 修改`~/.config/pip/pip.conf`
 内容如下
