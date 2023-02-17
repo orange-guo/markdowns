@@ -17,8 +17,14 @@ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 修改`~/.config/pip/pip.conf`
 内容如下
+
 ```bash
 [global]
 
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
 ```
+
+## 参考
+
+- [更换（Pypi）pip源到国内镜像](https://developer.aliyun.com/article/652884)
