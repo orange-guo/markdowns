@@ -16,3 +16,6 @@
 - [Design interservice communication for microservices](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication)
 - [Microservice chassis](https://dzone.com/articles/ms-chassis-pattern)
 - [Software Architecture](https://awesome-architecture.com/software-architecture/)
+- [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
+  <br/>A curated list of awesome articles, videos, and other resources to learn and practice software architecture,
+  patterns, and principles.

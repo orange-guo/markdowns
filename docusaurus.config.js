@@ -188,6 +188,7 @@ module.exports = {
 		prism: {
 			theme: lightCodeTheme,
 			darkTheme: darkCodeTheme,
+			additionalLanguages: ["java", "kotlin", "clojure"]
 		},
 		zoom: {
 			selector: '.markdown :not(em) > img',

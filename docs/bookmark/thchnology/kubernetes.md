@@ -18,3 +18,5 @@
 - [dapr](https://dapr.io/)
   <br/>APIs for building portable and reliable microservices
   <br/>Leverage industry best practices and focus on your application’s logic.
+- [kubernetes-handbook](https://github.com/feiskyer/kubernetes-handbook)
+  <br/>Kubernetes Handbook

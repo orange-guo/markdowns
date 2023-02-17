@@ -9,12 +9,13 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
+	let githubUrl = siteConfig.themeConfig.navbar.items.find(it => it.label === "Github").href;
 	return (
 		<header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="container">
 				<p className={clsx(styles.heroSlogan)}>
 					<p>Hello.<br/></p>
-					<p>This is the website from <strong>Xiangcheng Kuo.</strong></p>
+					<p>This is the website from <strong><a href={githubUrl}>Xiangcheng Kuo.</a></strong></p>
 					<p>I'm a <strong>backend</strong> programmer.</p>
 				</p>
 				<div className={styles.buttons}>
