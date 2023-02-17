@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: #2d3338;
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +21,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroSlogan {
+  font-size: 3em;
+  line-height: normal;
+  color: var(--ifm-color-white) !important;
+}
+
+.heroSlogan strong {
+  color: #4dbf4d;
+}
+
+.gettingStartedButton {
+  background: #ffffff;
+  color: var(--ifm-color-gray-900) !important;
+}
+
+.gettingStartedButton:hover {
+  background: #afafaf;
+  color: #ffffff;
 }

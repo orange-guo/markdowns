@@ -10,8 +10,8 @@ const editUrl = `${githubUrl}/markdowns/tree/master`
 const githubHeadImg = `https://github.com/orange-guo.png`
 
 module.exports = {
-	title: 'markdowns',
-	tagline: 'Dinosaurs are cool',
+	title: 'Markdowns',
+	tagline: 'This is my personal markdowns',
 	url: gitPagesUrl,
 	baseUrl: '/markdowns/',
 	onBrokenLinks: 'warn',
