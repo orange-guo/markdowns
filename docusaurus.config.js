@@ -7,6 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const gitPagesUrl = 'https://orange-guo.github.io'
 const githubUrl = "https://github.com/orange-guo"
 const editUrl = `${githubUrl}/markdowns/tree/master`
+const githubHeadImg = `https://github.com/orange-guo.png`
 
 module.exports = {
 	title: 'markdowns',
@@ -15,7 +16,7 @@ module.exports = {
 	baseUrl: '/markdowns/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'img/favicon.svg',
+	favicon: githubHeadImg,
 
 	organizationName: 'geek66',
 	projectName: 'markdowns',
@@ -48,7 +49,7 @@ module.exports = {
 			title: 'Markdowns',
 			logo: {
 				alt: 'My Site Logo',
-				src: 'img/logo.svg',
+				src: githubHeadImg,
 			},
 			items: [
 				{
