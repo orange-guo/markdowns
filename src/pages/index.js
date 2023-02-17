@@ -13,9 +13,9 @@ function HomepageHeader() {
 		<header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="container">
 				<p className={clsx(styles.heroSlogan)}>
-					Kotest is a flexible and elegant <strong>multi-platform</strong> test framework
-					for <strong>Kotlin</strong> with extensive <strong>assertions</strong> and integrated <strong>property
-					testing</strong>
+					<p>Hello.<br/></p>
+					<p>This is the website from <strong>Xiangcheng Kuo.</strong></p>
+					<p>I'm a backend programmer</p>
 				</p>
 				<div className={styles.buttons}>
 					<Link
