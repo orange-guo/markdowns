@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2825],{3388:n=>{n.exports=JSON.parse('{"title":"Python","slug":"/category/python","permalink":"/markdowns/docs/category/python","navigation":{"previous":{"title":"yq","permalink":"/markdowns/docs/note/linux/yq"},"next":{"title":"pip\u6e90","permalink":"/markdowns/docs/note/python/pip-mirror"}}}')}}]);
