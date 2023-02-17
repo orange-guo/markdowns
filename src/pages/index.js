@@ -15,7 +15,7 @@ function HomepageHeader() {
 				<p className={clsx(styles.heroSlogan)}>
 					<p>Hello.<br/></p>
 					<p>This is the website from <strong>Xiangcheng Kuo.</strong></p>
-					<p>I'm a backend programmer</p>
+					<p>I'm a <strong>backend</strong> programmer.</p>
 				</p>
 				<div className={styles.buttons}>
 					<Link
