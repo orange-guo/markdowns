@@ -6,8 +6,6 @@ sidebar_position: 0
 
 ## Template
 
-### Markdown
-
 ```markdown
 # 标题
 
@@ -25,7 +23,3 @@ sidebar_position: 0
 
 ## 参考
 ```
-
-### Example
-
-[在consul中修改mgmt-api服务的属性配置时触发协程报错(内容由copilot生成, 仅供参考, 内容可能不实)](./template-example)
