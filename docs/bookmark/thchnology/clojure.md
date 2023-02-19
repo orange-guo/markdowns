@@ -31,15 +31,9 @@
 - [tools.cli](https://github.com/clojure/tools.cli)
   <br/>Command-line processing
 - [CLJ Easy](https://github.com/clj-easy)
-  <br/>This organization was created to collaborate on small utilities or documentation projects that are of general
-  use<br/>
-  for the Clojure community and aren't large enough to be hosted in a separate organization like babashka or
-  clj-kondo.<br/>
-  Typical examples:<br/>
-  graal-docs<br/>
-  graal-build-time<br/>
-  graal-config<br/>
+  <br/>This organization was created to collaborate on small utilities or documentation projects that are of general use
+  for the Clojure community and aren't large enough to be hosted in a separate organization like babashka or clj-kondo.
 - [graal-build-time](https://github.com/clj-easy/graal-build-time)
   <br/>Library to initialize Clojure packages at build time with GraalVM native-image.
-- [Graalvm](https://www.innoq.com/en/blog/native-clojure-and-graalvm/)
 - [babashka](https://babashka.org/)
+  <br/>Native, fast starting Clojure interpreter for scripting.
