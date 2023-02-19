@@ -240,10 +240,12 @@ Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpack
 2022-12-29T12:56:03.538Z  INFO 1 --- [nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 ```
 
-
-> 2022-12-29T12:56:00.479Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)<br/>
-> 2022-12-29T12:56:02.547Z  INFO 1 --- [           main] c.f.a.FastoneAuditingApplicationKt       : Started FastoneAuditingApplicationKt in 3.642 seconds (process running for 3.961)<br/>
-> 通常在这两个阶段中间还有别的事情会做, 如果出现比较极端的情况例如服务组件过多,或者机器资源不足, 那么这两个阶段中间会有比较大的时间差距<br/>
+> 2022-12-29T12:56:00.479Z INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized
+> with port(s): 6666 (http)<br/>
+> 2022-12-29T12:56:02.547Z INFO 1 --- [           main] c.f.a.FastoneAuditingApplicationKt       : Started
+> FastoneAuditingApplicationKt in 3.642 seconds (process running for 3.961)<br/>
+> 通常在这两个阶段中间还有别的事情会做, 如果出现比较极端的情况例如服务组件过多,或者机器资源不足,
+> 那么这两个阶段中间会有比较大的时间差距<br/>
 
 ### 解决方案
 

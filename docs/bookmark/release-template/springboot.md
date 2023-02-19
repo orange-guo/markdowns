@@ -1,18 +1,23 @@
 ---
 title: Springboot
 ---
+
 # v3.0.1
 
 ## New Features
+
 - Provide a configuration property for the observation patterns of Spring Integration components #33099
+
 ## Bug Fixes
 
 - io.micrometer.tracing.Tracer on the classpath breaks AOT processing for tests #33298
 - Tracer library HTTP instrumentation is auto-configured unnecessarily #33287
 - Auto-configuration ignores user-provided ObservationConventions #33285
-- ScheduledBeanLazyInitializationExcludeFilter is auto-configured even when annotation-based scheduled has not been enabled #33284
+- ScheduledBeanLazyInitializationExcludeFilter is auto-configured even when annotation-based scheduled has not been
+  enabled #33284
 - SpringBootContextLoader prints banner twice when using a @ContextHierarchy #33263
-- Properties migrator causes an application to fail to start if it tries to map a property whose metadata data entry contains an invalid configuration property name #33250
+- Properties migrator causes an application to fail to start if it tries to map a property whose metadata data entry
+  contains an invalid configuration property name #33250
 - Wavefront MeterRegistryCustomizer is not applying application tags from application.properties #33244
 - Actuator responses no longer format timestamps as ISO-8601 #33236
 - Configuration property is not bound in a native image when property has get, set, and is methods #33232
@@ -20,7 +25,8 @@ title: Springboot
 - Contribute missing resource hints for GraphQL schema files and GraphiQL HTML page #33208
 - Hints for ClientHttpRequestFactory should only be generated for matching methods #33203
 - Native profile should configure execution in pluginManagement #33184
-- Configuring management.server.port via a config tree results in a ConverterNotFoundException when the management context is refreshed #33169
+- Configuring management.server.port via a config tree results in a ConverterNotFoundException when the management
+  context is refreshed #33169
 - JBoss logging does not route directly to SLF4J when using Logback #33155
 - Test with UseMainMethod.Always do not work with Kotlin main functions #33114
 - Maven process-aot does not specify source and target release when compiling generated sources #33112
@@ -37,14 +43,17 @@ title: Springboot
 - Align Tomcat multiple connectors example with recommendation to configure SSL declaratively #33333
 - Actuator document is misleading about k8s startup probe #33327
 - Update documented for @Timed to reflect narrower support #33282
-- Update reference documentation to replace mentions of tags providers and contributors with their Observation-based equivalents #33281
+- Update reference documentation to replace mentions of tags providers and contributors with their Observation-based
+  equivalents #33281
 - Link to Micrometer's @Timed documentation #33266
 - Clarify use of the spring.cache.type property with Hazelcast #33258
 - Example git.commit.time in the Actuator API documentation is thousands of years in the future #33256
 - Update Spring Security filter dispatcher types docs to reflect change in default value #33252
-- Documentation for nested configuration properties in a native image uses @NestedConfigurationProperty too widely #33239
+- Documentation for nested configuration properties in a native image uses @NestedConfigurationProperty too widely
+  #33239
 - Document that the jar task should not be disabled when building a native image #33238
-- Document nesting configuration properties using records or Kotlin data classes and how and when to use @NestedConfigurationProperty #33235
+- Document nesting configuration properties using records or Kotlin data classes and how and when to use
+  @NestedConfigurationProperty #33235
 - Links to Features describes sections that have moved elsewhere #33214
 - Fix broken links in docs #33209
 - Document the need for compilation with -parameters when targeting a native image #33182

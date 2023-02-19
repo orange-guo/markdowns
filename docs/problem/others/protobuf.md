@@ -71,7 +71,8 @@ BUILD FAILED in 4s
 
 ### 原因
 
-对于存在import的proto文件, 需要确保其在同一个目录下这样生成出的路径才是正确的, 但是由于根目录并不是所有的文件都是我们关心的, 我们需要只导入特定的文件
+对于存在import的proto文件, 需要确保其在同一个目录下这样生成出的路径才是正确的, 但是由于根目录并不是所有的文件都是我们关心的,
+我们需要只导入特定的文件
 
 ### 解决方案
 
@@ -104,6 +105,7 @@ sourceSets {
 ```
 
 ### 备注
+
 - [:generateProto fails with directory not found when importing other proto definitions](https://github.com/google/protobuf-gradle-plugin/issues/405)
 
 ## protobuf生成的java代码编译报错找不到symbol
@@ -185,12 +187,15 @@ BUILD FAILED in 22s
 
 > If you are receiving this message, you are using new codegen with old runtime code. The recent security fix uses new
 > methods in GeneratedMessageV3.Builder.
-> https://github.com/protocolbuffers/protobuf/blob/main/java/core/src/main/java/com/google/protobuf/GeneratedMessageV3.java (line 823)
+> https://github.com/protocolbuffers/protobuf/blob/main/java/core/src/main/java/com/google/protobuf/GeneratedMessageV3.java (
+> line 823)
 > Old generated code will work with the new runtime (but will not be security-fixed)
 > New generated code will not work with pre-patched runtimes.
 
 ### 解决方案
+
 升级`protobuf`到最新版本
+
 ### 备注
 
 - [Java Compile Error on parseUnknownField](https://github.com/protocolbuffers/protobuf/issues/10695)

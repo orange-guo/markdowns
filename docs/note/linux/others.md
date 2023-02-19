@@ -1,6 +1,5 @@
 # others
 
-
 ## ldd查看glibc版本
 
 ```
