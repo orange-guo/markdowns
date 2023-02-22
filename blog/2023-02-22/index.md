@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [springdoc, spring]
 ---
 
-# 在`springdoc-v2`中在不配置`@ParameterObject`的情况下实现Pageable以及Sort对象到API参数的转换
+# `springdoc-v2`中在不配置`@ParameterObject`的情况下实现Pageable以及Sort对象到API参数的转换
 
 ## 介绍
 
