@@ -8,9 +8,9 @@ tags: [springdoc, spring]
 ## 介绍
 
 `springdoc`是一个可以快速生成`API`文档的第三方公共库, 并提供了`UI`页面以供访问.<br/>
-同时它也提供了`spring-webmvc`中的`handler`中的复杂对象到`API`参数的映射, 这是一个将复杂对象的内部值映射到`API`参数上的功能.
-官方要求需要使用`@ParameterObject`来进行修饰.<br/>
-对于`spring-data-commons`中的`Pageable`和`Sort`, `springdoc`提供了开箱即用的功能, 只需要在配置文件中启用即可<br/>
+同时它也提供了`spring-webmvc`中的`handler`中的参数对象到`API`参数的转换.<br/>
+对于`spring-data-commons`中的`Pageable`和`Sort`, `springdoc`提供了开箱即用的功能,
+需要在配置文件中启用以及在参数中声明`@ParameterObject`<br/>
 
 ```yaml title="application.yml"
 springdoc:
@@ -28,7 +28,7 @@ springdoc:
 
 ### @ParameterObject
 
-> 在`springdoc`中, `@ParameterObject`注解的获取是来自于`spring-webmvc`中的`HandlerMethod`对象,
+在`springdoc`中, `@ParameterObject`注解的获取是来自于`spring-webmvc`中的`HandlerMethod`对象
 
 ### HandlerMethod
 
