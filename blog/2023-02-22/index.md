@@ -12,7 +12,7 @@ tags: [springdoc, spring]
 官方要求需要使用`@ParameterObject`来进行修饰.<br/>
 对于`spring-data-commons`中的`Pageable`和`Sort`, `springdoc`提供了开箱即用的功能, 只需要在配置文件中启用即可<br/>
 
-```yaml
+```yaml title="application.yml"
 springdoc:
   model-converters:
     pageable-converter:
@@ -141,6 +141,37 @@ internal class ApidocAutoConfiguration {
 		AppendSpringdocAnnotationBeanPostProcessor()
 
 }
+```
+
+## 备注
+
+### 反射
+
+该解决方法是基于反射的, 并且在`spring`的`BeanPostProcessor`中修改了`MethodParameter`的`parameterAnnotations`属性.
+该属性可能会在`spring`的其他地方被使用, 因此可能会引起一些不可预知的问题.
+
+### `springdoc`应该在生产环境中关闭
+
+在生产环境中, 不应该开启`springdoc`, 因为这会暴露`swagger`的`api`文档, 从而导致`api`文档泄露,
+
+使用`spring`中提供的`profile`功能以实现在开发模式下开启`springdoc`, 生产模式下关闭`springdoc`
+
+```yaml title="application.yml"
+springdoc:
+  api-docs:
+    enabled: false
+  model-converters:
+    pageable-converter:
+      enabled: true
+```
+
+```yaml title="application-dev.yml"
+springdoc:
+  api-docs:
+    enabled: true
+  model-converters:
+    pageable-converter:
+      enabled: true
 ```
 
 ## 参考
