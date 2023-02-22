@@ -53,7 +53,7 @@ springdoc:
 
 ## 解决方案
 
-### 新增`AppendSpringdocAnnotationBeanPostProcessor`用于实现增加@ParameterObject注解的能力
+### 新增`AppendSpringdocAnnotationBeanPostProcessor`用于实现增加`@ParameterObject`注解的能力
 
 ```kotlin title="AppendSpringdocAnnotationBeanPostProcessor.kt"
 /**
