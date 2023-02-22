@@ -11,7 +11,8 @@ SHOW max_connections;
 ### 重置
 
 ```bash
-RESET max_connections;
+RESET max_connections
+
 ```
 
 ### 修改
@@ -26,6 +27,7 @@ ALTER SYSTEM SET max_connections = 500;
 
 - [Query a parameter (postgresql.conf setting) like "max_connections"](https://stackoverflow.com/questions/8288823/query-a-parameter-postgresql-conf-setting-like-max-connections)
 - [How to increase max_connection in the official PostgreSQL Docker image](https://stackoverflow.com/questions/47252026/how-to-increase-max-connection-in-the-official-postgresql-docker-image)
+- [Tuning Postgres Max Connections](https://linuxhint.com/tuning-postgres-max-connections/)
 
 ## pg_dump
 
