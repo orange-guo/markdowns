@@ -373,3 +373,4 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 
 - [Effective Java第一章中关于静态工厂的命名习惯](https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual/blob/dev/Chapter-2/Chapter-2-Item-1-Consider-static-factory-methods-instead-of-constructors.md)
 - [ORACLE Naming Conventions](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
+- [Naming Conventions in Java](https://www.geeksforgeeks.org/java-naming-conventions/)
