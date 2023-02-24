@@ -61,20 +61,14 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Book Mark',
-					docId: 'bookmark/introduction'
+					label: 'Note',
+					docId: 'note/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
 					label: 'Problem',
 					docId: 'problem/introduction',
-				},
-				{
-					type: 'doc',
-					position: 'left',
-					label: 'Note',
-					docId: 'note/introduction',
 				},
 				{
 					type: 'doc',
@@ -107,16 +101,12 @@ module.exports = {
 							to: '/docs/introduction',
 						},
 						{
-							label: 'Book Mark',
-							to: '/docs/bookmark/introduction',
+							label: 'Note',
+							to: '/docs/note/introduction',
 						},
 						{
 							label: 'Problem',
 							to: '/docs/problem/introduction',
-						},
-						{
-							label: 'Note',
-							to: '/docs/note/introduction',
 						},
 						{
 							label: 'Book Note',

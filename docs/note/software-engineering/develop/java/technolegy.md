@@ -1,4 +1,4 @@
-# Java
+# Technology
 
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
@@ -27,3 +27,12 @@
 - [graalvm](https://www.graalvm.org/)
   <br/>GraalVM is a high-performance, polyglot virtual machine for running applications written in JavaScript, Python,
   Ruby, R, JVM-based languages like Java, Scala, Kotlin, and LLVM-based languages such as C and C++.
+- [javalin](https://javalin.io/)
+  <br/>A simple web framework for Java and Kotlin
+- [Project Lombok](https://projectlombok.org/)
+  <br/>Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
+  <br/>Never write another getter or equals method again, with one annotation your class has a fully featured builder,
+  Automate your logging variables, and much more.
+- [Manifold](http://manifold.systems/)
+  <br/>Manifold is a Java compiler plugin, its features include Metaprogramming, Properties, Extension Methods, Operator
+  Overloading, Templates, a Preprocessor, and more.

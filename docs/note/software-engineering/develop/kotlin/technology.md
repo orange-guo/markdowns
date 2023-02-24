@@ -1,4 +1,4 @@
-# Kotlin
+# Technology
 
 - [kotlin.link](https://kotlin.link/)
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
