@@ -371,4 +371,4 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 
 ## 参考
 
-- [Effective Java第一章中关于静态工厂的命名习惯](https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual)
+- [Effective Java第一章中关于静态工厂的命名习惯](https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual/blob/dev/Chapter-2/Chapter-2-Item-1-Consider-static-factory-methods-instead-of-constructors.md)
