@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [naming]
 ---
 
-# 对于常见的命名前缀规则的总结及解释
+# 常见的命名前缀
 
 ## 介绍
 
