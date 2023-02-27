@@ -209,11 +209,10 @@ Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Sta
 
 ## 解决方案
 
-在`TestContainers`拉取镜像前配置系统配置
+在执行测试用例之前，先执行`docker login`命令，输入用户名和密码即可
 
-```kotlin
-System.setProperty("registry.username", "<your-username>")
-System.setProperty("registry.password", "<your-password>")
+```bash
+echo <password> | docker login -u <username> --password-stdin <registry>
 ```
 
 ## 参考
