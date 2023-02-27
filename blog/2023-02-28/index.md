@@ -1,4 +1,19 @@
-# JDK中的一些改进项目的介绍
+# JDK改进项目的介绍
+
+以下列表是截至到目前`JDK`中的部分改进项目, 这些改进项目的主要目的是为了改进`Java`的性能和开发体验. 从而使`Java`
+能够更好地适应现在的软件开发需求.
+
+- Amber
+- Galahad
+- Leyden
+- Lilliput
+- Loom
+- Panama
+- Valhalla
+
+下面是这些项目的简单介绍
+
+<!--truncate-->
 
 ## Amber
 
