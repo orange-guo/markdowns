@@ -1,4 +1,4 @@
-# Technology
+# Python
 
 - [awesome-python](https://github.com/vinta/awesome-python)
   <br/>A curated list of awesome Python frameworks, libraries, software and resources.

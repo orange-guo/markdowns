@@ -1,4 +1,4 @@
-# Technology
+# Java
 
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.

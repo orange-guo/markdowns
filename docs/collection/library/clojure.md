@@ -1,4 +1,4 @@
-# Technology
+# Clojure
 
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff

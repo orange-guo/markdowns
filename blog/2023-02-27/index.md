@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [testcontainers, docker]
 ---
 
-# `TestContainers`中实现`docker registry`认证
+# 解决`TestContainers`中拉取特定`docker registry`中的镜像需要认证的问题
 
 ## 背景
 
@@ -212,7 +212,7 @@ Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Sta
 在执行测试用例之前，先执行`docker login`命令，输入用户名和密码即可
 
 ```bash
-echo <password> | docker login -u <username> --password-stdin <registry>
+docker login -u <username> -p <password> <registry>
 ```
 
 ## 参考
