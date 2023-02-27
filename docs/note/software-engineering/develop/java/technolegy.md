@@ -36,3 +36,13 @@
 - [Manifold](http://manifold.systems/)
   <br/>Manifold is a Java compiler plugin, its features include Metaprogramming, Properties, Extension Methods, Operator
   Overloading, Templates, a Preprocessor, and more.
+- [conductor](https://conductor.netflix.com/)
+  <br/>Conductor is a platform created by Netflix to orchestrate workflows that span across microservices.
+- [flowable](https://www.flowable.com/)
+  <br/>A compact and highly efficient workflow and Business Process Management (BPM) platform for developers, system admins and business users.
+- [camunda](https://github.com/camunda/camunda-bpm-platform)
+  <br/>Flexible framework for workflow and decision automation with BPMN and DMN. Integration with Spring, Spring Boot, CDI.
+- [Activiti](https://github.com/Activiti/Activiti)
+  <br/>Activiti is a light-weight workflow and Business Process Management (BPM) Platform targeted at business people, developers and system admins. Its core is a super-fast and rock-solid BPMN 2 process engine for Java. It's open-source and distributed under the Apache license. Activiti runs in any Java application, on a server, on a cluster or in the…
+- [Airflow](https://airflow.apache.org/)
+  <br/>Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.
