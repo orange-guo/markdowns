@@ -12,22 +12,6 @@ ssh-keygen -p -N "" -m pem -f /tmp/id_rsa # Openssh Private Key to RSA Private K
 - https://stackoverflow.com/questions/59524727/how-to-overwrite-existing-ssh-key-file-using-ssh-keygen-and-powershell-without-t
 - https://docs.aws.amazon.com/zh_cn/cloudhsm/classic/userguide/generate_ssh_key.html
 
-## avoid asking permission
-
-```log
-RSA key fingerprint is 96:a9:23:5c:cc:d1:0a:d4:70:22:93:e9:9e:1e:74:2f.
-Are you sure you want to continue connecting (yes/no)? yes
-```
-
-Solution
-
-```bash
-ssh -o StrictHostKeyChecking=no
-```
-
-- [how to avoid ssh asking permission?](https://unix.stackexchange.com/questions/33271/how-to-avoid-ssh-asking-permission)
-- [How to accept 'yes' from shell script "Are you sure you want to continue connecting (yes/no)?" using ssh. Without using StrictHostKeyChecking=no](https://stackoverflow.com/questions/64449495/how-to-accept-yes-from-shell-script-are-you-sure-you-want-to-continue-connect)
-
 ## no matching host key type found. Their offer: ssh-rsa,ssh-dss
 
 ```log
