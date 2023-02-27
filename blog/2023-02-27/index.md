@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [testcontainers, docker]
 ---
 
-# 解决`TestContainers`中拉取特定`docker registry`中的镜像需要认证的问题
+# 在`TestContainers`中实现`Docker registry`认证
 
 在`docker registry`配置了认证后, 项目中`CICD`中运行的`test case`失败, 错误日志如下
 
