@@ -1,13 +1,13 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [testcontainers]
+tags: [testcontainers, docker]
 ---
 
 # `TestContainers`中实现`docker registry`认证
 
 ## 背景
 
-在`docker registry`配置了认证后, 项目中的`test case`失败, 错误日志如下
+在`docker registry`配置了认证后, 项目中`CICD`中运行的`test case`失败, 错误日志如下
 
 ```log
 java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@24f6f6bf testClass = com.fastonetech.lib.auditing.JaversAspectTest, locations = [], classes = [com.fastonetech.lib.auditing.TestApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7e22550a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5bc9ba1d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4189d70b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@e20413a0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6cfcd46d, org.springframework.boot.test.context.SpringBootTestAnnotation@35498888], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
