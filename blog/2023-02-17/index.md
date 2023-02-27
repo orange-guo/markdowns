@@ -28,6 +28,6 @@ snap install <app> --channel=<channel>
 snap install node --channel=12/stable
 ```
 
-## 备注
+## 参考
 
 - [man snap](https://manpages.org/snap)
