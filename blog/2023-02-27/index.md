@@ -37,12 +37,15 @@ Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Sta
 Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"unauthorized: unauthorized to access repository: cce/fastone-auditing, action: pull: unauthorized to access repository: cce/fastone-auditing, action: pull"}
 ```
 
-在执行测试用例之前，先执行`docker login`命令，输入用户名和密码即可
+执行`docker login`命令，然后从`~/.docker/config.json`中获取认证信息作为`DOCKER_AUTH_CONFIG`环境变量的值
 
 ```bash
 docker login -u <username> -p <password> <registry>
+DOCKER_AUTH_CONFIG=""
+DOCKER_AUTH_CONFIG=$(cat ~/.docker/config.json)
+export DOCKER_AUTH_CONFIG
 ```
 
 ## 参考
 
-- [How to login to private DockerHub registry in runtime?](https://github.com/testcontainers/testcontainers-java/issues/968#issuecomment-872924394)
+- [Docker registry authentication](https://www.testcontainers.org/supported_docker_environment/#docker-registry-authentication)
