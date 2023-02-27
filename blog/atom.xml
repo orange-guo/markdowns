@@ -9,8 +9,8 @@
     <icon>https://orange-guo.github.io/markdowns/https://github.com/orange-guo.png</icon>
     <entry>
         <title type="html"><![CDATA[JDK改进项目的介绍]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/28/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/28/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/28/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/28/"/>
         <updated>2023-02-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[以下列表是截至到目前Open JDK中部分进行的对JDK的改进项目]]></summary>
         <content type="html"><![CDATA[<p>以下列表是截至到目前<code>Open JDK</code>中部分进行的对<code>JDK</code>的改进项目</p><ul><li>Amber</li><li>Galahad</li><li>Leyden</li><li>Lilliput</li><li>Loom</li><li>Panama</li><li>Valhalla</li></ul><p>这些改进项目的主要目的是为了改进<code>Java</code>的性能和开发体验.
@@ -24,8 +24,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在TestContainers中实现Docker registry认证]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/27/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/27/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/27/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/27/"/>
         <updated>2023-02-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在docker registry配置了认证后, 项目中CICD中运行的test case失败, 错误日志如下]]></summary>
         <content type="html"><![CDATA[<p>在<code>docker registry</code>配置了认证后, 项目中<code>CICD</code>中运行的<code>test case</code>失败, 错误日志如下</p><div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Caused by: org.testcontainers.containers.ContainerFetchException: Can't get Docker image: RemoteDockerImage(imageName=hub.fastonetech.com/cce/fastone-auditing:latest, imagePullPolicy=AlwaysPullPolicy(), imageNameSubstitutor=org.testcontainers.utility.ImageNameSubstitutor$LogWrappedImageNameSubstitutor@3b68a50c)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.containers.GenericContainer.getDockerImageName(GenericContainer.java:1371)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.containers.GenericContainer.logger(GenericContainer.java:651)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:331)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ... 153 more</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Caused by: org.testcontainers.containers.ContainerFetchException: Failed to pull image: hub.fastonetech.com/cce/fastone-auditing:latest</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.images.RemoteDockerImage.resolve(RemoteDockerImage.java:119)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.images.RemoteDockerImage.resolve(RemoteDockerImage.java:28)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.utility.LazyFuture.getResolvedValue(LazyFuture.java:17)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.utility.LazyFuture.get(LazyFuture.java:39)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.containers.GenericContainer.getDockerImageName(GenericContainer.java:1369)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ... 155 more</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"unauthorized: unauthorized to access repository: cce/fastone-auditing, action: pull: unauthorized to access repository: cce/fastone-auditing, action: pull"}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at app//org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案">解决方案<a href="#解决方案" class="hash-link" aria-label="Direct link to 解决方案" title="Direct link to 解决方案">​</a></h2><p>根据上述日志中的关键信息得出由于<code>docker registry</code>未认证导致该问题的出现</p><div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"unauthorized: unauthorized to access repository: cce/fastone-auditing, action: pull: unauthorized to access repository: cce/fastone-auditing, action: pull"}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>执行<code>docker login</code>命令，然后从<code>~/.docker/config.json</code>中获取认证信息作为<code>DOCKER_AUTH_CONFIG</code>环境变量的值</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">docker</span><span class="token plain"> login -u </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">username</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> -p </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">password</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">registry</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token assign-left variable" style="color:#36acaa">DOCKER_AUTH_CONFIG</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">""</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token assign-left variable" style="color:#36acaa">DOCKER_AUTH_CONFIG</span><span class="token operator" style="color:#393A34">=</span><span class="token variable" style="color:#36acaa">$(</span><span class="token variable function" style="color:#d73a49">cat</span><span class="token variable" style="color:#36acaa"> ~/.docker/config.json</span><span class="token variable" style="color:#36acaa">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">export</span><span class="token plain"> DOCKER_AUTH_CONFIG</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a href="#参考" class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考">​</a></h2><ul><li><a href="https://www.testcontainers.org/supported_docker_environment/#docker-registry-authentication" target="_blank" rel="noopener noreferrer">Docker registry authentication</a></li></ul>]]></content>
@@ -38,8 +38,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[启用SSH密码验证]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/24/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/24/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/24/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/24/"/>
         <updated>2023-02-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在ssh中, 默认是不允许使用password认证的, 但是有时候, 我们需要使用password认证.]]></summary>
         <content type="html"><![CDATA[<p>在<code>ssh</code>中, 默认是不允许使用<code>password</code>认证的, 但是有时候, 我们需要使用<code>password</code>认证.<br>
@@ -52,8 +52,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[常见的命名前缀]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/23/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/23/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/23/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/23/"/>
         <updated>2023-02-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在编程中, 命名是一件非常重要的事情, 好的命名能够让代码更加易读, 也能够让代码更加易于维护.]]></summary>
         <content type="html"><![CDATA[<p>在编程中, 命名是一件非常重要的事情, 好的命名能够让代码更加易读, 也能够让代码更加易于维护.<br>
@@ -80,8 +80,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[springdoc-v2中在不配置@ParameterObject的情况下实现Pageable以及Sort对象到API参数的转换]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/22/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/22/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/22/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/22/"/>
         <updated>2023-02-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[springdoc是一个可以快速生成API文档的第三方公共库, 并提供了UI页面以供访问.]]></summary>
         <content type="html"><![CDATA[<p><code>springdoc</code>是一个可以快速生成<code>API</code>文档的第三方公共库, 并提供了<code>UI</code>页面以供访问.<br>
@@ -106,8 +106,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[通过环境变量注入数组到应用程序配置]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/21/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/21/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/21/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/21/"/>
         <updated>2023-02-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[容器启动时, 需要通过环境变量注入配置给应用程序.]]></summary>
         <content type="html"><![CDATA[<p>容器启动时, 需要通过环境变量注入配置给应用程序.<br>
@@ -121,8 +121,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[清理旧版本的snap应用以释放空间]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/20/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/20/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/20/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/20/"/>
         <updated>2023-02-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[snap默认会保留旧版本的应用, 但是这些旧版本的应用占用了大量的空间, 所以我们需要清理旧版本的应用, 以释放空间.]]></summary>
         <content type="html"><![CDATA[<p><code>snap</code>默认会保留旧版本的应用, 但是这些旧版本的应用占用了大量的空间, 所以我们需要清理旧版本的应用, 以释放空间.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案">解决方案<a href="#解决方案" class="hash-link" aria-label="Direct link to 解决方案" title="Direct link to 解决方案">​</a></h2><p>新增脚本用于清理旧版本的<code>snap</code>应用.</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">cleanup-old-snaps.sh</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token shebang important">#!/bin/bash</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">set</span><span class="token plain"> -eu</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">echo</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Old versions of snaps will be removed."</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token function" style="color:#d73a49">sudo</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">rm</span><span class="token plain"> -rf /var/lib/snapd/cache/*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">snap list --all </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">awk</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'/disabled/{print $1, $3}'</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token builtin class-name">read</span><span class="token plain"> -r package revision</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">do</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  snap remove </span><span class="token string" style="color:#e3116c">"</span><span class="token string variable" style="color:#36acaa">$package</span><span class="token string" style="color:#e3116c">"</span><span class="token plain"> --revision</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">"</span><span class="token string variable" style="color:#36acaa">$revision</span><span class="token string" style="color:#e3116c">"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">done</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">echo</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Old revisions of snaps are removed."</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a href="#参考" class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考">​</a></h2><ul><li><a href="https://www.linuxuprising.com/2019/04/how-to-remove-old-snap-versions-to-free.html" target="_blank" rel="noopener noreferrer">How To Remove Old Snap Versions To Free Up Disk Space</a></li></ul>]]></content>
@@ -134,8 +134,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[通过启用nlb以实现为aws-eks托管的k8s中的service启用外部访问能力]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/19/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/19/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/19/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/19/"/>
         <updated>2023-02-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[默认情况下k8s中的Service为ClusterIP类型, 即只能在集群内部访问, 无法通过外部访问(这里的外部指的是k8s集群外部,]]></summary>
         <content type="html"><![CDATA[<p>默认情况下<code>k8s</code>中的<code>Service</code>为<code>ClusterIP</code>类型, 即只能在集群内部访问, 无法通过外部访问(这里的外部指的是<code>k8s</code>集群外部,
@@ -152,8 +152,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[使用aliyundrive-webdav搭配rclone实现以本地文件系统的方式操作阿里云盘中的文件]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/18/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/18/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/18/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/18/"/>
         <updated>2023-02-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[aliyun-webdav是一个开源的工具, 可以根据配置的阿里云盘帐号信息对外提供WebDAV服务.]]></summary>
         <content type="html"><![CDATA[<p><code>aliyun-webdav</code>是一个开源的工具, 可以根据配置的阿里云盘帐号信息对外提供<code>WebDAV</code>服务.<br>
@@ -170,8 +170,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[使用snap安装指定版本的应用]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/17/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/17/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/17/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/17/"/>
         <updated>2023-02-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在使用snap安装应用时，如果没有指定版本，会默认安装最新版本的应用.]]></summary>
         <content type="html"><![CDATA[<p>在使用<code>snap</code>安装应用时，如果没有指定版本，会默认安装最新版本的应用.<br>
@@ -188,8 +188,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在linux中通过启用swapfile来增加虚拟内存并提高性能]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/16/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/16/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/16/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/16/"/>
         <updated>2023-02-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[swapfile是linux中的一种虚拟内存, 与windows中的pagefile类似.]]></summary>
         <content type="html"><![CDATA[<p><code>swapfile</code>是<code>linux</code>中的一种虚拟内存, 与<code>windows</code>中的<code>pagefile</code>类似.<br>
@@ -204,8 +204,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在TestContainers中实现配置的容器hostname以解决容器之间访问问题]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/15/index</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/15/index"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/15/</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/15/"/>
         <updated>2023-02-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在使用TestContainers启动容器时, 可能会存在容器之间依赖的情况.]]></summary>
         <content type="html"><![CDATA[<p>在使用<code>TestContainers</code>启动容器时, 可能会存在容器之间依赖的情况.<br>
