@@ -5,8 +5,6 @@ tags: [springdoc, spring]
 
 # `springdoc-v2`中在不配置`@ParameterObject`的情况下实现Pageable以及Sort对象到API参数的转换
 
-## 介绍
-
 `springdoc`是一个可以快速生成`API`文档的第三方公共库, 并提供了`UI`页面以供访问.<br/>
 同时它也提供了`spring-webmvc`中的`handler`中的参数对象到`API`参数的转换.<br/>
 对于`spring-data-commons`中的`Pageable`和`Sort`, `springdoc`提供了开箱即用的功能,
@@ -23,6 +21,8 @@ springdoc:
 这个过程通常比较繁琐, 因为对于一个具有一定规模的项目而言, 其对外提供的`API`往往会非常多,
 需要进行大量的修改功能才能实现该功能<br/>
 那么此时我们需要一种解决方案, 即如何在不配置`@ParameterObject`的情况下实现`Pageable`以及`Sort`对象到API参数的转换
+
+<!--truncate-->
 
 ## 思路
 
