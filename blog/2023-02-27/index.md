@@ -199,15 +199,13 @@ Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Sta
 	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
 ```
 
-## 问题分析
+## 解决方案
 
 根据上述日志中的关键信息得出由于`docker registry`未认证导致该问题的出现
 
 ```log
 Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"unauthorized: unauthorized to access repository: cce/fastone-auditing, action: pull: unauthorized to access repository: cce/fastone-auditing, action: pull"}
 ```
-
-## 解决方案
 
 在执行测试用例之前，先执行`docker login`命令，输入用户名和密码即可
 
