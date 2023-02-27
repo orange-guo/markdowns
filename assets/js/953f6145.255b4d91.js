@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2286],{4329:e=>{e.exports=JSON.parse('{"title":"Linux","slug":"/category/linux","permalink":"/markdowns/docs/category/linux","navigation":{"previous":{"title":"Kubernetes","permalink":"/markdowns/docs/note/kubernetes/"},"next":{"title":"apt","permalink":"/markdowns/docs/note/linux/apt"}}}')}}]);
