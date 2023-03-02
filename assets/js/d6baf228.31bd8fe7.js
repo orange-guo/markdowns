@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1761],{1816:e=>{e.exports=JSON.parse('{"permalink":"/markdowns/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":19,"previousPage":"/markdowns/blog","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
