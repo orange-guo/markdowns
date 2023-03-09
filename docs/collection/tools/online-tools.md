@@ -4,3 +4,4 @@
 - [URL Decode online](https://www.urldecoder.io/)
 - [JWT Decoder](http://jwt.calebb.net/)
 - [Secure Password Generator](https://passwordsgenerator.net/)
+- [Bcrypt Hash Generator](https://bcrypt.online/)
