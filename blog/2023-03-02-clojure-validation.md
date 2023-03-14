@@ -1,6 +1,6 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [clojure, kotlin, java, spring]
+tags: [clojure, kotlin, java, spring, validation]
 ---
 
 # 基于`clojure`表达式实现更加灵活的数据验证
