@@ -8,7 +8,7 @@
     <subtitle>Markdowns Blog</subtitle>
     <icon>https://orange-guo.github.io/markdowns/https://github.com/orange-guo.png</icon>
     <entry>
-        <title type="html"><![CDATA[通过增加timeout-control以解决当TCP连接一直处于SYN_SENT状态导致java中的ldap-client的failover不工作的问题]]></title>
+        <title type="html"><![CDATA[通过增加timeout-control以解决当tcp连接一直处于SYN_SENT状态导致java中的ldap-client的failover不工作的问题]]></title>
         <id>https://orange-guo.github.io/markdowns/blog/2023/03/15/2023-03-15/ldap-client-failover</id>
         <link href="https://orange-guo.github.io/markdowns/blog/2023/03/15/2023-03-15/ldap-client-failover"/>
         <updated>2023-03-15T00:00:00.000Z</updated>
