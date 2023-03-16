@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [problem-solving, java, ldap, failover, spring]
 ---
 
-# 通过增加`timeout-control`以解决当`TCP`连接一直处于`SYN_SENT`状态导致`java`中的`ldap-client`的`failover`不工作的问题
+# 通过增加`timeout-control`以解决当`tcp`连接一直处于`SYN_SENT`状态导致`java`中的`ldap-client`的`failover`不工作的问题
 
 今天遇到一个问题是当测试模拟`ldap`的服务端主节点挂掉的时候并在页面点击登录, 后端一直未作出响应.<br/>
 这个问题的原因是因为代码中的`ldap-client`的`failover`未生效, 通过排查发现`ldap-client`一直在连接`ldap`的主节点,
