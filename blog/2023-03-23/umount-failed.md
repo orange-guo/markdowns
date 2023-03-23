@@ -23,5 +23,5 @@ tags: [problem-solving, umount, fuse]
 
 ## 解决方案
 
-- `ymir down`的超时时间可配置确保服务能够都正常清理并成功退出 @faststone_sleep
-- `fastone-rclone`服务`detach`挂载时需要强制`detach`, 考虑采用`umount -l`来实现该功能 @Jacky
+- `ymir down`的超时时间可配置确保服务能够都正常清理并成功退出
+- `fastone-rclone`服务`detach`挂载时需要强制`detach`, 考虑采用`umount -l`来实现该功能
