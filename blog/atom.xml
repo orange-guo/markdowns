@@ -8,7 +8,7 @@
     <subtitle>Markdowns Blog</subtitle>
     <icon>https://orange-guo.github.io/markdowns/https://github.com/orange-guo.png</icon>
     <entry>
-        <title type="html"><![CDATA[解决umount失败报错transport endpoint is not connected]]></title>
+        <title type="html"><![CDATA[错误解决transport endpoint is not connected]]></title>
         <id>https://orange-guo.github.io/markdowns/blog/2023/03/23/umount-failed</id>
         <link href="https://orange-guo.github.io/markdowns/blog/2023/03/23/umount-failed"/>
         <updated>2023-03-23T00:00:00.000Z</updated>

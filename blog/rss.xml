@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[解决umount失败报错transport endpoint is not connected]]></title>
+            <title><![CDATA[错误解决transport endpoint is not connected]]></title>
             <link>https://orange-guo.github.io/markdowns/blog/2023/03/23/umount-failed</link>
             <guid>https://orange-guo.github.io/markdowns/blog/2023/03/23/umount-failed</guid>
             <pubDate>Thu, 23 Mar 2023 00:00:00 GMT</pubDate>
