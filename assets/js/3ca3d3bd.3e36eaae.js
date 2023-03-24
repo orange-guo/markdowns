@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[5111],{8396:s=>{s.exports=JSON.parse('{"label":"kubernetes","permalink":"/markdowns/blog/tags/kubernetes","allTagsPath":"/markdowns/blog/tags","count":1}')}}]);
