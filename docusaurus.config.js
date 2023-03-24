@@ -77,12 +77,6 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Problem',
-					docId: 'problem/introduction',
-				},
-				{
-					type: 'doc',
-					position: 'left',
 					label: 'Book Note',
 					docId: 'booknote/introduction',
 				},
@@ -113,10 +107,6 @@ module.exports = {
 						{
 							label: 'Note',
 							to: '/docs/note/introduction',
-						},
-						{
-							label: 'Problem',
-							to: '/docs/problem/introduction',
 						},
 						{
 							label: 'Book Note',
