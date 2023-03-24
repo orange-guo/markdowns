@@ -1,6 +1,6 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [testcontainers, docker]
+tags: [problem-solving, testcontainers, docker]
 ---
 
 # 在`TestContainers`中实现`Docker registry`认证
