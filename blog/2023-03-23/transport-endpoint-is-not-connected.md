@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [problem-solving, umount, fuse]
 ---
 
-# 错误解决transport endpoint is not connected
+# transport endpoint is not connected问题解决
 
 在升级执行过程中遇到问题, 升级执行过程会`down`老的环境并`setup`新的环境<br/>
 在`ymir setup`过程中出现`transport endpoint is not connected`, 该问题导致升级失败<br/>
