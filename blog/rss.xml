@@ -424,8 +424,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[在Docker中使用Rclone并将对应的fuse挂载到宿主机]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/02/11/</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/11/</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/02/11/rclone-fuse</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/11/rclone-fuse</guid>
             <pubDate>Sat, 11 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[在Docker中使用Rclone时需要将fuse挂载到宿主机.]]></description>
             <content:encoded><![CDATA[<p>在<code>Docker</code>中使用<code>Rclone</code>时需要将<code>fuse</code>挂载到宿主机.<br>
@@ -436,8 +436,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[使用pyenv实现python多版本管理]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/02/10/</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/10/</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/02/10/pyenv</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/10/pyenv</guid>
             <pubDate>Fri, 10 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[pyenv是一个python版本管理工具, 可以方便的管理多个python版本.]]></description>
             <content:encoded><![CDATA[<p><code>pyenv</code>是一个<code>python</code>版本管理工具, 可以方便的管理多个<code>python</code>版本.<br>
