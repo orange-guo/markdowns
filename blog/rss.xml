@@ -378,8 +378,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[在TestContainers中实现配置的容器hostname以解决容器之间访问问题]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/02/15/</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/15/</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/02/15/testcontainers-hostname</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/15/testcontainers-hostname</guid>
             <pubDate>Wed, 15 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[在使用TestContainers启动容器时, 可能会存在容器之间依赖的情况.]]></description>
             <content:encoded><![CDATA[<p>在使用<code>TestContainers</code>启动容器时, 可能会存在容器之间依赖的情况.<br>
@@ -394,8 +394,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[跳过SSH连接时的确认提示]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/02/14/</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/14/</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/02/14/ssh-prompt</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/14/ssh-prompt</guid>
             <pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[平时在写一些脚本的时候, 需要频繁地连接在云上新创建的机器.]]></description>
             <content:encoded><![CDATA[<p>平时在写一些脚本的时候, 需要频繁地连接在云上新创建的机器.<br>
