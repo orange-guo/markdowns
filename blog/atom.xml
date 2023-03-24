@@ -593,6 +593,7 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
             <name>Xiangcheng Kuo</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
+        <category label="problem-solving" term="problem-solving"/>
         <category label="testcontainers" term="testcontainers"/>
         <category label="docker" term="docker"/>
     </entry>
@@ -613,6 +614,7 @@ FastoneAuditingApplicationKt in 3.642 seconds (process running for 3.961)<br>
             <name>Xiangcheng Kuo</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
+        <category label="problem-solving" term="problem-solving"/>
         <category label="testcontainers" term="testcontainers"/>
         <category label="docker" term="docker"/>
     </entry>
