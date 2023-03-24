@@ -1,6 +1,6 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [java]
+tags: [java, openjdk]
 ---
 # JDK改进项目的介绍
 
