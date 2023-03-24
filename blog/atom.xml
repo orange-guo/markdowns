@@ -449,8 +449,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
     </entry>
     <entry>
         <title type="html"><![CDATA[在linux中通过启用swapfile来增加虚拟内存并提高性能]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/02/16/</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/16/"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/02/16/linux-swapfile</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/02/16/linux-swapfile"/>
         <updated>2023-02-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[swapfile是linux中的一种虚拟内存, 与windows中的pagefile类似.]]></summary>
         <content type="html"><![CDATA[<p><code>swapfile</code>是<code>linux</code>中的一种虚拟内存, 与<code>windows</code>中的<code>pagefile</code>类似.<br>
