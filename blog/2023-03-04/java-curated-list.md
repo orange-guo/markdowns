@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [java, curated-list]
 ---
 
-# 整理的一些java中的第三方库
+# java的工具收藏列表
 
 <!--truncate-->
 

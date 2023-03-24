@@ -1,4 +1,11 @@
-# Kubernetes
+---
+authors: [xiangcheng.kuo]
+tags: [kubernetes, curated-list]
+---
+
+# kubernetes的工具收藏列表
+
+<!--truncate-->
 
 - [kubernetes](https://kubernetes.io/)
   <br/>Production-Grade Container Orchestration
@@ -21,5 +28,13 @@
 - [dapr](https://dapr.io/)
   <br/>APIs for building portable and reliable microservices
   <br/>Leverage industry best practices and focus on your application’s logic.
+- [openfaas](https://www.openfaas.com/)
+  <br/>Serverless Functions, Made Simple.
+  <br/>OpenFaaS® makes it simple to deploy both functions and existing code to Kubernetes.
 - [kubernetes-handbook](https://github.com/feiskyer/kubernetes-handbook)
   <br/>Kubernetes Handbook
+
+## See also
+
+- [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources)
+  <br/>A curated list of awesome Kubernetes tools and resources.
