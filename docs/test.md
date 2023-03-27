@@ -16,3 +16,10 @@ https://copy.sh/v86/
 一纸简历
 spring http interface
 minio
+
+
+netstat
+lsof
+博弈论
+范畴论/集合论
+国富论 君主论

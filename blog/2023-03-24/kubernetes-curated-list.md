@@ -31,6 +31,8 @@ tags: [kubernetes, curated-list]
 - [openfaas](https://www.openfaas.com/)
   <br/>Serverless Functions, Made Simple.
   <br/>OpenFaaS® makes it simple to deploy both functions and existing code to Kubernetes.
+- [https://kubevela.io/](https://kubevela.io/)
+  <br/>Make shipping applications more enjoyable.
 - [kubernetes-handbook](https://github.com/feiskyer/kubernetes-handbook)
   <br/>Kubernetes Handbook
 
