@@ -372,8 +372,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[使用snap安装指定版本的应用]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/02/17/</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/17/</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/02/17/snap-install-specify-version</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/02/17/snap-install-specify-version</guid>
             <pubDate>Fri, 17 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[在使用snap安装应用时，如果没有指定版本，会默认安装最新版本的应用.]]></description>
             <content:encoded><![CDATA[<p>在使用<code>snap</code>安装应用时，如果没有指定版本，会默认安装最新版本的应用.<br>
