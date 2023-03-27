@@ -18,9 +18,7 @@ tags: [evans, grpc]
 - 放到`/usr/local/bin`目录下.
 - 将`/path/to/evans`添加到`PATH`环境变量中.
 
-## 使用方式
-
-### 启动
+## 启动
 
 通过`evans`命令启动, 由于服务调用需要知道契约, 所以需要指定契约文件, 有两种方式
 
@@ -62,7 +60,7 @@ evans --host <HOST> --port <PORT> -r
 192.168.16.243:27778>
 ```
 
-### 交互式界面
+## 服务调用
 
 当进入evans的交互式界面后, 后续连接特定的服务, 调用特定的方法, 以及传递参数都是通过交互式界面来完成的.<br/>
 接下来需要几个步骤来完成服务的调用
@@ -71,7 +69,7 @@ evans --host <HOST> --port <PORT> -r
 - 设置`service`
 - 调用`rpc`
 
-#### 列出`package`
+### 列出`package`
 
 通过`show package`命令来查看当前连接的服务中的`package`
 
@@ -90,7 +88,7 @@ show package
 +---------------+
 ```
 
-#### 设置`package`
+### 设置`package`
 
 根据命令执行的结果选择一个特定的`package`进行设置.<br/>
 例如: 设置`package`为`nott.v1.nottm`
@@ -99,7 +97,7 @@ show package
 service nott.v1.nottm
 ```
 
-#### 列出`service`
+### 列出`service`
 
 当设置完`package`后, 还需要设置`service`, 通过`show service`命令来查看当前`package`下的所有`service`
 
@@ -129,7 +127,7 @@ show service
 +---------+---------------------+-----------------------+------------------------+
 ```
 
-#### 设置`service`
+### 设置`service`
 
 根据命令执行的结果选择一个特定的`service`进行设置.<br/>
 例如: 设置`service`为`Nottm`
@@ -138,7 +136,7 @@ show service
 service Nottm
 ```
 
-#### 调用`rpc`
+### 调用`rpc`
 
 当设置完`service`后, 可以通过`call <RPC>`命令来调用`rpc`方法.<br/>
 
