@@ -24,10 +24,14 @@ container.withFixedExposedPort(
 ) // we need to fix the port to make sure the port is the same when the container is restarted
 ```
 
+### 注意事项
+
 需要注意以下几点:
 
-- `FixedHostPortGenericContainer`是`TestContainers`提供的一个`GenericContainer`的子类, 用来固定容器的端口
-- 使用`TestSocketUtils.findAvailableTcpPort()`获取一个可用的端口确保`host`上的端口没有被占用
+- 创建FixedHostPortGenericContainer的实例来固定端口
+  <br/>`FixedHostPortGenericContainer`是`TestContainers`提供的一个`GenericContainer`的子类, 用来固定容器的端口
+- 使用`TestSocketUtils.findAvailableTcpPort()`获取一个可用的端口
+  <br/>使用`TestSocketUtils.findAvailableTcpPort()`获取一个可用的端口确保`host`上的端口没有被占用
 
 ## 参考资料
 
