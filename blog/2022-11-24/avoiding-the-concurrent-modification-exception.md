@@ -5,7 +5,7 @@ tags: [ problem-solving, kotlin, java, consul ]
 
 # 通过引入防御性复制以避免`ConcurrentModificationException`
 
-在`consul`中修改相关服务的配置时引发`ConcurrentModificationException`并导致服务中相关调度逻辑不再执行. <br/>
+在`consul`中修改相关服务的配置时引发`ConcurrentModificationException`并导致协程任务异常退出.<br/>
 相关报错如下:
 
 ```log
@@ -38,11 +38,11 @@ Suppressed: kotlinx.coroutines.DiagnosticCoroutineContextException: [StandaloneC
 ## 原因
 
 这个问题的原因是被修改的配置映射到了代码中被`@ConfigurationProperties`注解的类中的一个`List`类型的属性.<br/>
-该属性被修改时正在另一个调度线程中遍历该属性, 从而导致`ConcurrentModificationException`异常.<br/>
+该属性被修改时恰好协程任务正在遍历该属性, 从而导致`ConcurrentModificationException`异常.<br/>
 
 ## 解决方案
 
-每次获取`List`类型的对象时都进行一次防御性复制, 从而避免`ConcurrentModificationException`异常
+每次获取该属性时都进行一次防御性复制, 从而避免`ConcurrentModificationException`异常
 
 ## 参考资料
 
