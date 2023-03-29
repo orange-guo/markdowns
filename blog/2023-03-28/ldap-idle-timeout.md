@@ -9,7 +9,7 @@ tags: [problem-solving, ldap, nslcd]
 
 `nslcd`日志如下:
 
-```
+```log
 [fastone@layout01 ~]$ sudo journalctl -t nslcd| tail --line 20
 Mar 28 11:58:24 layout01 nslcd[25607]: [debc9e] <group="fsadmin"> connected to LDAP server ldap://172.20.3.126:389
 Mar 28 11:59:17 layout01 nslcd[25607]: [fe8aa7] <passwd=2032> ldap_search_ext() failed: Can't contact LDAP server: Broken pipe
