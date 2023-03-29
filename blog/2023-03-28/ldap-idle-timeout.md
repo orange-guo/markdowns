@@ -3,10 +3,11 @@ authors: [xiangcheng.kuo]
 tags: [problem-solving, ldap, nslcd]
 ---
 
-# 延长ldap连接超时时间以减少`nslcd`服务中的`Can't contact LDAP server`报错
+# 延长`olcIdleTimeout`以减少`nslcd`中的`Can't contact LDAP server`日志报错
 
 客户用例执行失败, 其猜测可能是`nslcd`服务中的`Can't contact LDAP server`相关报错导致其生产用例执行失败.<br/>
-相关日志如下:
+
+`nslcd`日志如下:
 
 ```
 [fastone@layout01 ~]$ sudo journalctl -t nslcd| tail --line 20
@@ -40,12 +41,18 @@ Mar 28 12:03:48 layout01 nslcd[25607]: [0f614b] <group/member="root"> connected 
 
 这个问题的原因是因为触发了`ldap-server`的超时时间, 从而导致`nslcd`服务中的`Can't contact LDAP server`相关报错.<br/>
 `ldap-server`的连接超时时间我们设置的默认为`30s`为了确保连接不会被一直占用从而导致服务端负载过高.<br/>
-但是频繁出现这个错误会让客户认为是我们的`ldap-server`出现问题导致其用例失败, 所以我们需要延长`ldap`
-连接超时时间来避免来自客户的误解.<br/>
+但是频繁出现这个错误会让客户认为是我们的`ldap-server`出现问题导致其用例失败, 我们需要延长超时时间来避免客户的误解.<br/>
 
 ## 解决方案
 
-#### 创建`change-timeout.ldif`文件
+为了解决这个问题, 我们需要修改`ldap-server`的超时时间.<br/>
+`ldap-server`中的超时时间是通过`olcIdleTimeout`来设置的.<br/>
+通过修改此值可以延长`ldap-server`的连接超时时间.<br/>
+需要注意的是, `olcIdleTimeout`的单位是秒.<br/>
+另外的一个注意事项是修改此值需要通过`ldap`中的`config`数据库的`admin`用户来修改.<br/>
+修改完成之后, 我们需要重启`ldap-server`服务.<br/>
+
+### 创建`change-timeout.ldif`文件
 
 先创建如下文件, 为了方便, 我们将超时时间设置为`12h`.
 
@@ -61,7 +68,7 @@ olcIdleTimeout: 43200
 我们需要连接`ldap-server`并执行`ldapmodify`命令来修改`ldap`连接超时时间.<br/>
 然后执行如下命令
 
-需要注意的是, 执行`ldapmodify`命令`bind`的用户为`cn=admin,cn=config`用户, 该用户是配置管理员用户.<br/>
+需要注意的是, 执行`ldapmodify`命令`bind`的用户为`cn=admin,cn=config`用户, 该用户是`config`数据库的`admin`用户.<br/>
 
 ```bash
 ldapmodify -x -D cn=admin,cn=config -w <password-of-config-admin> -f change-timeout.ldif
