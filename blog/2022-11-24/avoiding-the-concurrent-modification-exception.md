@@ -1,6 +1,6 @@
 ---
 authors: [ xiangcheng.kuo ]
-tags: [ problem-solving, kotlin, java ]
+tags: [ problem-solving, kotlin, java, consul ]
 ---
 
 # 通过引入防御性复制以避免`ConcurrentModificationException`
