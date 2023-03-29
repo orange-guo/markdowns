@@ -1,8 +1,11 @@
-# 前端请求regional-api接口时报错提示`cannot execute UPDATE in a read-only transaction`
+---
+authors: [ xiangcheng.kuo ]
+tags: [ problem-solving, kotlin, java, postgresql ]
+---
 
-## 现象
+# 当调度服务接口时报错提示`cannot execute UPDATE in a read-only transaction`问题解决
 
-前端请求regional-api服务调用相应接口报错, 日志如下。
+前端请求服务相应接口报错, 日志如下
 
 ```log
 2023-01-30 12:10:14.822  WARN 1 --- [nio-4396-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 25006
@@ -104,8 +107,8 @@ fun lastAccessAt(id: Long, type: LaunchableAppType): UserSoftwareUsageDTO {
 }
 ```
 
-其采用javax的@Transactional进行事务控制。
-该注解没有提供事务的读写行为相关属性, 是否是只读或者写入只能由由数据库的默认行为决定。
+其采用的`javax`的`@Transactional`进行事务控制.<br/>
+该注解没有提供显式指定数据库事务的读写行为相关属性, 是否是只读或者写入只能由由数据库的默认行为决定.<br/>
 
 在`PostgreSQL`中, 可以通过以下命令来查看默认的读写行为
 
