@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[739],{5171:a=>{a.exports=JSON.parse('{"label":"compatibility","permalink":"/markdowns/blog/tags/compatibility","allTagsPath":"/markdowns/blog/tags","count":1}')}}]);
