@@ -3,11 +3,11 @@ authors: [ xiangcheng.kuo ]
 tags: [ problem-solving, elm, jetbrains, code2art, open-radiant ]
 ---
 
-# 通过手动下载并安装elm依赖解决elm下载失败问题
+# 通过手动下载并安装elm依赖解决执行`elm make`时依赖下载失败问题
 
-最近在本地构建[open-radiant](https://github.com/JetBrains/open-radiant)项目时遇到了一些问题.<br/>
+最近在本地构建[open-radiant](https://github.com/JetBrains/open-radiant)项目.<br/>
 该项目是`JetBrains`开源的一个项目, 用于生成AI艺术图片, 在线演示地址为: [code2art](https://code2art.jetbrains.com/)<br/>
-
+在构建的过程中遇到了一些问题.<br/>
 其中的一个问题是当执行`elm make`时依赖下载失败, 日志如下:
 
 ```log

@@ -5,8 +5,9 @@ tags: [ problem-solving, nodejs, openssl, compatibility, jetbrains, code2art, op
 
 # node.js v17及以上版本使用openssl v3.0引发的哈希算法错误及其解决方法
 
-最近在本地构建[open-radiant](https://github.com/JetBrains/open-radiant)项目时遇到了一些问题.<br/>
+最近在本地构建[open-radiant](https://github.com/JetBrains/open-radiant)项目.<br/>
 该项目是`JetBrains`开源的一个项目, 用于生成AI艺术图片, 在线演示地址为: [code2art](https://code2art.jetbrains.com/)<br/>
+在构建的过程中遇到了一些问题.<br/>
 
 其中的一个问题是当执行`npm start`时报错, 相关错误信息如下:
 
