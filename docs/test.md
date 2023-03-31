@@ -30,3 +30,7 @@ linux中文件处理相关学习(cat输出重定向到文件通过ctrl+D结束�
 
 ldap的fd配置
 ldap禁止匿名登录
+
+gradle中的platform概念并通过platfrom作为maven pom
+gradle如何确保snapshot包永远是最新的
+gradle中的api和implementation的区别
