@@ -45,7 +45,7 @@
             <category>open-radiant</category>
         </item>
         <item>
-            <title><![CDATA[延长olcIdleTimeout以减少nslcd中的Can't contact LDAP server日志报错]]></title>
+            <title><![CDATA[通过延长olcIdleTimeout以减少nslcd中的Can't contact LDAP server日志报错]]></title>
             <link>https://orange-guo.github.io/markdowns/blog/2023/03/28/ldap-idle-timeout</link>
             <guid>https://orange-guo.github.io/markdowns/blog/2023/03/28/ldap-idle-timeout</guid>
             <pubDate>Tue, 28 Mar 2023 00:00:00 GMT</pubDate>
