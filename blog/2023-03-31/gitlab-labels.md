@@ -26,6 +26,10 @@ Gitlab中的标签是一个非常有用的功能, 该功能可以帮助我们更
 | Task      | 橙色 | #FFA500 | 任务或工作    |
 | Wontfix   | 棕色 | #A52A2A | 不会或不需修复  |
 
+效果如下:
+
+![gitlab-labels](./gitlab-labels.png)
+
 ## 参考资料
 
 - [Labels project management guidelines | GitLab](https://about.gitlab.com/handbook/marketing/project-management-guidelines/labels/)
