@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [problem-solving, ldap, nslcd]
 ---
 
-# 延长`olcIdleTimeout`以减少`nslcd`中的`Can't contact LDAP server`日志报错
+# 通过延长`olcIdleTimeout`以减少`nslcd`中的`Can't contact LDAP server`日志报错
 
 客户用例执行失败, 其猜测可能是`nslcd`服务中的`Can't contact LDAP server`相关报错导致其生产用例执行失败.<br/>
 
