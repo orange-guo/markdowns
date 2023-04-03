@@ -3,7 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [kubernetes, curated-list]
 ---
 
-# kubernetes的工具收藏列表
+# Kubernetes相关技术列表
 
 <!--truncate-->
 

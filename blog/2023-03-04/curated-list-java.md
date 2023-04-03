@@ -3,7 +3,9 @@ authors: [xiangcheng.kuo]
 tags: [java, curated-list]
 ---
 
-# java的工具收藏列表
+# Java相关技术列表
+
+以下是
 
 <!--truncate-->
 
