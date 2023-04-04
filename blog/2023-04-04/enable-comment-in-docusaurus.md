@@ -88,7 +88,7 @@ npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
 
 > 注意: 该文件中的`Giscus`组件参数需要根据你的配置进行修改, 配置的参数在上一节中已经介绍过了
 
-```typescript jsx title="src/theme/BlogPostItem/index.js"
+```typescript jsx title="src/theme/BlogPostItem/index.tsx"
 import React from 'react';
 import BlogPostItem from '@theme-original/BlogPostItem';
 import Giscus from "@giscus/react";

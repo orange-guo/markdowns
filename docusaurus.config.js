@@ -22,7 +22,7 @@ module.exports = {
 	projectName: 'markdowns',
 
 	i18n: {
-		defaultLocale: 'zh-CN',
+		defaultLocale: 'en',
 		locales: ['zh-CN'],
 	},
 
