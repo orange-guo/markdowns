@@ -1,13 +1,12 @@
 matrixone
-zig
+
 https://javaguide.cn
 https://www.pdai.tech/
 https://github.com/livk-cloud/spring-boot-example
 medium
 ebpf
 www.javalearn.cn
-rcosket
-rocksdb
+
 https://openjdk.org/jeps/8302326
 康威定律
 ab testing
@@ -15,8 +14,6 @@ ab testing
 https://copy.sh/v86/
 一纸简历
 spring http interface
-minio
-
 
 netstat
 lsof
@@ -68,7 +65,6 @@ https://makelinux.github.io/kernel/map/
 https://vaadin.com/flow?ssp=1&darkschemeovr=0&setlang=en-US&safesearch=moderate
 
 https://github.com/giscus/giscus
-
 
 
 https://github.com/utkuozdemir/nvidia_gpu_exporter

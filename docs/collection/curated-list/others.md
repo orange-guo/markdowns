@@ -1,5 +1,15 @@
 # Others
 
+- [rsocket](https://rsocket.io/)
+  <br/>Application protocol providing Reactive Streams semantics
+- [rocksdb](https://rocksdb.org/)
+  <br/>A persistent key-value store for fast storage environments
+- [minio](https://min.io/)
+  <br/>MinIO offers high-performance, S3 compatible object storage. Native to
+  Kubernetes, MinIO is the only object storage suite available on every public
+  cloud, every Kubernetes distribution, the private cloud and the edge. MinIO
+  is software-defined and is 100% open source under GNU AGPL v3.
+
 ## build
 
 - [paketo](https://paketo.io/)
@@ -31,4 +41,7 @@
 - [skill-map](https://github.com/TeamStuQ/skill-map)
 - [open-radiant](https://github.com/JetBrains/open-radiant)
   <br/>JetBrains Branded Art Generator
+- [zig](https://ziglang.org/)
+  <br/>Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable
+  software.
 
