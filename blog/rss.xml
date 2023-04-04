@@ -680,5 +680,35 @@ FastoneAuditingApplicationKt in 3.642 seconds (process running for 3.961)<br>
             <category>clojure</category>
             <category>curated-list</category>
         </item>
+        <item>
+            <title><![CDATA[前端相关技术列表]]></title>
+            <link>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-frontend</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-frontend</guid>
+            <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[- nvm]]></description>
+            <content:encoded><![CDATA[<ul><li><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">nvm</a><br>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</li></ul>]]></content:encoded>
+            <category>frontend</category>
+            <category>curated-list</category>
+        </item>
+        <item>
+            <title><![CDATA[Kotlin相关技术列表]]></title>
+            <link>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-kotlin</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-kotlin</guid>
+            <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[- kotlin.link]]></description>
+            <content:encoded><![CDATA[<ul><li><a href="https://kotlin.link/" target="_blank" rel="noopener noreferrer">kotlin.link</a></li><li><a href="https://github.com/KotlinBy/awesome-kotlin" target="_blank" rel="noopener noreferrer">awesome-kotlin</a><br>A curated list of awesome Kotlin related stuff Inspired by awesome-java.</li><li><a href="https://ktor.io/" target="_blank" rel="noopener noreferrer">ktor</a><br>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps in a simple way. Open Source, free, and fun!</li><li><a href="https://insert-koin.io/" target="_blank" rel="noopener noreferrer">koin</a><br>The pragmatic Kotlin dependency injection framework.</li><li><a href="https://arrow-kt.io/" target="_blank" rel="noopener noreferrer">arrow</a><br>Functional companion to Kotlin's Standard Library</li><li><a href="https://github.com/Kotlin/kotlinx-cli" target="_blank" rel="noopener noreferrer">kotlinx-cli</a><br>Pure Kotlin implementation of a generic CLI parser.</li><li><a href="https://github.com/xenomachina/kotlin-argparser" target="_blank" rel="noopener noreferrer">kotlin-argparser</a><br>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin</li><li><a href="https://github.com/Kotlin/kotlinx.coroutines" target="_blank" rel="noopener noreferrer">kotlinx.coroutines</a><br>Library support for Kotlin coroutines</li><li><a href="https://kosi-libs.org/" target="_blank" rel="noopener noreferrer">Kodein</a><br>Painless Kotlin Dependency Injection</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="test">Test<a href="#test" class="hash-link" aria-label="Direct link to Test" title="Direct link to Test">​</a></h2><ul><li><a href="https://kotest.io/" target="_blank" rel="noopener noreferrer">kotest</a><br>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and integrated property testing</li><li><a href="https://mockk.io/" target="_blank" rel="noopener noreferrer">mockk</a><br>mocking library for Kotlin</li><li><a href="https://github.com/mockito/mockito-kotlin" target="_blank" rel="noopener noreferrer">mockito-kotlin</a><br>sing Mockito with Kotlin</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="orm">ORM<a href="#orm" class="hash-link" aria-label="Direct link to ORM" title="Direct link to ORM">​</a></h2><ul><li><a href="https://github.com/ctripcorp/SQLlin" target="_blank" rel="noopener noreferrer">SQLlin</a><br>A DSL SQLite library for Kotlin Multiplatform.</li><li><a href="https://www.ktorm.org/" target="_blank" rel="noopener noreferrer">ktorm</a><br>Ktorm is a lightweight and efficient ORM Framework for Kotlin directly based on pure JDBC. It provides strong-typed and flexible SQL DSL and convenient sequence APIs to reduce our duplicated effort on database operations. All the SQL statements, of course, are generated automatically.</li><li><a href="https://github.com/JetBrains/Exposed" target="_blank" rel="noopener noreferrer">exposed</a><br>Kotlin SQL Framework</li><li><a href="https://cashapp.github.io/sqldelightSQLDelight" target="_blank" rel="noopener noreferrer">sqldelight</a><br>SQLDelight generates typesafe kotlin APIs from your SQL statements. It verifies your schema, statements, and migrations at compile-time and provides IDE features like autocomplete and refactoring which make writing and maintaining SQL simple</li></ul>]]></content:encoded>
+            <category>kotlin</category>
+            <category>curated-list</category>
+        </item>
+        <item>
+            <title><![CDATA[Python相关技术列表]]></title>
+            <link>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-python</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-python</guid>
+            <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[- awesome-python]]></description>
+            <content:encoded><![CDATA[<ul><li><a href="https://github.com/vinta/awesome-python" target="_blank" rel="noopener noreferrer">awesome-python</a><br>A curated list of awesome Python frameworks, libraries, software and resources.</li><li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">fastapi</a><br>FastAPI framework, high performance, easy to learn, fast to code, ready for production</li><li><a href="https://typer.tiangolo.com/" target="_blank" rel="noopener noreferrer">typer</a><br>Typer, build great CLIs. Easy to code. Based on Python type hints.</li><li><a href="https://github.com/pallets/flask" target="_blank" rel="noopener noreferrer">flask</a><br>The Python micro framework for building web applications.</li><li><a href="https://github.com/pallets/jinja" target="_blank" rel="noopener noreferrer">jinja</a><br>A very fast and expressive template engine.</li><li><a href="https://github.com/pyinstaller/pyinstaller" target="_blank" rel="noopener noreferrer">pyinstaller</a><br>Freeze (package) Python programs into stand-alone executables</li><li><a href="https://github.com/marcelotduarte/cx_Freeze" target="_blank" rel="noopener noreferrer">cx_Freeze</a><br>Create standalone executables from Python scripts, with the same performance and is cross-platform.</li></ul>]]></content:encoded>
+            <category>python</category>
+            <category>curated-list</category>
+        </item>
     </channel>
 </rss>
