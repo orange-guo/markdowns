@@ -7,38 +7,29 @@ import useIsBrowser from '@docusaurus/useIsBrowser';
 
 
 export default function BlogPostItemWrapper(props) {
-
-	try {
-		const {metadata, isBlogPostPage} = useBlogPost()
-		const isBrowser = useIsBrowser();
-
-		console.log(metadata)
-
-		const {frontMatter, slug, title} = metadata
-		const {enableComments} = frontMatter
-	} catch (e) {
-	}
-
+	const {metadata, isBlogPostPage} = useBlogPost()
 	return (
 		<>
 			<BlogPostItem {...props} />
-			<Giscus
-				repo="orange-guo/markdowns-comment"
-				repoId="R_kgDOJSYyJA"
-				category="Announcements"
-				categoryId="DIC_kwDOJSYyJM4CVg1x"
-				mapping="pathname"
-				strict="0"
-				reactionsEnabled="1"
-				emitMetadata="0"
-				inputPosition="bottom"
-				theme="preferred_color_scheme"
-				lang="en"
-				crossorigin="anonymous"
-				term="Welcome to @giscus/react component!"
-				loading="lazy"
-				async
-			/>
+			{(isBlogPostPage ) && (
+				<Giscus
+					repo="orange-guo/markdowns-comment"
+					repoId="R_kgDOJSYyJA"
+					category="Announcements"
+					categoryId="DIC_kwDOJSYyJM4CVg1x"
+					mapping="pathname"
+					strict="0"
+					reactionsEnabled="1"
+					emitMetadata="0"
+					inputPosition="bottom"
+					theme="preferred_color_scheme"
+					lang="en"
+					crossorigin="anonymous"
+					term="Welcome to @giscus/react component!"
+					loading="lazy"
+					async
+				/>
+			)}
 		</>
 	);
 }
