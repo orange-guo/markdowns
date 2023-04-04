@@ -1,9 +1,9 @@
-import React from 'react';
-import BlogPostItem from '@theme-original/BlogPostItem';
-import Giscus from "@giscus/react";
+import React from 'react'
+import BlogPostItem from '@theme-original/BlogPostItem'
+import Giscus from "@giscus/react"
 import {useBlogPost} from '@docusaurus/theme-common/internal'
-import {useColorMode} from '@docusaurus/theme-common';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 export default function BlogPostItemWrapper(props) {
 	const {i18n: {defaultLocale, localeConfigs}} = useDocusaurusContext()

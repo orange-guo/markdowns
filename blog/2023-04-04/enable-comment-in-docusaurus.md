@@ -84,42 +84,50 @@ npm install --save @giscus/react
 npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
 ```
 
-此时`src/theme/BlogPostItem/index.js`文件会被创建对该文件进行编辑
+该命令执行完成后`src/theme/BlogPostItem/index.js`文件会被创建<br/>
+
+接下来对该文件进行编辑<br/>
 
 > 注意: 该文件中的`Giscus`组件参数需要根据你的配置进行修改, 配置的参数在上一节中已经介绍过了
 
-```typescript jsx title="src/theme/BlogPostItem/index.tsx"
-import React from 'react';
-import BlogPostItem from '@theme-original/BlogPostItem';
-import Giscus from "@giscus/react";
+```jsx title="src/theme/BlogPostItem/index.js"
+import React from 'react'
+import BlogPostItem from '@theme-original/BlogPostItem'
+import Giscus from "@giscus/react"
 import {useBlogPost} from '@docusaurus/theme-common/internal'
+import {useColorMode} from '@docusaurus/theme-common'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 export default function BlogPostItemWrapper(props) {
-	const {metadata, isBlogPostPage} = useBlogPost()
-	return (
-		<>
-			<BlogPostItem {...props} />
-			{(isBlogPostPage) && (
-				<Giscus
-					repo="xxx"
-					repoId="xxx"
-					category="xxx"
-					categoryId="xxx"
-					mapping="xxx"
-					strict="xxx"
-					reactionsEnabled="xxx"
-					emitMetadata="xxx"
-					inputPosition="xxx"
-					theme="xxx"
-					lang="xxx"
-					crossorigin="xxx"
-					term="Welcome to @giscus/react component!"
-					loading="lazy"
-					async
-				/>
-			)}
-		</>
-	);
+  const {i18n: {defaultLocale, localeConfigs}} = useDocusaurusContext()
+
+  const {colorMode} = useColorMode()
+
+  const {metadata, isBlogPostPage} = useBlogPost()
+  return (
+      <>
+        <BlogPostItem {...props} />
+        {(isBlogPostPage) && (
+            <Giscus
+                repo="xxx"
+                repoId="xxx"
+                category="xxx"
+                categoryId="xxx"
+                mapping="xxx"
+                strict="xxx"
+                reactionsEnabled="xxx"
+                emitMetadata="xxx"
+                inputPosition="xxx"
+                theme={colorMode}
+                lang={defaultLocale}
+                crossorigin="anonymous"
+                term="Welcome to @giscus/react component!"
+                loading="lazy"
+                async
+            />
+        )}
+      </>
+  );
 }
 ```
 
