@@ -6,15 +6,14 @@ tags: [ docusaurus,  giscus, github ]
 # 为Docusaurus中的Blog启用评论功能
 
 最近想在`Docusaurus`中启用评论功能, 但是官方并没有提供这个功能, 所以只能自己动手了.<br/>
-接下来将会介绍如何在`Docusaurus`中通过`Giscus`启用评论功能.
+
+目前的解决方案是通过`Giscus`来实现, 它是一个基于`Github`的`Discussions`的评论系统实现的.<br/>
+`Discussions`需要依赖`Github`账号来进行评论, 所以后续需要一个公共的仓库来存放评论数据.<br/>
+如果你的博客是私有项目, 可以考虑创建一个新的公共的仓库用于存放评论数据, 这样可以确保原来的项目还可以为私有的.<br/>
+
+以下内容会假设你拥有`Github`相关知识<br/>
 
 <!--truncate-->
-
-目前的解决方案是通过`Giscus`来实现, 它是一个基于`Github Discussions`的评论系统实现的评论方案.<br/>
-由于`Giscus`是基于`Github Discussions`来实现的, 所以需要通过`Github`登录账号进行评论,
-另外需要一个公共的仓库来存放评论数据.<br/>
-如果你的博客是私有项目, 可以考虑创建一个新的公共的仓库用于存放评论数据, 这样你原来的博客项目还可以为私有项目.<br/>
-以下内容会假设你拥有`github`相关知识<br/>
 
 ## 配置`Giscus`
 
@@ -25,10 +24,12 @@ tags: [ docusaurus,  giscus, github ]
   <br/>该仓库主要用于存放评论数据, 如果你的博客是私有项目可以考虑创建一个公共的仓库用于存放评论数据
 - 为公共的仓库启用`Github Discussions`,
   参考[Enabling or disabling GitHub Discussions for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository)
-- 安装[giscus-github-app](https://github.com/apps/giscus)
-- 配置`Giscus-github-app`配置可以访问哪些仓库, 在刚才的安装页面中可以找到`Configure`按钮, 点击该按钮进入配置页面
+- 安装[giscus-github-app](https://github.com/apps/giscus)并配置可以访问哪些仓库,
+  安装页面完成后可以在应用页面中可以找到`Configure`按钮, 点击该按钮进入配置页面
 
-以上是大致的配置步骤, 还有一些细节例如关于评论到`Discussion`之间的映射这个可以在刚才的官网页面中查看具体的配置说明.<br/>
+以上是大致的配置步骤, 还有一些细节可以在刚才的官网页面中查看具体的配置说明. 例如:<br/>
+
+- `Docusaurus`博客的评论到`Discussion`中的映射关系
 
 ## 验证配置
 
@@ -75,10 +76,10 @@ npm install --save @giscus/react
 
 `Docusaurus`中提供了[Swizzling](https://docusaurus.io/docs/swizzling)功能, 可以对`Docusaurus`
 中的组件进行扩展并增加新的功能.<br/>
-`BlogPostPage`是`Docusaurus`中用于展示博客文章的组件, 该组件位于`@docusaurus/theme-classic`中.<br/>
-为了给在`Docusaurus`中启用评论功能, 需要对`BlogPostPage`进行修改.<br/>
+`BlogPostItem`是`Docusaurus`中用于展示博客文章的组件, 该组件位于`@theme-original/BlogPostItem`中.<br/>
+为了给在`Docusaurus`中启用评论功能, 需要对`BlogPostItem`进行扩展.<br/>
 
-执行`swizzle`命令创建`BlogPostItem`组建
+执行`swizzle`命令创建`BlogPostItem`组件
 
 ```bash
 npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
@@ -88,7 +89,7 @@ npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
 
 接下来对该文件进行编辑<br/>
 
-> 注意: 该文件中的`Giscus`组件参数需要根据你的配置进行修改, 配置的参数在上一节中已经介绍过了
+> 注意: 该文件中的`Giscus`组件的xxx参数需要根据你的配置进行修改, 配置的参数在上一节中已经介绍过了
 
 ```jsx title="src/theme/BlogPostItem/index.js"
 import React from 'react'
