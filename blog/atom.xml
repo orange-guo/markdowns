@@ -168,20 +168,6 @@
         <category label="grpc" term="grpc"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Kubernetes相关技术列表]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/03/24/curated-list-kubernetes</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/24/curated-list-kubernetes"/>
-        <updated>2023-03-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- kubernetes]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer">kubernetes</a><br>Production-Grade Container Orchestration</li><li><a href="https://kind.sigs.k8s.io/" target="_blank" rel="noopener noreferrer">kind</a><br>kind is a tool for running local Kubernetes clusters using Docker container “nodes”.<br>kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.</li><li><a href="https://k3s.io/" target="_blank" rel="noopener noreferrer">k3s</a><br>The certified Kubernetes distribution built for IoT &amp; Edge computing</li><li><a href="https://minikube.sigs.k8s.io/" target="_blank" rel="noopener noreferrer">minikube</a><br>minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows. We proudly focus on helping application developers and new Kubernetes users.</li><li><a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">cncf</a><br>CNCF is the open source, vendor-neutral hub of cloud native computing, hosting projects like Kubernetes and Prometheus to make cloud native universal and sustainable.</li><li><a href="https://istio.io/" target="_blank" rel="noopener noreferrer">istio</a><br>Simplify observability, traffic management, security, and policy with the leading service mesh.</li><li><a href="https://knative.dev/" target="_blank" rel="noopener noreferrer">Knative</a><br>Knative is an Open-Source Enterprise-level solution to build Serverless and Event Driven Applications Serverless Containers in Kubernetes environments.</li><li><a href="https://dapr.io/" target="_blank" rel="noopener noreferrer">dapr</a><br>APIs for building portable and reliable microservices<br>Leverage industry best practices and focus on your application’s logic.</li><li><a href="https://www.openfaas.com/" target="_blank" rel="noopener noreferrer">openfaas</a><br>Serverless Functions, Made Simple.<br>OpenFaaS® makes it simple to deploy both functions and existing code to Kubernetes.</li><li><a href="https://kubevela.io/" target="_blank" rel="noopener noreferrer">https://kubevela.io/</a><br>Make shipping applications more enjoyable.</li><li><a href="https://github.com/feiskyer/kubernetes-handbook" target="_blank" rel="noopener noreferrer">kubernetes-handbook</a><br>Kubernetes Handbook</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See also<a href="#see-also" class="hash-link" aria-label="Direct link to See also" title="Direct link to See also">​</a></h2><ul><li><a href="https://github.com/tomhuang12/awesome-k8s-resources" target="_blank" rel="noopener noreferrer">awesome-k8s-resources</a><br>A curated list of awesome Kubernetes tools and resources.</li></ul>]]></content>
-        <author>
-            <name>Xiangcheng Kuo</name>
-            <uri>https://github.com/orange-guo</uri>
-        </author>
-        <category label="kubernetes" term="kubernetes"/>
-        <category label="curated-list" term="curated-list"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[transport endpoint is not connected问题解决]]></title>
         <id>https://orange-guo.github.io/markdowns/blog/2023/03/23/transport-endpoint-is-not-connected</id>
         <link href="https://orange-guo.github.io/markdowns/blog/2023/03/23/transport-endpoint-is-not-connected"/>
@@ -354,6 +340,34 @@ SecurityContextRepository默认实现也变了<br>
         <category label="spring" term="spring"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Clojure相关技术列表]]></title>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-clojure</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-clojure"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- awesome-clojure]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://github.com/razum2um/awesome-clojure" target="_blank" rel="noopener noreferrer">awesome-clojure</a><br>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff</li><li><a href="https://joker-lang.org/" target="_blank" rel="noopener noreferrer">joker</a><br>Joker is a small interpreted dialect of Clojure written in Go. It is also a Clojure(Script) linter.</li><li><a href="https://planck-repl.org/" target="_blank" rel="noopener noreferrer">planck</a><br>Planck is a stand-alone ClojureScript REPL for macOS and Linux. <br>Planck launches instantly and is useful for scripting.</li><li><a href="https://github.com/dundalek/closh" target="_blank" rel="noopener noreferrer">closh</a><br>Bash-like shell based on Clojure</li><li><a href="https://github.com/anmonteiro/lumo" target="_blank" rel="noopener noreferrer">lumo</a><br>Fast, cross-platform, standalone ClojureScript environment</li><li><a href="https://github.com/ring-clojure/ring" target="_blank" rel="noopener noreferrer">ring</a><br>Clojure HTTP server abstraction</li><li><a href="https://github.com/puppetlabs/ring-middleware" target="_blank" rel="noopener noreferrer">ring-middleware</a></li><li><a href="https://github.com/ring-clojure/ring-json" target="_blank" rel="noopener noreferrer">ring-json</a><br>Ring middleware for handling JSON</li><li><a href="https://github.com/dakrone/cheshire" target="_blank" rel="noopener noreferrer">cheshire</a><br>Clojure JSON and JSON SMILE (binary json format) encoding/decoding</li><li><a href="https://www.hugsql.org/" target="_blank" rel="noopener noreferrer">hugsql</a><br>A Clojure library for embracing SQL.</li><li><a href="https://github.com/seancorfield/honeysql" target="_blank" rel="noopener noreferrer">honeysql</a><br>Turn Clojure data structures into SQL</li><li><a href="https://github.com/metabase/toucan" target="_blank" rel="noopener noreferrer">toucan</a><br>A classy high-level Clojure library for defining application models and retrieving them from a DB</li><li><a href="https://codeberg.org/leiningen/leiningen" target="_blank" rel="noopener noreferrer">leiningen</a><br>Moved to Codeberg; this is a convenience mirror</li><li><a href="https://github.com/pauldorman/clj-ldap" target="_blank" rel="noopener noreferrer">clj-ldap</a><br>Clojure LDAP client</li><li><a href="https://github.com/clojure/tools.cli" target="_blank" rel="noopener noreferrer">tools.cli</a><br>Command-line processing</li><li><a href="https://github.com/clj-easy" target="_blank" rel="noopener noreferrer">CLJ Easy</a><br>This organization was created to collaborate on small utilities or documentation projects that are of general use for the Clojure community and aren't large enough to be hosted in a separate organization like babashka or clj-kondo.</li><li><a href="https://github.com/clj-easy/graal-build-time" target="_blank" rel="noopener noreferrer">graal-build-time</a><br>Library to initialize Clojure packages at build time with GraalVM native-image.</li><li><a href="https://babashka.org/" target="_blank" rel="noopener noreferrer">babashka</a><br>Native, fast starting Clojure interpreter for scripting.</li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="clojure" term="clojure"/>
+        <category label="curated-list" term="curated-list"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前端相关技术列表]]></title>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-frontend</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-frontend"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- nvm]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">nvm</a><br>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="frontend" term="frontend"/>
+        <category label="curated-list" term="curated-list"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Java相关技术列表]]></title>
         <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-java</id>
         <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-java"/>
@@ -365,6 +379,48 @@ SecurityContextRepository默认实现也变了<br>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="java" term="java"/>
+        <category label="curated-list" term="curated-list"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kotlin相关技术列表]]></title>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-kotlin</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-kotlin"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- kotlin.link]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://kotlin.link/" target="_blank" rel="noopener noreferrer">kotlin.link</a></li><li><a href="https://github.com/KotlinBy/awesome-kotlin" target="_blank" rel="noopener noreferrer">awesome-kotlin</a><br>A curated list of awesome Kotlin related stuff Inspired by awesome-java.</li><li><a href="https://ktor.io/" target="_blank" rel="noopener noreferrer">ktor</a><br>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps in a simple way. Open Source, free, and fun!</li><li><a href="https://insert-koin.io/" target="_blank" rel="noopener noreferrer">koin</a><br>The pragmatic Kotlin dependency injection framework.</li><li><a href="https://arrow-kt.io/" target="_blank" rel="noopener noreferrer">arrow</a><br>Functional companion to Kotlin's Standard Library</li><li><a href="https://github.com/Kotlin/kotlinx-cli" target="_blank" rel="noopener noreferrer">kotlinx-cli</a><br>Pure Kotlin implementation of a generic CLI parser.</li><li><a href="https://github.com/xenomachina/kotlin-argparser" target="_blank" rel="noopener noreferrer">kotlin-argparser</a><br>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin</li><li><a href="https://github.com/Kotlin/kotlinx.coroutines" target="_blank" rel="noopener noreferrer">kotlinx.coroutines</a><br>Library support for Kotlin coroutines</li><li><a href="https://kosi-libs.org/" target="_blank" rel="noopener noreferrer">Kodein</a><br>Painless Kotlin Dependency Injection</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="test">Test<a href="#test" class="hash-link" aria-label="Direct link to Test" title="Direct link to Test">​</a></h2><ul><li><a href="https://kotest.io/" target="_blank" rel="noopener noreferrer">kotest</a><br>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and integrated property testing</li><li><a href="https://mockk.io/" target="_blank" rel="noopener noreferrer">mockk</a><br>mocking library for Kotlin</li><li><a href="https://github.com/mockito/mockito-kotlin" target="_blank" rel="noopener noreferrer">mockito-kotlin</a><br>sing Mockito with Kotlin</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="orm">ORM<a href="#orm" class="hash-link" aria-label="Direct link to ORM" title="Direct link to ORM">​</a></h2><ul><li><a href="https://github.com/ctripcorp/SQLlin" target="_blank" rel="noopener noreferrer">SQLlin</a><br>A DSL SQLite library for Kotlin Multiplatform.</li><li><a href="https://www.ktorm.org/" target="_blank" rel="noopener noreferrer">ktorm</a><br>Ktorm is a lightweight and efficient ORM Framework for Kotlin directly based on pure JDBC. It provides strong-typed and flexible SQL DSL and convenient sequence APIs to reduce our duplicated effort on database operations. All the SQL statements, of course, are generated automatically.</li><li><a href="https://github.com/JetBrains/Exposed" target="_blank" rel="noopener noreferrer">exposed</a><br>Kotlin SQL Framework</li><li><a href="https://cashapp.github.io/sqldelightSQLDelight" target="_blank" rel="noopener noreferrer">sqldelight</a><br>SQLDelight generates typesafe kotlin APIs from your SQL statements. It verifies your schema, statements, and migrations at compile-time and provides IDE features like autocomplete and refactoring which make writing and maintaining SQL simple</li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="kotlin" term="kotlin"/>
+        <category label="curated-list" term="curated-list"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes相关技术列表]]></title>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-kubernetes</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-kubernetes"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- kubernetes]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer">kubernetes</a><br>Production-Grade Container Orchestration</li><li><a href="https://kind.sigs.k8s.io/" target="_blank" rel="noopener noreferrer">kind</a><br>kind is a tool for running local Kubernetes clusters using Docker container “nodes”.<br>kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.</li><li><a href="https://k3s.io/" target="_blank" rel="noopener noreferrer">k3s</a><br>The certified Kubernetes distribution built for IoT &amp; Edge computing</li><li><a href="https://minikube.sigs.k8s.io/" target="_blank" rel="noopener noreferrer">minikube</a><br>minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows. We proudly focus on helping application developers and new Kubernetes users.</li><li><a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">cncf</a><br>CNCF is the open source, vendor-neutral hub of cloud native computing, hosting projects like Kubernetes and Prometheus to make cloud native universal and sustainable.</li><li><a href="https://istio.io/" target="_blank" rel="noopener noreferrer">istio</a><br>Simplify observability, traffic management, security, and policy with the leading service mesh.</li><li><a href="https://knative.dev/" target="_blank" rel="noopener noreferrer">Knative</a><br>Knative is an Open-Source Enterprise-level solution to build Serverless and Event Driven Applications Serverless Containers in Kubernetes environments.</li><li><a href="https://dapr.io/" target="_blank" rel="noopener noreferrer">dapr</a><br>APIs for building portable and reliable microservices<br>Leverage industry best practices and focus on your application’s logic.</li><li><a href="https://www.openfaas.com/" target="_blank" rel="noopener noreferrer">openfaas</a><br>Serverless Functions, Made Simple.<br>OpenFaaS® makes it simple to deploy both functions and existing code to Kubernetes.</li><li><a href="https://kubevela.io/" target="_blank" rel="noopener noreferrer">https://kubevela.io/</a><br>Make shipping applications more enjoyable.</li><li><a href="https://github.com/feiskyer/kubernetes-handbook" target="_blank" rel="noopener noreferrer">kubernetes-handbook</a><br>Kubernetes Handbook</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See also<a href="#see-also" class="hash-link" aria-label="Direct link to See also" title="Direct link to See also">​</a></h2><ul><li><a href="https://github.com/tomhuang12/awesome-k8s-resources" target="_blank" rel="noopener noreferrer">awesome-k8s-resources</a><br>A curated list of awesome Kubernetes tools and resources.</li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="kubernetes" term="kubernetes"/>
+        <category label="curated-list" term="curated-list"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python相关技术列表]]></title>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-python</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/04/curated-list-python"/>
+        <updated>2023-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- awesome-python]]></summary>
+        <content type="html"><![CDATA[<ul><li><a href="https://github.com/vinta/awesome-python" target="_blank" rel="noopener noreferrer">awesome-python</a><br>A curated list of awesome Python frameworks, libraries, software and resources.</li><li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">fastapi</a><br>FastAPI framework, high performance, easy to learn, fast to code, ready for production</li><li><a href="https://typer.tiangolo.com/" target="_blank" rel="noopener noreferrer">typer</a><br>Typer, build great CLIs. Easy to code. Based on Python type hints.</li><li><a href="https://github.com/pallets/flask" target="_blank" rel="noopener noreferrer">flask</a><br>The Python micro framework for building web applications.</li><li><a href="https://github.com/pallets/jinja" target="_blank" rel="noopener noreferrer">jinja</a><br>A very fast and expressive template engine.</li><li><a href="https://github.com/pyinstaller/pyinstaller" target="_blank" rel="noopener noreferrer">pyinstaller</a><br>Freeze (package) Python programs into stand-alone executables</li><li><a href="https://github.com/marcelotduarte/cx_Freeze" target="_blank" rel="noopener noreferrer">cx_Freeze</a><br>Create standalone executables from Python scripts, with the same performance and is cross-platform.</li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="python" term="python"/>
         <category label="curated-list" term="curated-list"/>
     </entry>
     <entry>
@@ -832,61 +888,5 @@ FastoneAuditingApplicationKt in 3.642 seconds (process running for 3.961)<br>
         <category label="kotlin" term="kotlin"/>
         <category label="java" term="java"/>
         <category label="consul" term="consul"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Clojure相关技术列表]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-clojure</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-clojure"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- awesome-clojure]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://github.com/razum2um/awesome-clojure" target="_blank" rel="noopener noreferrer">awesome-clojure</a><br>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff</li><li><a href="https://joker-lang.org/" target="_blank" rel="noopener noreferrer">joker</a><br>Joker is a small interpreted dialect of Clojure written in Go. It is also a Clojure(Script) linter.</li><li><a href="https://planck-repl.org/" target="_blank" rel="noopener noreferrer">planck</a><br>Planck is a stand-alone ClojureScript REPL for macOS and Linux. <br>Planck launches instantly and is useful for scripting.</li><li><a href="https://github.com/dundalek/closh" target="_blank" rel="noopener noreferrer">closh</a><br>Bash-like shell based on Clojure</li><li><a href="https://github.com/anmonteiro/lumo" target="_blank" rel="noopener noreferrer">lumo</a><br>Fast, cross-platform, standalone ClojureScript environment</li><li><a href="https://github.com/ring-clojure/ring" target="_blank" rel="noopener noreferrer">ring</a><br>Clojure HTTP server abstraction</li><li><a href="https://github.com/puppetlabs/ring-middleware" target="_blank" rel="noopener noreferrer">ring-middleware</a></li><li><a href="https://github.com/ring-clojure/ring-json" target="_blank" rel="noopener noreferrer">ring-json</a><br>Ring middleware for handling JSON</li><li><a href="https://github.com/dakrone/cheshire" target="_blank" rel="noopener noreferrer">cheshire</a><br>Clojure JSON and JSON SMILE (binary json format) encoding/decoding</li><li><a href="https://www.hugsql.org/" target="_blank" rel="noopener noreferrer">hugsql</a><br>A Clojure library for embracing SQL.</li><li><a href="https://github.com/seancorfield/honeysql" target="_blank" rel="noopener noreferrer">honeysql</a><br>Turn Clojure data structures into SQL</li><li><a href="https://github.com/metabase/toucan" target="_blank" rel="noopener noreferrer">toucan</a><br>A classy high-level Clojure library for defining application models and retrieving them from a DB</li><li><a href="https://codeberg.org/leiningen/leiningen" target="_blank" rel="noopener noreferrer">leiningen</a><br>Moved to Codeberg; this is a convenience mirror</li><li><a href="https://github.com/pauldorman/clj-ldap" target="_blank" rel="noopener noreferrer">clj-ldap</a><br>Clojure LDAP client</li><li><a href="https://github.com/clojure/tools.cli" target="_blank" rel="noopener noreferrer">tools.cli</a><br>Command-line processing</li><li><a href="https://github.com/clj-easy" target="_blank" rel="noopener noreferrer">CLJ Easy</a><br>This organization was created to collaborate on small utilities or documentation projects that are of general use for the Clojure community and aren't large enough to be hosted in a separate organization like babashka or clj-kondo.</li><li><a href="https://github.com/clj-easy/graal-build-time" target="_blank" rel="noopener noreferrer">graal-build-time</a><br>Library to initialize Clojure packages at build time with GraalVM native-image.</li><li><a href="https://babashka.org/" target="_blank" rel="noopener noreferrer">babashka</a><br>Native, fast starting Clojure interpreter for scripting.</li></ul>]]></content>
-        <author>
-            <name>Xiangcheng Kuo</name>
-            <uri>https://github.com/orange-guo</uri>
-        </author>
-        <category label="clojure" term="clojure"/>
-        <category label="curated-list" term="curated-list"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[前端相关技术列表]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-frontend</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-frontend"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- nvm]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">nvm</a><br>Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</li></ul>]]></content>
-        <author>
-            <name>Xiangcheng Kuo</name>
-            <uri>https://github.com/orange-guo</uri>
-        </author>
-        <category label="frontend" term="frontend"/>
-        <category label="curated-list" term="curated-list"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Kotlin相关技术列表]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-kotlin</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-kotlin"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- kotlin.link]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://kotlin.link/" target="_blank" rel="noopener noreferrer">kotlin.link</a></li><li><a href="https://github.com/KotlinBy/awesome-kotlin" target="_blank" rel="noopener noreferrer">awesome-kotlin</a><br>A curated list of awesome Kotlin related stuff Inspired by awesome-java.</li><li><a href="https://ktor.io/" target="_blank" rel="noopener noreferrer">ktor</a><br>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps in a simple way. Open Source, free, and fun!</li><li><a href="https://insert-koin.io/" target="_blank" rel="noopener noreferrer">koin</a><br>The pragmatic Kotlin dependency injection framework.</li><li><a href="https://arrow-kt.io/" target="_blank" rel="noopener noreferrer">arrow</a><br>Functional companion to Kotlin's Standard Library</li><li><a href="https://github.com/Kotlin/kotlinx-cli" target="_blank" rel="noopener noreferrer">kotlinx-cli</a><br>Pure Kotlin implementation of a generic CLI parser.</li><li><a href="https://github.com/xenomachina/kotlin-argparser" target="_blank" rel="noopener noreferrer">kotlin-argparser</a><br>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin</li><li><a href="https://github.com/Kotlin/kotlinx.coroutines" target="_blank" rel="noopener noreferrer">kotlinx.coroutines</a><br>Library support for Kotlin coroutines</li><li><a href="https://kosi-libs.org/" target="_blank" rel="noopener noreferrer">Kodein</a><br>Painless Kotlin Dependency Injection</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="test">Test<a href="#test" class="hash-link" aria-label="Direct link to Test" title="Direct link to Test">​</a></h2><ul><li><a href="https://kotest.io/" target="_blank" rel="noopener noreferrer">kotest</a><br>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and integrated property testing</li><li><a href="https://mockk.io/" target="_blank" rel="noopener noreferrer">mockk</a><br>mocking library for Kotlin</li><li><a href="https://github.com/mockito/mockito-kotlin" target="_blank" rel="noopener noreferrer">mockito-kotlin</a><br>sing Mockito with Kotlin</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="orm">ORM<a href="#orm" class="hash-link" aria-label="Direct link to ORM" title="Direct link to ORM">​</a></h2><ul><li><a href="https://github.com/ctripcorp/SQLlin" target="_blank" rel="noopener noreferrer">SQLlin</a><br>A DSL SQLite library for Kotlin Multiplatform.</li><li><a href="https://www.ktorm.org/" target="_blank" rel="noopener noreferrer">ktorm</a><br>Ktorm is a lightweight and efficient ORM Framework for Kotlin directly based on pure JDBC. It provides strong-typed and flexible SQL DSL and convenient sequence APIs to reduce our duplicated effort on database operations. All the SQL statements, of course, are generated automatically.</li><li><a href="https://github.com/JetBrains/Exposed" target="_blank" rel="noopener noreferrer">exposed</a><br>Kotlin SQL Framework</li><li><a href="https://cashapp.github.io/sqldelightSQLDelight" target="_blank" rel="noopener noreferrer">sqldelight</a><br>SQLDelight generates typesafe kotlin APIs from your SQL statements. It verifies your schema, statements, and migrations at compile-time and provides IDE features like autocomplete and refactoring which make writing and maintaining SQL simple</li></ul>]]></content>
-        <author>
-            <name>Xiangcheng Kuo</name>
-            <uri>https://github.com/orange-guo</uri>
-        </author>
-        <category label="kotlin" term="kotlin"/>
-        <category label="curated-list" term="curated-list"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python相关技术列表]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-python</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2022/10/24/curated-list-python"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- awesome-python]]></summary>
-        <content type="html"><![CDATA[<ul><li><a href="https://github.com/vinta/awesome-python" target="_blank" rel="noopener noreferrer">awesome-python</a><br>A curated list of awesome Python frameworks, libraries, software and resources.</li><li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">fastapi</a><br>FastAPI framework, high performance, easy to learn, fast to code, ready for production</li><li><a href="https://typer.tiangolo.com/" target="_blank" rel="noopener noreferrer">typer</a><br>Typer, build great CLIs. Easy to code. Based on Python type hints.</li><li><a href="https://github.com/pallets/flask" target="_blank" rel="noopener noreferrer">flask</a><br>The Python micro framework for building web applications.</li><li><a href="https://github.com/pallets/jinja" target="_blank" rel="noopener noreferrer">jinja</a><br>A very fast and expressive template engine.</li><li><a href="https://github.com/pyinstaller/pyinstaller" target="_blank" rel="noopener noreferrer">pyinstaller</a><br>Freeze (package) Python programs into stand-alone executables</li><li><a href="https://github.com/marcelotduarte/cx_Freeze" target="_blank" rel="noopener noreferrer">cx_Freeze</a><br>Create standalone executables from Python scripts, with the same performance and is cross-platform.</li></ul>]]></content>
-        <author>
-            <name>Xiangcheng Kuo</name>
-            <uri>https://github.com/orange-guo</uri>
-        </author>
-        <category label="python" term="python"/>
-        <category label="curated-list" term="curated-list"/>
     </entry>
 </feed>
