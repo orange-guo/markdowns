@@ -20,7 +20,7 @@ export default function BlogPostItemWrapper(props) {
 					emitMetadata="0"
 					inputPosition="bottom"
 					theme="preferred_color_scheme"
-					lang="en"
+					lang="zh-CN"
 					crossorigin="anonymous"
 					term="Welcome to @giscus/react component!"
 					loading="lazy"

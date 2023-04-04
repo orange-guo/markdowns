@@ -22,8 +22,8 @@ module.exports = {
 	projectName: 'markdowns',
 
 	i18n: {
-		defaultLocale: 'en',
-		locales: ['en'],
+		defaultLocale: 'zh-CN',
+		locales: ['zh-CN'],
 	},
 
 	presets: [
