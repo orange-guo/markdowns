@@ -37,7 +37,7 @@ tags: [ docusaurus,  giscus, github ]
 
 [giscus](https://giscus.app/)页面下的`Repository`提供了一个可以验证你的`repo`
 
-## 获取启用评论功能所需的参数
+## 获取参数
 
 为了后续在`Docusaurus`中启用评论功能, 还需要获取一些参数, 这些参数后续会在`Docusaurus`中使用.<br/>
 
@@ -63,7 +63,7 @@ tags: [ docusaurus,  giscus, github ]
 </script>
 ```
 
-## 安装`Giscus`组件
+## 安装`Giscus`
 
 `Giscus`组件是一个`React`组件, 用于在`Docusaurus`中启用评论功能.<br/>
 我们需要在项目中安装`Giscus`组件
@@ -72,7 +72,7 @@ tags: [ docusaurus,  giscus, github ]
 npm install --save @giscus/react
 ```
 
-## 通过`Swizzling`扩展`Docusaurus`中的`BlogPostItem`组件
+## 组件扩展
 
 `Docusaurus`中提供了[Swizzling](https://docusaurus.io/docs/swizzling)功能, 可以对`Docusaurus`
 中的组件进行扩展并增加新的功能.<br/>
@@ -132,7 +132,9 @@ export default function BlogPostItemWrapper(props) {
 }
 ```
 
-## 效果
+## 最终效果
+
+最终效果如下图所示:
 
 ![enable-comment-in-docusaurus.png](enable-comment-in-docusaurus.png)
 
