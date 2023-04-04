@@ -7,8 +7,8 @@ export default function GiscusComponent() {
 			repo="orange-guo/markdowns-comment"
 			repoId="R_kgDOJSYyJA"
 			category="Announcements"
-			categoryId="DIC_kwDOJSYyJM4CVg1x"  // E.g. id of "General"
-			mapping="pathname"                        // Important! To map comments to URL
+			categoryId="DIC_kwDOJSYyJM4CVg1x"
+			mapping="pathname"
 			strict="0"
 			reactionsEnabled="1"
 			emitMetadata="0"

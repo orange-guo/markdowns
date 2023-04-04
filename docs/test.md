@@ -68,3 +68,7 @@ https://makelinux.github.io/kernel/map/
 https://vaadin.com/flow?ssp=1&darkschemeovr=0&setlang=en-US&safesearch=moderate
 
 https://github.com/giscus/giscus
+
+
+
+https://github.com/utkuozdemir/nvidia_gpu_exporter
