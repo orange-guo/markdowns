@@ -14,29 +14,48 @@ tags: [ gitlab ]
 
 下面介绍常见的一些标签的定义, 以便我们更好的使用.
 
-|      名称       |                   颜色                   | 16进制代码  |    描述    |             使用时机              |
-|:-------------:|:--------------------------------------:|:-------:|:--------:|:-----------------------------:|
-|      Bug      | <span style="color:#FF0000">红色</span>  | #FF0000 |  错误或需修复  |     当发现或报告一个问题时，可以使用这个标签      |
-|   Duplicate   | <span style="color:#808080">灰色</span>  | #808080 | 重复的issue |   当发现或报告一个已经存在的问题时，可以使用这个标签   |
-|    Feature    | <span style="color:#0000FF">蓝色</span>  | #0000FF |  新功能或需求  |   当提出或实现一个新的功能或需求时，可以使用这个标签   |
-|     Fixed     | <span style="color:#00FF00">绿色</span>  | #00FF00 |  已修复或完成  |    当解决或完成一个问题或任务时，可以使用这个标签    |
-|    Invalid    | <span style="color:#000000">黑色</span>  | #000000 |  无效或不合理  | 当发现或报告一个不符合规范或逻辑的问题时，可以使用这个标签 |
-|   Proposal    | <span style="color:#800080">紫色</span>  | #800080 |  建议或想法   |    当提出或讨论一个建议或想法时，可以使用这个标签    |
-|     Task      | <span style="color:#FFA500">橙色</span>  | #FFA500 |  任务或工作   |    当分配或执行一个任务或工作时，可以使用这个标签    |
-|    Wontfix    | <span style="color:#A52A2A">棕色</span>  | #A52A2A | 不会或不需修复  |    当决定不处理或忽略一个问题时，可以使用这个标签    |
-|  Improvement  | <span style="color:#FFC0CB">粉色</span>  | #FFC0CB |  改进或优化   |  当对一个功能或需求进行改进或优化时，可以使用这个标签   |
-|  Enhancement  | <span style="color:#ADD8E6">淡蓝色</span> | #ADD8E6 |  增强或扩展   |  当对一个功能或需求进行增强或扩展时，可以使用这个标签   |
-|   Question    | <span style="color:#FFFF00">黄色</span>  | #FFFF00 |  疑问或询问   |   当对一个问题或任务有疑问或询问时，可以使用这个标签   |
-|  Help wanted  | <span style="color:#FF00FF">紫红色</span> | #FF00FF | 需要帮助或协作  |    当需要其他人的帮助或协作时，可以使用这个标签     |
-| Documentation | <span style="color:#90EE90">浅绿色</span> | #90EE90 | 需要或涉及文档  |   当需要或涉及文档的编写或更新时，可以使用这个标签    |
+export const Label = ({name, color}) => (
+	<span style={{
+		fontSize: "0.75rem",
+		color: "white", // 设置字体颜色为白色
+		background: color,
+		borderRadius: "22px", // 设置边框的圆角为5像素
+		padding: "4px 12px", // 设置内边距为2像素上下，5像素左右
+		margin: "2px", // 设置外边距为2像素
+	}}>{name}</span>
+)
 
-效果如下:
+|                      名称                       | 颜色  | 16进制代码  |    描述    |             使用时机              |
+|:---------------------------------------------:|:---:|:-------:|:--------:|:-----------------------------:|
+|      <Label name="Bug" color="#FF0000"/>      | 红色  | #FF0000 |  错误或需修复  |     当发现或报告一个问题时，可以使用这个标签      |
+|   <Label name="Duplicate" color="#808080"/>   | 灰色  | #808080 | 重复的issue |   当发现或报告一个已经存在的问题时，可以使用这个标签   |
+|    <Label name="Feature" color="#0000FF"/>    | 蓝色  | #0000FF |  新功能或需求  |   当提出或实现一个新的功能或需求时，可以使用这个标签   |
+|     <Label name="Fixed" color="#00FF00"/>     | 绿色  | #00FF00 |  已修复或完成  |    当解决或完成一个问题或任务时，可以使用这个标签    |
+|    <Label name="Invalid" color="#000000"/>    | 黑色  | #000000 |  无效或不合理  | 当发现或报告一个不符合规范或逻辑的问题时，可以使用这个标签 |
+|   <Label name="Proposal" color="#800080"/>    | 紫色  | #800080 |  建议或想法   |    当提出或讨论一个建议或想法时，可以使用这个标签    |
+|     <Label name="Task" color="#FFA500"/>      | 橙色  | #FFA500 |  任务或工作   |    当分配或执行一个任务或工作时，可以使用这个标签    |
+|    <Label name="Wontfix" color="#A52A2A"/>    | 棕色  | #A52A2A | 不会或不需修复  |    当决定不处理或忽略一个问题时，可以使用这个标签    |
+|  <Label name="Improvement" color="#FFC0CB"/>  | 粉色  | #FFC0CB |  改进或优化   |  当对一个功能或需求进行改进或优化时，可以使用这个标签   |
+|  <Label name="Enhancement" color="#ADD8E6"/>  | 淡蓝色 | #ADD8E6 |  增强或扩展   |  当对一个功能或需求进行增强或扩展时，可以使用这个标签   |
+|   <Label name="Question" color="#FFFF00"/>    | 黄色  | #FFFF00 |  疑问或询问   |   当对一个问题或任务有疑问或询问时，可以使用这个标签   |
+|  <Label name="Help wanted" color="#FF00FF"/>  | 紫红色 | #FF00FF | 需要帮助或协作  |    当需要其他人的帮助或协作时，可以使用这个标签     |
+| <Label name="Documentation" color="#90EE90"/> | 浅绿色 | #90EE90 | 需要或涉及文档  |   当需要或涉及文档的编写或更新时，可以使用这个标签    |
 
-![gitlab-labels](./gitlab-labels.png)
+:::note
+Improvement和Enhancement之间的区别<br/>
+
+Improvement: <br/>
+表示对一个不太好的事物进行改善或提高, 使其达到更好的水平或状态.<br/>
+We need to improve our product quality to meet the customer’s needs.(我们需要改善我们的产品质量, 以满足客户的需求.)<br/>
+
+Enhancement: <br/>
+表示对一个已经很好的事物进行增强或扩展, 使其更加优秀或有吸引力.<br/>
+The new feature of this phone enhanced its competitiveness.(这款手机的新功能增强了它的竞争力.)<br/>
+:::
 
 ## 参考资料
 
 - [Labels project management guidelines | GitLab](https://about.gitlab.com/handbook/marketing/project-management-guidelines/labels/)
-  <br/>这是Gitlab关于标签项目管理指南的页面, 包含了一些创建和使用标签的规范和建议.
+<br/>这是Gitlab关于标签项目管理指南的页面, 包含了一些创建和使用标签的规范和建议.
 - [GitLab Labeling Training | GitLab](https://about.gitlab.com/handbook/support/support-ops/training/gitlab-labeling.html)
   <br/>这是Gitlab关于标签培训的页面, 包含了一些标签的最佳实践和示例.
