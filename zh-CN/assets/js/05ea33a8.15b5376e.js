@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1704],{1290:s=>{s.exports=JSON.parse('{"permalink":"/markdowns/zh-CN/blog/tags/postgresql","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

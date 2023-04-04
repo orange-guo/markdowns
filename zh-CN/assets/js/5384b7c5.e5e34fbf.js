@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2841],{1875:a=>{a.exports=JSON.parse('{"label":"java","permalink":"/markdowns/zh-CN/blog/tags/java","allTagsPath":"/markdowns/zh-CN/blog/tags","count":6}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3881],{3222:s=>{s.exports=JSON.parse('{"label":"spring-boot","permalink":"/markdowns/zh-CN/blog/tags/spring-boot","allTagsPath":"/markdowns/zh-CN/blog/tags","count":2}')}}]);

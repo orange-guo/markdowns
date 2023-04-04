@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4399],{7736:a=>{a.exports=JSON.parse('{"label":"clojure","permalink":"/markdowns/zh-CN/blog/tags/clojure","allTagsPath":"/markdowns/zh-CN/blog/tags","count":1}')}}]);

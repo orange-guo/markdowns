@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6307],{2763:a=>{a.exports=JSON.parse('{"permalink":"/markdowns/zh-CN/blog/tags/open-radiant","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

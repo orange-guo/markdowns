@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9324],{522:a=>{a.exports=JSON.parse('{"label":"kotlin","permalink":"/markdowns/zh-CN/blog/tags/kotlin","allTagsPath":"/markdowns/zh-CN/blog/tags","count":3}')}}]);

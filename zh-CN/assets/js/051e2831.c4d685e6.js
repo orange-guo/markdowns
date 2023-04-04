@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4487],{6907:s=>{s.exports=JSON.parse('{"permalink":"/markdowns/zh-CN/blog/tags/testcontainers","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
