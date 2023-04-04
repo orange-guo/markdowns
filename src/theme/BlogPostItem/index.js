@@ -1,12 +1,44 @@
 import React from 'react';
 import BlogPostItem from '@theme-original/BlogPostItem';
-import GiscusComponent from '@site/src/components/GiscusComponent';
+import Giscus from "@giscus/react";
+
+import {useBlogPost} from '@docusaurus/theme-common/internal'
+import useIsBrowser from '@docusaurus/useIsBrowser';
+
 
 export default function BlogPostItemWrapper(props) {
+
+	try {
+		const {metadata, isBlogPostPage} = useBlogPost()
+		const isBrowser = useIsBrowser();
+
+		console.log(metadata)
+
+		const {frontMatter, slug, title} = metadata
+		const {enableComments} = frontMatter
+	} catch (e) {
+	}
+
 	return (
 		<>
 			<BlogPostItem {...props} />
-			<GiscusComponent/>
+			<Giscus
+				repo="orange-guo/markdowns-comment"
+				repoId="R_kgDOJSYyJA"
+				category="Announcements"
+				categoryId="DIC_kwDOJSYyJM4CVg1x"
+				mapping="pathname"
+				strict="0"
+				reactionsEnabled="1"
+				emitMetadata="0"
+				inputPosition="bottom"
+				theme="preferred_color_scheme"
+				lang="en"
+				crossorigin="anonymous"
+				term="Welcome to @giscus/react component!"
+				loading="lazy"
+				async
+			/>
 		</>
 	);
 }
