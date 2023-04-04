@@ -1,4 +1,11 @@
-# Clojure
+---
+authors: [xiangcheng.kuo]
+tags: [clojure, curated-list]
+---
+
+# Clojure相关技术列表
+
+<!--truncate-->
 
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
