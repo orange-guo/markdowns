@@ -63,4 +63,8 @@
 - [open-radiant](https://github.com/JetBrains/open-radiant)
   <br/>JetBrains Branded Art Generator
 - [skill-map](https://github.com/TeamStuQ/skill-map)
-
+- [vaadin](https://vaadin.com/)
+- [ebpf](https://ebpf.io/)
+  <br/>Dynamically program the kernel for efficient networking, observability, tracing, and security
+- [matrixone](https://www.matrixorigin.cn/)
+  <br/>Hyperconverged cloud-edge native database

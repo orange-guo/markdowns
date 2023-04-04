@@ -1,11 +1,11 @@
 matrixone
 
 https://javaguide.cn
+www.javalearn.cn
 https://www.pdai.tech/
 https://github.com/livk-cloud/spring-boot-example
 medium
-ebpf
-www.javalearn.cn
+
 
 https://openjdk.org/jeps/8302326
 康威定律
@@ -62,9 +62,6 @@ gitops devops finops
 
 https://makelinux.github.io/kernel/map/
 
-https://vaadin.com/flow?ssp=1&darkschemeovr=0&setlang=en-US&safesearch=moderate
-
 https://github.com/giscus/giscus
-
 
 https://github.com/utkuozdemir/nvidia_gpu_exporter
