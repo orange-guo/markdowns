@@ -44,7 +44,7 @@ The new feature of this phone enhanced its competitiveness.(这款手机的新�
             <category>gitlab</category>
         </item>
         <item>
-            <title><![CDATA[通过手动下载并安装elm依赖解决执行elm make时依赖下载失败问题]]></title>
+            <title><![CDATA[解决elm依赖下载失败的问题]]></title>
             <link>https://orange-guo.github.io/markdowns/blog/2023/03/30/fix-elm-package-download-failed</link>
             <guid>https://orange-guo.github.io/markdowns/blog/2023/03/30/fix-elm-package-download-failed</guid>
             <pubDate>Thu, 30 Mar 2023 00:00:00 GMT</pubDate>
