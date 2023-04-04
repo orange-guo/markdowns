@@ -59,30 +59,30 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Introduction',
+					label: '介绍',
 					docId: 'introduction/introduction'
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Collection',
+					label: '收藏',
 					docId: 'collection/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Note',
+					label: '笔记',
 					docId: 'note/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Book Note',
+					label: '读书笔记',
 					docId: 'booknote/introduction',
 				},
 				{
 					to: 'blog',
-					label: 'Blog',
+					label: '博客',
 					position: 'left'
 				},
 				{
