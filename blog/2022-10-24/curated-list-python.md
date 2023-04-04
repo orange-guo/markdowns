@@ -1,4 +1,11 @@
-# Python
+---
+authors: [ xiangcheng.kuo ]
+tags: [ python, curated-list ]
+---
+
+# Python相关技术列表
+
+<!--truncate-->
 
 - [awesome-python](https://github.com/vinta/awesome-python)
   <br/>A curated list of awesome Python frameworks, libraries, software and resources.

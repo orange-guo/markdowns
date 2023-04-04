@@ -1,4 +1,11 @@
-# Kotlin
+---
+authors: [ xiangcheng.kuo ]
+tags: [ kotlin, curated-list ]
+---
+
+# Kotlin相关技术列表
+
+<!--truncate-->
 
 - [kotlin.link](https://kotlin.link/)
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
