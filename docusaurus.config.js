@@ -23,7 +23,7 @@ module.exports = {
 
 	i18n: {
 		defaultLocale: 'en',
-		locales: ['zh-CN'],
+		locales: ['en', 'zh-CN'],
 	},
 
 	presets: [
