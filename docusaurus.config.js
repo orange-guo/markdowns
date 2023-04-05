@@ -4,7 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const gitPagesUrl = 'https://orange-guo.github.io'
 const githubUrl = "https://github.com/orange-guo"
 const editUrl = `${githubUrl}/markdowns/tree/master`
 const githubHeadImg = `https://github.com/orange-guo.png`
@@ -13,7 +12,7 @@ module.exports = {
 	title: 'Markdowns',
 	tagline: 'This is my personal markdowns',
 	url: gitPagesUrl,
-	baseUrl: '/',
+	baseUrl: 'https://www.geek66.cyou/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: githubHeadImg,
