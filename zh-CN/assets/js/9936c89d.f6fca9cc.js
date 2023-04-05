@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2176],{7898:e=>{e.exports=JSON.parse('{"permalink":"/markdowns/zh-CN/blog","page":1,"postsPerPage":10,"totalPages":4,"totalCount":40,"nextPage":"/markdowns/zh-CN/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
