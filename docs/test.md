@@ -111,5 +111,11 @@ Select 表达式：实验性的特性，可以同时等待多个挂起操作，�
 1: Android 上的 Kotlin 协程 | Android Developers 2: 协程指南 - Kotlin 语言中文站 3: 协程 · Kotlin 官方文档 中文版
 
 ## others
-实现在docurauras
-- 
+实现在docusaurus中执行代码的插件
+- [Judge0 CE - API Docs](https://ce.judge0.com/)
+- [Judge0 IDE](https://ide.judge0.com/)
+- [OneCompiler](https://onecompiler.com/)
+- [OneCompiler APIs Cheatsheet](https://onecompiler.com/cheatsheets/onecompiler-apis)
+- [OneCompiler Embedding Demos](https://onecompiler.github.io/editor-embed-demo/)
+- [Ideone](https://www.ideone.com/F7mT6q)
+- [OnlineGDB](https://www.onlinegdb.com/online_java_compiler)
