@@ -74,3 +74,12 @@ https://copy.sh/v86/
 1984
 反脆弱
 https://github.com/LeonLi0102/cloud-native-spring-in-action-translate/tree/main/cn-translate/01-Introduction-to-cloud-native/1.1-What-is-cloud-native
+
+
+## onecompile
+```javascript
+var text = window.document.getElementsByClassName('ace_text-input')[0]
+var event = document.createEvent("Event");
+event.initEvent("input", true, false);
+text.dispatchEvent(event);
+```
