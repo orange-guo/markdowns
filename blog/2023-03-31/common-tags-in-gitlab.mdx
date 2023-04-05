@@ -16,7 +16,7 @@ tags: [ gitlab ]
 
 export const Label = ({name, color}) => (
 	<span style={{
-		fontSize: "0.75rem",
+		fontSize: "1rem",
 		color: "white",
 		background: color,
 		borderRadius: "22px",
@@ -24,21 +24,126 @@ export const Label = ({name, color}) => (
 	}}>{name}</span>
 )
 
-|                      名称                       | 颜色  | 16进制代码  |    描述    |             使用时机              |
-|:---------------------------------------------:|:---:|:-------:|:--------:|:-----------------------------:|
-|      <Label name="Bug" color="#FF0000"/>      | 红色  | #FF0000 |  错误或需修复  |     当发现或报告一个问题时，可以使用这个标签      |
-|   <Label name="Duplicate" color="#808080"/>   | 灰色  | #808080 | 重复的issue |   当发现或报告一个已经存在的问题时，可以使用这个标签   |
-|    <Label name="Feature" color="#0000FF"/>    | 蓝色  | #0000FF |  新功能或需求  |   当提出或实现一个新的功能或需求时，可以使用这个标签   |
-|     <Label name="Fixed" color="#00FF00"/>     | 绿色  | #00FF00 |  已修复或完成  |    当解决或完成一个问题或任务时，可以使用这个标签    |
-|    <Label name="Invalid" color="#000000"/>    | 黑色  | #000000 |  无效或不合理  | 当发现或报告一个不符合规范或逻辑的问题时，可以使用这个标签 |
-|   <Label name="Proposal" color="#800080"/>    | 紫色  | #800080 |  建议或想法   |    当提出或讨论一个建议或想法时，可以使用这个标签    |
-|     <Label name="Task" color="#FFA500"/>      | 橙色  | #FFA500 |  任务或工作   |    当分配或执行一个任务或工作时，可以使用这个标签    |
-|    <Label name="Wontfix" color="#A52A2A"/>    | 棕色  | #A52A2A | 不会或不需修复  |    当决定不处理或忽略一个问题时，可以使用这个标签    |
-|  <Label name="Improvement" color="#FFC0CB"/>  | 粉色  | #FFC0CB |  改进或优化   |  当对一个功能或需求进行改进或优化时，可以使用这个标签   |
-|  <Label name="Enhancement" color="#ADD8E6"/>  | 淡蓝色 | #ADD8E6 |  增强或扩展   |  当对一个功能或需求进行增强或扩展时，可以使用这个标签   |
-|   <Label name="Question" color="#FFFF00"/>    | 黄色  | #FFFF00 |  疑问或询问   |   当对一个问题或任务有疑问或询问时，可以使用这个标签   |
-|  <Label name="Help wanted" color="#FF00FF"/>  | 紫红色 | #FF00FF | 需要帮助或协作  |    当需要其他人的帮助或协作时，可以使用这个标签     |
-| <Label name="Documentation" color="#90EE90"/> | 浅绿色 | #90EE90 | 需要或涉及文档  |   当需要或涉及文档的编写或更新时，可以使用这个标签    |
+
+<table>
+	<thead>
+	<tr>
+		<th align="center">名称</th>
+		<th align="center">颜色</th>
+		<th align="center">16进制代码</th>
+		<th align="center">描述</th>
+		<th align="center">使用时机</th>
+	</tr>
+	</thead>
+	<tbody>
+	{[
+		{
+			name: "Bug",
+			colorName: "红",
+			colorHex: "#FF0000",
+			desc: "错误或需修复",
+			usage: "发现/报告 一个问题"
+		},
+		{
+			name: "Duplicate",
+			colorName: "灰",
+			colorHex: "#808080",
+			desc: "重复的issue",
+			usage: "发现/报告 一个已经存在的问题"
+		},
+		{
+			name: "Feature",
+			colorName: "蓝",
+			colorHex: "#0000FF",
+			desc: "新功能或需求",
+			usage: "提出/实现 一个新的功能或需求"
+		},
+		{
+			name: "Fixed",
+			colorName: "绿",
+			colorHex: "#00FF00",
+			desc: "已修复或完成",
+			usage: "解决/完成 一个问题或任务"
+		},
+		{
+			name: "Invalid",
+			colorName: "黑",
+			colorHex: "#000000",
+			desc: "无效或不合理",
+			usage: "发现/报告 一个不符合 规范/逻辑 的问题"
+		},
+		{
+			name: "Proposal",
+			colorName: "紫",
+			colorHex: "#800080",
+			desc: "建议或想法",
+			usage: "提出/讨论 一个建议或想法"
+		},
+		{
+			name: "Task",
+			colorName: "橙",
+			colorHex: "#FFA500",
+			desc: "任务或工作",
+			usage: "分配/执行 一个任务或工作"
+		},
+		{
+			name: "Wontfix",
+			colorName: "棕",
+			colorHex: "#A52A2A",
+			desc: "不会或不需修复",
+			usage: "决定不处理/忽略 一个问题"
+		},
+		{
+			name: "Improvement",
+			colorName: "粉",
+			colorHex: "#FFC0CB",
+			desc: "改进或优化",
+			usage: "对一个功能或需求进行 改进/优化"
+		},
+		{
+			name: "Enhancement",
+			colorName: "淡蓝",
+			colorHex: "#ADD8E6",
+			desc: "增强或扩展",
+			usage: "对一个功能或需求进行 增强/扩展"
+		},
+		{
+			name: "Question",
+			colorName: "黄",
+			colorHex: "#FFFF00",
+			desc: "疑问或询问",
+			usage: "对一个问题或任务有 疑问/询问"
+		},
+		{
+			name: "Help wanted",
+			colorName: "紫红",
+			colorHex: "#FF00FF",
+			desc: "需要帮助或协作",
+			usage: "需要其他人的 帮助/协作"
+		},
+		{
+			name: "Documentation",
+			colorName: "浅绿",
+			colorHex: "#90EE90",
+			desc: "需要或涉及文档",
+			usage: "涉及文档的 编写/更新"
+		}
+	].map((item, index) => (
+		<tr key={index}>
+			<td align="center">
+				<Label name={item.name} color={item.colorHex}/>
+			</td>
+			<td align="center" style={{whiteSpace: 'nowrap'}}>{item.colorName}</td>
+			<td align="center">
+				<strong>{item.colorHex}</strong>
+			</td>
+			<td align="center">{item.desc}</td>
+			<td align="center">{item.usage}</td>
+		</tr>
+	))}
+	</tbody>
+</table>
+
 
 :::note
 Improvement和Enhancement之间的区别<br/>
