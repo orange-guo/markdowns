@@ -8,11 +8,13 @@ const githubUrl = "https://github.com/orange-guo"
 const editUrl = `${githubUrl}/markdowns/tree/master`
 const githubHeadImg = `https://github.com/orange-guo.png`
 
+const author = 'Xiangcheng Kuo'
+
 module.exports = {
-	title: 'Markdowns',
-	tagline: 'This is my personal markdowns',
-	url: gitPagesUrl,
-	baseUrl: 'https://www.geek66.cyou/',
+	title: author,
+	tagline: `This is website from ${author}`,
+	url: 'https://www.geek66.cyou/',
+	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: githubHeadImg,
@@ -49,7 +51,7 @@ module.exports = {
 
 	themeConfig: ({
 		navbar: {
-			title: 'Markdowns',
+			title: author,
 			logo: {
 				alt: 'My Site Logo',
 				src: githubHeadImg,
