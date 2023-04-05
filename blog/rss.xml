@@ -31,8 +31,8 @@
         </item>
         <item>
             <title><![CDATA[Gitlab中常见的标签]]></title>
-            <link>https://orange-guo.github.io/markdowns/blog/2023/03/31/gitlab-labels</link>
-            <guid>https://orange-guo.github.io/markdowns/blog/2023/03/31/gitlab-labels</guid>
+            <link>https://orange-guo.github.io/markdowns/blog/2023/03/31/common-tags-in-gitlab</link>
+            <guid>https://orange-guo.github.io/markdowns/blog/2023/03/31/common-tags-in-gitlab</guid>
             <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Gitlab中的标签是一个非常有用的功能, 该功能可以帮助我们更好的管理ISSUE.]]></description>
             <content:encoded><![CDATA[<p><code>Gitlab</code>中的标签是一个非常有用的功能, 该功能可以帮助我们更好的管理<code>ISSUE</code>.<br>

@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Gitlab中常见的标签]]></title>
-        <id>https://orange-guo.github.io/markdowns/blog/2023/03/31/gitlab-labels</id>
-        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/31/gitlab-labels"/>
+        <id>https://orange-guo.github.io/markdowns/blog/2023/03/31/common-tags-in-gitlab</id>
+        <link href="https://orange-guo.github.io/markdowns/blog/2023/03/31/common-tags-in-gitlab"/>
         <updated>2023-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Gitlab中的标签是一个非常有用的功能, 该功能可以帮助我们更好的管理ISSUE.]]></summary>
         <content type="html"><![CDATA[<p><code>Gitlab</code>中的标签是一个非常有用的功能, 该功能可以帮助我们更好的管理<code>ISSUE</code>.<br>
