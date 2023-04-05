@@ -13,7 +13,7 @@ module.exports = {
 	title: 'Markdowns',
 	tagline: 'This is my personal markdowns',
 	url: gitPagesUrl,
-	baseUrl: '/markdowns/',
+	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: githubHeadImg,
