@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[8698],{675:o=>{o.exports=JSON.parse('{"permalink":"/markdowns/zh-CN/blog/tags/compatibility","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

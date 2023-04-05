@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6021],{8671:a=>{a.exports=JSON.parse('{"label":"open-radiant","permalink":"/markdowns/blog/tags/open-radiant","allTagsPath":"/markdowns/blog/tags","count":2}')}}]);

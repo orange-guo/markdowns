@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[5070],{9100:a=>{a.exports=JSON.parse('{"label":"open-radiant","permalink":"/zh-CN/blog/tags/open-radiant","allTagsPath":"/zh-CN/blog/tags","count":2}')}}]);

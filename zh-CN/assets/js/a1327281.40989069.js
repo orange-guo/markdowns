@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4570],{7877:a=>{a.exports=JSON.parse('{"label":"pyenv","permalink":"/zh-CN/blog/tags/pyenv","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);
