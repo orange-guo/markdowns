@@ -7,3 +7,12 @@
 - [Bcrypt Hash Generator](https://bcrypt.online/)
 - [16进制到文本字符串](https://www.bejson.com/convert/ox2str/)
 - [Markdown Live Preview](https://markdownlivepreview.com/)
+- [crontab时间计算](https://tool.lu/crontab/)
+- [crontab guru](https://crontab.guru/)
+
+## 前端
+- [w3schools](https://www.w3schools.com/)
+- [浏览器支持查询](https://caniuse.com/)
+- [selenium](https://www.selenium.dev/)
+- [React](https://react.dev/)
+- [CSS 选择器](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Selectors)
