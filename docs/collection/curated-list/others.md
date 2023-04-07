@@ -55,6 +55,10 @@
   for a parallel world
 - [elm](https://elm-lang.org/)
   <br/>A delightful language for reliable web applications.
+- [Julia](https://julialang.org/)
+  <br/>The Julia Programming Language
+- [groovy](https://groovy-lang.org/)
+  <br/>Apache Groovy: A powerful multi-faceted programming language for the JVM platform
 
 ## Others
 
