@@ -9,6 +9,7 @@
 - [Markdown Live Preview](https://markdownlivepreview.com/)
 - [crontab时间计算](https://tool.lu/crontab/)
 - [crontab guru](https://crontab.guru/)
+- [随机密码生成器 - 随机字符串生成器](http://tool.c7sky.com/password/)
 
 ## 前端
 - [w3schools](https://www.w3schools.com/)
