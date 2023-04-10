@@ -5,6 +5,13 @@ tags: [aliyundrive, rclone, docker]
 
 # 使用`aliyundrive-webdav`搭配`rclone`实现以本地文件系统的方式操作阿里云盘中的文件
 
+:::danger
+
+`aliyundrive-webdav`不再支持旧版本的`refresh_token`认证方式, 请查阅[aliyundrive-webdav
+](https://github.com/messense/aliyundrive-webdav)了解详细信息
+
+:::
+
 `aliyun-webdav`是一个开源的工具, 可以根据配置的阿里云盘帐号信息对外提供`WebDAV`服务.<br/>
 `rclone`是一个开源的工具, 可以将各种网络文件协议的文件挂载到本地文件系统并通过本地文件系统的方式进行文件的操作.<br/>
 其支持的网络文件协议如下
