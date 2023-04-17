@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7183],{38660:a=>{a.exports=JSON.parse('{"label":"code2art","permalink":"/blog/tags/code-2-art","allTagsPath":"/blog/tags","count":2}')}}]);
