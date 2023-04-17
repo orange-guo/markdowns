@@ -3,18 +3,10 @@ authors: [xiangcheng.kuo]
 tags: [aliyundrive, rclone, docker]
 ---
 
-# 使用`aliyundrive-webdav`搭配`rclone`实现以本地文件系统的方式操作阿里云盘中的文件
+# 通过`aliyundrive-webdav`搭配`rclone`实现将阿里云盘中的文件挂载到本地
 
-:::danger
-
-`aliyundrive-webdav`不再支持旧版本的`refresh_token`认证方式, 请查阅[aliyundrive-webdav
-](https://github.com/messense/aliyundrive-webdav)了解详细信息
-
-:::
-
-`aliyun-webdav`是一个开源的工具, 可以根据配置的阿里云盘帐号信息对外提供`WebDAV`服务.<br/>
-`rclone`是一个开源的工具, 可以将各种网络文件协议的文件挂载到本地文件系统并通过本地文件系统的方式进行文件的操作.<br/>
-其支持的网络文件协议如下
+`aliyun-webdav`是一个开源的工具, 可以为阿里云盘提供`WebDAV`服务.<br/>
+`rclone`是一个开源的工具, 可以将本地文件同步到各种云存储服务中, 包括但不限于
 
 - S3
 - WebDAV
@@ -22,8 +14,8 @@ tags: [aliyundrive, rclone, docker]
 - SFTP
 - ...
 
-以下将介绍如何使用`aliyun-webdav`搭配`rclone`实现本地文件同步到阿里云盘.
-本案例是基于`ubuntu`实现的, 由于该解决方案使用了`docker`, 因此理论上可以在任何支持`docker`的系统中实现.
+以下将介绍如何使用`aliyun-webdav`搭配`rclone`实现将本地文件同步到阿里云盘.<br/>
+本案例是基于`ubuntu`实现的, 方案使用到了`docker`因此理论上可以在任何支持`docker`的系统中实现.
 
 <!--truncate-->
 
@@ -43,91 +35,27 @@ sudo usermod -aG docker $USER
 sudo newgrp docker
 ```
 
-### 获取阿里云盘中的`refresh_token`
+### 获取阿里云盘的`refresh_token`
 
-- 登录[阿里云盘](https://www.aliyundrive.com/drive)
-- 打开浏览器的`开发者工具`(`F12`快捷键), 切换到`Console`选项卡, 输入以下命令, 并按下回车
+新版本的阿里云盘不再支持在浏览器中直接获取`refresh_token`, 所以需要访问该项目对应的开发者提供的获取`refresh_token`的页面,
+并在该页面中获取`refresh_token`
 
-```js
-JSON.parse(localStorage.token).refresh_token
-```
+进入[aliyundrive-webdav refresh token 获取](https://messense-aliyundrive-webdav-backendrefresh-token-ucs0wn.streamlit.app/)
+并根据页面提示获取`refresh_token`
 
-- 复制输出的`refresh_token`值, 作为后续配置, 注意不要包含引号
+### 配置`aliyundrive-webdav`
 
-### 新增`docker-compose.yml`文件
+下载并解压[aliyundrive.zip](aliyundrive.zip)`aliyundrive-webdav`, 这个压缩包中包含了相关服务的配置以及启动脚本.<br/>
+解压后的文件夹中存在`docker-compose.yml`文件, 编辑该文件.<br/>
+将`REFRESH_TOKEN: "<REFRESH_TOKEN>"`中的`<REFRESH_TOKEN>`
+改为上一步获取到的`refresh_token`.<br/>
 
-以下内容作为参考并填入需要的配置
+### 启动
 
-- `<填写上一个步骤获取到的refresh_token>`
+在刚才的目录中执行以下命令
 
-```yaml title="docker-compose.yml"
-version: "2"
-services:
-  aliyundrive:
-    image: messense/aliyundrive-webdav:1.11.0
-    container_name: aliyundrive
-    hostname: aliyundrive
-    ports:
-      - "8080:8080"
-    restart: always
-    environment:
-      REFRESH_TOKEN: <填写上一个步骤获取到的refresh_token>
-
-  rclone:
-    restart: always
-    image: rclone/rclone
-    container_name: rclone
-    hostname: rclone
-    user: "1000:1000"
-    volumes:
-      - "./rclone.conf:/config/rclone/rclone.conf"
-      - "./Aliyundrive:/Aliyundrive:rshared"
-      - "/etc/passwd:/etc/passwd:ro"
-      - "/etc/group:/etc/group:ro"
-    devices:
-      - "/dev/fuse:/dev/fuse"
-    cap_add:
-      - SYS_ADMIN
-    security_opt:
-      - "apparmor:unconfined"
-    command:
-      - "mount"
-      - "--dir-cache-time=1h"
-      - "--buffer-size=64M"
-      - "--vfs-cache-mode=full"
-      - "--transfers=16"
-      - "--allow-non-empty"
-      - "--no-update-modtime"
-      - "aliyundrive:"
-      - "/Aliyundrive"
-
-networks:
-  network:
-    driver: bridge
-    ipam:
-      driver: default
-```
-
-### 新增`rclone.conf`文件
-
-```ini title="rclone.conf"
-[aliyundrive]
-type = webdav
-url = http://aliyundrive:8080
-vendor = nextcloud
-```
-
-### 新增脚本`start.sh`, `stop.sh`
-
-```bash title="start.sh"
-mkdir -p ./Aliyundrive
-docker-compose up -d
-```
-
-```bash title="stop.sh"
-umount ./Aliyundrive
-docker-compose kill
-docker-compose rm -f
+```bash
+./start.sh
 ```
 
 ## 参考
