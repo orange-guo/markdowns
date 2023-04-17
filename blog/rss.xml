@@ -481,9 +481,9 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
             <category>aws</category>
         </item>
         <item>
-            <title><![CDATA[通过aliyundrive-webdav搭配rclone实现将阿里云盘中的文件挂载到本地]]></title>
-            <link>https://www.geek66.cyou/blog/2023/02/18/aliyundrive-webdav-fuse</link>
-            <guid>https://www.geek66.cyou/blog/2023/02/18/aliyundrive-webdav-fuse</guid>
+            <title><![CDATA[使用aliyundrive-webdav和rclone实现阿里云盘文件挂载到本地]]></title>
+            <link>https://www.geek66.cyou/blog/2023/02/18/use-aliyundrive-webdav-with-rclone-to-mount-files</link>
+            <guid>https://www.geek66.cyou/blog/2023/02/18/use-aliyundrive-webdav-with-rclone-to-mount-files</guid>
             <pubDate>Sat, 18 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[aliyun-webdav是一个开源的工具, 可以为阿里云盘提供WebDAV服务.]]></description>
             <content:encoded><![CDATA[<p><code>aliyun-webdav</code>是一个开源的工具, 可以为阿里云盘提供<code>WebDAV</code>服务.<br>
@@ -497,6 +497,7 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
             <category>aliyundrive</category>
             <category>rclone</category>
             <category>docker</category>
+            <category>fuse</category>
         </item>
         <item>
             <title><![CDATA[使用snap安装指定版本的应用]]></title>
