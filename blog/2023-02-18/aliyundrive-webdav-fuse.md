@@ -1,6 +1,6 @@
 ---
-authors: [xiangcheng.kuo]
-tags: [aliyundrive, rclone, docker]
+authors: [ xiangcheng.kuo ]
+tags: [ aliyundrive, rclone, docker, fuse ]
 ---
 
 # 通过`aliyundrive-webdav`搭配`rclone`实现将阿里云盘中的文件挂载到本地
