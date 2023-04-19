@@ -103,6 +103,17 @@ Module org.yaml.snakeyaml not found, required by com.fasterxml.jackson.dataforma
 implementation("org.yaml:snakeyaml:2.0")
 ```
 
+### `jdeps`命令执行失败报错`java.util.concurrent.ExecutionException: com.sun.tools.jdeps.MultiReleaseException`
+
+这个问题的原因是因为jdk17中的`jdeps`命令存在`bug`(无法处理不同jar中具有相同名称的类)导致的, 在jdk18中已经修复了这个问题.
+
+关于这个问题的更多信息可以参考
+
+- [jdeps can't print-module-deps due to a MultiReleaseException](https://stackoverflow.com/questions/69943899/jdeps-cant-print-module-deps-due-to-a-multireleaseexception)
+- [JDK-8277165](https://bugs.openjdk.org/browse/JDK-8277165)
+- [JDK-8277166](https://bugs.openjdk.org/browse/JDK-8277166)
+- [JDK-8277123](https://bugs.openjdk.org/browse/JDK-8277123)
+
 ### `arch`配置不生效导致生成出的deb文件无法安装
 
 执行完`package`任务后, 会在`build`目录下生成相应的`deb`文件名称为`xxx.deb`.
