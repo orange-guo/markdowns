@@ -96,15 +96,15 @@ module.exports = {
 					title: 'Docs',
 					items: [
 						{
-							label: 'Introduction',
-							to: '/docs/introduction',
+							label: "收藏",
+							to: "collection/introduction"
 						},
 						{
-							label: 'Note',
+							label: '笔记',
 							to: '/docs/note/introduction',
 						},
 						{
-							label: 'Book Note',
+							label: '读书笔记',
 							to: '/docs/booknote/introduction',
 						}
 					],
