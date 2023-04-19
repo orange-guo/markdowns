@@ -1,9 +1,4 @@
----
-authors: [ xiangcheng.kuo ]
-tags: [ kotlin, curated-list ]
----
-
-# Kotlin相关技术列表
+# Kotlin公共库列表
 
 <!--truncate-->
 
@@ -31,6 +26,11 @@ tags: [ kotlin, curated-list ]
   <br/>mocking library for Kotlin
 - [mockito-kotlin](https://github.com/mockito/mockito-kotlin)
   <br/>sing Mockito with Kotlin
+
+## Logging
+
+- [kotlin-logging](https://github.com/oshai/kotlin-logging)
+  <br/>Lightweight Multiplatform logging framework for Kotlin. A convenient and performant logging facade.
 
 ## ORM
 
