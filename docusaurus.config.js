@@ -60,12 +60,6 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: '介绍',
-					docId: 'introduction/introduction'
-				},
-				{
-					type: 'doc',
-					position: 'left',
 					label: '收藏',
 					docId: 'collection/introduction',
 				},
