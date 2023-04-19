@@ -168,6 +168,14 @@ Homepage: ${info.url}
 
 目前没有一个好的办法解决此问题, 后续准备在`JavaPackager`插件中提一个`PR`来解决此问题.
 
+## 备注
+
+### 解压AppImage
+
+```bash
+./xxx.AppImage --appimage-extract
+```
+
 ## 参考资料
 
 - [BundleJre.java](https://github.com/fvarrui/JavaPackager/blob/master/src/main/java/io/github/fvarrui/javapackager/packagers/BundleJre.java)
