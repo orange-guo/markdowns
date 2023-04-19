@@ -12,6 +12,7 @@
 - [随机密码生成器 - 随机字符串生成器](http://tool.c7sky.com/password/)
 
 ## 前端
+
 - [w3schools](https://www.w3schools.com/)
 - [浏览器支持查询](https://caniuse.com/)
 - [selenium](https://www.selenium.dev/)
@@ -20,3 +21,8 @@
 - [CodePen](https://codepen.io/)
   <br/>CodePen is a social development environment for front-end designers and developers. Build and deploy a website,
   show off your work, build test cases to learn and debug, and find inspiration.
+
+## 其他
+
+- [endoflife.date](https://endoflife.date/)
+  <br/>该工具可以查询各种软件的终止支持时间
