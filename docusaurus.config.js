@@ -91,81 +91,36 @@ module.exports = {
 		},
 		footer: {
 			style: 'dark',
-			links: [
-				{
-					title: 'Docs',
-					items: [
-						{
-							label: "收藏",
-							to: "collection/introduction"
-						},
-						{
-							label: '笔记',
-							to: '/docs/note/introduction',
-						},
-						{
-							label: '读书笔记',
-							to: '/docs/booknote/introduction',
-						}
-					],
-				},
-				{
-					title: 'Community',
-					items: [
-						{
-							label: 'Stack Overflow',
-							href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-						},
-						{
-							label: 'Discord',
-							href: 'https://discordapp.com/invite/docusaurus',
-						},
-						{
-							label: 'Twitter',
-							href: 'https://twitter.com/docusaurus',
-						},
-					],
-				},
-				{
-					title: 'More',
-					items: [
-						{
-							label: 'Blog',
-							to: '/blog',
-						},
-						{
-							label: 'Github',
-							href: githubUrl,
-						},
-					],
-				},
-				{
-					title: 'Legal',
-					// Please don't remove the privacy and terms, it's a legal
-					// requirement.
-					items: [
-						{
-							label: 'Privacy',
-							href: 'https://opensource.facebook.com/legal/privacy/',
-						},
-						{
-							label: 'Terms',
-							href: 'https://opensource.facebook.com/legal/terms/',
-						},
-						{
-							label: 'Data Policy',
-							href: 'https://opensource.facebook.com/legal/data-policy/',
-						},
-						{
-							label: 'Cookie Policy',
-							href: 'https://opensource.facebook.com/legal/cookie-policy/',
-						},
-					],
-				}
-			],
+			// links: [
+			// 	{
+			// 		title: 'Links',
+			// 		items: [
+			// 			{
+			// 				label: "收藏",
+			// 				to: "collection/introduction"
+			// 			},
+			// 			{
+			// 				label: '笔记',
+			// 				to: '/docs/note/introduction',
+			// 			},
+			// 			{
+			// 				label: '读书笔记',
+			// 				to: '/docs/booknote/introduction',
+			// 			},
+			// 			{
+			// 				label: 'Blog',
+			// 				to: '/blog',
+			// 			},
+			// 			{
+			// 				label: 'Github',
+			// 				href: githubUrl,
+			// 			},
+			// 		],
+			// 	},
+			// ],
 			// logo: {
 			// 	alt: 'Meta Open Source Logo',
-			// 	src: '/img/meta_opensource_logo_negative.svg',
+			// 	src: githubHeadImg,
 			// 	href: 'https://opensource.fb.com',
 			// },
 			copyright: `Copyright © ${new Date().getFullYear()}, Inc. Built with Docusaurus.`,
