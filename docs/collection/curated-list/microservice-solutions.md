@@ -117,3 +117,6 @@
 - [azkaban](https://azkaban.github.io/)
   <br/>Azkaban is a batch workflow job scheduler created at LinkedIn. It is used to schedule Hadoop jobs and other
   batch jobs. Azkaban is written in Java and uses a MySQL database to store metadata.
+- [cadence](https://cadenceworkflow.io/)
+  <br/>Cadence is a distributed, scalable, durable, and highly available orchestration engine to execute asynchronous
+  long-running business logic in a scalable and resilient way. Cadence is a Uber open source project.
