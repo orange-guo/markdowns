@@ -17,10 +17,6 @@ tags: [ kotlin, curated-list ]
   <br/>The pragmatic Kotlin dependency injection framework.
 - [arrow](https://arrow-kt.io/)
   <br/>Functional companion to Kotlin's Standard Library
-- [kotlinx-cli](https://github.com/Kotlin/kotlinx-cli)
-  <br/>Pure Kotlin implementation of a generic CLI parser.
-- [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
-  <br/>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
   <br/>Library support for Kotlin coroutines
 - [Kodein](https://kosi-libs.org/)
@@ -50,3 +46,13 @@ tags: [ kotlin, curated-list ]
   <br/>SQLDelight generates typesafe kotlin APIs from your SQL statements. It verifies your schema, statements, and
   migrations at compile-time and provides IDE features like autocomplete and refactoring which make writing and
   maintaining SQL simple
+
+## Command line
+
+- [Clikt](https://ajalt.github.io/clikt/)
+  <br/>Clikt (pronounced “clicked”) is a multiplatform Kotlin library that makes writing command line interfaces simple
+  and intuitive. It’s the “Command Line Interface for Kotlin”.
+- [kotlinx-cli](https://github.com/Kotlin/kotlinx-cli)
+  <br/>Pure Kotlin implementation of a generic CLI parser.
+- [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
+  <br/>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin
