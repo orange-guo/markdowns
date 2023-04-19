@@ -3,7 +3,7 @@ authors: [ xiangcheng.kuo ]
 tags: [ python, curated-list ]
 ---
 
-# Python相关技术列表
+# Python公共库
 
 <!--truncate-->
 

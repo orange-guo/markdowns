@@ -1,8 +1,3 @@
----
-authors: [xiangcheng.kuo]
-tags: [kubernetes, curated-list]
----
-
 # Kubernetes相关技术列表
 
 <!--truncate-->

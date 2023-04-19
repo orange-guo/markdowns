@@ -1,4 +1,4 @@
-# 语言列表
+# 语言
 
 - [cuelang](https://cuelang.org/)
   <br/>Configure Unify Execute

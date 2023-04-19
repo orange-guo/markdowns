@@ -1,4 +1,4 @@
-# Kotlin公共库列表
+# Kotlin公共库
 
 <!--truncate-->
 
