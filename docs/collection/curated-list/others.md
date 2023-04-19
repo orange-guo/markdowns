@@ -35,16 +35,12 @@
 
 - [casbin](https://casbin.org/)
   <br/>An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
-
-## Middleware
-
-- [consul](https://www.consul.io/)
-- [etcd](https://etcd.io/)
-  <br/>A distributed, reliable key-value store for the most critical data of a distributed system
-
+- [authelia](https://www.authelia.com/)
+  <br/>The Single Sign-On Multi-Factor portal for web apps
+- [keycloak](https://www.keycloak.org/)
+  <br/>Open Source Identity and Access Management For Modern Applications and Services
 
 ## Others
-
 - [rsocket](https://rsocket.io/)
   <br/>Application protocol providing Reactive Streams semantics
 - [open-radiant](https://github.com/JetBrains/open-radiant)

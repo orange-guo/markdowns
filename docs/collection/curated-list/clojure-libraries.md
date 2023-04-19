@@ -1,9 +1,4 @@
----
-authors: [xiangcheng.kuo]
-tags: [clojure, curated-list]
----
-
-# Clojure相关技术列表
+# Clojure公共库
 
 <!--truncate-->
 
