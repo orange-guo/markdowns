@@ -106,3 +106,14 @@
   robust
   and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a simple
   extensible data model that allows for online analytic application.
+
+## Orchestration
+
+- [conductor](https://netflix.github.io/conductor/)
+  <br/>Conductor is a distributed, scalable, durable, and elastic orchestration engine. It is designed to handle
+  workflows and tasks in a microservices environment. Conductor is a Netflix open source project.
+- [airflow](https://airflow.apache.org/)
+  <br/>Airflow is a platform to programmatically author, schedule and monitor workflows.
+- [azkaban](https://azkaban.github.io/)
+  <br/>Azkaban is a batch workflow job scheduler created at LinkedIn. It is used to schedule Hadoop jobs and other
+  batch jobs. Azkaban is written in Java and uses a MySQL database to store metadata.
