@@ -114,6 +114,19 @@ implementation("org.yaml:snakeyaml:2.0")
 - [JDK-8277166](https://bugs.openjdk.org/browse/JDK-8277166)
 - [JDK-8277123](https://bugs.openjdk.org/browse/JDK-8277123)
 
+### 构建过程中出现`java.lang.Exception: https://github.com/AppImage/AppImageKit/releases/download/13/appimagetool-x86_64.AppImagenot found! ... Unsupported OS architecture x86_64?`
+
+这个问题的原因是在打包`linux`的`AppImage`时, 会去下载`appimagetool`来进行打包, 下载过程中可能会出现网络问题导致下载失败,
+从而导致打包失败.
+但是作者捕获相关异常后没有将原始信息打印出来, 导致我们无法知道具体的错误信息, 从而导致了上面的错误.
+(这个异常信息是伪信息)
+
+相关代码在`io.github.fvarrui.javapackager.packagers.GenerateAppImage`中的`getAppImageTool`方法中.<br/>
+
+#### 解决方案
+
+重试后问题解决.对于这个问题后续计划提PR给作者.
+
 ### `arch`配置不生效导致生成出的deb文件无法安装
 
 执行完`package`任务后, 会在`build`目录下生成相应的`deb`文件名称为`xxx.deb`.
@@ -162,4 +175,5 @@ Homepage: ${info.url}
 - [LinuxPackager.java](https://github.com/fvarrui/JavaPackager/blob/master/src/main/java/io/github/fvarrui/javapackager/packagers/LinuxPackager.java)
 - [GenerateDeb.java](https://github.com/fvarrui/JavaPackager/blob/master/src/main/java/io/github/fvarrui/javapackager/packagers/GenerateDeb.java)
 - [control.vtl](https://github.com/fvarrui/JavaPackager/blob/master/src/main/resources/linux/control.vtl)
+- [GenerateAppImage.java](https://github.com/fvarrui/JavaPackager/blob/master/src/main/java/io/github/fvarrui/javapackager/packagers/GenerateAppImage.java)
 
