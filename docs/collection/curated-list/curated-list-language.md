@@ -1,6 +1,8 @@
 # 语言列表
 
 - [cuelang](https://cuelang.org/)
+  <br/>Configure Unify Execute
+  <br/>Validate, define, and use dynamic and text-based data
 - [Jython](https://www.jython.org/)
   <br/>Python for the Java Platform
 - [elixir](https://elixir-lang.org/)
