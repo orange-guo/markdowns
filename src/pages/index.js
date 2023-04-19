@@ -18,7 +18,7 @@ function HomepageHeader() {
 					<p>This is the website from <strong><a href={githubUrl}>Xiangcheng Kuo.</a></strong></p>
 					<p>I'm a <strong>backend</strong> programmer.</p>
 				</p>
-				<div className={styles.buttons}>
+				{/*<div className={styles.buttons}>
 					<Link
 						className={clsx(
 							'button button--outline button--secondary button--lg',
@@ -28,7 +28,7 @@ function HomepageHeader() {
 						Get Started
 					</Link>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</div>
+				</div>*/}
 			</div>
 		</header>
 	);
