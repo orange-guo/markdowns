@@ -671,8 +671,8 @@ Nonetheless, we get hordes of users asking how they can circumvent 35 years of U
         </item>
         <item>
             <title><![CDATA[通过调用shell模块来解决旧版本ansible无法设置密码过期时间的问题]]></title>
-            <link>https://www.geek66.cyou/blog/2023/02/07/1676784543</link>
-            <guid>https://www.geek66.cyou/blog/2023/02/07/1676784543</guid>
+            <link>https://www.geek66.cyou/blog/2023/02/07/use-chage-command-to-set-password-never-expire</link>
+            <guid>https://www.geek66.cyou/blog/2023/02/07/use-chage-command-to-set-password-never-expire</guid>
             <pubDate>Tue, 07 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[最近线上发现了一个问题, 这个问题的原因是由于系统用户过期导致用户无法在web通过SSH/VNC连接集群, 下面将介绍这个问题的具体细节以及解决方案.]]></description>
             <content:encoded><![CDATA[<p>最近线上发现了一个问题, 这个问题的原因是由于系统用户过期导致用户无法在<code>web</code>通过<code>SSH/VNC</code>连接集群, 下面将介绍这个问题的具体细节以及解决方案.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="原因">原因<a href="#原因" class="hash-link" aria-label="Direct link to 原因" title="Direct link to 原因">​</a></h2><p>查看负责创建<code>SSH/VNC</code>的服务的日志发现该服务在使用对应节点上的系统用户进行<code>ssh</code>连接时报错, 错误提示<code>Auth fail</code>.<br>
