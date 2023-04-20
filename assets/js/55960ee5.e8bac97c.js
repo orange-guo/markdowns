@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4121],{8070:a=>{a.exports=JSON.parse('[{"label":"frontend","permalink":"/docs/tags/frontend","count":1},{"label":"curated-list","permalink":"/docs/tags/curated-list","count":3},{"label":"java","permalink":"/docs/tags/java","count":1},{"label":"python","permalink":"/docs/tags/python","count":1}]')}}]);

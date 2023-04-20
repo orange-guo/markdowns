@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3830],{2835:a=>{a.exports=JSON.parse('{"label":"elm","permalink":"/blog/tags/elm","allTagsPath":"/blog/tags","count":1}')}}]);

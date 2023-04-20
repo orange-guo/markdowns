@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7630],{1945:a=>{a.exports=JSON.parse('{"label":"java-packager","permalink":"/zh-CN/blog/tags/java-packager","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

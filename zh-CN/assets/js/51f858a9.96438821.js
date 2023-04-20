@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7751],{8570:a=>{a.exports=JSON.parse('{"label":"failover","permalink":"/zh-CN/blog/tags/failover","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);
