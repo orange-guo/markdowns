@@ -1,5 +1,25 @@
 # Principles
 
+## SOLID
+
+SOLID是面向对象编程(OOP)中的五个基本原则，它们分别是：
+
+- [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+- [Open–closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)
+- [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
+- [Interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
+- [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
+
+## Separation of concerns
+
+Separation of concerns(SoC)是指将一个系统分解为一些相互分离的部分，每个部分都有自己的职责，这些部分之间互不干扰，互不影响。
+
+- [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+
+## Law of Demeter
+
+Law of Demeter(Law of Least Knowledge)是指一个对象应该对其他对象有最少的了解，也就是说，一个对象应该对自己需要耦合或者调用的类知道得最少。
+
 ## Don't repeat yourself
 
 DRY原则是指在软件开发中，不要重复自己，也就是说，不要重复自己的代码，不要重复自己的思想，不要重复自己的工作。
