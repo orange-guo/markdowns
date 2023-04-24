@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3252],{95359:s=>{s.exports=JSON.parse('{"label":"fuse","permalink":"/zh-CN/blog/tags/fuse","allTagsPath":"/zh-CN/blog/tags","count":3}')}}]);

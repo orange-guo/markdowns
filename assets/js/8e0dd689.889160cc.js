@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7056],{73688:a=>{a.exports=JSON.parse('{"label":"apt","permalink":"/blog/tags/apt","allTagsPath":"/blog/tags","count":1}')}}]);

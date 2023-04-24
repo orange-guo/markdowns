@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2773],{17268:s=>{s.exports=JSON.parse('{"label":"coroutines","permalink":"/zh-CN/blog/tags/coroutines","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);
