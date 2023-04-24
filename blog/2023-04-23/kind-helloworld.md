@@ -82,6 +82,8 @@ kubectl patch service -n kong kong-proxy -p '{"spec":{"type":"NodePort"}}'
 
 ## 启动测试应用
 
+创建如下文件用于后续执行`kubectl apply`命令
+
 ```yaml title="usage.yml"
 kind: Pod
 apiVersion: v1
