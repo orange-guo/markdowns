@@ -5,10 +5,10 @@ tags: [ kind, k8s, docker ]
 
 # 使用kind创建一个k8s集群
 
-kind是一个用于创建`k8s`集群的工具, 它使用`docker`容器作为节点, 可以快速创建一个`k8s`集群, 用于测试或者开发.<br/>
-官方提供了相应的文档[Ingress](https://kind.sigs.k8s.io/docs/user/ingress/).<br/>
-在使用该文档的时候出现了一些问题, 本文基于官方文档并作出了一定的修改介绍如何使用`kind`创建一个`k8s`集群,
-并在集群中部署`kong-ingress`.<br/>
+kind是一个用于创建`k8s`集群的工具, 它使用`docker`容器作为节点, 可以快速创建一个`k8s`集群,
+用于测试或者开发.<br/>
+官方提供了相应的文档[Ingress](https://kind.sigs.k8s.io/docs/user/ingress/), 在使用该文档的时候出现了一些问题.<br/>
+本文基于官方文档并作出了一定的修改介绍如何使用`kind`创建一个`k8s`集群, 并在集群中部署`kong-ingress`.最后部署一个测试应用并通过`kong-ingress`访问该应用.
 
 <!--truncate-->
 
