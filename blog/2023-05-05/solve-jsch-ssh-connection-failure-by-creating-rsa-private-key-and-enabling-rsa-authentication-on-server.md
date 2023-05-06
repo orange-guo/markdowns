@@ -78,3 +78,5 @@ sudo systemctl restart sshd
 - [support for openssh default key format in jsch fork](https://www.matez.de/index.php/2020/10/16/support-for-openssh-default-key-format-in-jsch-fork/#:~:text=If%20you%20are%20a%20user,them%20to%20old%20pem%20format.&text=Please%20upgrade%20to%20version%200.1,and%20give%20it%20a%20try.)
 - [SSH server gives "userauth_pubkey: key type ssh-rsa not in PubkeyAcceptedAlgorithms [preauth]" when connecting with Putty](https://unix.stackexchange.com/questions/721606/ssh-server-gives-userauth-pubkey-key-type-ssh-rsa-not-in-pubkeyacceptedalgorit)
 - [第三方基于jsch fork出来的库](https://github.com/mwiede/jsch)
+- [Openssh Private Key to RSA Private Key](https://stackoverflow.com/questions/54994641/openssh-private-key-to-rsa-private-key)
+- [SSH keys](https://wiki.archlinux.org/title/SSH_keys)
