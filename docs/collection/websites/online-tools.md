@@ -10,6 +10,7 @@
 - [crontab时间计算](https://tool.lu/crontab/)
 - [crontab guru](https://crontab.guru/)
 - [随机密码生成器 - 随机字符串生成器](http://tool.c7sky.com/password/)
+- [Chat with PDF](https://www.hipdf.com/chat-with-pdf)
 
 ## 前端
 
@@ -21,6 +22,8 @@
 - [CodePen](https://codepen.io/)
   <br/>CodePen is a social development environment for front-end designers and developers. Build and deploy a website,
   show off your work, build test cases to learn and debug, and find inspiration.
+- [Mozilla Developer Network](https://developer.mozilla.org/)
+  <br/>The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs
 
 ## 其他
 
