@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[649],{10750:t=>{t.exports=JSON.parse('{"label":"python","permalink":"/docs/tags/python","allTagsPath":"/docs/tags","count":1,"items":[{"id":"collection/python-library-list","title":"Python\u516c\u5171\u5e93","description":"- awesome-python","permalink":"/docs/collection/python-library-list"}]}')}}]);
