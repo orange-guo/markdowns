@@ -8,6 +8,21 @@
     <subtitle>Xiangcheng Kuo Blog</subtitle>
     <icon>https://www.geek66.cyou/zh-CN/https://github.com/orange-guo.png</icon>
     <entry>
+        <title type="html"><![CDATA[解决无法输入中文字符到vscode]]></title>
+        <id>https://www.geek66.cyou/zh-CN/blog/2023/05/15/solve-unable-to-input-chinese-character-into-vscode</id>
+        <link href="https://www.geek66.cyou/zh-CN/blog/2023/05/15/solve-unable-to-input-chinese-character-into-vscode"/>
+        <updated>2023-05-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[当通过snap安装vscode后，无法输入中文字符，解决方案是在官网下载deb包安装，这样就可以输入中文字符了.]]></summary>
+        <content type="html"><![CDATA[<p>当通过<code>snap</code>安装<code>vscode</code>后，无法输入中文字符，解决方案是在<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">官网</a>下载<code>deb</code>包安装，这样就可以输入中文字符了.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="#参考资料" class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接">​</a></h2><ul><li><a href="https://github.com/microsoft/vscode/issues/96041" target="_blank" rel="noopener noreferrer">unable to input chinese character</a></li></ul>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="vscode" term="vscode"/>
+        <category label="snap" term="snap"/>
+        <category label="deb" term="deb"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[通过关闭OpenEntityManagerInViewInterceptor确保当下游服务响应缓慢时不会导致数据库连接被占用完]]></title>
         <id>https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview</id>
         <link href="https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview"/>

@@ -9,6 +9,17 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <item>
+            <title><![CDATA[解决无法输入中文字符到vscode]]></title>
+            <link>https://www.geek66.cyou/zh-CN/blog/2023/05/15/solve-unable-to-input-chinese-character-into-vscode</link>
+            <guid>https://www.geek66.cyou/zh-CN/blog/2023/05/15/solve-unable-to-input-chinese-character-into-vscode</guid>
+            <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[当通过snap安装vscode后，无法输入中文字符，解决方案是在官网下载deb包安装，这样就可以输入中文字符了.]]></description>
+            <content:encoded><![CDATA[<p>当通过<code>snap</code>安装<code>vscode</code>后，无法输入中文字符，解决方案是在<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">官网</a>下载<code>deb</code>包安装，这样就可以输入中文字符了.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="#参考资料" class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接">​</a></h2><ul><li><a href="https://github.com/microsoft/vscode/issues/96041" target="_blank" rel="noopener noreferrer">unable to input chinese character</a></li></ul>]]></content:encoded>
+            <category>vscode</category>
+            <category>snap</category>
+            <category>deb</category>
+        </item>
+        <item>
             <title><![CDATA[通过关闭OpenEntityManagerInViewInterceptor确保当下游服务响应缓慢时不会导致数据库连接被占用完]]></title>
             <link>https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview</link>
             <guid>https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview</guid>
