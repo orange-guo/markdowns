@@ -4,10 +4,33 @@
         <title>Xiangcheng Kuo Blog</title>
         <link>https://www.geek66.cyou/zh-CN/blog</link>
         <description>Xiangcheng Kuo Blog</description>
-        <lastBuildDate>Fri, 05 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
+        <item>
+            <title><![CDATA[通过关闭OpenEntityManagerInViewInterceptor确保当下游服务响应缓慢时不会导致数据库连接被占用完]]></title>
+            <link>https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview</link>
+            <guid>https://www.geek66.cyou/zh-CN/blog/2023/05/15/to-ensure-that-database-connections-are-not-exhausted-when-downstream-services-respond-slowly-by-closing-open-session-inview</guid>
+            <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[OpenEntityManagerInViewInterceptor是spring中的一个拦截器，它的作用是在整个请求上下文复用同一个EntityManager]]></description>
+            <content:encoded><![CDATA[<p><code>OpenEntityManagerInViewInterceptor</code>是<code>spring</code>中的一个拦截器，它的作用是在整个请求上下文复用同一个<code>EntityManager</code>
+，从而避免在一个请求中多次创建一个<code>EntityManager</code>, 从而提高性能.<br>
+但是如果在一个请求的处理代码中请求了下游服务，而下游服务响应缓慢，那么在下游服务响应之前，<code>EntityManager</code>
+会一直被占用，直到整个请求处理完成，这样会导致当服务并发请求量较大时，数据库连接被占用完.<br>
+为了避免这种情况，可以通过关闭<code>OpenEntityManagerInViewInterceptor</code>来确保当下游服务响应缓慢时不会导致数据库连接被占用完.
+下面将介绍如何关闭<code>OpenEntityManagerInViewInterceptor</code>.<br></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案">解决方案<a href="#解决方案" class="hash-link" aria-label="解决方案的直接链接" title="解决方案的直接链接">​</a></h2><p>在<code>spring-boot</code>中，可以通过配置<code>spring.jpa.open-in-view</code>为<code>false</code>来关闭<code>OpenEntityManagerInViewInterceptor</code>，示例如下</p><div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">application.yml</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">spring</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">jpa</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">open-in-view</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean important" style="color:#36acaa">false</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="备注">备注<a href="#备注" class="hash-link" aria-label="备注的直接链接" title="备注的直接链接">​</a></h2><ul><li><p><code>org.springframework.orm.hibernate5.support.OpenSessionInViewInterceptor</code>在请求开始时会创建一个<code>EntityManager</code>
+并调用<code>org.springframework.transaction.support.TransactionSynchronizationManager.bindResource</code>
+方法来绑定<code>EntityManager</code>到当前线程</p></li><li><p>后续框架内部的调用例如<code>Repository.findAll()</code>的大致调用链路如下</p><ul><li>Repository.findAll()</li><li>org.springframework.orm.jpa.SharedEntityManagerCreator.SharedEntityManagerInvocationHandler.invoke</li><li>org.springframework.orm.jpa.EntityManagerFactoryUtils.doGetTransactionalEntityManager</li><li>org.springframework.transaction.support.TransactionSynchronizationManager.getResource<br>因为在请求开始时已经将`EntityManager`绑定到当前线程，所以这里会获取到之前创建的`EntityManager`</li></ul></li><li><p>后续执行<code>query</code>时会从<code>DataSource</code>中获取一个数据库连接，然后执行查询，查询完成后，数据库连接不会立即关闭，
+而是在<code>EntityManager</code>被关闭时关闭，而<code>EntityManager</code>会在<code>OpenEntityManagerInViewInterceptor</code>被关闭时关闭.</p></li></ul><p>综上所述，当<code>OpenEntityManagerInViewInterceptor</code>被关闭时，<code>EntityManager</code>会被关闭，而<code>EntityManager</code>
+被关闭时其对应的数据库连接也会被关闭.<br>
+<code>EntityManager</code>被创建出来时不会立即创建数据库连接，而是在执行<code>sql</code>时才会创建数据库连接.<br>
+如果整个请求链路非常耗时，那么在整个请求链路中，<code>EntityManager</code>对应的数据库连接都会被占用，直到整个请求链路执行完成.<br>
+如果同时有多个请求正在执行, 那么会导致数据库连接被占用完. 从而导致后续请求无法获取数据库连接.<br>
+为了避免这种情况，可以通过关闭<code>OpenEntityManagerInViewInterceptor</code>来确保当下游服务响应缓慢时不会导致数据库连接被占用完.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="#参考资料" class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接">​</a></h2><ul><li><a href="https://stackoverflow.com/questions/71140137/when-does-jpa-return-connection-to-db-pool" target="_blank" rel="noopener noreferrer">When does JPA return connection to db pool</a></li><li><a href="https://www.baeldung.com/spring-open-session-in-view" target="_blank" rel="noopener noreferrer">A Guide to Spring’s Open Session in View</a></li></ul>]]></content:encoded>
+            <category>spring-boot</category>
+            <category>spring-data-jpa</category>
+        </item>
         <item>
             <title><![CDATA[通过创建rsa格式的私钥以及服务端启用rsa认证解决jsch连接ssh失败的问题]]></title>
             <link>https://www.geek66.cyou/zh-CN/blog/2023/05/05/solve-jsch-ssh-connection-failure-by-creating-rsa-private-key-and-enabling-rsa-authentication-on-server</link>
