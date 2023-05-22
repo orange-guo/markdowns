@@ -1,6 +1,6 @@
 ---
 authors: [ xiangcheng.kuo ]
-tags: [ binary-build, java-packager, gradle-plugin ]
+tags: [ binary-build, java-packager, gradle-plugin, github-pr ]
 ---
 
 # 使用Gradle的JavaPackager插件将Java应用打包成二进制文件
@@ -167,6 +167,12 @@ Homepage: ${info.url}
 #### 解决方案
 
 目前没有一个好的办法解决此问题, 后续准备在`JavaPackager`插件中提一个`PR`来解决此问题.
+
+:::note
+2023-05-22<br/>
+相关pr已提交, 链接如下<br/>
+[fix(gradle-default-package-task): Set arch field for deb control file rendering #331](https://github.com/fvarrui/JavaPackager/pull/331)
+:::
 
 ## 备注
 

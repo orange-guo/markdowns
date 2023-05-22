@@ -1,6 +1,6 @@
 ---
 authors: [ xiangcheng.kuo ]
-tags: [ kind, k8s, docker ]
+tags: [ kind, k8s, docker, github-pr ]
 ---
 
 # 使用kind创建一个k8s集群
