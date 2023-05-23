@@ -497,6 +497,7 @@ SecurityContextRepository默认实现也变了<br>
         <category label="problem-solving" term="problem-solving"/>
         <category label="spring-boot" term="spring-boot"/>
         <category label="spring" term="spring"/>
+        <category label="github-pr" term="github-pr"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[脚本中实现修改用户密码]]></title>

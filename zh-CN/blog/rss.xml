@@ -410,6 +410,7 @@ SecurityContextRepository默认实现也变了<br>
             <category>problem-solving</category>
             <category>spring-boot</category>
             <category>spring</category>
+            <category>github-pr</category>
         </item>
         <item>
             <title><![CDATA[脚本中实现修改用户密码]]></title>
