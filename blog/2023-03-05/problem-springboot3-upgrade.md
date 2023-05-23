@@ -1,6 +1,6 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [problem-solving, spring-boot, spring, ]
+tags: [problem-solving, spring-boot, spring, github-pr]
 ---
 
 # 升级`springboot3`遇到的问题
