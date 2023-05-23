@@ -83,6 +83,12 @@ configure<PackagePluginExtension>() {
 
 解决方案就是在上面的配置中添加`packagingJdk`的配置`packagingJdk(file(System.getProperty("java.home")))`.
 
+:::note
+2023-05-23<br/>
+相关pr已提交, 链接如下<br/>
+[fix(gradle-default-package-task): Set default packagingJdk for bundle-jre #332](https://github.com/fvarrui/JavaPackager/pull/332).
+:::
+
 ### `jdeps`命令执行失败报错`Module xxx not found, required by xxx`
 
 在我的`case`中报错为:
