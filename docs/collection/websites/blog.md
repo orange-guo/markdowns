@@ -11,6 +11,7 @@
 - [patrickmn](https://patrickmn.com/)
 - [linuxize](https://linuxize.com/)
 - [Luke](https://broch.tech/)
+- [Vlad Mihalcea](https://vladmihalcea.com/)
 - [美团技术团队](https://tech.meituan.com/)
 - [Thoughtworks洞见](https://insights.thoughtworks.cn/)
 - [小米信息部技术团队](https://xiaomi-info.github.io/)
