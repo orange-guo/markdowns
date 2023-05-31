@@ -112,11 +112,24 @@
 - [conductor](https://netflix.github.io/conductor/)
   <br/>Conductor is a distributed, scalable, durable, and elastic orchestration engine. It is designed to handle
   workflows and tasks in a microservices environment. Conductor is a Netflix open source project.
-- [airflow](https://airflow.apache.org/)
-  <br/>Airflow is a platform to programmatically author, schedule and monitor workflows.
+
 - [azkaban](https://azkaban.github.io/)
   <br/>Azkaban is a batch workflow job scheduler created at LinkedIn. It is used to schedule Hadoop jobs and other
   batch jobs. Azkaban is written in Java and uses a MySQL database to store metadata.
 - [cadence](https://cadenceworkflow.io/)
   <br/>Cadence is a distributed, scalable, durable, and highly available orchestration engine to execute asynchronous
   long-running business logic in a scalable and resilient way. Cadence is a Uber open source project.
+
+## Data processing
+
+- [Spring Cloud Data Flow](https://spring.io/projects/spring-cloud-dataflow/)
+  <br/>Microservice based Streaming and Batch data processing for Cloud Foundry and Kubernetes.
+  <br/>Spring Cloud Data Flow provides tools to create complex topologies for streaming and batch data pipelines. The
+  data
+  <br/>pipelines consist of Spring Boot apps, built using the Spring Cloud Stream or Spring Cloud Task microservice
+  frameworks.
+  <br/>Spring Cloud Data Flow supports a range of data processing use cases, from ETL to import/export, event streaming,
+  and
+  predictive analytics.
+- [Apache Airflow](https://airflow.apache.org/)
+  <br/>Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.
