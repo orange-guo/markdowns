@@ -1,6 +1,6 @@
 ---
 authors: [xiangcheng.kuo]
-tags: [problem-solving, spring-boot, spring, binary-build ]
+tags: [problem-solving, spring-boot, spring, native-image ]
 ---
 
 # 使用`spring`构建`native`遇到的问题

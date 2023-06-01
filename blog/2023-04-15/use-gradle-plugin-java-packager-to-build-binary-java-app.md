@@ -1,6 +1,6 @@
 ---
 authors: [ xiangcheng.kuo ]
-tags: [ binary-build, java-packager, gradle-plugin, github-pr ]
+tags: [ native-image, java-packager, gradle-plugin, github-pr ]
 ---
 
 # 使用Gradle的JavaPackager插件将Java应用打包成二进制文件
