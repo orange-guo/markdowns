@@ -133,6 +133,12 @@ implementation("org.yaml:snakeyaml:2.0")
 
 重试后问题解决.对于这个问题后续计划提PR给作者.
 
+:::note
+2023-06-10<br/>
+相关pr已提交, 链接如下<br/>
+[improvement: Improve the error message when downloading the AppImageTool fails #337](https://github.com/fvarrui/JavaPackager/pull/337)
+:::
+
 ### `arch`配置不生效导致生成出的deb文件无法安装
 
 执行完`package`任务后, 会在`build`目录下生成相应的`deb`文件名称为`xxx.deb`.
