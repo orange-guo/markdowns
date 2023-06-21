@@ -1,56 +1,29 @@
-# 微服务解决方案列表
+# Technical Architecture Solution
+
+## Service discovery
 
 - [consul](https://www.consul.io/)
+  <br/>Consul is a service networking solution to connect and secure services across any runtime platform and public or
+  private cloud
+- [nacos](https://nacos.io/)
+  <br/>An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native
+  applications
+
+## Configuration management
+
+- [consul](https://www.consul.io/)
+  <br/>Consul is a service networking solution to connect and secure services across any runtime platform and public or
+  private cloud
+- [nacos](https://nacos.io/)
+  <br/>An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native
+  applications(
+- [apollo](https://www.apolloconfig.com/)
+  <br/>Apollo is a reliable configuration management system suitable for microservice configuration management
+  scenarios.
 - [etcd](https://etcd.io/)
-  <br/>A distributed, reliable key-value store for the most critical data of a distributed system
+  <br/>A distributed, reliable key-value store for the most critical data of a distributed
 
-## Monitoring
-
-- [prometheus](https://prometheus.io/)
-  <br/>Prometheus is a systems and service monitoring system. It collects metrics from configured targets at given
-  intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to
-  be true.
-- [grafana](https://grafana.com/)
-  <br/>Grafana is the open source analytics & monitoring solution for every database
-
-## Distributed tracing
-
-- [zipkin](https://zipkin.io/)
-  <br/>Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in
-  microservice architectures. Features include both the collection and lookup of this data.
-- [skywalking](https://skywalking.apache.org/)
-  <br/>Apache SkyWalking, an APM(application performance monitor) system, especially designed for microservices,
-  cloud native and container-based (Docker, K8s, Mesos) architectures.
-- [OpenTelemetry](https://opentelemetry.io/)
-  <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
-  telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
-
-- [jaeger](https://www.jaegertracing.io/)
-  <br/>Jaeger, a CNCF graduated project, is a distributed tracing system released as open source by Uber Technologies.
-  It is used for monitoring and troubleshooting microservices-based distributed systems, including:
-	- Distributed context propagation
-	- Distributed transaction monitoring
-	- Root cause analysis
-	- Service dependency analysis
-	- Performance / latency optimization
-	- OpenTracing compatible data model
-	- Multiple storage backends: Badger, Cassandra, Elasticsearch, Memory.
-
-## RPC
-
-- [grpc](https://grpc.io/)
-  <br/>gRPC is a modern open source high performance RPC framework that can run in any environment. It can efficiently
-  connect services in and across data centers with pluggable support for load balancing, tracing, health checking and
-  authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications
-  and browsers to backend services.
-- [thrift](https://thrift.apache.org/)
-  <br/>Thrift is a software framework for scalable cross-language services development. It combines a software stack
-  with a code generation engine to build services that work efficiently and seamlessly between C++, Java, Python,
-  PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and other languages.
-- [dubbo](http://dubbo.apache.org/)
-  <br/>Apache Dubbo™ is a high-performance, java based open source RPC framework.
-
-## Message Queue
+## Message broker
 
 - [rabbitmq](https://www.rabbitmq.com/)
   <br/>RabbitMQ is the most widely deployed open source message broker. It is lightweight and easy to deploy on premises
@@ -67,6 +40,85 @@
 - [nats](https://nats.io/)
   <br/>NATS is a simple, secure and high performance open source messaging system for cloud native applications,
   IoT messaging, and microservices architectures.
+
+## API Gateway
+
+- [Nginx](https://www.nginx.com/)
+  <br/>Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
+- [Traefik](https://traefik.io/)
+  <br/>Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+- [Kong](https://konghq.com/)
+  <br/>Kong is a cloud-native, fast, scalable, and distributed Microservice Abstraction Layer (also known as an API
+  Gateway, API Middleware or in some cases Service Mesh). Made available as an open-source project in 2015, its core
+  values are high performance and extensibility.
+- [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+  <br/>Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting
+  concerns to them such as: security, monitoring/metrics, and resiliency.
+
+## Monitoring
+
+- [prometheus](https://prometheus.io/)
+  <br/>Prometheus is a systems and service monitoring system. It collects metrics from configured targets at given
+  intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to
+  be true.
+- [grafana](https://grafana.com/)
+  <br/>Grafana is the open source analytics & monitoring solution for every database
+
+## Distributed tracing
+
+- [OpenTelemetry](https://opentelemetry.io/)
+  <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
+  telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+- [zipkin](https://zipkin.io/)
+  <br/>Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in
+  microservice architectures. Features include both the collection and lookup of this data.
+- [skywalking](https://skywalking.apache.org/)
+  <br/>Apache SkyWalking, an APM(application performance monitor) system, especially designed for microservices,
+  cloud native and container-based (Docker, K8s, Mesos) architectures.
+- [jaeger](https://www.jaegertracing.io/)
+  <br/>Jaeger, a CNCF graduated project, is a distributed tracing system released as open source by Uber Technologies.
+  It is used for monitoring and troubleshooting microservices-based distributed systems, including:
+  - Distributed context propagation
+  - Distributed transaction monitoring
+  - Root cause analysis
+  - Service dependency analysis
+  - Performance / latency optimization
+  - OpenTracing compatible data model
+  - Multiple storage backends: Badger, Cassandra, Elasticsearch, Memory.
+
+## Rpc
+
+- [grpc](https://grpc.io/)
+  <br/>gRPC is a modern open source high performance RPC framework that can run in any environment. It can efficiently
+  connect services in and across data centers with pluggable support for load balancing, tracing, health checking and
+  authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications
+  and browsers to backend services.
+- [thrift](https://thrift.apache.org/)
+  <br/>Thrift is a software framework for scalable cross-language services development. It combines a software stack
+  with a code generation engine to build services that work efficiently and seamlessly between C++, Java, Python,
+  PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and other languages.
+- [dubbo](http://dubbo.apache.org/)
+  <br/>Apache Dubbo™ is a high-performance, java based open source RPC framework.
+
+## Identity Provider
+
+- [keycloak](https://www.keycloak.org/)
+  <br/>Open Source Identity and Access Management For Modern Applications and Service
+- [FreeIPA](https://www.freeipa.org/)
+  <br/>FreeIPA is an integrated Identity and Authentication solution for Linux/UNIX networked environments. A FreeIPA
+  server provides centralized authentication, authorization and account information by storing data about user,
+  groups, hosts and other objects necessary to manage the security aspects of a network of computers.
+- [okta](https://www.okta.com/)
+  <br/>Okta is the leading independent provider of identity for the enterprise. The Okta Identity Cloud enables
+- [Authelia](https://www.authelia.com/)
+  <br/>Authelia is an open-source authentication and authorization server and portal fulfilling the identity and access
+  management (IAM) role of information security in providing multi-factor authentication and single sign-on (SSO) for
+  your applications via a web portal. It acts as a companion for common reverse proxies.
+
+## Database
+
+- [rocksdb](https://rocksdb.org/)
+  <br/>A persistent key-value store for fast storage environments
 
 ## Stream Processing
 

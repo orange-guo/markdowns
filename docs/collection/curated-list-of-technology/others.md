@@ -14,11 +14,6 @@
   cloud, every Kubernetes distribution, the private cloud and the edge. MinIO
   is software-defined and is 100% open source under GNU AGPL v3.
 
-## DB
-- [rocksdb](https://rocksdb.org/)
-  <br/>A persistent key-value store for fast storage environments
-
-
 ## build
 
 - [paketo](https://paketo.io/)
@@ -35,10 +30,6 @@
 
 - [casbin](https://casbin.org/)
   <br/>An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
-- [authelia](https://www.authelia.com/)
-  <br/>The Single Sign-On Multi-Factor portal for web apps
-- [keycloak](https://www.keycloak.org/)
-  <br/>Open Source Identity and Access Management For Modern Applications and Services
 
 ## Others
 - [rsocket](https://rsocket.io/)
