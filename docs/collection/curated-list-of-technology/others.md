@@ -32,8 +32,7 @@
   <br/>An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
 
 ## Others
-- [rsocket](https://rsocket.io/)
-  <br/>Application protocol providing Reactive Streams semantics
+
 - [open-radiant](https://github.com/JetBrains/open-radiant)
   <br/>JetBrains Branded Art Generator
 - [skill-map](https://github.com/TeamStuQ/skill-map)

@@ -1,4 +1,4 @@
-# Technical Architecture Solution
+# Distributed System Middleware
 
 ## Service discovery
 
@@ -66,9 +66,6 @@
 
 ## Distributed tracing
 
-- [OpenTelemetry](https://opentelemetry.io/)
-  <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
-  telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 - [zipkin](https://zipkin.io/)
   <br/>Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in
   microservice architectures. Features include both the collection and lookup of this data.

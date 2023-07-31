@@ -89,13 +89,38 @@ tags: [java, curated-list]
 - [sshj](https://github.com/hierynomus/sshj)
   <br/>ssh, scp and sftp for java.
 
-
 ## AOT
 
 - [graalvm](https://www.graalvm.org/)
   <br/>GraalVM is a high-performance, polyglot virtual machine for running applications written in JavaScript, Python,
   Ruby, R, JVM-based languages like Java, Scala, Kotlin, and LLVM-based languages such as C and C++.
 
+## Observation
+
+- [micrometer](https://micrometer.io/)
+  <br/>Micrometer provides a simple facade over the instrumentation clients for the most popular monitoring systems,
+  allowing you to instrument your JVM-based application code without vendor lock-in. Think SLF4J, but for metrics.
+- [OpenTelemetry](https://opentelemetry.io/)
+  <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
+  telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+
+## Reactive
+
+- [reactor](https://projectreactor.io/)
+  <br/>Reactor is a fourth-generation reactive library, based on the Reactive Streams
+  specification, for building non-blocking applications on the JVM.
+- [rsocket](https://rsocket.io/)
+  <br/>Application protocol providing Reactive Streams semantics.
+- [r2dbc](https://r2dbc.io/)
+  <br/>The Reactive Relational Database Connectivity (R2DBC) project brings reactive programming APIs to relational databases.
+
+
+## Data access
+
+- [jOOQ](https://www.jooq.org/)
+  <br/>jOOQ generates Java code from your database and lets you build type safe SQL queries through its fluent API.
+
 ## 参考
+
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
