@@ -1,10 +1,13 @@
 # "Simple Made Easy" - Rich Hickey (2011)
 
 > 此文章为`Rich Hickey`在2011年`Strange Loop`大会上的演讲的演讲的笔记, 主要讲述了`Simple`和`Easy`的区别，以及如何在软件开发中做到`Simple`.<br/>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LKtk3HCgTa8" title="YouTube video player"
 		frameborder="0"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		allowfullscreen></iframe>
+
+> Simplicity is prerequisite for reliability. - Edsger W. Dijkstra<br/>简单是可靠的前提. - Edsger W. Dijkstra
 
 ## Simple And Easy
 
@@ -44,7 +47,7 @@
 复杂性有以下几种表现形式:
 
 - `混乱(conjoined)`
-  <br/>定义: 多个不相关或不必要的事物在一起, 使它们难以分开或区分.
+<br/>定义: 多个不相关或不必要的事物在一起, 使它们难以分开或区分.
   <br/>案例: 订单(Order)的`创建`、`支付`、`发货`、`评价`等功能都放在一个类或一个方法里，就会造成混乱的复杂性.
 
 ```java
@@ -62,7 +65,7 @@ public class OrderService {
 ```
 
 - `缠绕(entangled）`
-  <br/>定义: 多个相关或必要的事物彼此交织或依赖, 使它们难以独立或修改.
+<br/>定义: 多个相关或必要的事物彼此交织或依赖, 使它们难以独立或修改.
   <br/>案例: 用户(Use)的`基本信息`, `权限`, `角色`, `积分`等属性和行为都耦合在一起，就会造成缠绕的复杂性.
 
 ```java
@@ -128,7 +131,7 @@ public class User {
 ```
 
 - `重叠(overlapping)`
-  <br/>定义: 多个相似或重复的事物存在于同一个范围或层次，使它们难以区分或管理.
+<br/>定义: 多个相似或重复的事物存在于同一个范围或层次，使它们难以区分或管理.
   <br/>案例: 商品(Product)的名称, 价格, 库存, 描述, 图片, 分类, 标签等属性和方法都定义在同一个类或同一个层次上，就会造成重叠的复杂性.
 
 ```java
@@ -176,7 +179,7 @@ public class Product {
 ```
 
 - `模糊(ambiguous)`
-  <br/>定义：多个不明确或不确定的事物表达或使用，使它们难以理解或预测.
+<br/>定义：多个不明确或不确定的事物表达或使用，使它们难以理解或预测.
   <br/>案例: 一个日期(Date)的格式、时区、语言等参数都没有明确指定或使用默认值，就会造成模糊的复杂性.
 
 ```java
@@ -194,7 +197,7 @@ public class Date {
 ```
 
 - `隐晦(opaque)`
-  <br/>定义: 多个难以观察或检测的事物隐藏或封装，使它们难以测试或调试.
+<br/>定义: 多个难以观察或检测的事物隐藏或封装，使它们难以测试或调试.
   <br/>案例: 一个算法(Algorithm)的实现细节、输入输出、错误处理等都隐藏在一个黑盒（Black Box）里，就会造成隐晦的复杂性.
 
 ```java
@@ -208,7 +211,7 @@ public class Algorithm {
 ```
 
 - `变化(variable)`
-  <br/>定义: 多个易变或不稳定的事物引入或依赖，使它们难以控制或适应.
+<br/>定义: 多个易变或不稳定的事物引入或依赖，使它们难以控制或适应.
   <br/>案例: `org.springframework.web.context.request.RequestContextHolder`.
   <br/>这个类的实现方式是基于`ThreadLocal`的, 而`ThreadLocal`是一个线程级别的变量，它的值只能在当前线程中共享，所以它的值是不稳定的，这就会造成变化的复杂性.
 
