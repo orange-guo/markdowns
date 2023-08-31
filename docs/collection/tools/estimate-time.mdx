@@ -33,6 +33,7 @@ export const TimeEstimate = [
 					]
 				]
 			],
+			["job"]
 		],
 		[
 			"Node",
@@ -60,7 +61,8 @@ export const TimeEstimate = [
 						["[sirius][node][api]节点列表api实现", 0.5]
 					]
 				]
-			]
+			],
+			["node"]
 		],
 		[
 			"Quota",
@@ -87,7 +89,8 @@ export const TimeEstimate = [
 						["[sirius][quota][api]配额列表接口实现", 0.5]
 					]
 				]
-			]
+			],
+			["quota"]
 		],
 		[
 			"User",
@@ -120,7 +123,8 @@ export const TimeEstimate = [
 						["[sirius][user][api]用户列表接口实现", 0.5]
 					]
 				]
-			]
+			],
+			["user"]
 		],
 		[
 			"daemon-set(内部)",
@@ -139,7 +143,8 @@ export const TimeEstimate = [
 						["[sirius][pod][api]创建接口支持将容器原始port映射到宿主机的实现", 0.5]
 					]
 				]
-			]
+			],
+			["daemon-set"]
 		],
 		[
 			"cli",
@@ -211,34 +216,38 @@ export const TimeEstimate = [
 						["[sirius][cli][daemon-set]detail", 0.5]
 					]
 				]
-			]
+			],
+			["cli"]
 		]
-	]
+	],
+	["sirius"]
 ];
 
 
-export function PrintModule({module: [Name, Features]}) {
+export function PrintModule({Module: [Name, Features, Metadata], MoreMetadata}) {
+	Metadata = Metadata || []
 	return (
 		<div>
 			<h2>{Name}</h2>
-			{Features.map(feature => <PrintFeature feature={feature}></PrintFeature>)}
+			{Features.map(Feature => <PrintFeature Feature={Feature} MoreMetadata={[...MoreMetadata, ...Metadata]}></PrintFeature>)}
 			<hr></hr>
 		</div>
 	)
 }
 
-export function PrintFeature({feature: [Name, Tasks]}) {
+export function PrintFeature({Feature: [Name, Tasks, Metadata], MoreMetadata}) {
+	Metadata = Metadata || []
 	let totalManDays = Tasks.map(([_, ManDays]) => ManDays).reduce((x, y) => x + y)
 	return (
 		<div>
 			<h4>{Name} (Total-Man-Days {totalManDays})</h4>
-			{Tasks.map(task => <PrintTask task={task}></PrintTask>)}
+			{Tasks.map(Task => <PrintTask Task={Task} MoreMetadata={[...MoreMetadata, ...Metadata]}></PrintTask>)}
 			<br></br>
 		</div>
 	)
 }
 
-export function PrintTask({task: [Name, ManDays]}) {
+export function PrintTask({Task: [Name, ManDays], MoreMetadata}) {
 	return (
 		<div>
 			<li>[{ManDays}]{Name}</li>
@@ -248,9 +257,10 @@ export function PrintTask({task: [Name, ManDays]}) {
 
 
 export function PrintTimeEstimate({TimeEstimate: [Modules, Metadata]}) {
+	Metadata = Metadata || []
 	return (
 		<div>
-			{Modules.map(module => <PrintModule module={module}></PrintModule>)}
+			{Modules.map(Module => <PrintModule Module={Module} MoreMetadata={Metadata}></PrintModule>)}
 		</div>
 	);
 }
