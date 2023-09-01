@@ -518,16 +518,30 @@ export function merge(a, b) {
 export function App() {
 	const [inputValue, setInputValue] = useState('');
 	const [project, setProject] = useState(null)
-	const handleChange = (event) => {
+	const handleInputChange = (event) => {
 		setInputValue(event.target.value);
 	};
 	return (
 		<div>
 			<h1>Time Estimate Tools</h1>
-			<input value={inputValue} onChange={handleChange} placeholder="Write Your json"></input>
-			<button onClick={e => setProject(JSON.parse(inputValue))}>submit
+			<div>
+				<input style={{
+					display: 'inline-block',
+					left: 0,
+					width: '100%',
+					height: '400px'
+				}} value={inputValue} onChange={handleInputChange}
+					   placeholder="Write Your Time Estimate"></input>
+			</div>
+			<button onClick={function (e) {
+				try {
+					setProject(JSON.parse(inputValue))
+				} catch (e) {
+					alert("invalid json")
+				}
+			}}>Submit Your Time Estimate
 			</button>
-			{(project != null) ? <PrintProject Project={project}></PrintProject> : <div>loading...</div>}
+			{(project != null) ? <PrintProject Project={project}></PrintProject> : <div>Empty Time Estimate</div>}
 		</div>
 	)
 }
