@@ -20,9 +20,10 @@ export function PrintIssue({Issue: {Issue, ManDays, Proj, Feat, Mod}}) {
 }
 
 export function PrintMod({Mod}) {
+	let totalManDays = Mod.Feats.flatMap(Feat => Feat.Issues).map(Issue => Issue.ManDays).reduce((x, y) => x + y)
 	return (
 		<div>
-			<h2>Module: {Mod.Mod}</h2>
+			<h2>Module: {Mod.Mod} ({totalManDays} Man-Days)</h2>
 			{Mod.Feats.map(Feat => <PrintFeat Feat={merge(Mod, Feat)}></PrintFeat>)}
 			<hr></hr>
 		</div>
@@ -30,9 +31,10 @@ export function PrintMod({Mod}) {
 }
 
 export function PrintProject({Project}) {
+	let totalManDays = Project.Mods.flatMap(Mod => Mod.Feats).flatMap(Feat => Feat.Issues).map(Issue => Issue.ManDays).reduce((x, y) => x + y)
 	return (
 		<div>
-			<h1>Project: {Project.Proj}</h1>
+			<h1>Project: {Project.Proj} ({totalManDays} Man-Days)</h1>
 			{Project.Mods.map(Mod => <PrintMod Mod={merge(Project, Mod)}></PrintMod>)}
 		</div>
 	);
