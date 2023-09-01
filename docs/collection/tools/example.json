@@ -5,31 +5,15 @@
 			"Mod": "pod",
 			"Feats": [
 				{
-					"Feat": "priority",
+					"Feat": "username",
 					"Issues": [
 						{
-							"Issue": "[api]新增pod接口priority定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]列表结果按照优先级排序",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "node-affinity",
-					"Issues": [
-						{
-							"Issue": "[api]新建接口增加node-spec参数定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[resource-allocation][state-transaction]根据pod配置的node-affinity进行资源分配",
+							"Issue": "[control-loop]run-container指定username为root",
 							"ManDays": 0.5
 						}
 					]
 				}
+
 			]
 		},
 		{
@@ -48,36 +32,23 @@
 					"Feat": "node-affinity",
 					"Issues": [
 						{
-							"Issue": "[node][api]列表接口定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[node][api]列表接口实现",
-							"ManDays": 0.5
-						},
-						{
 							"Issue": "[api]新建接口参数定义增加节点参数定义",
 							"ManDays": 0.5
 						},
 						{
 							"Issue": "[api]新建接口实现增加节点可选项",
-							"ManDays": 0.5
+							"ManDays": 0.25
 						},
 						{
 							"Issue": "[control-loop]实现创建任务关联pod时携带节点参数",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "logs",
-					"Issues": [
+							"ManDays": 0.25
+						},
 						{
-							"Issue": "[job][api]日志接口定义",
+							"Issue": "[pod][api]新建接口增加node-affinity参数定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "[job][api]日志接口实现",
+							"Issue": "[resource-allocation][state-transaction]根据pod配置的node-affinity进行资源分配",
 							"ManDays": 0.5
 						}
 					]
@@ -94,6 +65,36 @@
 							"ManDays": 1
 						}
 					]
+				},
+				{
+					"Feat": "priority",
+					"Issues": [
+						{
+							"Issue": "[job]创建pod时给定priority zzc",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]新增pod接口priority定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]列表结果按照优先级排序",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "logs",
+					"Issues": [
+						{
+							"Issue": "[pod][api]日志接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]日志接口实现",
+							"ManDays": 0.5
+						}
+					]
 				}
 			]
 		},
@@ -104,11 +105,11 @@
 					"Feat": "create",
 					"Issues": [
 						{
-							"Issue": "[api]新增接口参数定义",
+							"Issue": "[api]新增接口新参数定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "[api]新新增接口实现",
+							"Issue": "[api]新增接口新参数保存",
 							"ManDays": 0.5
 						},
 						{
@@ -162,10 +163,6 @@
 						{
 							"Issue": "[api]新增配额api实现",
 							"ManDays": 0.5
-						},
-						{
-							"Issue": "[state-transaction]active过程中检查配额是否超限",
-							"ManDays": 1
 						}
 					]
 				},
@@ -209,7 +206,7 @@
 					]
 				},
 				{
-					"Feat": "time-control",
+					"Feat": "job-time-control",
 					"Issues": [
 						{
 							"Issue": "[job][api]增加根据用户返回其活动中的任务, 包括运行时常",
@@ -229,7 +226,24 @@
 					"Feat": "node-affinity-control",
 					"Issues": [
 						{
-							"Issue": "[job]创建任务接口根据用户quota的node-affinity进行资源分配",
+							"Issue": "[job]创建任务接口根据用户quota给定的node-affinity列表进行资源分配",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "resource-isolation-for-quota",
+					"Issues": [
+						{
+							"Issue": "[job][control-loop]创建pod时将用户id设置为namespace",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]创建接口新增namespace参数定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[resource-allocation][control-loop]调度资源时根据namespace进行quota检查",
 							"ManDays": 0.5
 						}
 					]
@@ -506,6 +520,24 @@
 						},
 						{
 							"Issue": "detail",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "deployment",
+			"Feats": [
+				{
+					"Feat": "docker-registry-cert",
+					"Issues": [
+						{
+							"Issue": "将映射证书docker-registry",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "部署文档关于docker-registry的配置变更",
 							"ManDays": 0.5
 						}
 					]

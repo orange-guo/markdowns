@@ -5,7 +5,7 @@ export function PrintFeat({Feat}) {
 	return (
 		<div>
 			<h4>Feature: {Feat.Feat} ({totalManDays} Man-Days)</h4>
-			{Feat.Issues.map(Issue => <PrintIssue Issue={merge(Feat, Issue)}></PrintIssue>)}
+			{Feat.Issues.map(Issue => <PrintIssue Issue={Issue}></PrintIssue>)}
 			<br></br>
 		</div>
 	)
@@ -24,7 +24,7 @@ export function PrintMod({Mod}) {
 	return (
 		<div>
 			<h2>Module: {Mod.Mod} ({totalManDays} Man-Days)</h2>
-			{Mod.Feats.map(Feat => <PrintFeat Feat={merge(Mod, Feat)}></PrintFeat>)}
+			{Mod.Feats.map(Feat => <PrintFeat Feat={Feat}></PrintFeat>)}
 			<hr></hr>
 		</div>
 	)
@@ -35,36 +35,39 @@ export function PrintProject({Project}) {
 	return (
 		<div>
 			<h1>Project: {Project.Proj} ({totalManDays} Man-Days)</h1>
-			{Project.Mods.map(Mod => <PrintMod Mod={merge(Project, Mod)}></PrintMod>)}
+			{Project.Mods.map(Mod => <PrintMod Mod={Mod}></PrintMod>)}
 		</div>
 	);
 }
 
-export function merge(a, b) {
-	let c = {
-		Proj: "",
-		Mods: [],
-		Mod: "",
-		Feats: [],
-		Feat: "",
-		Issues: [],
-		Issue: "",
-		ManDays: 0
+export function extend(parent, child) {
+	child.Proj = child?.Proj || parent?.Proj || ""
+	child.Mods = child?.Mods || parent?.Mods || []
+	child.Mod = child?.Mod || parent?.Mod || ""
+	child.Feats = child?.Feats || parent?.Feats || []
+	child.Feat = child?.Feat || parent?.Feat || ""
+	child.Issues = child?.Issues || parent?.Issues || []
+	child.Issue = child?.Issue || parent?.Issue || ""
+	child.ManDays = child?.ManDays || parent?.ManDays || 0
+}
+
+export function fill(Project) {
+	for (let Mod of Project.Mods) {
+		extend(Project, Mod)
+		for (let Feat of Mod.Feats) {
+			extend(Mod, Feat)
+			for (let Issue of Feat.Issues) {
+				extend(Feat, Issue)
+			}
+		}
 	}
-	c.Proj = b?.Proj || a?.Proj // override
-	c.Mods = b?.Mods || a?.Mods // override
-	c.Mod = b?.Mod || a?.Mod // override
-	c.Feats = b?.Feats || a?.Feats // override
-	c.Feat = b?.Feat || a?.Feat // override
-	c.Issues = b?.Issues || a?.Issues // override
-	c.Issue = b?.Issue || a?.Issue // override
-	c.ManDays = b?.ManDays || a?.ManDays // override
-	return c
+	return Project
 }
 
 
 export function App() {
-	const [inputValue, setInputValue] = useState('');
+	const example = require('./example.json')
+	const [inputValue, setInputValue] = useState(JSON.stringify(example));
 	const [project, setProject] = useState(null)
 	const handleInputChange = (event) => {
 		setInputValue(event.target.value);
@@ -89,7 +92,7 @@ export function App() {
 				}
 			}}>Submit Your Time Estimate
 			</button>
-			{(project != null) ? <PrintProject Project={project}></PrintProject> : <h1>Empty Time Estimate</h1>}
+			{(project != null) ? <PrintProject Project={fill(project)}></PrintProject> : <h1>Empty Time Estimate</h1>}
 		</div>
 	)
 }
