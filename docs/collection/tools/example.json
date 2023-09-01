@@ -36,19 +36,19 @@
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "[api]新建接口实现增加节点可选项",
+							"Issue": "[api]新建接口实现node-affinity可选项",
 							"ManDays": 0.25
 						},
 						{
-							"Issue": "[control-loop]实现创建任务关联pod时携带节点参数",
+							"Issue": "[control-loop]实现创建任务关联pod时node-affinity参数",
 							"ManDays": 0.25
 						},
 						{
-							"Issue": "[pod][api]新建接口增加node-affinity参数定义",
+							"Issue": "[pod][api]新建接口增加node-affinity列表参数定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "[resource-allocation][state-transaction]根据pod配置的node-affinity进行资源分配",
+							"Issue": "[resource-allocation][control-loop]根据pod给定的node-affinity列表进行资源分配",
 							"ManDays": 0.5
 						}
 					]
@@ -70,7 +70,7 @@
 					"Feat": "priority",
 					"Issues": [
 						{
-							"Issue": "[job]创建pod时给定priority zzc",
+							"Issue": "[job]创建pod时根据策略计算priority并传递 zzc",
 							"ManDays": 0.5
 						},
 						{
