@@ -2,155 +2,6 @@
 	"Proj": "sirius",
 	"Mods": [
 		{
-			"Mod": "pod",
-			"Feats": [
-				{
-					"Feat": "username",
-					"Issues": [
-						{
-							"Issue": "[control-loop]run-container指定username为root",
-							"ManDays": 0.5
-						}
-					]
-				}
-
-			]
-		},
-		{
-			"Mod": "job",
-			"Feats": [
-				{
-					"Feat": "data-isolation",
-					"Issues": [
-						{
-							"Issue": "[api]列表结果根据用户角色进行过滤",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "node-affinity",
-					"Issues": [
-						{
-							"Issue": "[api]新建接口参数定义增加节点参数定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]新建接口实现node-affinity可选项",
-							"ManDays": 0.25
-						},
-						{
-							"Issue": "[control-loop]实现创建任务关联pod时node-affinity参数",
-							"ManDays": 0.25
-						},
-						{
-							"Issue": "[pod][api]新建接口增加node-affinity列表参数定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[resource-allocation][control-loop]根据pod给定的node-affinity列表进行资源分配",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "realtime-usage",
-					"Issues": [
-						{
-							"Issue": "[api]实时的任务资源使用率API定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]实时的任务资源使用率API实现",
-							"ManDays": 1
-						}
-					]
-				},
-				{
-					"Feat": "priority",
-					"Issues": [
-						{
-							"Issue": "[job]创建pod时根据策略计算priority并传递 zzc",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]新增pod接口priority定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]列表结果按照优先级排序",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "logs",
-					"Issues": [
-						{
-							"Issue": "[pod][api]日志接口定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]日志接口实现",
-							"ManDays": 0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"Mod": "node",
-			"Feats": [
-				{
-					"Feat": "create",
-					"Issues": [
-						{
-							"Issue": "[api]新增接口新参数定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]新增接口新参数保存",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[control-loop]pending->active(检查docker以及安装loki)(zzc)",
-							"ManDays": 2
-						}
-					]
-				},
-				{
-					"Feat": "evict",
-					"Issues": [
-						{
-							"Issue": "[api]evict节点api定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]evict节点api实现",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[control-loop]evicting->evicted",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "list",
-					"Issues": [
-						{
-							"Issue": "[api]节点列表api定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[api]节点列表api实现(包括数据隔离)",
-							"ManDays": 0.5
-						}
-					]
-				}
-			]
-		},
-		{
 			"Mod": "quota",
 			"Feats": [
 				{
@@ -251,6 +102,58 @@
 			]
 		},
 		{
+			"Mod": "node",
+			"Feats": [
+				{
+					"Feat": "create",
+					"Issues": [
+						{
+							"Issue": "[api]新增接口新参数定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[api]新增接口新参数保存",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[control-loop]pending->active(检查docker以及安装loki)(zzc)",
+							"ManDays": 2
+						}
+					]
+				},
+				{
+					"Feat": "evict",
+					"Issues": [
+						{
+							"Issue": "[api]evict节点api定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[api]evict节点api实现",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[control-loop]evicting->evicted",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "list",
+					"Issues": [
+						{
+							"Issue": "[api]节点列表api定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[api]节点列表api实现(包括数据隔离)",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
 			"Mod": "user",
 			"Feats": [
 				{
@@ -308,7 +211,122 @@
 			]
 		},
 		{
-			"Mod": "daemon-set(内部)",
+			"Mod": "job",
+			"Feats": [
+				{
+					"Feat": "data-isolation",
+					"Issues": [
+						{
+							"Issue": "[api]列表结果根据用户角色进行过滤",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "node-affinity",
+					"Issues": [
+						{
+							"Issue": "[api]新建接口参数定义增加节点参数定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[api]新建接口实现node-affinity可选项",
+							"ManDays": 0.25
+						},
+						{
+							"Issue": "[control-loop]实现创建任务关联pod时node-affinity参数",
+							"ManDays": 0.25
+						},
+						{
+							"Issue": "[pod][api]新建接口增加node-affinity列表参数定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[resource-allocation][control-loop]根据pod给定的node-affinity列表进行资源分配",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "realtime-usage",
+					"Issues": [
+						{
+							"Issue": "[api]实时的任务资源使用率API定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[api]实时的任务资源使用率API实现",
+							"ManDays": 1
+						}
+					]
+				},
+				{
+					"Feat": "priority",
+					"Issues": [
+						{
+							"Issue": "[job]创建pod时根据策略计算priority并传递 zzc",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]新增pod接口priority定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]列表结果按照优先级排序",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "logs",
+					"Issues": [
+						{
+							"Issue": "[pod][api]日志接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]日志接口实现",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "deployment",
+			"Feats": [
+				{
+					"Feat": "docker-registry-cert",
+					"Issues": [
+						{
+							"Issue": "将映射证书docker-registry",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "部署文档关于docker-registry的配置变更",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "pod",
+			"Feats": [
+				{
+					"Feat": "username",
+					"Issues": [
+						{
+							"Issue": "[control-loop]run-container指定username为root",
+							"ManDays": 0.5
+						}
+					]
+				}
+
+			]
+		},
+		{
+			"Mod": "daemon-set",
 			"Feats": [
 				{
 					"Feat": "create",
@@ -520,24 +538,6 @@
 						},
 						{
 							"Issue": "detail",
-							"ManDays": 0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"Mod": "deployment",
-			"Feats": [
-				{
-					"Feat": "docker-registry-cert",
-					"Issues": [
-						{
-							"Issue": "将映射证书docker-registry",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "部署文档关于docker-registry的配置变更",
 							"ManDays": 0.5
 						}
 					]
