@@ -235,22 +235,21 @@
 						{
 							"Issue": "[api]新建实现",
 							"ManDays": 0.5
-						}
-					]
-				},
-				{
-					"Feat": "state-transition",
-					"Issues": [
+						},
+						{
+							"Issue": "[pod][api]创建接口支持将容器原始port映射到宿主机",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]创建接口支持将容器原始port映射到宿主机的实现",
+							"ManDays": 0.5
+						},
 						{
 							"Issue": "pending->running",
 							"ManDays": 0.5
 						},
 						{
 							"Issue": "running状态下检查daemon-set的pod是否存在",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "terminating->terminated",
 							"ManDays": 0.5
 						}
 					]
@@ -267,11 +266,7 @@
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "[pod][api]创建接口支持将容器原始port映射到宿主机",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]创建接口支持将容器原始port映射到宿主机的实现",
+							"Issue": "terminating->terminated",
 							"ManDays": 0.5
 						}
 					]
