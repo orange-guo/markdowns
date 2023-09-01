@@ -1,4 +1,7 @@
-# Time Estimate Tools
+import {useState} from "react";
+
+
+
 
 export const Project = {
 	Proj : "sirius",
@@ -456,7 +459,7 @@ export function PrintFeat({Feat}) {
 	return (
 		<div>
 			<h4>Feature: {Feat.Feat} ({totalManDays} Man-Days)</h4>
-			{Feat.Issues.map(Issue => <PrintIssue Issue={concat(Feat, Issue)}></PrintIssue>)}
+			{Feat.Issues.map(Issue => <PrintIssue Issue={merge(Feat, Issue)}></PrintIssue>)}
 			<br></br>
 		</div>
 	)
@@ -474,7 +477,7 @@ export function PrintMod({Mod}) {
 	return (
 		<div>
 			<h2>Module: {Mod.Mod}</h2>
-			{Mod.Feats.map(Feat => <PrintFeat Feat={concat(Mod, Feat)}></PrintFeat>)}
+			{Mod.Feats.map(Feat => <PrintFeat Feat={merge(Mod, Feat)}></PrintFeat>)}
 			<hr></hr>
 		</div>
 	)
@@ -484,14 +487,12 @@ export function PrintProject({Project}) {
 	return (
 		<div>
 			<h1>Project: {Project.Proj}</h1>
-			{Project.Mods.map(Mod => <PrintMod Mod={concat(Project, Mod)}></PrintMod>)}
+			{Project.Mods.map(Mod => <PrintMod Mod={merge(Project, Mod)}></PrintMod>)}
 		</div>
 	);
 }
 
-<PrintProject Project={Project}></PrintProject>
-
-export function concat(a, b) {
+export function merge(a, b) {
 	let c = {
 		Proj: "",
 		Mods: [],
@@ -512,3 +513,23 @@ export function concat(a, b) {
 	c.ManDays = b?.ManDays || a?.ManDays // override
 	return c
 }
+
+
+export function App() {
+	const [inputValue, setInputValue] = useState('');
+	const [project, setProject] = useState(null)
+	const handleChange = (event) => {
+		setInputValue(event.target.value);
+	};
+	return (
+		<div>
+			<h1>Time Estimate Tools</h1>
+			<input value={inputValue} onChange={handleChange} placeholder="Write Your json"></input>
+			<button onClick={e => setProject(JSON.parse(inputValue))}>submit
+			</button>
+			{(project != null) ? <PrintProject Project={project}></PrintProject> : <div>loading...</div>}
+		</div>
+	)
+}
+
+<App></App>
