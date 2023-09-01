@@ -83,16 +83,8 @@
 					]
 				},
 				{
-					"Feat": "resource-isolation-for-quota",
+					"Feat": "quota-control",
 					"Issues": [
-						{
-							"Issue": "[job][control-loop]创建pod时将用户id设置为namespace",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]创建接口新增namespace参数定义",
-							"ManDays": 0.5
-						},
 						{
 							"Issue": "[resource-allocation][control-loop]调度资源时根据namespace进行quota检查",
 							"ManDays": 0.5
@@ -147,6 +139,24 @@
 						},
 						{
 							"Issue": "[api]节点列表api实现(包括数据隔离)",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "deployment",
+			"Feats": [
+				{
+					"Feat": "docker-registry-cert",
+					"Issues": [
+						{
+							"Issue": "将映射证书docker-registry",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "部署文档关于docker-registry的配置变更",
 							"ManDays": 0.5
 						}
 					]
@@ -214,15 +224,6 @@
 			"Mod": "job",
 			"Feats": [
 				{
-					"Feat": "data-isolation",
-					"Issues": [
-						{
-							"Issue": "[api]列表结果根据用户角色进行过滤",
-							"ManDays": 0.5
-						}
-					]
-				},
-				{
 					"Feat": "node-affinity",
 					"Issues": [
 						{
@@ -231,11 +232,11 @@
 						},
 						{
 							"Issue": "[api]新建接口实现node-affinity可选项",
-							"ManDays": 0.25
+							"ManDays": 0.5
 						},
 						{
 							"Issue": "[control-loop]实现创建任务关联pod时node-affinity参数",
-							"ManDays": 0.25
+							"ManDays": 0.5
 						},
 						{
 							"Issue": "[pod][api]新建接口增加node-affinity列表参数定义",
@@ -243,6 +244,19 @@
 						},
 						{
 							"Issue": "[resource-allocation][control-loop]根据pod给定的node-affinity列表进行资源分配",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "logs",
+					"Issues": [
+						{
+							"Issue": "[pod][api]日志接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]日志接口实现",
 							"ManDays": 0.5
 						}
 					]
@@ -259,7 +273,30 @@
 							"ManDays": 1
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			"Mod": "job-quota",
+			"Feats": [
+				{
+					"Feat": "support",
+					"Issues": [
+						{
+							"Issue": "[job][control-loop]创建pod时将用户id设置为namespace",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "[pod][api]创建接口新增namespace参数定义",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "priority",
+			"Feats": [
 				{
 					"Feat": "priority",
 					"Issues": [
@@ -278,32 +315,10 @@
 					]
 				},
 				{
-					"Feat": "logs",
+					"Feat": "data-isolation",
 					"Issues": [
 						{
-							"Issue": "[pod][api]日志接口定义",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "[pod][api]日志接口实现",
-							"ManDays": 0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"Mod": "deployment",
-			"Feats": [
-				{
-					"Feat": "docker-registry-cert",
-					"Issues": [
-						{
-							"Issue": "将映射证书docker-registry",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "部署文档关于docker-registry的配置变更",
+							"Issue": "[api]列表结果根据用户角色进行过滤",
 							"ManDays": 0.5
 						}
 					]
@@ -322,7 +337,6 @@
 						}
 					]
 				}
-
 			]
 		},
 		{
