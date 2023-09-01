@@ -1,247 +1,278 @@
-# Estimate Time Of Modules
+# Time Estimate Tools
 
 
-export const TimeEstimate = [
+export const job = [
 	[
 		[
-			"任务",
 			[
-				[
-					"新建任务支持节点选择",
-					[
-						["[sirius][node][api]列表接口定义", 0.5],
-						["[sirius][node][api]列表接口实现", 0.5],
-						["[sirius][job][api]新建接口参数定义增加节点参数定义", 0.5],
-						["[sirius][job][api]新建接口实现增加节点可选项", 0.5],
-						["[sirius][pod][api]新建接口增加node-spec参数定义", 0.5],
-						["[sirius][job][state-transition]实现创建任务关联pod时携带节点参数", 0.5],
-						["[sirius][resource-allocation][state-transaction]支持带节点的pod资源分配", 0.5]
-					],
-				],
-				[
-					"任务日志",
-					[
-						["[sirius][job][api]日志接口定义", 0.5],
-						["[sirius][job][api]日志接口实现", 0.5]
-					]
-				],
-				[
-					"实时任务资源使用率",
-					[
-						["[sirius][job][api]实时的任务资源使用率API定义", 0.5],
-						["[sirius][job][api]实时的任务资源使用率API实现", 0.5]
-					]
-				]
+				["[sirius][node][api]列表接口定义", 0.5],
+				["[sirius][node][api]列表接口实现", 0.5],
+				["[sirius][job][api]新建接口参数定义增加节点参数定义", 0.5],
+				["[sirius][job][api]新建接口实现增加节点可选项", 0.5],
+				["[sirius][pod][api]新建接口增加node-spec参数定义", 0.5],
+				["[sirius][job][state-transition]实现创建任务关联pod时携带节点参数", 0.5],
+				["[sirius][resource-allocation][state-transaction]支持带节点的pod资源分配", 0.5]
 			],
-			["job"]
+			{
+				Feat: "node-selection"
+			}
 		],
 		[
-			"Node",
 			[
-				[
-					"新增节点",
-					[
-						["[sirius][node][api]新增接口参数定义", 0.5],
-						["[sirius][node][api]新新增接口实现", 0.5],
-						["[sirius][node][state-transition]pending->active(更新节点的配置信息)", 0.5]
-					]
-				],
-				[
-					"删除节点",
-					[
-						["[sirius][node][api]evict节点api定义", 0.5],
-						["[sirius][node][api]evict节点api实现", 0.5],
-						["[sirius][node][state-transition]evicting->evicted", 0.5]
-					]
-				],
-				[
-					"节点列表",
-					[
-						["[sirius][node][api]节点列表api定义", 0.5],
-						["[sirius][node][api]节点列表api实现", 0.5]
-					]
-				]
+				["[sirius][job][api]日志接口定义", 0.5],
+				["[sirius][job][api]日志接口实现", 0.5]
 			],
-			["node"]
+			{
+				Feat: "logs"
+			}
 		],
 		[
-			"Quota",
 			[
-				[
-					"添加配额",
-					[
-						["[sirius][quota][api]添加配额接口定义", 0.5],
-						["[sirius][quota][api]添加配额接口实现", 0.5],
-						["[sirius][quota][state-transaction]active过程中检查配额是否超限", 1]
-					]
-				],
-				[
-					"修改配额",
-					[
-						["[sirius][quota][api]修改配额接口定义", 0.5],
-						["[sirius][quota][api]修改配额接口实现", 0.5]
-					]
-				],
-				[
-					"配额列表",
-					[
-						["[sirius][quota][api]配额列表接口定义", 0.5],
-						["[sirius][quota][api]配额列表接口实现", 0.5]
-					]
-				]
+				["[sirius][job][api]实时的任务资源使用率API定义", 0.5],
+				["[sirius][job][api]实时的任务资源使用率API实现", 0.5]
 			],
-			["quota"]
-		],
-		[
-			"User",
-			[
-				[
-					"添加用户",
-					[
-						["[sirius][user][api]添加用户接口定义", 0.5],
-						["[sirius][user][api]添加用户接口实现", 0.5]
-					]
-				],
-				[
-					"编辑用户",
-					[
-						["[sirius][user][api]编辑用户接口定义", 0.5],
-						["[sirius][user][api]编辑用户接口实现", 0.5]
-					]
-				],
-				[
-					"删除用户",
-					[
-						["[sirius][user][api]删除用户接口定义", 0.5],
-						["[sirius][user][api]删除用户接口实现", 0.5]
-					]
-				],
-				[
-					"用户列表",
-					[
-						["[sirius][user][api]用户列表接口定义", 0.5],
-						["[sirius][user][api]用户列表接口实现", 0.5]
-					]
-				]
-			],
-			["user"]
-		],
-		[
-			"daemon-set(内部)",
-			[
-				[
-					"实现",
-					[
-						["[sirius][daemon-set][api]新建定义", 0.5],
-						["[sirius][daemon-set][api]新建实现", 0.5],
-						["[sirius][daemon-set][api]终止定义", 0.5],
-						["[sirius][daemon-set][api]终止实现", 0.5],
-						["[sirius][daemon-set][state-transition]pending->running", 0.5],
-						["[sirius][daemon-set][state-transition]running状态下检查daemon-set的pod是否存在", 0.5],
-						["[sirius][daemon-set][state-transition]terminating->terminated", 0.5],
-						["[sirius][pod][api]创建接口支持将容器原始port映射到宿主机", 0.5],
-						["[sirius][pod][api]创建接口支持将容器原始port映射到宿主机的实现", 0.5]
-					]
-				]
-			],
-			["daemon-set"]
-		],
-		[
-			"cli",
-			[
-				[
-					"Base",
-					[
-						["[sirius][cli][base]login", 0.5],
-						["[sirius][cli][base]logout", 0.5],
-						["[sirius][cli][base]命令执行前检查是否登录", 0.5]
-					]
-				],
-				[
-					"job",
-					[
-						["[sirius][cli][job]create", 0.5],
-						["[sirius][cli][job]stop", 0.5],
-						["[sirius][cli][job]start", 0.5],
-						["[sirius][cli][job]terminate", 0.5],
-						["[sirius][cli][job]create-image", 0.5],
-						["[sirius][cli][job]list", 0.5],
-						["[sirius][cli][job]detail", 0.5]
-					]
-				],
-				[
-					"node",
-					[
-						["[sirius][cli][node]include", 0.5],
-						["[sirius][cli][node]evict", 0.5],
-						["[sirius][cli][node]list", 0.5],
-						["[sirius][cli][node]detail", 0.5]
-					],
-				],
-				[
-					"pod",
-					[
-						["[sirius][cli][pod]create", 0.5],
-						["[sirius][cli][pod]exec", 0.5],
-						["[sirius][cli][pod]logs", 0.5],
-						["[sirius][cli][pod]evict", 0.5],
-						["[sirius][cli][pod]list", 0.5],
-						["[sirius][cli][pod]detail", 0.5]
-					]
-				],
-				[
-					"quota",
-					[
-						["[sirius][cli][quota]create", 0.5],
-						["[sirius][cli][quota]update", 0.5],
-						["[sirius][cli][quota]list", 0.5],
-						["[sirius][cli][quota]detail", 0.5]
-					]
-				],
-				[
-					"user",
-					[
-						["[sirius][cli][user]create", 0.5],
-						["[sirius][cli][user]update", 0.5],
-						["[sirius][cli][user]delete", 0.5],
-						["[sirius][cli][user]list", 0.5]
-					]
-				],
-				[
-					"daemon-set",
-					[
-						["[sirius][cli][daemon-set]create", 0.5],
-						["[sirius][cli][daemon-set]terminate", 0.5],
-						["[sirius][cli][daemon-set]list", 0.5],
-						["[sirius][cli][daemon-set]detail", 0.5]
-					]
-				]
-			],
-			["cli"]
+			{
+				Feat: "resource-usage"
+			}
 		]
 	],
-	["sirius"]
+	{
+		Mod: "job"
+	}
+]
+
+export const node = [
+	[
+		[
+			"create",
+			[
+				["[sirius][node][api]新增接口参数定义", 0.5],
+				["[sirius][node][api]新新增接口实现", 0.5],
+				["[sirius][node][state-transition]pending->active(更新节点的配置信息)", 0.5]
+			]
+		],
+		[
+			"evict",
+			[
+				["[sirius][node][api]evict节点api定义", 0.5],
+				["[sirius][node][api]evict节点api实现", 0.5],
+				["[sirius][node][state-transition]evicting->evicted", 0.5]
+			]
+		],
+		[
+			"list",
+			[
+				["[sirius][node][api]节点列表api定义", 0.5],
+				["[sirius][node][api]节点列表api实现", 0.5]
+			]
+		]
+	],
+	{
+		Mod: "node"
+	}
+]
+
+export const quota = [
+	[
+		[
+			"create",
+			[
+				["[sirius][quota][api]添加配额接口定义", 0.5],
+				["[sirius][quota][api]添加配额接口实现", 0.5],
+				["[sirius][quota][state-transaction]active过程中检查配额是否超限", 1]
+			]
+		],
+		[
+			"update",
+			[
+				["[sirius][quota][api]修改配额接口定义", 0.5],
+				["[sirius][quota][api]修改配额接口实现", 0.5]
+			]
+		],
+		[
+			"list",
+			[
+				["[sirius][quota][api]配额列表接口定义", 0.5],
+				["[sirius][quota][api]配额列表接口实现", 0.5]
+			]
+		]
+	],
+	{
+		Mod: "quota"
+	}
+]
+
+export const user = [
+	[
+		[
+			"create",
+			[
+				["[sirius][user][api]添加用户接口定义", 0.5],
+				["[sirius][user][api]添加用户接口实现", 0.5]
+			]
+		],
+		[
+			"update",
+			[
+				["[sirius][user][api]编辑用户接口定义", 0.5],
+				["[sirius][user][api]编辑用户接口实现", 0.5]
+			]
+		],
+		[
+			"delete",
+			[
+				["[sirius][user][api]删除用户接口定义", 0.5],
+				["[sirius][user][api]删除用户接口实现", 0.5]
+			]
+		],
+		[
+			"list",
+			[
+				["[sirius][user][api]用户列表接口定义", 0.5],
+				["[sirius][user][api]用户列表接口实现", 0.5]
+			]
+		]
+	],
+	{
+		Mod: "user"
+	}
+]
+
+export const daemonSet = [
+	[
+		[
+			"create",
+			[
+				["[sirius][daemon-set][api]新建定义", 0.5],
+				["[sirius][daemon-set][api]新建实现", 0.5]
+			]
+		],
+		[
+			"state-transition",
+			[
+				["[sirius][daemon-set][state-transition]pending->running", 0.5],
+				["[sirius][daemon-set][state-transition]running状态下检查daemon-set的pod是否存在", 0.5],
+				["[sirius][daemon-set][state-transition]terminating->terminated", 0.5],
+			]
+		],
+		[
+			"terminate",
+			[
+				["[sirius][daemon-set][api]终止定义", 0.5],
+				["[sirius][daemon-set][api]终止实现", 0.5],
+				["[sirius][pod][api]创建接口支持将容器原始port映射到宿主机", 0.5],
+				["[sirius][pod][api]创建接口支持将容器原始port映射到宿主机的实现", 0.5]
+			]
+		]
+	],
+	{
+		Mod: "daemon-set(内部)"
+	}
+]
+
+export const cli = [
+	[
+		[
+			"base",
+			[
+				["[sirius][cli][base]login", 0.5],
+				["[sirius][cli][base]logout", 0.5],
+				["[sirius][cli][base]命令执行前检查是否登录", 0.5]
+			]
+		],
+		[
+			"job",
+			[
+				["[sirius][cli][job]create", 0.5],
+				["[sirius][cli][job]stop", 0.5],
+				["[sirius][cli][job]start", 0.5],
+				["[sirius][cli][job]terminate", 0.5],
+				["[sirius][cli][job]create-image", 0.5],
+				["[sirius][cli][job]list", 0.5],
+				["[sirius][cli][job]detail", 0.5]
+			]
+		],
+		[
+			"node",
+			[
+				["[sirius][cli][node]include", 0.5],
+				["[sirius][cli][node]evict", 0.5],
+				["[sirius][cli][node]list", 0.5],
+				["[sirius][cli][node]detail", 0.5]
+			],
+		],
+		[
+			"pod",
+			[
+				["[sirius][cli][pod]create", 0.5],
+				["[sirius][cli][pod]exec", 0.5],
+				["[sirius][cli][pod]logs", 0.5],
+				["[sirius][cli][pod]evict", 0.5],
+				["[sirius][cli][pod]list", 0.5],
+				["[sirius][cli][pod]detail", 0.5]
+			]
+		],
+		[
+			"quota",
+			[
+				["[sirius][cli][quota]create", 0.5],
+				["[sirius][cli][quota]update", 0.5],
+				["[sirius][cli][quota]list", 0.5],
+				["[sirius][cli][quota]detail", 0.5]
+			]
+		],
+		[
+			"user",
+			[
+				["[sirius][cli][user]create", 0.5],
+				["[sirius][cli][user]update", 0.5],
+				["[sirius][cli][user]delete", 0.5],
+				["[sirius][cli][user]list", 0.5]
+			]
+		],
+		[
+			"daemon-set",
+			[
+				["[sirius][cli][daemon-set]create", 0.5],
+				["[sirius][cli][daemon-set]terminate", 0.5],
+				["[sirius][cli][daemon-set]list", 0.5],
+				["[sirius][cli][daemon-set]detail", 0.5]
+			]
+		]
+	],
+	{
+		Mod: "cli"
+	}
+]
+
+
+export const ProjectTimeEstimate = [
+	[
+		job
+	],
+	{
+		Proj: "sirius"
+	}
 ];
 
 
-export function PrintModule({Module: [Name, Features, Metadata], MoreMetadata}) {
-	Metadata = Metadata || []
+export function PrintModule({Module: [Features, Meta], MoreMeta}) {
 	return (
 		<div>
-			<h2>{Name}</h2>
-			{Features.map(Feature => <PrintFeature Feature={Feature} MoreMetadata={[...MoreMetadata, ...Metadata]}></PrintFeature>)}
+			<h2>Module: {Meta.Mod}</h2>
+			{Features.map(Feature => <PrintFeature Feature={Feature} MoreMeta={plus(MoreMeta, Meta)}></PrintFeature>)}
 			<hr></hr>
 		</div>
 	)
 }
 
 export function PrintFeature({Feature: [Name, Tasks, Metadata], MoreMetadata}) {
-	Metadata = Metadata || []
+	plus(MoreMetadata, Metadata)
 	let totalManDays = Tasks.map(([_, ManDays]) => ManDays).reduce((x, y) => x + y)
 	return (
 		<div>
-			<h4>{Name} (Total-Man-Days {totalManDays})</h4>
-			{Tasks.map(Task => <PrintTask Task={Task} MoreMetadata={[...MoreMetadata, ...Metadata]}></PrintTask>)}
+			<h4>Feature: {Name} (Total-Man-Days {totalManDays})</h4>
+			{Tasks.map(Task => <PrintTask Task={Task} MoreMetadata={[]}></PrintTask>)}
 			<br></br>
 		</div>
 	)
@@ -256,13 +287,27 @@ export function PrintTask({Task: [Name, ManDays], MoreMetadata}) {
 }
 
 
-export function PrintTimeEstimate({TimeEstimate: [Modules, Metadata]}) {
-	Metadata = Metadata || []
+export function PrintProjectTimeEstimate({ProjectTimeEstimate: [Modules, Meta]}) {
 	return (
 		<div>
-			{Modules.map(Module => <PrintModule Module={Module} MoreMetadata={Metadata}></PrintModule>)}
+			<h1>Project: {Meta.Proj}</h1>
+			{Modules.map(Module => <PrintModule Module={Module} MoreMeta={Meta}></PrintModule>)}
 		</div>
 	);
 }
 
-<PrintTimeEstimate TimeEstimate={TimeEstimate}></PrintTimeEstimate>
+<PrintProjectTimeEstimate ProjectTimeEstimate={ProjectTimeEstimate}></PrintProjectTimeEstimate>
+
+export function plus(a, b) {
+	let c = {
+		Proj: "",
+		Mod: "",
+		Feat: "",
+		Tags: []
+	}
+	c.Proj = b.Proj || a.Proj // override
+	c.Mod = b.Mod || a.Mod
+	c.Feat = b.Feat || a.Feat
+	c.Tags = [...(a.Tags || []), ...(b.Tags || [])] // concat
+	return c
+}
