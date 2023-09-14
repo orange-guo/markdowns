@@ -13,7 +13,7 @@
 - [rocm-container-runtime](https://github.com/abuccts/rocm-container-runtime)
   <br/>ROCm container runtime
 
-## References]
+## References
 
 - [Docker run reference](https://docs.docker.com/engine/reference/run/)
 
