@@ -54,6 +54,9 @@ tags: [java, curated-list]
   fuss. Most Spring Boot applications need minimal Spring configuration.
   <br/>If you’re looking for information about a specific version, or instructions about how to upgrade from an earlier
   release, check out the project release notes section on our wiki.
+- [spring-integration](https://github.com/spring-projects/spring-integration)
+  <br/>Spring Integration provides an extension of the Spring programming model to support the well-known Enterprise
+  Integration Patterns (EIP)
 - [helidon](https://helidon.io/)
   <br/>Helidon is a cloud-native, open‑source set of Java libraries for writing microservices that run on a fast web
   core powered by Netty.
