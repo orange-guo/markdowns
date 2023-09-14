@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1549],{55731:a=>{a.exports=JSON.parse('{"label":"golang","permalink":"/docs/tags/golang","allTagsPath":"/docs/tags","count":1,"items":[{"id":"collection/curated-list/golang","title":"Golang curated list","description":"Libraries","permalink":"/docs/collection/curated-list/golang"}]}')}}]);
