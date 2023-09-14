@@ -1,4 +1,11 @@
-# Gradle相关插件列表
+# Gradle
+
+## Reference
+
+- [Sharing dependency versions between projects](https://docs.gradle.org/current/userguide/platforms.html)
+- [Understanding dependency resolution](https://docs.gradle.org/current/userguide/dependency_resolution.html)
+
+## Plugins
 
 - [Shadow](https://imperceptiblethoughts.com/shadow/)
   <br/>Shadow is a Gradle plugin for combining a project's dependency classes and resources into a single output Jar.
