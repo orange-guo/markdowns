@@ -1,9 +1,4 @@
----
-authors: [ Xiangcheng Kuo ]
-tags: [ golang, curated-list ]
----
-
-# Golang curated list
+# Golang
 
 ## Libraries
 

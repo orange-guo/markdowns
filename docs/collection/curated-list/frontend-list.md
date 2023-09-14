@@ -1,9 +1,4 @@
----
-authors: [xiangcheng.kuo]
-tags: [frontend, curated-list]
----
-
-# 前端相关技术列表
+# Frontend
 
 <!--truncate-->
 

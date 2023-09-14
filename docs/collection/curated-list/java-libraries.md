@@ -3,9 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [java, curated-list]
 ---
 
-# Java相关技术列表
-
-以下是
+# Java
 
 <!--truncate-->
 
