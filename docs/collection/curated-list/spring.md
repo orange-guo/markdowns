@@ -1,6 +1,6 @@
 # Spring
 
-## Website
+## Sites
 
 - [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/)
 
