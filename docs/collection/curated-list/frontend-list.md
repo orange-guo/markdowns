@@ -1,9 +1,4 @@
----
-authors: [xiangcheng.kuo]
-tags: [frontend, curated-list]
----
-
-# 前端相关技术列表
+# Frontend
 
 <!--truncate-->
 
@@ -14,3 +9,5 @@ tags: [frontend, curated-list]
   <br/>Fake a progress bar using an exponential progress function
 - [Lerna](https://lerna.js.org/)
   <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+- [rxjs](https://rxjs.dev/)
+  <br/>Reactive Extensions Library for JavaScript

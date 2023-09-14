@@ -1,9 +1,4 @@
----
-authors: [ xiangcheng.kuo ]
-tags: [ python, curated-list ]
----
-
-# Python公共库
+# Python
 
 <!--truncate-->
 

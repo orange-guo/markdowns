@@ -3,9 +3,7 @@ authors: [xiangcheng.kuo]
 tags: [java, curated-list]
 ---
 
-# Java相关技术列表
-
-以下是
+# Java
 
 <!--truncate-->
 
@@ -47,13 +45,6 @@ tags: [java, curated-list]
 
 ## Framework
 
-- [spring-boot](https://spring.io/projects/spring-boot)
-  <br/>Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just
-  run".
-  <br/>We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum
-  fuss. Most Spring Boot applications need minimal Spring configuration.
-  <br/>If you’re looking for information about a specific version, or instructions about how to upgrade from an earlier
-  release, check out the project release notes section on our wiki.
 - [helidon](https://helidon.io/)
   <br/>Helidon is a cloud-native, open‑source set of Java libraries for writing microservices that run on a fast web
   core powered by Netty.
@@ -65,11 +56,6 @@ tags: [java, curated-list]
 - [quarkus](https://quarkus.io/)
   <br/>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java
   libraries and standards.
-- [spring-modulith](https://spring.io/projects/spring-modulith)
-  <br/>Spring Modulith allows developers to build well-structured Spring Boot applications and guides developers in
-  finding and working with application modules driven by the domain. It supports the verification of such modular
-  arrangements, integration testing individual modules, observing the application’s behavior on the module level and
-  creating documentation snippets based on the arrangement created.
 - [javalin](https://javalin.io/)
   <br/>A simple web framework for Java and Kotlin
 
