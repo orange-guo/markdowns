@@ -1,14 +1,23 @@
 # Spring
 
-## Libraries
+## Website
 
+- [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/)
+
+## Spring Projects
+
+- [Spring](https://github.com/spring-projects)
+  <br/>Spring Projects
 - [spring-boot](https://spring.io/projects/spring-boot)
-  <br/>Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just
-  run".
-  <br/>We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum
-  fuss. Most Spring Boot applications need minimal Spring configuration.
-  <br/>If you’re looking for information about a specific version, or instructions about how to upgrade from an earlier
-  release, check out the project release notes section on our wiki.
+  <br/>Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum
+  fuss. It takes an opinionated view of the Spring platform so that new and existing users can quickly get to the bits
+  they need.
+- [spring-framework](https://github.com/spring-projects/spring-framework)
+  <br/>This is the home of the Spring Framework: the foundation for all Spring projects. Collectively the Spring Framework and the family of Spring projects are often referred to simply as "Spring".
+- [spring-security](https://github.com/spring-projects/spring-security)
+  <br/>Spring Security provides security services for the Spring IO Platform. Spring Security 6.0 requires Spring 6.0 as a minimum and also requires Java 17.
+- [spring-petclinic](https://github.com/spring-projects/spring-petclinic)
+  <br/>A sample Spring-based application
 - [spring-integration](https://github.com/spring-projects/spring-integration)
   <br/>Spring Integration provides an extension of the Spring programming model to support the well-known Enterprise
   Integration Patterns (EIP)
@@ -32,9 +41,6 @@
   <br/>Support for using OpenFeign in Spring Cloud apps
 - [spring-cloud-function](https://github.com/spring-cloud/spring-cloud-function)
 
-## Website
-
-- [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/)
 
 ## Issues
 
