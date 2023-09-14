@@ -5,11 +5,21 @@
 ```markdown
 # Topic
 
-## Sites
+## Projects
 
-## Libraries
+### Libraries
+
+### Runtimes
+
+### Images
+
+### Plugins
 
 ## Reference
+
+### CodeStyle
+
+### Sites
 
 ### Docs
 
