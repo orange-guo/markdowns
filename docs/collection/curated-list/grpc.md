@@ -14,6 +14,8 @@
   <br/>Go support for Google's protocol buffers
 - [gogo-protobuf](https://github.com/gogo/protobuf)
   <br/>[Deprecated] Protocol Buffers for Go with Gadgets
+- [googleapis](https://github.com/googleapis/googleapis)
+  <br/>Public interface definitions of Google APIs.
 
 ## Gradle Plugins
 
@@ -26,6 +28,8 @@
   <br/>more expressive universal gRPC client
 - [docusaurus-protobuffet](https://github.com/protobuffet/docusaurus-protobuffet)
   <br/>Docusaurus toolset for Protobuf contract documentation.
+- [buf](https://github.com/bufbuild/buf)
+  <br/>A new way of working with Protocol Buffers.
 
 ## References
 
