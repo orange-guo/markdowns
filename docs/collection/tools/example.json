@@ -2,17 +2,56 @@
 	"Proj": "sirius",
 	"Mods": [
 		{
-			"Mod": "deployment",
+			"Mod": "group",
 			"Feats": [
 				{
-					"Feat": "docker-registry-cert",
+					"Feat": "create",
 					"Issues": [
 						{
-							"Issue": "将映射证书docker-registry",
+							"Issue": "新建接口定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "部署文档关于docker-registry的配置变更",
+							"Issue": "新建接口实现",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "update",
+					"Issues": [
+						{
+							"Issue": "更新接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "更新接口实现",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "delete",
+					"Issues": [
+						{
+							"Issue": "删除接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "删除接口实现",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "list",
+					"Issues": [
+						{
+							"Issue": "列表接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "列表接口实现",
 							"ManDays": 0.5
 						}
 					]
@@ -20,54 +59,154 @@
 			]
 		},
 		{
-			"Mod": "cli",
+			"Mod": "setting-mount",
 			"Feats": [
 				{
-					"Feat": "base",
+					"Feat": "put",
 					"Issues": [
 						{
-							"Issue": "login",
+							"Issue": "接口定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "logout",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "命令执行前检查是否登录",
+							"Issue": "接口实现",
 							"ManDays": 0.5
 						}
 					]
 				},
 				{
+					"Feat": "get",
+					"Issues": [
+						{
+							"Issue": "接口定义",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "接口实现",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "permission",
+			"Feats": [
+				{
+					"Feat": "enhancement",
+					"Issues": [
+						{
+							"Issue": "支持管理员停止任务",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "支持管理员销毁任务",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "数据集列表支持ACL",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "deployment",
+			"Feats": [
+				{
+					"Feat": "secure-docker-registry",
+					"Issues": [
+						{
+							"Issue": "docker-registry配置tls",
+							"ManDays": 0.5
+						},
+						{
+							"Issue": "gateway配置支持sirius组件的反向代理",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "mount",
+			"Feats": [
+				{
 					"Feat": "job",
 					"Issues": [
 						{
-							"Issue": "create",
+							"Issue": "[state-transition]创建任务时传递mount-setting",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "pod",
+					"Issues": [
+						{
+							"Issue": "[api]创建pod接口增加挂载的读写权限以及容忍失败的参数定义",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "stop",
+							"Issue": "[state-transition]创建容器时传递读写权限以及容忍失败的参数",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "container",
+					"Issues": [
+						{
+							"Issue": "[api]挂载点允许失败以及读写权限参数定义",
+							"ManDays": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"Mod": "deployment-automation",
+			"Feats": [
+				{
+					"Feat": "nfs-server",
+					"Issues": [
+						{
+							"Issue": "nfs-server初始化",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "core",
+					"Issues": [
+						{
+							"Issue": "工作目录初始化",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "start",
+							"Issue": "持久化nfs-mount",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "terminate",
+							"Issue": "docker-registry配置",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "create-image",
+							"Issue": "镜像初始化",
+							"ManDays": 0.5
+						}
+					]
+				},
+				{
+					"Feat": "compute",
+					"Issues": [
+						{
+							"Issue": "持久化nfs-mount",
 							"ManDays": 0.5
 						},
 						{
-							"Issue": "list",
-							"ManDays": 0.5
-						},
-						{
-							"Issue": "detail",
+							"Issue": "docker-registry配置",
 							"ManDays": 0.5
 						}
 					]
