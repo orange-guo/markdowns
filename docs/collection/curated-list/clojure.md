@@ -2,7 +2,9 @@
 
 <!--truncate-->
 
-## Libraries
+## Project
+
+### Library
 
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
@@ -42,8 +44,7 @@
 - [babashka](https://babashka.org/)
   <br/>Native, fast starting Clojure interpreter for scripting.
 
-
-## Code style
+### Code style
 
 - [clojure-style-guide](https://github.com/bbatsov/clojure-style-guide)
   <br/>A community coding style guide for the Clojure programming language
