@@ -5,8 +5,6 @@ tags: [java, curated-list]
 
 # Java
 
-<!--truncate-->
-
 ## Project
 
 ### Testing
