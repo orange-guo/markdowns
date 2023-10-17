@@ -21,3 +21,6 @@
   <br/>Repository for OpenJDK Mission Control, a production time profiling and diagnostics tools suite.
 - [jfx](https://github.com/openjdk/jfx)
   <br/>JavaFX mainline development
+  <br/>
+- [CRaC](https://github.com/CRaC/docs#crac)
+  <br/>CRaC is a tool for analyzing the performance of Java applications. It is based on the Java Virtual Machine
