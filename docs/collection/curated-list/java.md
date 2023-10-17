@@ -7,7 +7,9 @@ tags: [java, curated-list]
 
 <!--truncate-->
 
-## Testing
+## Project
+
+### Testing
 
 - [approval-tests](https://approvaltests.com/)
   <br/>Unit testing asserts can be difficult to use. Approval tests simplify this by taking a snapshot of the results,
@@ -16,7 +18,7 @@ tags: [java, curated-list]
   <br/>Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common
   databases, Selenium web browsers, or anything else that can run in a Docker container.
 
-## Workflow
+### Workflow
 
 - [conductor](https://conductor.netflix.com/)
   <br/>Conductor is a platform created by Netflix to orchestrate workflows that span across microservices.
@@ -33,7 +35,7 @@ tags: [java, curated-list]
 - [Airflow](https://airflow.apache.org/)
   <br/>Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.
 
-## Language Extension
+### Language Extension
 
 - [Project Lombok](https://projectlombok.org/)
   <br/>Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
@@ -43,7 +45,7 @@ tags: [java, curated-list]
   <br/>Manifold is a Java compiler plugin, its features include Metaprogramming, Properties, Extension Methods, Operator
   Overloading, Templates, a Preprocessor, and more.
 
-## Framework
+### Framework
 
 - [helidon](https://helidon.io/)
   <br/>Helidon is a cloud-native, open‑source set of Java libraries for writing microservices that run on a fast web
@@ -59,12 +61,12 @@ tags: [java, curated-list]
 - [javalin](https://javalin.io/)
   <br/>A simple web framework for Java and Kotlin
 
-## Console
+### Console
 
 - [jline](https://github.com/jline/jline3)
   <br/>JLine is a Java library for handling console input.
 
-## Command Execution
+### Command Execution
 
 - [commons-exec](https://github.com/apache/commons-exec)
   <br/>Apache Commons Exec.
@@ -75,13 +77,13 @@ tags: [java, curated-list]
 - [sshj](https://github.com/hierynomus/sshj)
   <br/>ssh, scp and sftp for java.
 
-## AOT
+### AOT
 
 - [graalvm](https://www.graalvm.org/)
   <br/>GraalVM is a high-performance, polyglot virtual machine for running applications written in JavaScript, Python,
   Ruby, R, JVM-based languages like Java, Scala, Kotlin, and LLVM-based languages such as C and C++.
 
-## Observation
+### Observation
 
 - [micrometer](https://micrometer.io/)
   <br/>Micrometer provides a simple facade over the instrumentation clients for the most popular monitoring systems,
@@ -90,7 +92,7 @@ tags: [java, curated-list]
   <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
   telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 
-## Reactive
+### Reactive
 
 - [reactor](https://projectreactor.io/)
   <br/>Reactor is a fourth-generation reactive library, based on the Reactive Streams
@@ -100,13 +102,20 @@ tags: [java, curated-list]
 - [r2dbc](https://r2dbc.io/)
   <br/>The Reactive Relational Database Connectivity (R2DBC) project brings reactive programming APIs to relational databases.
 
-
-## Data access
+### Data access
 
 - [jOOQ](https://www.jooq.org/)
   <br/>jOOQ generates Java code from your database and lets you build type safe SQL queries through its fluent API.
 
-## 参考
+### Curated list
 
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
+
+
+## Reference
+
+### Article
+
+- [Measuring Object Sizes in the JVM](https://www.baeldung.com/jvm-measuring-object-sizes)
+- [Using Watch with the Kubernetes API](https://www.baeldung.com/java-kubernetes-watch)
