@@ -18,3 +18,5 @@
   <br/>The Julia Programming Language
 - [groovy](https://groovy-lang.org/)
   <br/>Apache Groovy: A powerful multi-faceted programming language for the JVM platform
+- [haskell](https://www.haskell.org/)
+  <br/>An advanced, purely functional programming language
