@@ -24,3 +24,8 @@
   <br/>
 - [CRaC](https://github.com/CRaC/docs#crac)
   <br/>CRaC is a tool for analyzing the performance of Java applications. It is based on the Java Virtual Machine
+
+## JEP
+
+- [JEP 444](https://openjdk.org/jeps/444)
+  <br/>JEP 444: Virtual Threads
