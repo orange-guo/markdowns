@@ -6,22 +6,39 @@
   <br/>For engineering, STEM education, and data science
 - [prometheus-client-golang](https://github.com/prometheus/client_golang)
   <br/>Prometheus instrumentation library for Go applications
+- [moby](https://github.com/moby/moby)
+  <br/>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
+
+## Data Access
+
 - [gorm](https://gorm.io/)
   <br/>The fantastic ORM library for Golang
 - [gorm-gen](https://gorm.io/gen/)
   <br/>GORM Gen is a code generation tool for GORM ORM library
-- [urfave/cli](https://github.com/urfave/cli)
-  <br/>A simple, fast, and fun package for building command line apps in Go
+
+## Testing
+
 - [mock](https://github.com/uber-go/mock)
   <br/>GoMock is a mocking framework for the Go programming language.
-- [fx](https://github.com/uber-go/fx)
-  <br/>A dependency injection based application framework for Go.
+
+## Functional
+
 - [lo](https://github.com/samber/lo)
   <br/>💥 A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)
 - [mo](https://github.com/samber/mo)
   <br/>🦄 Monads and popular FP abstractions, powered by Go 1.18+ Generics (Option, Result, Either...)
-- [moby](https://github.com/moby/moby)
-  <br/>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
+
+## Dependency Injection
+
+- [fx](https://github.com/uber-go/fx)
+  <br/>A dependency injection based application framework for Go.
+
+### Command line
+
+- [urfave/cli](https://github.com/urfave/cli)
+  <br/>A simple, fast, and fun package for building command line apps in Go
+- [cobra](https://github.com/spf13/cobra)
+  <br/>A Commander for modern Go CLI interactions
 
 ## Tutorial
 
@@ -31,6 +48,8 @@
 - [Go Tutorials & Examples](https://gosamples.dev/)
   <br/>Learn Go programming by example. GOSAMPLES is a library of Go tutorials and examples that helps you solve
   everyday code problems.
+- [enumflag](https://github.com/thediveo/enumflag)
+  <br/>enumflag is a Go package for the Go standard library's flag package to support command-line flags of type enum.
 
 ## Articles
 
