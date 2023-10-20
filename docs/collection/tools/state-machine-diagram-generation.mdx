@@ -1,0 +1,47 @@
+import {useState} from "react";
+import smcat from "state-machine-cat";
+import {useLocation} from "react-router-dom";
+
+export function Render() {
+	try {
+		const location = useLocation();
+		const queryParams = new URLSearchParams(location.search);
+		const definition = queryParams.get('smcat');
+		console.log(definition)
+		const defaultInput = definition || ""
+		const [input, setInput] = useState(defaultInput)
+		const [imgData, setImgData] = useState("")
+		function getUrl() {
+			return `${window.location.origin}${location.pathname}?smcat=${encodeURIComponent(input)}`
+		}
+		return (
+			<div>
+				<div>
+					<input value={input} placeholder={"Put yor smcat definition here"} onChange={(e) => {
+						setInput(e.target.value)
+					}}></input>
+					<button onClick={(e) => {
+						try {
+							setImgData(
+								smcat.render(
+									input,
+									{
+										outputType: "svg",
+									},
+								)
+							)
+						} catch (e) {
+							alert(e)
+						}
+					}}>Submit
+					</button>
+				</div>
+				<p>This is share url {getUrl()}</p>
+				<img key={imgData} src={`data:image/svg+xml;utf8,${encodeURIComponent(imgData)}`} alt="SVG"/>
+			</div>
+		);
+	} catch (pError) {
+	}
+}
+
+<Render/>

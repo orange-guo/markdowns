@@ -33,7 +33,9 @@
     "prism-react-renderer": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "snowflake-id": "^1.1.0"
+    "react-router-dom": "^6.17.0",
+    "snowflake-id": "^1.1.0",
+    "state-machine-cat": "^12.0.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.4.1"
