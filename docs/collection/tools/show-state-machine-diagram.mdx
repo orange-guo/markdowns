@@ -1,10 +1,9 @@
-import {render} from "state-machine-cat";
-
+import smcat from "state-machine-cat";
 
 export function Render() {
 	const queryParams = new URLSearchParams(location.search);
 	try {
-		let data = render(
+		let data = smcat.render(
 			queryParams.get('smcat'),
 			{
 				outputType: "svg",
