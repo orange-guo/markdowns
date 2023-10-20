@@ -12,7 +12,7 @@ export function Render() {
 		const [input, setInput] = useState(defaultInput)
 		const [imgData, setImgData] = useState("")
 		function getUrl() {
-			return `${window.location.origin}${location.pathname}?smcat=${encodeURIComponent(input)}`
+			return `${window.location.origin}/docs/collection/tools/show-state-machine-diagram?smcat=${encodeURIComponent(input)}`
 		}
 		return (
 			<div>

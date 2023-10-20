@@ -1,0 +1,23 @@
+import {render} from "state-machine-cat";
+
+
+export function Render() {
+	const queryParams = new URLSearchParams(location.search);
+	try {
+		let data = render(
+			queryParams.get('smcat'),
+			{
+				outputType: "svg",
+			},
+		)
+		return (
+			<div>
+				<img src={`data:image/svg+xml;utf8,${encodeURIComponent(data)}`} alt="SVG"/>
+			</div>
+		)
+	} catch (ex) {
+		return (<div><p>{ex.message}</p></div>)
+	}
+}
+
+<Render/>
