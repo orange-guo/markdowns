@@ -1,0 +1,54 @@
+import CodeMirror from "@uiw/react-codemirror";
+import {json} from '@codemirror/lang-json'
+import {light} from '@uiw/codemirror-theme-white';
+import {useState} from "react";
+import smcat from "state-machine-cat";
+
+export function Render() {
+    try {
+        const [imgData, setImgData] = useState(null)
+        const [error, setError] = useState("No smcat definition")
+        const [url, setUrl] = useState(null)
+        function onCodeMirrorChange(value) {
+            console.log(value)
+            try {
+                setImgData(
+                    smcat.render(
+                        value,
+                        {
+                            outputType: "svg",
+                        },
+                    )
+                )
+                setUrl(`${window.location.origin}/docs/collection/tools/show-state-machine-diagram?smcat=${encodeURIComponent(value)}`)
+                setError(null)
+            } catch (e) {
+                setError(e.message)
+            }
+        }
+        return (
+            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+                <div style={{alignSelf: "stretch"}}>
+                    <CodeMirror
+                        theme={light}
+                        extensions={[json()]}
+                        onChange={onCodeMirrorChange}
+                        style={{
+                            border: '1px',
+                        }}
+                    />
+                </div>
+                <div style={{alignSelf: "stretch"}}>
+                    <p>The share url is {url}</p>
+                    <div>
+                        {(error == null) ? <img src={`data:image/svg+xml;base64,${btoa(imgData)}`} alt=""/> :
+                            <div>{error}</div>}
+                    </div>
+                </div>
+            </div>
+        );
+    } catch (pError) {
+    }
+}
+
+<Render/>
