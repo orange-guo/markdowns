@@ -1,6 +1,8 @@
 import smcat from "state-machine-cat";
+import {useLocation} from "react-router-dom";
 
 export function Render() {
+	const location = useLocation();
 	const queryParams = new URLSearchParams(location.search);
 	try {
 		let data = smcat.render(
