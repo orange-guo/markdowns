@@ -2,33 +2,30 @@ import CodeMirror from "@uiw/react-codemirror";
 import {json} from '@codemirror/lang-json'
 import {light} from '@uiw/codemirror-theme-white';
 import {useState} from "react";
-import smcat from "state-machine-cat";
+import {render} from "state-machine-cat";
 
 export function Render() {
     try {
-        const [imgData, setImgData] = useState(null)
+		const [image, setImage] = useState(null)
         const [error, setError] = useState("No smcat definition")
-        const [url, setUrl] = useState(null)
+		const [previewUrl, setPreviewUrl] = useState(null)
+		function base64EncodeUnicode(str) {
+			// 对字符串进行编码，以支持非拉丁字符
+			return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => String.fromCharCode(`0x${p1}`)));
+		}
         function onCodeMirrorChange(value) {
-            console.log(value)
             try {
-                setImgData(
-                    smcat.render(
-                        value,
-                        {
-                            outputType: "svg",
-                        },
-                    )
-                )
-                setUrl(`${window.location.origin}/docs/collection/tools/show-state-machine-diagram?smcat=${encodeURIComponent(value)}`)
+				setImage(base64EncodeUnicode(render(value, {outputType: "svg"})))
+				setPreviewUrl(`${window.location.origin}/docs/collection/tools/show-state-machine-diagram?smcat=${encodeURIComponent(value)}`)
                 setError(null)
             } catch (e) {
+				setPreviewUrl(null)
                 setError(e.message)
             }
         }
         return (
             <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
-                <div style={{alignSelf: "stretch"}}>
+                <div style={{alignSelf: "stretch", width: '300px'}}>
                     <CodeMirror
                         theme={light}
                         extensions={[json()]}
@@ -38,11 +35,11 @@ export function Render() {
                         }}
                     />
                 </div>
-                <div style={{alignSelf: "stretch"}}>
-                    <p>The share url is {url}</p>
+                <div style={{alignSelf: "stretch", width: '700px'}}>
+					<p>The share url is <a href={previewUrl}>Link</a></p>
                     <div>
-                        {(error == null) ? <img src={`data:image/svg+xml;base64,${btoa(imgData)}`} alt=""/> :
-                            <div>{error}</div>}
+						{(error == null) ? <img src={`data:image/svg+xml;base64,${image}`} alt=""/> :
+							<div>{error}</div>}
                     </div>
                 </div>
             </div>
