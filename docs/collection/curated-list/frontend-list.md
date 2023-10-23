@@ -23,6 +23,10 @@
 - [react-codemirror](https://github.com/uiwjs/react-codemirror)
   <br/>CodeMirror component for React. @codemirror
 
+### Diagram Generation
+- [state-machine-cat](https://github.com/sverweij/state-machine-cat)
+  <br/>write beautiful state charts 🙀
+
 ## References
 
 ### Sites
