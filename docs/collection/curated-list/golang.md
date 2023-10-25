@@ -1,5 +1,24 @@
 # Golang
 
+## Web
+
+- [gin](https://github.com/gin-gonic/gin)
+  <br/>Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better
+  performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin.
+- [echo](https://github.com/labstack/echo)
+  <br/>High performance, minimalist Go web framework
+
+## Configuration
+
+- [viper](https://github.com/spf13/viper)
+  <br/>Go configuration with fangs
+
+## Log
+
+- [logus](https://github.com/sirupsen/logrus)
+  <br/>Structured, pluggable logging for Go.
+
+
 ## Libraries
 
 - [gop](https://goplus.org/)
@@ -23,6 +42,10 @@
 
 - [mock](https://github.com/uber-go/mock)
   <br/>GoMock is a mocking framework for the Go programming language.
+- [goconvey](https://github.com/smartystreets/goconvey)
+  <br/>Go testing in the browser. Integrates with `go test`. Write behavioral tests in Go.
+- [ginkgo](https://github.com/onsi/ginkgo)
+  <br/>A Modern Testing Framework for Go
 
 ## Functional
 
@@ -35,6 +58,8 @@
 
 - [fx](https://github.com/uber-go/fx)
   <br/>A dependency injection based application framework for Go.
+- [wire](https://github.com/google/wire)
+  <br/>Compile-time Dependency Injection for Go
 
 ### Command line
 
@@ -42,6 +67,11 @@
   <br/>A simple, fast, and fun package for building command line apps in Go
 - [cobra](https://github.com/spf13/cobra)
   <br/>A Commander for modern Go CLI interactions
+
+## Build
+
+- [glide](https://github.com/Masterminds/glide)
+  <br/>Package Management for Golang
 
 ## Tutorial
 
