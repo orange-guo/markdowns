@@ -1,6 +1,6 @@
 # Grpc
 
-## Dependencies
+## Projects
 
 - [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway)
   <br/>gRPC to JSON proxy generator following the gRPC HTTP spec
@@ -16,6 +16,14 @@
   <br/>[Deprecated] Protocol Buffers for Go with Gadgets
 - [googleapis](https://github.com/googleapis/googleapis)
   <br/>Public interface definitions of Google APIs.
+- [connect-es](https://github.com/connectrpc/connect-es)
+  <br/>The TypeScript implementation of Connect: Protobuf RPC that works.
+- [ts-protoc-gen](https://github.com/improbable-eng/ts-protoc-gen)
+  <br/>Protocol Buffers Compiler (protoc) plugin for TypeScript and gRPC-Web.
+- [protobuf-ts](https://github.com/timostamm/protobuf-ts)\
+  <br/>Protobuf and RPC for TypeScript
+- [protoc-gen-grpc-gateway-ts](https://github.com/grpc-ecosystem/protoc-gen-grpc-gateway-ts)
+  <br/>protoc-gen-grpc-gateway-ts is a Typescript client generator for the grpc-gateway project. It generates idiomatic Typescript clients that connect the web frontend and golang backend fronted by grpc-gateway.
 
 ## Gradle Plugins
 
