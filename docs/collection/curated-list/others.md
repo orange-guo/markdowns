@@ -52,6 +52,8 @@
   <br/>🃏 A magical documentation site generator.
 - [docusaurus](https://github.com/facebook/docusaurus)
   <br/>Easy to maintain open source documentation websites.
+- [docusaurus-prince-pdf](https://github.com/signcl/docusaurus-prince-pdf)
+  <br/>Docusaurus PDF generator using Prince XML
 
 ## Code Art
 - [“IDE 启动画面是如何诞生的？” | JetBrains AI 图形发展史](https://mp.weixin.qq.com/s/0HXmHpb658DvSQpAZUQWew)
