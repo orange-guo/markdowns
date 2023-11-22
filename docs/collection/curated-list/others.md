@@ -52,3 +52,15 @@
   <br/>🃏 A magical documentation site generator.
 - [docusaurus](https://github.com/facebook/docusaurus)
   <br/>Easy to maintain open source documentation websites.
+
+## Code Art
+- [“IDE 启动画面是如何诞生的？” | JetBrains AI 图形发展史](https://mp.weixin.qq.com/s/0HXmHpb658DvSQpAZUQWew)
+- [Intelligent Code Art](https://blog.jetbrains.com/blog/2020/09/29/intelligent-code-art/)
+- [Gradient](https://gradient-public.labs.jb.gg/)
+  <br/>We propose a rethinking of the gradient concept as a spatial expression of time, the fundamental basis of any dynamics, any movement and any drive.
+- [dots.labs.jb.gg](https://dots.labs.jb.gg/)
+- [Eidos - Code2Art 2023](https://code2art.jetbrains.com/)
+- [Computational Arts](https://cai.jetbrains.com/)
+- [Desktop Art](https://www.jetbrains.com/company/brand/desktop-art/)
+- [Tiler](https://tiler.labs.jb.gg/)
+  <br/>We implemented a collaborative approach that combined individual artistic expression with a computational tiling algorithm.
