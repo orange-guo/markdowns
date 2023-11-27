@@ -95,6 +95,13 @@
 - [asdf-golang](https://github.com/asdf-community/asdf-golang)
   <br/>Go plugin for the asdf version manager
 
+## Alerting
+
+- [sentry](https://github.com/getsentry/sentry)
+  <br/>Developer-first error tracking and performance monitoring
+- [alertmanager](https://github.com/prometheus/alertmanager)
+  <br/>Prometheus Alertmanager
+
 ## OpenAPI
 - [openapi-generator-cli](https://github.com/OpenAPITools/openapi-generator-cli)
   <br/>A node package wrapper for https://github.com/OpenAPITools/openapi-generator
