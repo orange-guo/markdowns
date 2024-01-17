@@ -9,6 +9,11 @@
   became one of the best-selling Java books on Amazon.
   <br/>I'm currently developing the amazing Hypersistence Optimizer, and in my free time, I develop various open-source
   projects (e.g. Hibernate Types and FlexyPool) and answer questions on StackOverflow.
+- [learning-notes](https://learning-notes.mistermicheels.com/)
+  <br/>These are some notes regarding things I have learned.
+  <br/>Each note will provide a summary of the most important points regarding the topic. This is useful for getting a
+  higher-level understanding or refreshing your memory. If you want more details, you can use the resources at the end
+  of the note as a curated list of resources.
 - [martinfowler.com](https://martinfowler.com)
 - [microservices.io](https://microservices.io)
 - [samnewman.io](https://samnewman.io)
