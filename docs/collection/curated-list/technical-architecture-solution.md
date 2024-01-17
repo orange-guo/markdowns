@@ -54,6 +54,14 @@
 - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
   <br/>Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting
   concerns to them such as: security, monitoring/metrics, and resiliency.
+- [apisix](https://github.com/apache/apisix)
+  <br/>The Cloud-Native API Gateway
+- [tyk](https://github.com/TykTechnologies/tyk)
+  <br/>Tyk Open Source API Gateway written in Go, supporting REST, GraphQL, TCP and gRPC protocols
+- [krakend-ce](https://github.com/krakend/krakend-ce)
+  <br/>KrakenD Community Edition: High-performance, stateless, declarative, API Gateway written in Go.
+- [gravitee-api-management](https://github.com/gravitee-io/gravitee-api-management)
+  <br/>Gravitee.io - OpenSource API Management
 
 ## Monitoring
 
