@@ -20,3 +20,4 @@
   <br/>Apache Groovy: A powerful multi-faceted programming language for the JVM platform
 - [haskell](https://www.haskell.org/)
   <br/>An advanced, purely functional programming language
+- [Haskell Wiki](wiki.haskell.org)
