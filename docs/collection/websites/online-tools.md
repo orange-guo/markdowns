@@ -11,6 +11,10 @@
 - [crontab guru](https://crontab.guru/)
 - [随机密码生成器 - 随机字符串生成器](http://tool.c7sky.com/password/)
 - [Chat with PDF](https://www.hipdf.com/chat-with-pdf)
+- [httpbin.org](https://httpbin.org/)
+  <br/>A simple HTTP Request & Response Service.
+- [CodeSandbox](https://codesandbox.io/dashboard)
+  <br/>CodeSandbox is a cloud development platform that empowers developers to code, collaborate and ship projects of any size from any device in record time.
 
 ## 前端
 

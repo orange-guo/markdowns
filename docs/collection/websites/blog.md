@@ -1,5 +1,14 @@
 # Blog
 
+- [Thomas Vitale](https://www.thomasvitale.com/)
+  <br/>Hello! I'm Thomas Vitale, I live in Denmark, and I'm a Software Engineer and Architect specialized in building
+  cloud native, resilient, and secure enterprise applications. I'm the author of Cloud Native Spring in Action, I'm a
+  CNCF Ambassador, and Oracle ACE Pro.
+- [Vlad Mihalcea](https://vladmihalcea.com/)
+  <br/>My name is Vlad Mihalcea, and I’m a Java Champion. I wrote the High-Performance Java Persistence book, which
+  became one of the best-selling Java books on Amazon.
+  <br/>I'm currently developing the amazing Hypersistence Optimizer, and in my free time, I develop various open-source
+  projects (e.g. Hibernate Types and FlexyPool) and answer questions on StackOverflow.
 - [martinfowler.com](https://martinfowler.com)
 - [microservices.io](https://microservices.io)
 - [samnewman.io](https://samnewman.io)
@@ -11,7 +20,6 @@
 - [patrickmn](https://patrickmn.com/)
 - [linuxize](https://linuxize.com/)
 - [Luke](https://broch.tech/)
-- [Vlad Mihalcea](https://vladmihalcea.com/)
 - [美团技术团队](https://tech.meituan.com/)
 - [Thoughtworks洞见](https://insights.thoughtworks.cn/)
 - [小米信息部技术团队](https://xiaomi-info.github.io/)
