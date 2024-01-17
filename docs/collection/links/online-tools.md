@@ -28,6 +28,9 @@
   show off your work, build test cases to learn and debug, and find inspiration.
 - [Mozilla Developer Network](https://developer.mozilla.org/)
   <br/>The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs
+- [ReactiveX](https://reactivex.io/)
+  <br/>An API for asynchronous programming
+  with observable streams
 
 ## 其他
 
