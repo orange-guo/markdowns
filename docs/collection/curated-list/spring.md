@@ -39,6 +39,12 @@
   <br/>Support for using OpenFeign in Spring Cloud apps
 - [spring-cloud-function](https://github.com/spring-cloud/spring-cloud-function)
 
+### Third Party
+
+- [awesome-spring](https://github.com/ThomasVitale/awesome-spring)
+  <br/>A curated list of awesome books, tutorials, courses, and resources for the Spring framework ecosystem.
+
+
 ## Reference
 
 ### Sites
