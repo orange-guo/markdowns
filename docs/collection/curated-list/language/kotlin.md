@@ -5,17 +5,28 @@
 - [kotlin.link](https://kotlin.link/)
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
   <br/>A curated list of awesome Kotlin related stuff Inspired by awesome-java.
-- [ktor](https://ktor.io/)
-  <br/>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps
-  in a simple way. Open Source, free, and fun!
-- [koin](https://insert-koin.io/)
-  <br/>The pragmatic Kotlin dependency injection framework.
 - [arrow](https://github.com/arrow-kt/arrow)
   <br/>Λrrow - Functional companion to Kotlin's Standard Library
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
   <br/>Library support for Kotlin coroutines
+
+## Web
+
+- [ktor](https://ktor.io/)
+  <br/>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps
+  in a simple way. Open Source, free, and fun!
+
+## Dependency Injection
+
+- [koin](https://github.com/InsertKoinIO/koin)
+  <br/>Koin - a pragmatic lightweight dependency injection framework for Kotlin & Kotlin Multiplatform
 - [Kodein](https://kosi-libs.org/)
   <br/>Painless Kotlin Dependency Injection
+
+## Utility
+
+- [kunion](https://github.com/renatoathaydes/kunion)
+  <br/>Union types for Kotlin
 
 ## Test
 
@@ -32,7 +43,7 @@
 - [kotlin-logging](https://github.com/oshai/kotlin-logging)
   <br/>Lightweight Multiplatform logging framework for Kotlin. A convenient and performant logging facade.
 
-## ORM
+## Database
 
 - [SQLlin](https://github.com/ctripcorp/SQLlin)
   <br/>A DSL SQLite library for Kotlin Multiplatform.
