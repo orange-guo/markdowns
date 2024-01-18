@@ -24,6 +24,15 @@
 - [ngx-schema-form](https://github.com/guillotinaweb/ngx-schema-form)
   <br/>HTML form generation based on JSON Schema
 
+## UI
+
+- [material-ui](https://github.com/mui/material-ui)
+  <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements Google's Material Design.
+- [ant-design](https://github.com/ant-design/ant-design)
+  <br/>An enterprise-class UI design language and React UI library
+
+- [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
+
 ## Editor
 
 - [monaco-react](https://github.com/suren-atoyan/monaco-react)
