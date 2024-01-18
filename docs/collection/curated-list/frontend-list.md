@@ -13,7 +13,18 @@
 - [gitbeaker](https://github.com/jdalrymple/gitbeaker)
   <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
-### Editor
+## UI Form
+
+- [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form)
+  <br/>A React component for building Web forms from JSON Schema.
+- [jsonforms](https://github.com/eclipsesource/jsonforms)
+  <br/>Customizable JSON Schema-based forms with React, Angular and Vue support out of the box.
+- [jsonforms-angular-seed](https://github.com/eclipsesource/jsonforms-angular-seed)
+  <br/>Angular-based JSON Forms seed app
+- [ngx-schema-form](https://github.com/guillotinaweb/ngx-schema-form)
+  <br/>HTML form generation based on JSON Schema
+
+## Editor
 
 - [monaco-react](https://github.com/suren-atoyan/monaco-react)
   <br/>Monaco Editor for React - use the monaco-editor in any React application without needing to use webpack (or
@@ -21,7 +32,7 @@
 - [react-codemirror](https://github.com/uiwjs/react-codemirror)
   <br/>CodeMirror component for React. @codemirror
 
-### Diagram Generation
+## Diagram Generation
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
