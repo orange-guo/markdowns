@@ -15,6 +15,8 @@
   is software-defined and is 100% open source under GNU AGPL v3.
 - [fuse-copyfs](https://github.com/cognusion/fuse-copyfs)
   <br/>CopyFS is the copy-on-write (COW) versioned filesystem for FUSE. Years ago I added features to CopyFS 1.0, then 1.0.1 came out and I never bothered to forward-port my changes. Now I have. Master is 1.3.1M, which is CopyFS 1.0.1 + 1.3M
+- [incubator-opendal](https://github.com/apache/incubator-opendal)
+  <br/>Apache OpenDAL: access data freely.
 
 ## build
 
