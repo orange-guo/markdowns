@@ -7,17 +7,18 @@
   performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin.
 - [echo](https://github.com/labstack/echo)
   <br/>High performance, minimalist Go web framework
+- [huma](https://github.com/danielgtaylor/huma)
+  <br/>A modern web framework for Go
 
 ## Configuration
 
 - [viper](https://github.com/spf13/viper)
   <br/>Go configuration with fangs
 
-## Log
+## Logging
 
 - [logus](https://github.com/sirupsen/logrus)
   <br/>Structured, pluggable logging for Go.
-
 
 ## Libraries
 
@@ -31,12 +32,33 @@
 - [moby](https://github.com/moby/moby)
   <br/>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
 
-## Data Access
+## Database
 
-- [gorm](https://gorm.io/)
+- [gorm](https://github.com/go-gorm/gorm)
   <br/>The fantastic ORM library for Golang
 - [gorm-gen](https://gorm.io/gen/)
   <br/>GORM Gen is a code generation tool for GORM ORM library
+- [badger](https://github.com/dgraph-io/badger)
+  <br/>Fast key-value DB in Go.
+
+## Gprc & Protobuf
+
+- [protoc-gen-jsonschema](https://github.com/chrusty/protoc-gen-jsonschema)
+  <br/>Protobuf to JSON-Schema compiler
+
+## Json
+
+- [jsonschema](https://github.com/invopop/jsonschema)
+  <br/>Generate JSON Schemas from Go types
+- [go-jsonschema](https://github.com/omissis/go-jsonschema)
+  <br/>A tool to generate Go data types from JSON Schema definitions.
+
+## Yaml
+
+- [yaml2go](https://github.com/PrasadG193/yaml2go)
+  <br/>Converts YAML specs into Go Lang type definitions
+- [yaml](https://github.com/go-yaml/yaml)
+  <br/>YAML support for the Go language.
 
 ## Testing
 
@@ -56,10 +78,19 @@
 
 ## Dependency Injection
 
-- [fx](https://github.com/uber-go/fx)
-  <br/>A dependency injection based application framework for Go.
 - [wire](https://github.com/google/wire)
   <br/>Compile-time Dependency Injection for Go
+- [dig](https://github.com/uber-go/dig)
+  <br/>A reflection based dependency injection toolkit for Go.
+- [fx](https://github.com/uber-go/fx)
+  <br/>A dependency injection based application framework for Go.
+
+## Value Mapping
+
+- [mapstructure](https://github.com/mitchellh/mapstructure)
+  <br/>Go library for decoding generic map values into native Go structures and vice versa.
+- [copier](https://github.com/jinzhu/copier)
+  <br/>Copier for golang, copy value from struct to struct and more
 
 ### Command line
 
@@ -72,6 +103,11 @@
 
 - [glide](https://github.com/Masterminds/glide)
   <br/>Package Management for Golang
+
+## Notification
+
+- [notify](https://github.com/nikoksr/notify)
+  <br/>A dead simple Go library for sending notifications to various messaging services.
 
 ## Tutorial
 
