@@ -75,11 +75,6 @@ tags: [java, curated-list]
 - [sshj](https://github.com/hierynomus/sshj)
   <br/>ssh, scp and sftp for java.
 
-### AOT
-
-- [graalvm](https://www.graalvm.org/)
-  <br/>GraalVM is a high-performance, polyglot virtual machine for running applications written in JavaScript, Python,
-  Ruby, R, JVM-based languages like Java, Scala, Kotlin, and LLVM-based languages such as C and C++.
 
 ### Observation
 
@@ -117,3 +112,4 @@ tags: [java, curated-list]
 
 - [Measuring Object Sizes in the JVM](https://www.baeldung.com/jvm-measuring-object-sizes)
 - [Using Watch with the Kubernetes API](https://www.baeldung.com/java-kubernetes-watch)
+- [深入浅出Java多线程](https://redspider.gitbook.io/concurrent/)
