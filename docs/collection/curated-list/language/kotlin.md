@@ -10,6 +10,12 @@
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
   <br/>Library support for Kotlin coroutines
 
+## Samples
+
+- [ktor-arrow-example](https://github.com/nomisRev/ktor-arrow-example)
+  <br/>Real World implementation - "The mother of all demo apps". Written in Kotlin, with Ktor, Arrow, SqlDelight,
+  KotlinX Serialization, etc.
+
 ## Web
 
 - [ktor](https://ktor.io/)
@@ -66,3 +72,9 @@
   <br/>Pure Kotlin implementation of a generic CLI parser.
 - [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
   <br/>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin
+
+
+
+## Articles
+
+- [Running Kotlin coroutines on Project Loom's virtual threads](https://kt.academy/article/dispatcher-loom)
