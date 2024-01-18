@@ -49,9 +49,8 @@
 
 ## Command line
 
-- [Clikt](https://ajalt.github.io/clikt/)
-  <br/>Clikt (pronounced “clicked”) is a multiplatform Kotlin library that makes writing command line interfaces simple
-  and intuitive. It’s the “Command Line Interface for Kotlin”.
+- [clikt](https://github.com/ajalt/clikt)
+  <br/>Multiplatform command line interface parsing for Kotlin
 - [kotlinx-cli](https://github.com/Kotlin/kotlinx-cli)
   <br/>Pure Kotlin implementation of a generic CLI parser.
 - [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
