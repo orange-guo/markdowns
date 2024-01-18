@@ -10,8 +10,8 @@
   in a simple way. Open Source, free, and fun!
 - [koin](https://insert-koin.io/)
   <br/>The pragmatic Kotlin dependency injection framework.
-- [arrow](https://arrow-kt.io/)
-  <br/>Functional companion to Kotlin's Standard Library
+- [arrow](https://github.com/arrow-kt/arrow)
+  <br/>Λrrow - Functional companion to Kotlin's Standard Library
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
   <br/>Library support for Kotlin coroutines
 - [Kodein](https://kosi-libs.org/)
