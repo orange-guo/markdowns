@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9433],{42659:e=>{e.exports=JSON.parse('{"title":"Tools","slug":"/category/tools","permalink":"/docs/category/tools","navigation":{"previous":{"title":"Scala","permalink":"/docs/curated-list/language/scala"},"next":{"title":"estimate-time","permalink":"/docs/curated-list/tools/estimate-time"}}}')}}]);
