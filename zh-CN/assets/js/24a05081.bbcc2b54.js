@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7089],{99604:s=>{s.exports=JSON.parse('{"label":"ansible","permalink":"/zh-CN/blog/tags/ansible","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

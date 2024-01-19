@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4051],{50098:a=>{a.exports=JSON.parse('{"label":"gradle-plugin","permalink":"/blog/tags/gradle-plugin","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

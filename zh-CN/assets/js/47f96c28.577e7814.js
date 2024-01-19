@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6608],{1926:s=>{s.exports=JSON.parse('{"label":"giscus","permalink":"/zh-CN/blog/tags/giscus","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

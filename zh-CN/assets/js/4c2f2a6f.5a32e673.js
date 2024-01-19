@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3259],{70583:s=>{s.exports=JSON.parse('{"label":"spring-cloud-openfeign","permalink":"/zh-CN/blog/tags/spring-cloud-openfeign","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

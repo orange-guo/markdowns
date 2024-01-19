@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[417],{3232:e=>{e.exports=JSON.parse('{"label":"openfeign","permalink":"/zh-CN/blog/tags/openfeign","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[5711],{69728:s=>{s.exports=JSON.parse('{"label":"springdoc","permalink":"/blog/tags/springdoc","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

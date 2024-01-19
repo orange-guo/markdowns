@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9514],{84528:s=>{s.exports=JSON.parse('{"label":"github","permalink":"/zh-CN/blog/tags/github","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

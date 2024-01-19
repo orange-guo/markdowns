@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9132],{2509:s=>{s.exports=JSON.parse('{"label":"aws","permalink":"/zh-CN/blog/tags/aws","allTagsPath":"/zh-CN/blog/tags","count":3,"unlisted":false}')}}]);

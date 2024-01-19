@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[964],{91189:s=>{s.exports=JSON.parse('{"label":"nvm","permalink":"/zh-CN/blog/tags/nvm","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);
