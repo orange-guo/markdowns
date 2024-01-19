@@ -60,24 +60,24 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Curated List',
+					label: 'Curated Lists',
 					docId: 'curated-list/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: '笔记',
+					label: 'Notes',
 					docId: 'note/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: '读书笔记',
+					label: 'Book Notes',
 					docId: 'booknote/introduction',
 				},
 				{
 					to: 'blog',
-					label: '博客',
+					label: 'Blog',
 					position: 'left'
 				},
 				{
