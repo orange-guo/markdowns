@@ -87,23 +87,6 @@
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
 
-## Monitoring
-
-- [sentry](https://github.com/getsentry/sentry)
-  <br/>Developer-first error tracking and performance monitoring
-- [self-hosted](https://github.com/getsentry/self-hosted)
-  <br/>Sentry, feature-complete and packaged up for low-volume deployments and proofs-of-concept
-- [alertmanager](https://github.com/prometheus/alertmanager)
-  <br/>Prometheus Alertmanager
-- [zabbix](https://github.com/zabbix/zabbix)
-  <br/>Real-time monitoring of IT components and services, such as networks, servers, VMs, applications and the cloud.
-- [icinga2](https://github.com/Icinga/icinga2)
-  <br/>The core of our monitoring platform with a powerful configuration language and REST API.
-- [nagioscore](https://github.com/NagiosEnterprises/nagioscore)
-  <br/>Nagios Core
-- [awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts)
-  <br/>🚨 Collection of Prometheus alerting rules
-
 ## Paas
 
 - [nomad](https://github.com/hashicorp/nomad)
