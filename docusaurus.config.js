@@ -66,12 +66,6 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Notes',
-					docId: 'note/introduction',
-				},
-				{
-					type: 'doc',
-					position: 'left',
 					label: 'Book Notes',
 					docId: 'booknote/introduction',
 				},
