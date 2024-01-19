@@ -68,6 +68,13 @@
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
 
+## Tools
+
+- [8biticon](https://github.com/matveyco/8biticon)
+  <br/>8biticon picture generator. Create your own funny profile pics!
+- [avatar-generator](https://github.com/arusanov/avatar-generator)
+  <br/>8bit avatar generator. Inspired by https://github.com/matveyco/8biticon
+
 ## AI Generated Content
 
 - [文心一言](https://yiyan.baidu.com/)
