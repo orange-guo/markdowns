@@ -68,7 +68,7 @@
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
 
-## Tools
+## avatar generator
 
 - [boring-avatars](https://github.com/boringdesigners/boring-avatars)
   <br/>Boring avatars is a tiny JavaScript React library that generates custom, SVG-based avatars from any username and color palette.
