@@ -60,8 +60,8 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Curated Lists',
-					docId: 'curated-list/introduction',
+					label: 'Docs',
+					docId: 'docs/introduction',
 				},
 				{
 					type: 'doc',
