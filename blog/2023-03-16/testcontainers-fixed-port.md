@@ -36,5 +36,5 @@ container.withFixedExposedPort(
 ## 参考资料
 
 - [Class TestSocketUtils](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/test/util/TestSocketUtils.html)
-- [Class FixedHostPortGenericContainer<SELF extends FixedHostPortGenericContainer<SELF\>\>](https://javadoc.io/static/org.testcontainers/testcontainers/1.15.1/org/testcontainers/containers/FixedHostPortGenericContainer.html)
+- [Class FixedHostPortGenericContainer\<SELF extends FixedHostPortGenericContainer\<SELF\>\>](https://javadoc.io/static/org.testcontainers/testcontainers/1.15.1/org/testcontainers/containers/FixedHostPortGenericContainer.html)
 - [How to useFixedHostPortGenericContainerinorg.testcontainers.containers](https://www.tabnine.com/code/java/classes/org.testcontainers.containers.FixedHostPortGenericContainer)
