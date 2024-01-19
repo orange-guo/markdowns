@@ -45,6 +45,30 @@
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
+## Build
+
+- [nx](https://github.com/nrwl/nx)
+  <br/>Smart Monorepos · Fast CI
+- [vite](https://github.com/vitejs/vite)
+  <br/>Next generation frontend tooling. It's fast!
+- [webpack](https://github.com/webpack/webpack)
+  <br/>A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for
+  loading parts of the application on demand. Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images,
+  JSON, Coffeescript, LESS, ... and your custom stuff.
+- [rollup](https://github.com/rollup/rollup)
+  <br/>Next-generation ES module bundler
+- [parcel](https://github.com/parcel-bundler/parcel)
+  <br/>The zero configuration build tool for the web. 📦🚀
+- [esbuild](https://github.com/evanw/esbuild)
+  <br/>An extremely fast bundler for the web
+- [swc](https://github.com/swc-project/swc)
+  <br/>Rust-based platform for the Web
+
+## Package Manager
+
+- [pnpm](https://github.com/pnpm/pnpm)
+  <br/>Fast, disk space efficient package manager
+
 ## References
 
 ### Sites
