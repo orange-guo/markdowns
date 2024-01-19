@@ -20,11 +20,6 @@
 - [terraform-examples](https://github.com/futurice/terraform-examples)
   <br/>Terraform samples for all the major clouds you can copy and paste. The future, co-created.
 
-## Security
-
-- [casbin](https://casbin.org/)
-  <br/>An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
-
 ## Others
 
 - [open-radiant](https://github.com/JetBrains/open-radiant)
@@ -68,10 +63,3 @@
   <br/>A node package wrapper for https://github.com/OpenAPITools/openapi-generator
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
-
-## Paas
-
-- [nomad](https://github.com/hashicorp/nomad)
-  <br/>Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice,
-  batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and
-  Vault integrations.

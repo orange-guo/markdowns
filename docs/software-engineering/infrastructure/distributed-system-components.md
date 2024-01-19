@@ -1,5 +1,17 @@
 # Distributed System Components
 
+## Paas
+
+- [nomad](https://github.com/hashicorp/nomad)
+  <br/>Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice,
+  batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and
+  Vault integrations.
+
+## Security
+
+- [casbin](https://casbin.org/)
+  <br/>An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
+
 ## Monitoring
 
 - [prometheus](https://prometheus.io/)
