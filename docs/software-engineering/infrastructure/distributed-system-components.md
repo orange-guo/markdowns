@@ -1,5 +1,59 @@
 # Distributed System Components
 
+## API Gateway
+
+- [Nginx](https://www.nginx.com/)
+  <br/>Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
+- [Traefik](https://traefik.io/)
+  <br/>Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+- [Kong](https://konghq.com/)
+  <br/>Kong is a cloud-native, fast, scalable, and distributed Microservice Abstraction Layer (also known as an API
+  Gateway, API Middleware or in some cases Service Mesh). Made available as an open-source project in 2015, its core
+  values are high performance and extensibility.
+- [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+  <br/>Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting
+  concerns to them such as: security, monitoring/metrics, and resiliency.
+- [apisix](https://github.com/apache/apisix)
+  <br/>The Cloud-Native API Gateway
+- [tyk](https://github.com/TykTechnologies/tyk)
+  <br/>Tyk Open Source API Gateway written in Go, supporting REST, GraphQL, TCP and gRPC protocols
+- [krakend-ce](https://github.com/krakend/krakend-ce)
+  <br/>KrakenD Community Edition: High-performance, stateless, declarative, API Gateway written in Go.
+- [gravitee-api-management](https://github.com/gravitee-io/gravitee-api-management)
+  <br/>Gravitee.io - OpenSource API Management
+
+## Configuration management
+
+- [consul](https://www.consul.io/)
+  <br/>Consul is a service networking solution to connect and secure services across any runtime platform and public or
+  private cloud
+- [nacos](https://nacos.io/)
+  <br/>An easy-to-use dynamic service discovery, configuration and service management platform for building cloud native
+  applications(
+- [apollo](https://www.apolloconfig.com/)
+  <br/>Apollo is a reliable configuration management system suitable for microservice configuration management
+  scenarios.
+- [etcd](https://etcd.io/)
+  <br/>A distributed, reliable key-value store for the most critical data of a distributed
+
+## Message broker
+
+- [rabbitmq](https://www.rabbitmq.com/)
+  <br/>RabbitMQ is the most widely deployed open source message broker. It is lightweight and easy to deploy on premises
+  and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated
+  configurations to meet high-scale, high-availability requirements.
+- [kafka](https://kafka.apache.org/)
+  <br/>Apache Kafka is a distributed streaming platform
+- [rocketmq](http://rocketmq.apache.org/)
+  <br/>Apache RocketMQ is a distributed messaging and streaming platform with low latency, high performance and
+  reliability, trillion-level capacity and flexible scalability.
+- [pulsar](https://pulsar.apache.org/)
+  <br/>Apache Pulsar is a cloud-native, distributed messaging and streaming platform originally created at Yahoo! and
+  now part of the Apache Software Foundation.
+- [nats](https://nats.io/)
+  <br/>NATS is a simple, secure and high performance open source messaging system for cloud native applications,
+  IoT messaging, and microservices architectures.
+
 ## Paas
 
 - [nomad](https://github.com/hashicorp/nomad)
@@ -55,13 +109,13 @@
 - [jaeger](https://www.jaegertracing.io/)
   <br/>Jaeger, a CNCF graduated project, is a distributed tracing system released as open source by Uber Technologies.
   It is used for monitoring and troubleshooting microservices-based distributed systems, including:
-  - Distributed context propagation
-  - Distributed transaction monitoring
-  - Root cause analysis
-  - Service dependency analysis
-  - Performance / latency optimization
-  - OpenTracing compatible data model
-  - Multiple storage backends: Badger, Cassandra, Elasticsearch, Memory.
+	- Distributed context propagation
+	- Distributed transaction monitoring
+	- Root cause analysis
+	- Service dependency analysis
+	- Performance / latency optimization
+	- OpenTracing compatible data model
+	- Multiple storage backends: Badger, Cassandra, Elasticsearch, Memory.
 
 ## Rpc
 
