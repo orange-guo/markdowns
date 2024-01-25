@@ -13,7 +13,7 @@
 - [gitbeaker](https://github.com/jdalrymple/gitbeaker)
   <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
-## UI Form
+## Json Form
 
 - [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form)
   <br/>A React component for building Web forms from JSON Schema.
@@ -23,6 +23,8 @@
   <br/>Angular-based JSON Forms seed app
 - [ngx-schema-form](https://github.com/guillotinaweb/ngx-schema-form)
   <br/>HTML form generation based on JSON Schema
+- [ngx-formly](https://github.com/ngx-formly/ngx-formly)
+  <br/>📝 JSON powered / Dynamic forms for Angular
 
 ## UI
 
