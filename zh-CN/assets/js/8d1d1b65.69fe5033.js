@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9090],{79760:s=>{s.exports=JSON.parse('{"label":"k8s","permalink":"/zh-CN/blog/tags/k-8-s","allTagsPath":"/zh-CN/blog/tags","count":2,"unlisted":false}')}}]);
