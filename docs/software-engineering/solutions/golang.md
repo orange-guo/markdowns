@@ -12,6 +12,11 @@
 - [huma](https://github.com/danielgtaylor/huma)
   <br/>A modern web framework for Go
 
+### Desktop
+
+- [beeep](https://github.com/gen2brain/beeep)
+  <br/>Go cross-platform library for sending desktop notifications, alerts and beeps
+
 ### Configuration
 
 - [viper](https://github.com/spf13/viper)
