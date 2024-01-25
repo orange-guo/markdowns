@@ -17,13 +17,43 @@
 - [ngx-formly](https://github.com/ngx-formly/ngx-formly)
   <br/>📝 JSON powered / Dynamic forms for Angular
 
-### UI
+### Design System
 
 - [material-ui](https://github.com/mui/material-ui)
   <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements Google's Material Design.
 - [ant-design](https://github.com/ant-design/ant-design)
   <br/>An enterprise-class UI design language and React UI library
 - [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
+
+### Web Framework
+
+- [angular](https://github.com/angular/angular)
+  <br/>Deliver web apps with confidence 🚀
+- [react](https://github.com/facebook/react)
+  <br/>The library for web and native user interfaces.
+- [vue](https://github.com/vuejs/core)
+  🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+- [svelte](https://github.com/sveltejs/svelte)
+  <br/>Cybernetically enhanced web apps
+- [preact](https://github.com/preactjs/preact)
+  <br/>⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.
+- [inferno](https://github.com/infernojs/inferno)
+  <br/>🔥 An extremely fast, React-like JavaScript library for building modern user interfaces
+- [solid](https://github.com/solidjs/solid)
+  <br/>A declarative, efficient, and flexible JavaScript library for building user interfaces.
+- [lit](https://github.com/lit/lit)
+  <br/>Lit is a simple library for building fast, lightweight web components.
+- [marko](https://github.com/marko-js/marko)
+  <br/>A friendly (and fast!) UI library from eBay that makes building web apps fun
+
+### Server Side Rendering
+
+- [next.js](https://github.com/vercel/next.js)
+  <br/>The React Framework
+- [nuxt.js](https://github.com/nuxt/nuxt)
+  <br/>The Intuitive Vue Framework.
+- [kit](https://github.com/sveltejs/kit)
+  <br/>web development, streamlined
 
 ### Editor
 
