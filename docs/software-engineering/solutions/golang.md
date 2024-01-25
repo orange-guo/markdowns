@@ -1,6 +1,8 @@
 # Golang
 
-## Web
+## Projects
+
+### Web
 
 - [gin](https://github.com/gin-gonic/gin)
   <br/>Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better
@@ -10,29 +12,29 @@
 - [huma](https://github.com/danielgtaylor/huma)
   <br/>A modern web framework for Go
 
-## Configuration
+### Configuration
 
 - [viper](https://github.com/spf13/viper)
   <br/>Go configuration with fangs
 
-## Logging
+### Logging
 
 - [logus](https://github.com/sirupsen/logrus)
   <br/>Structured, pluggable logging for Go.
 
-## Libraries
+### Libraries
 
 - [gop](https://goplus.org/)
   <br/>For engineering, STEM education, and data science
 
-## Middleware Client
+### Middleware Client
 
 - [prometheus-client-golang](https://github.com/prometheus/client_golang)
   <br/>Prometheus instrumentation library for Go applications
 - [moby](https://github.com/moby/moby)
   <br/>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
 
-## Database
+### Database
 
 - [gorm](https://github.com/go-gorm/gorm)
   <br/>The fantastic ORM library for Golang
@@ -41,26 +43,26 @@
 - [badger](https://github.com/dgraph-io/badger)
   <br/>Fast key-value DB in Go.
 
-## Gprc & Protobuf
+### Gprc & Protobuf
 
 - [protoc-gen-jsonschema](https://github.com/chrusty/protoc-gen-jsonschema)
   <br/>Protobuf to JSON-Schema compiler
 
-## Json
+### Json
 
 - [jsonschema](https://github.com/invopop/jsonschema)
   <br/>Generate JSON Schemas from Go types
 - [go-jsonschema](https://github.com/omissis/go-jsonschema)
   <br/>A tool to generate Go data types from JSON Schema definitions.
 
-## Yaml
+### Yaml
 
 - [yaml2go](https://github.com/PrasadG193/yaml2go)
   <br/>Converts YAML specs into Go Lang type definitions
 - [yaml](https://github.com/go-yaml/yaml)
   <br/>YAML support for the Go language.
 
-## Testing
+### Testing
 
 - [mock](https://github.com/uber-go/mock)
   <br/>GoMock is a mocking framework for the Go programming language.
@@ -69,14 +71,14 @@
 - [ginkgo](https://github.com/onsi/ginkgo)
   <br/>A Modern Testing Framework for Go
 
-## Functional
+### Functional
 
 - [lo](https://github.com/samber/lo)
   <br/>💥 A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)
 - [mo](https://github.com/samber/mo)
   <br/>🦄 Monads and popular FP abstractions, powered by Go 1.18+ Generics (Option, Result, Either...)
 
-## Dependency Injection
+### Dependency Injection
 
 - [wire](https://github.com/google/wire)
   <br/>Compile-time Dependency Injection for Go
@@ -85,7 +87,7 @@
 - [fx](https://github.com/uber-go/fx)
   <br/>A dependency injection based application framework for Go.
 
-## Value Mapping
+### Value Mapping
 
 - [mapstructure](https://github.com/mitchellh/mapstructure)
   <br/>Go library for decoding generic map values into native Go structures and vice versa.
@@ -99,22 +101,22 @@
 - [cobra](https://github.com/spf13/cobra)
   <br/>A Commander for modern Go CLI interactions
 
-## Build
+### Build
 
 - [glide](https://github.com/Masterminds/glide)
   <br/>Package Management for Golang
 
-## Notification
+### Notification
 
 - [notify](https://github.com/nikoksr/notify)
   <br/>A dead simple Go library for sending notifications to various messaging services.
 
-## Systemd
+### Systemd
 
 - [service](https://github.com/kardianos/service)
   <br/>Run go programs as a service on major platforms.
 
-## Profiler
+### Profiler
 
 - [pprof](https://github.com/google/pprof)
   <br/>pprof is a tool for visualization and analysis of profiling data
