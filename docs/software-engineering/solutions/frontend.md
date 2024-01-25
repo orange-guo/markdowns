@@ -99,6 +99,13 @@
   <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the
   same repository.
 
+### Visual Regression Testing
+
+- [playwright](https://github.com/microsoft/playwright)
+  <br/>https://github.com/microsoft/playwright
+- [argos](https://github.com/argos-ci/argos)
+  <br/>Visual Testing for modern web apps. Review visual changes in your development workflow.
+
 ### Util Library
 
 - [rxjs](https://github.com/ReactiveX/rxjs)
