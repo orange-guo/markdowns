@@ -67,10 +67,15 @@
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
-## UI Library
+### UI Library
 
 - [fake-progress](https://github.com/piercus/fake-progress)
   <br/>Fake a progress bar using an exponential progress function
+
+### 8-bit
+
+- [NES.css](https://github.com/nostalgic-css/NES.css)
+  <br/>NES-style CSS Framework | ファミコン風CSSフレームワーク
 
 ### Build
 
