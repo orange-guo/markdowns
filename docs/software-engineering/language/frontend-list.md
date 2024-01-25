@@ -4,15 +4,6 @@
 
 ## Project
 
-- [fake-progress](https://github.com/piercus/fake-progress)
-  <br/>Fake a progress bar using an exponential progress function
-- [Lerna](https://lerna.js.org/)
-  <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
-- [rxjs](https://rxjs.dev/)
-  <br/>Reactive Extensions Library for JavaScript
-- [gitbeaker](https://github.com/jdalrymple/gitbeaker)
-  <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
-
 ### Json Form
 
 - [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form)
@@ -32,7 +23,6 @@
   <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements Google's Material Design.
 - [ant-design](https://github.com/ant-design/ant-design)
   <br/>An enterprise-class UI design language and React UI library
-
 - [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
 
 ### Editor
@@ -65,6 +55,18 @@
   <br/>An extremely fast bundler for the web
 - [swc](https://github.com/swc-project/swc)
   <br/>Rust-based platform for the Web
+- [Lerna](https://lerna.js.org/)
+  <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the
+  same repository.
+
+### Others
+
+- [fake-progress](https://github.com/piercus/fake-progress)
+  <br/>Fake a progress bar using an exponential progress function
+- [rxjs](https://rxjs.dev/)
+  <br/>Reactive Extensions Library for JavaScript
+- [gitbeaker](https://github.com/jdalrymple/gitbeaker)
+  <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
 ### Package Manager
 
