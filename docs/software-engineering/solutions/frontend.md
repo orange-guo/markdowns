@@ -16,6 +16,8 @@
   <br/>HTML form generation based on JSON Schema
 - [ngx-formly](https://github.com/ngx-formly/ngx-formly)
   <br/>📝 JSON powered / Dynamic forms for Angular
+- [ajv](https://github.com/ajv-validator/ajv)
+  <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (RFC8927)
 
 ### Design System
 
