@@ -67,6 +67,11 @@
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
+## UI Library
+
+- [fake-progress](https://github.com/piercus/fake-progress)
+  <br/>Fake a progress bar using an exponential progress function
+
 ### Build
 
 - [nx](https://github.com/nrwl/nx)
@@ -89,19 +94,20 @@
   <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the
   same repository.
 
-### Others
+### Util Library
 
-- [fake-progress](https://github.com/piercus/fake-progress)
-  <br/>Fake a progress bar using an exponential progress function
-- [rxjs](https://rxjs.dev/)
-  <br/>Reactive Extensions Library for JavaScript
-- [gitbeaker](https://github.com/jdalrymple/gitbeaker)
-  <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
+- [rxjs](https://github.com/ReactiveX/rxjs)
+  <br/>A reactive programming library for JavaScript
 
 ### Package Manager
 
 - [pnpm](https://github.com/pnpm/pnpm)
   <br/>Fast, disk space efficient package manager
+
+### Others
+
+- [gitbeaker](https://github.com/jdalrymple/gitbeaker)
+  <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
 ## Online IDE
 
