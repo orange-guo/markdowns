@@ -71,6 +71,8 @@
   <br/>Generate JSON Schemas from Go types
 - [go-jsonschema](https://github.com/omissis/go-jsonschema)
   <br/>A tool to generate Go data types from JSON Schema definitions.
+- [go-jsonmerge](https://github.com/RaveNoX/go-jsonmerge)
+  <br/>Merge JSON objects to one (replaces only existent values)
 
 ### Yaml
 
