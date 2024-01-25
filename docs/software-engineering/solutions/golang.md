@@ -34,6 +34,18 @@
 - [moby](https://github.com/moby/moby)
   <br/>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
 
+### OIDC & OAuth2
+
+- [go-oidc](https://github.com/coreos/go-oidc)
+  <br/>A Go OpenID Connect client.
+- [oauth2](https://github.com/golang/oauth2)
+  <br/>Go OAuth2
+
+### Ldap 
+
+- [ldap](https://github.com/go-ldap/ldap)
+  <br/>Basic LDAP v3 functionality for the GO programming language.
+
 ### Database
 
 - [gorm](https://github.com/go-gorm/gorm)
