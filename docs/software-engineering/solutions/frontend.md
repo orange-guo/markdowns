@@ -65,6 +65,11 @@
 - [react-codemirror](https://github.com/uiwjs/react-codemirror)
   <br/>CodeMirror component for React. @codemirror
 
+### Rendering
+
+- [react-pdf](https://github.com/diegomura/react-pdf)
+  <br/>📄 Create PDF files using React
+
 ### Diagram Generation
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
