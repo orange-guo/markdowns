@@ -148,6 +148,10 @@
   <br/>Easy to maintain open source documentation websites.
 - [docusaurus-prince-pdf](https://github.com/signcl/docusaurus-prince-pdf)
   <br/>Docusaurus PDF generator using Prince XML
+- [docusaurus-protobuffet](https://github.com/protobuffet/docusaurus-protobuffet)
+  <br/>Docusaurus toolset for Protobuf contract documentation.
+- [docusaurus-openapi](https://github.com/cloud-annotations/docusaurus-openapi)
+  <br/>🦕 OpenAPI plugin for generating API reference docs in Docusaurus v2.
 - [mdBook](https://github.com/rust-lang/mdBook)
   <br/>Create book from markdown files. Like Gitbook but implemented in Rust
 - [mkdocs](https://github.com/mkdocs/mkdocs)

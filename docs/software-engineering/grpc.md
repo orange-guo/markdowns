@@ -34,8 +34,6 @@
 
 - [evans](https://github.com/ktr0731/evans)
   <br/>more expressive universal gRPC client
-- [docusaurus-protobuffet](https://github.com/protobuffet/docusaurus-protobuffet)
-  <br/>Docusaurus toolset for Protobuf contract documentation.
 - [buf](https://github.com/bufbuild/buf)
   <br/>A new way of working with Protocol Buffers.
 
