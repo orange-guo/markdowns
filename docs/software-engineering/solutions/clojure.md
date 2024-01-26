@@ -1,10 +1,13 @@
 # Clojure
 
-<!--truncate-->
+## Projects
 
-## Project
+### Serialization
 
-### Library
+- [nippy](https://github.com/taoensso/nippy)
+  <br/>The fastest serialization library for Clojure
+
+### Others
 
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
