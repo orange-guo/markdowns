@@ -15,26 +15,36 @@
 - [ktor-arrow-example](https://github.com/nomisRev/ktor-arrow-example)
   <br/>Real World implementation - "The mother of all demo apps". Written in Kotlin, with Ktor, Arrow, SqlDelight,
   KotlinX Serialization, etc.
+- [kotlin-android-template](https://github.com/cortinico/kotlin-android-template)
+  <br/>Android + Kotlin + Github Actions + ktlint + Detekt + Gradle Kotlin DSL + buildSrc = ❤️
 
-## Web
+## Projects
+
+### Web
 
 - [ktor](https://ktor.io/)
   <br/>Create asynchronous client and server applications. Anything from microservices to multiplatform HTTP client apps
   in a simple way. Open Source, free, and fun!
 
-## Dependency Injection
+### Dependency Injection
 
 - [koin](https://github.com/InsertKoinIO/koin)
   <br/>Koin - a pragmatic lightweight dependency injection framework for Kotlin & Kotlin Multiplatform
 - [Kodein](https://kosi-libs.org/)
   <br/>Painless Kotlin Dependency Injection
 
-## Utility
+### GUI
+
+- [compose-multiplatform](https://github.com/JetBrains/compose-multiplatform)
+  <br/>Compose Multiplatform, a modern UI framework for Kotlin that makes building performant and beautiful user
+  interfaces easy and enjoyable.
+
+### Utility
 
 - [kunion](https://github.com/renatoathaydes/kunion)
   <br/>Union types for Kotlin
 
-## Test
+### Test
 
 - [kotest](https://kotest.io/)
   <br/>Kotest is a flexible and elegant multi-platform test framework for Kotlin with extensive assertions and
@@ -44,12 +54,12 @@
 - [mockito-kotlin](https://github.com/mockito/mockito-kotlin)
   <br/>sing Mockito with Kotlin
 
-## Logging
+### Logging
 
 - [kotlin-logging](https://github.com/oshai/kotlin-logging)
   <br/>Lightweight Multiplatform logging framework for Kotlin. A convenient and performant logging facade.
 
-## Database
+### Database
 
 - [SQLlin](https://github.com/ctripcorp/SQLlin)
   <br/>A DSL SQLite library for Kotlin Multiplatform.
@@ -64,7 +74,7 @@
   migrations at compile-time and provides IDE features like autocomplete and refactoring which make writing and
   maintaining SQL simple
 
-## Command line
+### Command line
 
 - [clikt](https://github.com/ajalt/clikt)
   <br/>Multiplatform command line interface parsing for Kotlin
