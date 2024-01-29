@@ -165,6 +165,8 @@
   <br/>Documentation that simply works
 - [docsify](https://github.com/docsifyjs/docsify/)
   <br/>🃏 A magical documentation site generator.
+- [gitbook](https://github.com/GitbookIO/gitbook)
+  <br/>📝 Modern documentation format and toolchain using Git and Markdown
 
 ## Online IDE
 
