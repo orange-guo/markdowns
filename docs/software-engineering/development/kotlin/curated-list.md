@@ -1,4 +1,4 @@
-# Kotlin
+# Curated list
 
 
 ## Learning
