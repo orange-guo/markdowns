@@ -1,6 +1,33 @@
 # Clojure
 
+## Learning
+
+### Sites
+
+- [Clojureverse](https://clojureverse.org/)
+  <br/>A friendly and diverse community of Clojurians, discussing all things Clojure and ClojureScript
+
+## electric-fiddle
+
+### Projects
+
+- [electric-fiddle](https://github.com/hyperfiddle/electric-fiddle)
+  <br/>Easiest way to get started with Electric Clojure
+- [fulcro-electric-template](https://github.com/hyperfiddle/fulcro-electric-template)
+  <br/>A sample project that could be used as a starting point for a Fulcro 3 + Electric project.
+
+### Articles
+
+- []()
+
 ## Projects
+
+### Awesome Clojure
+
+- [awesome-clojure](https://github.com/mbuczko/awesome-clojure)
+  <br/>list of useful links for clojurians
+- [awesome-clojure](https://github.com/razum2um/awesome-clojure)
+  <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
 
 ### Serialization
 
