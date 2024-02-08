@@ -1,14 +1,6 @@
 # Kotlin
 
 
-## Arrow 
-
-### Docs
-
-- [Why suspend over IO](https://arrow-kt.io/learn/design/suspend-io/)
-- [Validation](https://arrow-kt.io/learn/typed-errors/validation/)
-
-
 ## Learning
 
 ### Sites
@@ -49,6 +41,13 @@
   <br/>Android + Kotlin + Github Actions + ktlint + Detekt + Gradle Kotlin DSL + buildSrc = ❤️
 
 ## Projects
+
+### Arrow
+
+**Docs**
+
+- [Why suspend over IO](https://arrow-kt.io/learn/design/suspend-io/)
+- [Validation](https://arrow-kt.io/learn/typed-errors/validation/)
 
 ### Web
 
