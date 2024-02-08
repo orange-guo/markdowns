@@ -75,6 +75,21 @@ tags: [java, curated-list]
 - [sshj](https://github.com/hierynomus/sshj)
   <br/>ssh, scp and sftp for java.
 
+### Template Engine
+
+- [thymeleaf](https://github.com/thymeleaf/thymeleaf)
+  <br/>Thymeleaf is a modern server-side Java template engine for both web and standalone environments.
+- [mustache.java](https://github.com/spullara/mustache.java)
+  <br/>Implementation of mustache.js for Java
+- [freemarker](https://github.com/apache/freemarker)
+  <br/>Apache Freemarker
+- [velocity-engine](https://github.com/apache/velocity-engine) 
+  <br/>Mirror of Apache Velocity Engine
+- [pebble](https://github.com/PebbleTemplates/pebble)
+  <br/>Java Template Engine
+- [jte](https://github.com/casid/jte)
+  <br/>Secure and speedy templates for Java and Kotlin.
+
 
 ### Observation
 
