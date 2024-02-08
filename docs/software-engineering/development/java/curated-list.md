@@ -11,7 +11,8 @@ sidebar_position: 0
 - [avaje-inject](https://github.com/avaje/avaje-inject)
   <br/>Dependency injection via APT (source code generation) ala "Server-Side Dagger DI"
 
-- [Dagger
+- [Dagger](https://github.com/google/dagger)
+  <br/>A fast dependency injector for Android and Java.
 
 ### Testing
 
