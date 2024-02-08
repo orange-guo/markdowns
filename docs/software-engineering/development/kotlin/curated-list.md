@@ -76,6 +76,8 @@ sidebar_position: 0
 
 - [kunion](https://github.com/renatoathaydes/kunion)
   <br/>Union types for Kotlin
+- [kopykat](https://github.com/kopykat-kt/kopykat)
+  <br/>Little utilities for more pleasant immutable data in Kotlin
 
 ### Test
 

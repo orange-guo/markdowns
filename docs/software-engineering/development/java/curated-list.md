@@ -6,6 +6,13 @@ sidebar_position: 0
 
 ## Projects
 
+### Dependency Injection
+
+- [avaje-inject](https://github.com/avaje/avaje-inject)
+  <br/>Dependency injection via APT (source code generation) ala "Server-Side Dagger DI"
+
+- [Dagger
+
 ### Testing
 
 - [approval-tests](https://approvaltests.com/)
