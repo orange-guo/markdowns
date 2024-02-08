@@ -1,5 +1,14 @@
 # Kotlin
 
+
+## Arrow 
+
+### Docs
+
+- [Why suspend over IO](https://arrow-kt.io/learn/design/suspend-io/)
+- [Validation](https://arrow-kt.io/learn/typed-errors/validation/)
+
+
 ## Learning
 
 ### Sites
