@@ -27,8 +27,7 @@
 - [kotlin.link](https://kotlin.link/)
 - [awesome-kotlin](https://github.com/KotlinBy/awesome-kotlin)
   <br/>A curated list of awesome Kotlin related stuff Inspired by awesome-java.
-- [arrow](https://github.com/arrow-kt/arrow)
-  <br/>Λrrow - Functional companion to Kotlin's Standard Library
+
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
   <br/>Library support for Kotlin coroutines
 
@@ -43,6 +42,9 @@
 ## Projects
 
 ### Arrow
+
+- [arrow](https://github.com/arrow-kt/arrow)
+  <br/>Λrrow - Functional companion to Kotlin's Standard Library
 
 **Docs**
 
