@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Introduction
 
-## Project
+## Projects
 
 ### Testing
 
