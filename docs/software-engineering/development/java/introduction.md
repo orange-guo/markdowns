@@ -1,6 +1,5 @@
 ---
-authors: [xiangcheng.kuo]
-tags: [java, curated-list]
+sidebar_position: 0
 ---
 
 # Java
