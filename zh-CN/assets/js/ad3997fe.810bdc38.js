@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1642],{50821:e=>{e.exports=JSON.parse('{"title":"Development","slug":"/category/development","permalink":"/zh-CN/docs/category/development","navigation":{"next":{"title":"Java","permalink":"/zh-CN/docs/category/java"}}}')}}]);

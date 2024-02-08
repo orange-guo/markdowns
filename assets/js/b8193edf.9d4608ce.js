@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1100],{82583:e=>{e.exports=JSON.parse('{"title":"Methodology","slug":"/category/methodology","permalink":"/docs/category/methodology","navigation":{"next":{"title":"C4 model","permalink":"/docs/software-engineering/methodology/c4-model"}}}')}}]);
