@@ -12,3 +12,16 @@ bean之间的映射。它通过注解处理器生成映射代码，这些注解�
   <br/>MapStruct Kotlin Example
 - [mapstruct-examples](https://github.com/mapstruct/mapstruct-examples)
   <br/>Examples for using MapStruct
+
+## Docs
+
+- [MapStruct Reference Guide](https://mapstruct.org/documentation/stable/reference/html/)
+
+## Articles
+
+- [How to Use Conditional Mapping With MapStruct](https://www.baeldung.com/java-mapstruct-bean-types-conditional)
+
+## Questions
+
+- [MapStruct: How to map to existing target?](https://stackoverflow.com/questions/64768227/mapstruct-how-to-map-to-existing-target)
+- [Nested list mapping using MapStruct](https://stackoverflow.com/questions/46841093/nested-list-mapping-using-mapstruct)
