@@ -24,6 +24,7 @@
   <br/>yaml to json converter
 - [Bcrypt密码生成工具](https://www.bejson.com/encrypt/bcrpyt_encode/)
 - [IP地址查询工具](https://zh-hans.ipshu.com/)
+- [macz](https://www.macz.com/)
 
 ## 前端
 
