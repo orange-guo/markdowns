@@ -15,8 +15,11 @@
 - [httpbin.org](https://httpbin.org/)
   <br/>A simple HTTP Request & Response Service.
 - [在线生成自签名SSL证书以及国密SM2证书](https://bkssl.com/ssl/selfsign)
+- [测试证书](https://www.ssleye.com/ssltool/self_sign.html)
+  <br/>在线生成测试证书（自签名证书），通过设置签发域名、签发者、密钥算法、签名算法等，方便测试系统HTTPS的可行性。
 - [LDAP Test Tool](https://www.filestash.app/ldap-test-tool.html)
   <br/>Test your LDAP connection with this online test tool
+- [Online LDAP Test Server](https://www.forumsys.com/2022/05/10/online-ldap-test-server/)
 - [yaml to json converter](https://onlineyamltools.com/convert-yaml-to-json)
   <br/>yaml to json converter
 - [Bcrypt密码生成工具](https://www.bejson.com/encrypt/bcrpyt_encode/)
