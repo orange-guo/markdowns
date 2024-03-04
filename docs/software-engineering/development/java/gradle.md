@@ -12,6 +12,10 @@
 
 ## Reference
 
+## Mirrors
+
+- [gradle plugins/repos/wrapper/tools 国内快速同步下载镜像](https://www.cnblogs.com/bluestorm/p/14761482.html)
+
 ### Doc
 
 - [Compatibility Matrix](https://docs.gradle.org/current/userguide/compatibility.html)
