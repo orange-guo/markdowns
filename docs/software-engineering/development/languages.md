@@ -21,3 +21,5 @@
 - [haskell](https://www.haskell.org/)
   <br/>An advanced, purely functional programming language
 - [Haskell Wiki](wiki.haskell.org)
+- [swift](https://github.com/apple/swift)
+  <br/>The Swift Programming Language
