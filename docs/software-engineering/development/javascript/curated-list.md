@@ -1,8 +1,12 @@
+---
+sidebar_position: 0
+---
+
 # Frontend
 
 <!--truncate-->
 
-## Project
+## Projects
 
 ### Json Form
 
@@ -160,7 +164,7 @@
 - [gitbeaker](https://github.com/jdalrymple/gitbeaker)
   <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
-## Documentation
+### Docs
 
 - [vitepress](https://github.com/vuejs/vitepress)
   <br/>Vite & Vue powered static site generator.
