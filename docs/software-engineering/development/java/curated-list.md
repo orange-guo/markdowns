@@ -6,7 +6,10 @@ sidebar_position: 0
 
 ## Projects
 
-### AI
+### Spring
+
+- [spring-search](https://github.com/sipios/spring-search)
+  <br/>Provides advanced search capabilities to a JPA entity
 
 ### Dependency Injection
 
