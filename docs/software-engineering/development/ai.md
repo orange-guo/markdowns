@@ -1,6 +1,13 @@
 # AIs
 
-## AI Generated Content
+## Projects
+
+### AI Applications
+
+- [search_with_lepton](https://github.com/leptonai/search_with_lepton)
+  <br/>Building a quick conversation-based search demo with Lepton AI.
+
+### AI Generated Content
 
 - [文心一言](https://yiyan.baidu.com/)
 - [通义千问](https://qianwen.aliyun.com/)
@@ -17,3 +24,8 @@
 - [stable-diffusion-docker](https://github.com/fboulnois/stable-diffusion-docker)
   <br/>Run the official Stable Diffusion releases in a Docker container with txt2img, img2img, depth2img, pix2pix,
   upscale4x, and inpaint.
+
+### Book Repositories
+
+- [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+  <br/>Implementing a ChatGPT-like LLM from scratch, step by step

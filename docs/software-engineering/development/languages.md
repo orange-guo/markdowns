@@ -38,7 +38,7 @@
 ## Data schema Language
 
 - [json-schema](https://github.com/json-schema-org/json-schema-spec)
-  <br/>
+  <br/>The JSON Schema specification
 
 ## Query Language
 
