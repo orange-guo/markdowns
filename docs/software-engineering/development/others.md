@@ -52,20 +52,12 @@
   <br/>Generate TypeScript types from OpenAPI 3 specs
 
 
-## AI Generated Content
 
-- [文心一言](https://yiyan.baidu.com/)
-- [通义千问](https://qianwen.aliyun.com/)
-- [Claude](https://claude.ai/)
-- [Bard](https://bard.google.com/)
-- [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx)
-- [ChatGPT](https://chat.openai.com/)
-- [Poe](https://poe.com/)
+### Games
 
-### AI
-
-- [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-  <br/>Stable Diffusion web UI
-- [stable-diffusion-docker](https://github.com/fboulnois/stable-diffusion-docker)
-  <br/>Run the official Stable Diffusion releases in a Docker container with txt2img, img2img, depth2img, pix2pix,
-  upscale4x, and inpaint.
+- [awesome-PICO-8](https://github.com/pico-8/awesome-PICO-8) 
+  <br/>A curated list of awesome PICO-8 resources, carts, tools and more
+- [pyxel](https://github.com/kitao/pyxel)
+  <br/>Retro Game Engine for Python
+- [TIC-80](https://github.com/nesbox/TIC-80)
+  <br/>TIC-80 is a fantasy computer for making, playing and sharing tiny games.

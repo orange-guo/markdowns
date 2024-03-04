@@ -1,5 +1,7 @@
 # Language
 
+## Programming
+
 - [cuelang](https://cuelang.org/)
   <br/>Configure Unify Execute
   <br/>Validate, define, and use dynamic and text-based data
@@ -23,3 +25,22 @@
 - [Haskell Wiki](wiki.haskell.org)
 - [swift](https://github.com/apple/swift)
   <br/>The Swift Programming Language
+
+## Data Language
+
+- [toml](https://github.com/toml-lang/toml)
+  <br/>Tom's Obvious, Minimal Language
+- [hcl](https://github.com/hashicorp/hcl)
+  <br/>HCL is the HashiCorp configuration language.
+- [yaml-spec](https://github.com/yaml/yaml-spec)
+  <br/>YAML Specification
+
+## Data schema Language
+
+- [json-schema](https://github.com/json-schema-org/json-schema-spec)
+  <br/>
+
+## Query Language
+
+- [graphql-spec](https://github.com/graphql/graphql-spec)
+  <br/>GraphQL is a query language and execution engine tied to any backend service.

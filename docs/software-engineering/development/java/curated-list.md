@@ -6,6 +6,8 @@ sidebar_position: 0
 
 ## Projects
 
+### AI
+
 ### Dependency Injection
 
 - [avaje-inject](https://github.com/avaje/avaje-inject)
@@ -94,13 +96,12 @@ sidebar_position: 0
   <br/>Implementation of mustache.js for Java
 - [freemarker](https://github.com/apache/freemarker)
   <br/>Apache Freemarker
-- [velocity-engine](https://github.com/apache/velocity-engine) 
+- [velocity-engine](https://github.com/apache/velocity-engine)
   <br/>Mirror of Apache Velocity Engine
 - [pebble](https://github.com/PebbleTemplates/pebble)
   <br/>Java Template Engine
 - [jte](https://github.com/casid/jte)
   <br/>Secure and speedy templates for Java and Kotlin.
-
 
 ### Observation
 
@@ -119,7 +120,8 @@ sidebar_position: 0
 - [rsocket](https://rsocket.io/)
   <br/>Application protocol providing Reactive Streams semantics.
 - [r2dbc](https://r2dbc.io/)
-  <br/>The Reactive Relational Database Connectivity (R2DBC) project brings reactive programming APIs to relational databases.
+  <br/>The Reactive Relational Database Connectivity (R2DBC) project brings reactive programming APIs to relational
+  databases.
 
 ### Data access
 
@@ -130,7 +132,6 @@ sidebar_position: 0
 
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
-
 
 ## Reference
 
