@@ -39,6 +39,7 @@
 
 - [json-schema](https://github.com/json-schema-org/json-schema-spec)
   <br/>The JSON Schema specification
+- [JSON Schema Docs](https://www.learnjsonschema.com/)
 
 ## Query Language
 
