@@ -17,14 +17,16 @@
 - [ngx-formly](https://github.com/ngx-formly/ngx-formly)
   <br/>📝 JSON powered / Dynamic forms for Angular
 - [ajv](https://github.com/ajv-validator/ajv)
-  <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (RFC8927)
+  <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (
+  RFC8927)
 
 ### Design System
 
 - [ant-design](https://github.com/ant-design/ant-design)
   <br/>An enterprise-class UI design language and React UI library
 - [material-ui](https://github.com/mui/material-ui)
-  <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements Google's Material Design.
+  <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements
+  Google's Material Design.
 - [element](https://github.com/ElemeFE/element)
   <br/>A Vue.js 2.0 UI Toolkit for Web
 - [arco-design](https://github.com/arco-design/arco-design)
@@ -79,6 +81,7 @@
   <br/>📄 Create PDF files using React
 
 ### Diagram Generation
+
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
@@ -95,7 +98,8 @@
 ### Avatar Generator
 
 - [boring-avatars](https://github.com/boringdesigners/boring-avatars)
-  <br/>Boring avatars is a tiny JavaScript React library that generates custom, SVG-based avatars from any username and color palette.
+  <br/>Boring avatars is a tiny JavaScript React library that generates custom, SVG-based avatars from any username and
+  color palette.
 - [vue-color-avatar](https://github.com/Codennnn/vue-color-avatar)
   <br/>An online avatar generator just for fun | 一个纯前端实现的头像生成网站
 - [avataaars-generator](https://github.com/fangpenlin/avataaars-generator)
@@ -140,6 +144,11 @@
 
 - [rxjs](https://github.com/ReactiveX/rxjs)
   <br/>A reactive programming library for JavaScript
+
+### Encryption
+
+- [crypto-js](https://github.com/brix/crypto-js)
+  <br/>JavaScript library of crypto standards.
 
 ### Package Manager
 
@@ -195,4 +204,5 @@
 ### Sites
 
 - [mdn](https://developer.mozilla.org/)
-  <br/>The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and HTML5 Apps. It also documents Mozilla products, like Firefox OS.
+  <br/>The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and
+  APIs for both Web sites and HTML5 Apps. It also documents Mozilla products, like Firefox OS.
