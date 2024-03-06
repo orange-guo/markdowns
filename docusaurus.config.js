@@ -60,14 +60,8 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Software Engineering',
-					docId: 'software-engineering/introduction',
-				},
-				{
-					type: 'doc',
-					position: 'left',
-					label: 'Book Notes',
-					docId: 'booknote/introduction',
+					label: 'Note',
+					docId: 'note/introduction',
 				},
 				{
 					to: 'blog',
