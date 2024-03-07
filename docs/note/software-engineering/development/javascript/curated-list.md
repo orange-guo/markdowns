@@ -8,6 +8,11 @@ sidebar_position: 0
 
 ## Projects
 
+### RPC
+
+- [connect-es](https://github.com/connectrpc/connect-es)
+  <br/>The TypeScript implementation of Connect: Protobuf RPC that works.
+
 ### Json Form
 
 - [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form)
