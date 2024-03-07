@@ -16,3 +16,7 @@
   <br/>Freeze (package) Python programs into stand-alone executables
 - [cx_Freeze](https://github.com/marcelotduarte/cx_Freeze)
   <br/>Create standalone executables from Python scripts, with the same performance and is cross-platform.
+
+## Articles
+
+- [更换（Pypi）pip源到国内镜像](https://developer.aliyun.com/article/652884)
