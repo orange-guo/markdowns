@@ -5,8 +5,7 @@
   <br/>简单便捷的网络工具
 - [16进制到文本字符串](https://www.bejson.com/convert/ox2str/)
 - [Markdown Live Preview](https://markdownlivepreview.com/)
-- [Chat with PDF](https://www.hipdf.com/chat-with-pdf)
-  <br/>A simple HTTP Request & Response Service.
+
 - [macz](https://www.macz.com/)
 
 ## 前端
