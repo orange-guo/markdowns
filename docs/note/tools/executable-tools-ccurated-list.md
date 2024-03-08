@@ -13,3 +13,9 @@ sidebar_position: 0
 
 - [thefuck](https://github.com/nvbn/thefuck)
   <br/>Magnificent app which corrects your previous console command.
+
+- [fish-shell](https://github.com/fish-shell/fish-shell)
+  <br/>The user-friendly command line shell.
+
+- [babashka](https://github.com/babashka/babashka)
+  <br/>Native, fast starting Clojure interpreter for scripting
