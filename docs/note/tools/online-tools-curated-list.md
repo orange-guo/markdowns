@@ -45,3 +45,9 @@ sidebar_position: 0
 - [tabnine](https://www.tabnine.com/)
   <br/>Tabnine is the AI code completion tool trusted by millions of developers worldwide. It uses machine learning to
   provide code completions in every language, and it's always learning from the code you write.
+
+## LDAP
+
+- [LDAP Test Tool](https://www.filestash.app/ldap-test-tool.html)
+  <br/>Test your LDAP connection with this online test tool
+- [Online LDAP Test Server](https://www.forumsys.com/2022/05/10/online-ldap-test-server/)

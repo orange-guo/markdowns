@@ -7,9 +7,6 @@
 - [Markdown Live Preview](https://markdownlivepreview.com/)
 - [Chat with PDF](https://www.hipdf.com/chat-with-pdf)
   <br/>A simple HTTP Request & Response Service.
-- [LDAP Test Tool](https://www.filestash.app/ldap-test-tool.html)
-  <br/>Test your LDAP connection with this online test tool
-- [Online LDAP Test Server](https://www.forumsys.com/2022/05/10/online-ldap-test-server/)
 - [IP地址查询工具](https://zh-hans.ipshu.com/)
 - [macz](https://www.macz.com/)
 
