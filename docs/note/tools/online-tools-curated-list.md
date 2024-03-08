@@ -15,6 +15,8 @@ sidebar_position: 0
 
 - [Secure Password Generator](https://passwordsgenerator.net/)
 - [随机密码生成器 - 随机字符串生成器](http://tool.c7sky.com/password/)
+- [随机密码生成](https://suijimimashengcheng.bmcx.com/)
+- [PASSWORD GENERATOR TOOL](https://www.lastpass.com/features/password-generator)
 
 ## SSL
 
@@ -32,9 +34,14 @@ sidebar_position: 0
 
 - [IP地址查询工具](https://zh-hans.ipshu.com/)
 
-## Encryption
+## Encoding / Decoding
 
 - [Base64 在线编码解码](https://base64.us/)
+- [TEXT to 核心价值观](https://sym233.github.io/core-values-encoder/)、
+- [与佛论禅重制版V2](https://tools.takuron.com/talk-with-buddha/)
+
+## Encryption
+
 - [Bcrypt Hash Generator](https://bcrypt.online/)
 - [Bcrypt密码生成工具](https://www.bejson.com/encrypt/bcrpyt_encode/)
 
