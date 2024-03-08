@@ -1,33 +1,10 @@
 # Methodologies
 
 
-## DevOps
 
-DevOps 是一种软件开发方法, 它将软件开发(Dev)和信息技术运营(Ops)结合在一起, 以便更快地开发和交付软件.
 
-- [DevOps](https://en.wikipedia.org/wiki/DevOps)
-- [What Is DevOps?](https://www.atlassian.com/devops)
-- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)
 
-## GitOps
 
-GitOps 是一种方法论, 旨在通过 Git 管理集群配置, 以便更好地管理集群.
-
-- [What is GitOps?](https://www.weave.works/technologies/gitops/)
-- [GitOps](https://www.gitops.tech/)
-- [GitOps Toolkit](https://toolkit.fluxcd.io/)
-- [GitOps Principles](https://www.weave.works/blog/gitops-principles)
-- [GitOps: How to implement a GitOps workflow](https://www.redhat.com/en/topics/devops/what-is-gitops)
-
-## Chaos Engineering
-
-Chaos Engineering 是一种方法论, 旨在通过引入故障来测试系统的弹性, 以便更好地管理系统.
-
-- [Chaos Engineering](https://en.wikipedia.org/wiki/Chaos_engineering)
-- [Chaos Engineering](https://principlesofchaos.org/)
-- [Chaos Engineering](https://www.chaosiq.io/)
-- [Chaos Engineering](https://chaos-mesh.org/)
-- [Chaos Engineering](
 
 ## Cloud Native
 
