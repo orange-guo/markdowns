@@ -57,15 +57,14 @@ sidebar_position: 0
 
 ## Terminal
 
+- [tabby](https://github.com/Eugeny/tabby)
+  <br/>A terminal for a more modern age
 - [asciinema](https://github.com/asciinema/asciinema)
   <br/>Terminal session recorder 📹
-
 - [thefuck](https://github.com/nvbn/thefuck)
   <br/>Magnificent app which corrects your previous console command.
-
 - [fish-shell](https://github.com/fish-shell/fish-shell)
   <br/>The user-friendly command line shell.
-
 - [babashka](https://github.com/babashka/babashka)
   <br/>Native, fast starting Clojure interpreter for scripting
 
