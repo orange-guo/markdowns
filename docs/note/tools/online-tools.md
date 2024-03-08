@@ -7,7 +7,6 @@
 - [Markdown Live Preview](https://markdownlivepreview.com/)
 - [Chat with PDF](https://www.hipdf.com/chat-with-pdf)
   <br/>A simple HTTP Request & Response Service.
-- [IP地址查询工具](https://zh-hans.ipshu.com/)
 - [macz](https://www.macz.com/)
 
 ## 前端
