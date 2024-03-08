@@ -37,7 +37,7 @@ sidebar_position: 0
 ## Encoding / Decoding
 
 - [Base64 在线编码解码](https://base64.us/)
-- [TEXT to 核心价值观](https://sym233.github.io/core-values-encoder/)、
+- [TEXT to 社会主义核心价值观](https://sym233.github.io/core-values-encoder/)、
 - [与佛论禅重制版V2](https://tools.takuron.com/talk-with-buddha/)
 
 ## Encryption
