@@ -68,6 +68,19 @@ sidebar_position: 0
 - [babashka](https://github.com/babashka/babashka)
   <br/>Native, fast starting Clojure interpreter for scripting
 
+## HTTP
+
+- [httpie-cli](https://github.com/httpie/cli)
+  <br/>🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions,
+  downloads, plugins & more.
+- [httpbin](https://github.com/postmanlabs/httpbin)
+  <br/>HTTP Request & Response Service, written in Python + Flask.
+- [hoppscotch](https://github.com/hoppscotch/hoppscotch)
+  <br/>👽 Open source API development ecosystem - https://hoppscotch.io
+- [insomnia](https://github.com/Kong/insomnia)
+  <br/>The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git
+  storage.
+
 ## Firewall
 
 - [OpenGFW](https://github.com/apernet/OpenGFW)
