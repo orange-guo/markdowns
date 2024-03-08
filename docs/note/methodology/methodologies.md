@@ -1,18 +1,5 @@
 # Methodologies
 
-## SSCCE
-
-SSCCE 是一个缩写, 它代表 Short, Self Contained, Correct (Compilable), Example, 它是一种编程方法, 旨在帮助开发人员更好地解决问题.
-
-- [The SSCCE](http://sscce.org/)
-
-
-## FinOps
-
-FinOps是一种方法论, 旨在帮助企业管理云计算成本, 以便更好地控制云计算成本.
-
-- [What is Cloud FinOps?](https://cloud.google.com/learn/what-is-finops)
-- [FinOps](https://www.finops.org/)
 
 ## DevOps
 
