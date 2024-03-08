@@ -73,8 +73,6 @@ sidebar_position: 0
 - [httpie-cli](https://github.com/httpie/cli)
   <br/>🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions,
   downloads, plugins & more.
-- [httpbin](https://github.com/postmanlabs/httpbin)
-  <br/>HTTP Request & Response Service, written in Python + Flask.
 - [hoppscotch](https://github.com/hoppscotch/hoppscotch)
   <br/>👽 Open source API development ecosystem - https://hoppscotch.io
 - [insomnia](https://github.com/Kong/insomnia)
@@ -85,3 +83,23 @@ sidebar_position: 0
 
 - [OpenGFW](https://github.com/apernet/OpenGFW)
   <br/>OpenGFW is a flexible, easy-to-use, open source implementation of GFW (Great Firewall of China) on Linux
+
+## Testing
+
+### Platforms
+
+- [testsigma](https://github.com/testsigmahq/testsigma)
+  <br/>A powerful open source test automation platform for Web Apps, Mobile Apps, and APIs. Build stable and reliable
+  end-to-end tests @ DevOps speed.
+
+### Visual Regression Testing
+
+- [playwright](https://github.com/microsoft/playwright)
+  <br/>https://github.com/microsoft/playwright
+- [argos](https://github.com/argos-ci/argos)
+  <br/>Visual Testing for modern web apps. Review visual changes in your development workflow.
+
+### Contract Testing
+
+- [PACT](https://pact.io/)
+  <br/>Fast, easy and reliable testing for integrating web apps, APIs and microservices

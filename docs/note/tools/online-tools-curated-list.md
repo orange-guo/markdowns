@@ -25,6 +25,8 @@ sidebar_position: 0
 ## HTTP
 
 - [URL Decode online](https://www.urldecoder.io/)
+- [httpbin](https://github.com/postmanlabs/httpbin)
+  <br/>HTTP Request & Response Service, written in Python + Flask.
 
 ## NET
 
