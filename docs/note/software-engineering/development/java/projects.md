@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Profiling
+
+- [async-profiler](https://github.com/async-profiler/async-profiler)
+  <br/>Sampling CPU and HEAP profiler for Java featuring AsyncGetCallTrace + perf_events
+
 ## Spring
 
 - [spring-search](https://github.com/sipios/spring-search)
