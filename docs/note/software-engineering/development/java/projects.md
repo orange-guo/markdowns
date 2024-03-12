@@ -2,16 +2,14 @@
 sidebar_position: 0
 ---
 
-# Curated list
+# Projects
 
-## Projects
-
-### Spring
+## Spring
 
 - [spring-search](https://github.com/sipios/spring-search)
   <br/>Provides advanced search capabilities to a JPA entity
 
-### Dependency Injection
+## Dependency Injection
 
 - [avaje-inject](https://github.com/avaje/avaje-inject)
   <br/>Dependency injection via APT (source code generation) ala "Server-Side Dagger DI"
@@ -19,7 +17,7 @@ sidebar_position: 0
 - [Dagger](https://github.com/google/dagger)
   <br/>A fast dependency injector for Android and Java.
 
-### Testing
+## Testing
 
 - [approval-tests](https://approvaltests.com/)
   <br/>Unit testing asserts can be difficult to use. Approval tests simplify this by taking a snapshot of the results,
@@ -32,7 +30,7 @@ sidebar_position: 0
 - [cucumber-jvm](https://github.com/cucumber/cucumber-jvm)
   <br/>Cucumber for the JVM
 
-### Workflow
+## Workflow
 
 - [conductor](https://conductor.netflix.com/)
   <br/>Conductor is a platform created by Netflix to orchestrate workflows that span across microservices.
@@ -49,7 +47,7 @@ sidebar_position: 0
 - [Airflow](https://airflow.apache.org/)
   <br/>Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.
 
-### Language Extension
+## Language Extension
 
 - [Project Lombok](https://projectlombok.org/)
   <br/>Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
@@ -59,7 +57,7 @@ sidebar_position: 0
   <br/>Manifold is a Java compiler plugin, its features include Metaprogramming, Properties, Extension Methods, Operator
   Overloading, Templates, a Preprocessor, and more.
 
-### Framework
+## Framework
 
 - [helidon](https://helidon.io/)
   <br/>Helidon is a cloud-native, open‑source set of Java libraries for writing microservices that run on a fast web
@@ -75,12 +73,12 @@ sidebar_position: 0
 - [javalin](https://javalin.io/)
   <br/>A simple web framework for Java and Kotlin
 
-### Console
+## Console
 
 - [jline](https://github.com/jline/jline3)
   <br/>JLine is a Java library for handling console input.
 
-### Command Execution
+## Command Execution
 
 - [commons-exec](https://github.com/apache/commons-exec)
   <br/>Apache Commons Exec.
@@ -91,7 +89,7 @@ sidebar_position: 0
 - [sshj](https://github.com/hierynomus/sshj)
   <br/>ssh, scp and sftp for java.
 
-### Template Engine
+## Template Engine
 
 - [thymeleaf](https://github.com/thymeleaf/thymeleaf)
   <br/>Thymeleaf is a modern server-side Java template engine for both web and standalone environments.
@@ -106,7 +104,7 @@ sidebar_position: 0
 - [jte](https://github.com/casid/jte)
   <br/>Secure and speedy templates for Java and Kotlin.
 
-### Observation
+## Observation
 
 - [micrometer](https://micrometer.io/)
   <br/>Micrometer provides a simple facade over the instrumentation clients for the most popular monitoring systems,
@@ -115,7 +113,7 @@ sidebar_position: 0
   <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
   telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 
-### Reactive
+## Reactive
 
 - [reactor](https://projectreactor.io/)
   <br/>Reactor is a fourth-generation reactive library, based on the Reactive Streams
@@ -126,19 +124,19 @@ sidebar_position: 0
   <br/>The Reactive Relational Database Connectivity (R2DBC) project brings reactive programming APIs to relational
   databases.
 
-### Data access
+## Data access
 
 - [jOOQ](https://www.jooq.org/)
   <br/>jOOQ generates Java code from your database and lets you build type safe SQL queries through its fluent API.
 
-### Curated list
+## Curated list
 
 - [awesome-java](https://github.com/akullpp/awesome-java)
   <br/>A curated list of awesome frameworks, libraries and software for the Java programming language.
 
 ## Reference
 
-### Article
+## Article
 
 - [Measuring Object Sizes in the JVM](https://www.baeldung.com/jvm-measuring-object-sizes)
 - [Using Watch with the Kubernetes API](https://www.baeldung.com/java-kubernetes-watch)
