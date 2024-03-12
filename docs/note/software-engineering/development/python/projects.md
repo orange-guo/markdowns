@@ -33,6 +33,11 @@ sidebar_position: 0
 - [cx_Freeze](https://github.com/marcelotduarte/cx_Freeze)
   <br/>Create standalone executables from Python scripts, with the same performance and is cross-platform.
 
+## SSH
+
+- [paramiko](https://github.com/paramiko/paramiko)
+  <br/>The leading native Python SSHv2 protocol library.
+
 ## Study
 
 - [pytudes](https://github.com/norvig/pytudes)
