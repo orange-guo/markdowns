@@ -1,44 +1,25 @@
-# Clojure
+# Projects
 
-## Learning
-
-### Sites
-
-- [Clojureverse](https://clojureverse.org/)
-  <br/>A friendly and diverse community of Clojurians, discussing all things Clojure and ClojureScript
-- [ClojureScript REPL featuring](https://clojurescript.io/)
-  <br/>A ClojureScript REPL featuring instant feedback, integrated documentation, and a powerful editor
-
-## electric-fiddle
-
-### Projects
-
-- [electric-fiddle](https://github.com/hyperfiddle/electric-fiddle)
-  <br/>Easiest way to get started with Electric Clojure
-- [fulcro-electric-template](https://github.com/hyperfiddle/fulcro-electric-template)
-  <br/>A sample project that could be used as a starting point for a Fulcro 3 + Electric project.
-
-### Articles
-
-- [Electric Clojure – A signals DSL for full-stack web UI](https://news.ycombinator.com/item?id=34771771)
-  <br/>Electric Clojure – A signals DSL for full-stack web UI
-- [hyperfiddle/electric (formerly photon) has been made public](https://www.reddit.com/r/Clojure/comments/11146ic/hyperfiddleelectric_formerly_photon_has_been_made/)
-
-## Projects
-
-### Awesome Clojure
+## Curated list
 
 - [awesome-clojure](https://github.com/mbuczko/awesome-clojure)
   <br/>list of useful links for clojurians
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
 
-### Serialization
+## Web
+
+- [electric-fiddle](https://github.com/hyperfiddle/electric-fiddle)
+  <br/>Easiest way to get started with Electric Clojure
+- [fulcro-electric-template](https://github.com/hyperfiddle/fulcro-electric-template)
+  <br/>A sample project that could be used as a starting point for a Fulcro 3 + Electric project.
+
+## Serialization
 
 - [nippy](https://github.com/taoensso/nippy)
   <br/>The fastest serialization library for Clojure
 
-### Others
+## Others
 
 - [awesome-clojure](https://github.com/razum2um/awesome-clojure)
   <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
@@ -78,7 +59,7 @@
 - [babashka](https://babashka.org/)
   <br/>Native, fast starting Clojure interpreter for scripting.
 
-### Code style
+## Code style
 
 - [clojure-style-guide](https://github.com/bbatsov/clojure-style-guide)
   <br/>A community coding style guide for the Clojure programming language
