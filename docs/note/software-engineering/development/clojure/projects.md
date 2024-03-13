@@ -9,6 +9,8 @@
 
 ## Web
 
+- [electric](https://github.com/hyperfiddle/electric)
+  <br/>a reactive Clojure dialect for web development that uses a compiler to infer the frontend/backend boundary
 - [electric-fiddle](https://github.com/hyperfiddle/electric-fiddle)
   <br/>Easiest way to get started with Electric Clojure
 - [fulcro-electric-template](https://github.com/hyperfiddle/fulcro-electric-template)
