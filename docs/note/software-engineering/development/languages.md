@@ -25,6 +25,10 @@
 - [Haskell Wiki](wiki.haskell.org)
 - [swift](https://github.com/apple/swift)
   <br/>The Swift Programming Language
+- [Nim](https://github.com/nim-lang/Nim)
+  <br/>Nim is a statically typed compiled systems programming language. It combines successful concepts from mature
+  languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order
+  of priority).
 
 ## Data Language
 
