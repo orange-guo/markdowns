@@ -10,6 +10,7 @@ sidebar_position: 0
 ## JWT
 
 - [JWT Decoder](http://jwt.calebb.net/)
+- [JWT Decoder](https://www.jstoolset.com/jwt)
 
 ## Password Generation
 
