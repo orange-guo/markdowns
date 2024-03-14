@@ -44,12 +44,7 @@ SDK 和工具访问 TOS 时，请务必确保配置了 VirtualHostStyle 的请�
 PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。</p>
 </blockquote>
 <ul>
-<li>
-<p><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html?spm=a2c4g.11186623.0.0.6b9d64012JMDoP" target="_blank" rel="noopener noreferrer">Virtual hosting of buckets</a></p>
-</li>
-<li>
-<p><a href="https://github.com/kopia/kopia/issues/3734" target="_blank" rel="noopener noreferrer">Custmize minio creation options</a></p>
-</li>
+<li><a href="https://github.com/kopia/kopia/issues/3734" target="_blank" rel="noopener noreferrer">Custmize minio creation options</a></li>
 </ul>]]></content>
         <author>
             <name>Xiangcheng Kuo</name>
