@@ -4,10 +4,13 @@ sidebar_position: 0
 
 # Projects
 
-## Building Own Application
+## Building
 
 - [search_with_lepton](https://github.com/leptonai/search_with_lepton)
   <br/>Building a quick conversation-based search demo with Lepton AI.
+- [intel-extension-for-transformers](https://github.com/intel/intel-extension-for-transformers)
+  <br/>⚡ Build your chatbot within minutes on your favorite device; offer SOTA compression techniques for LLMs; run LLMs
+  efficiently on Intel Platforms⚡
 
 ## Chat Pdf
 
