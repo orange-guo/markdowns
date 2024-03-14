@@ -52,3 +52,10 @@
 
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
   <br/>Implementing a ChatGPT-like LLM from scratch, step by step
+
+## Chat Pdf
+
+- [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
+  <br/>PDF GPT allows you to chat with the contents of your PDF file by using GPT capabilities. The most effective open
+  source solution to turn your pdf files in a chatbot!
+
