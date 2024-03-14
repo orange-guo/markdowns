@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1392],{17020:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/problem-solving/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":18,"previousPage":"/blog/tags/problem-solving","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
