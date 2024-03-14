@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Projects
 
-## Application Building
+## Building Own Application
 
 - [search_with_lepton](https://github.com/leptonai/search_with_lepton)
   <br/>Building a quick conversation-based search demo with Lepton AI.
@@ -16,6 +16,9 @@ sidebar_position: 0
   source solution to turn your pdf files in a chatbot!
 - [ChatFiles](https://github.com/guangzhengli/ChatFiles)
   <br/>Document Chatbot — multiple files. Powered by GPT / Embedding.
+- [ChatPDF](https://github.com/Anil-matcha/ChatPDF)
+  <br/>Chat with any PDF. Easily upload the PDF documents you'd like to chat with. Instant answers. Ask questions,
+  extract information, and summarize documents with AI. Sources included.
 
 ## Stable Diffusion
 
