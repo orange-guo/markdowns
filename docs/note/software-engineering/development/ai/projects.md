@@ -14,6 +14,8 @@ sidebar_position: 0
 - [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
   <br/>PDF GPT allows you to chat with the contents of your PDF file by using GPT capabilities. The most effective open
   source solution to turn your pdf files in a chatbot!
+- [ChatFiles](https://github.com/guangzhengli/ChatFiles)
+  <br/>Document Chatbot — multiple files. Powered by GPT / Embedding.
 
 ## Stable Diffusion
 
