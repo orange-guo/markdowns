@@ -7,8 +7,8 @@ tags: [ problem-solving, golang, kopia, volcengine, tos, s3 ]
 
 `kopia`是一个备份工具, 支持多种存储后端, 包括`对象存储`, `文件系统`等,
 通过kopia可以将数据备份到不同的存储后端, 也可以从不同的存储后端恢复数据.
-火山云TOS是火山云提供的对象存储服务, 支持s3协议.
-最近在使用kopia接入火山云TOS时, 遇到了一个问题, 问题的现象是调用kopia提供的s3_storage接入火山云TOS时, 报错Access Denied.
+火山云`TOS`是火山云提供的对象存储服务, 支持通过`S3`协议访问.
+最近在使用kopia接入火山云`TOS`时, 遇到了一个问题, 问题的现象是调用`kopia`提供的`s3_storage`接入火山云TOS时, 报错`Access Denied.`
 
 ```log
 unable to determine if bucket "xxxxx" exists: Access Denied.
@@ -28,7 +28,7 @@ unable to determine if bucket "xxxxx" exists: Access Denied.
 > `Path-Style`:
 > 这种请求方式是通过在域名后面指定存储桶名称来进行操作, 如`https://s3.{region-code}.amazonaws.com/{bucket-name}
 
-`kopia`通过`minio`实现了对s3协议的支持, `minio`中默认情况下使用`Path-Style`的请求方式,
+`kopia`通过`minio`实现了对`S3`协议的支持, `minio`中默认情况下使用`Path-Style`的请求方式,
 所以导致了`Access Denied`的问题.
 
 ## 解决方案
@@ -37,6 +37,9 @@ unable to determine if bucket "xxxxx" exists: Access Denied.
 目前已在`kopia`的`repo`中开了一个[issue](https://github.com/kopia/kopia/issues/3734), 需要等待后续的进展.
 
 ## 参考
+
+- [kopia](https://github.com/kopia/kopia)
+- [TOS](https://www.volcengine.com/docs/6349)
 
 - [AWS S3 协议兼容性说明](https://www.volcengine.com/docs/6349/147050)
 
