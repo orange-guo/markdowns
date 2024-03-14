@@ -16,8 +16,8 @@
             <description><![CDATA[kopia是一个备份工具, 支持多种存储后端, 包括对象存储, 文件系统等,]]></description>
             <content:encoded><![CDATA[<p><code>kopia</code>是一个备份工具, 支持多种存储后端, 包括<code>对象存储</code>, <code>文件系统</code>等,
 通过kopia可以将数据备份到不同的存储后端, 也可以从不同的存储后端恢复数据.
-火山云TOS是火山云提供的对象存储服务, 支持s3协议.
-最近在使用kopia接入火山云TOS时, 遇到了一个问题, 问题的现象是调用kopia提供的s3_storage接入火山云TOS时, 报错Access Denied.</p>
+火山云<code>TOS</code>是火山云提供的对象存储服务, 支持通过<code>S3</code>协议访问.
+最近在使用kopia接入火山云<code>TOS</code>时, 遇到了一个问题, 问题的现象是调用<code>kopia</code>提供的<code>s3_storage</code>接入火山云TOS时, 报错<code>Access Denied.</code></p>
 <div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">unable to determine if bucket "xxxxx" exists: Access Denied.</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>以下是该问题的原因及解决方案总结.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="问题原因">问题原因<a href="https://www.geek66.cyou/blog/2024/03/14/kopia-integration-with-volcano-cloud-tos-access-denied-issue-investigation-and-fix#%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0" class="hash-link" aria-label="Direct link to 问题原因" title="Direct link to 问题原因">​</a></h2>
@@ -30,14 +30,22 @@
 <code>Path-Style</code>:
 这种请求方式是通过在域名后面指定存储桶名称来进行操作, 如`<a href="https://s3.{region-code}.amazonaws.com/%7Bbucket-name%7D" target="_blank" rel="noopener noreferrer">https://s3.{region-code}.amazonaws.com/{bucket-name}</a></p>
 </blockquote>
-<p><code>kopia</code>通过<code>minio</code>实现了对s3协议的支持, <code>minio</code>中默认情况下使用<code>Path-Style</code>的请求方式,
+<p><code>kopia</code>通过<code>minio</code>实现了对<code>S3</code>协议的支持, <code>minio</code>中默认情况下使用<code>Path-Style</code>的请求方式,
 所以导致了<code>Access Denied</code>的问题.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案">解决方案<a href="https://www.geek66.cyou/blog/2024/03/14/kopia-integration-with-volcano-cloud-tos-access-denied-issue-investigation-and-fix#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" class="hash-link" aria-label="Direct link to 解决方案" title="Direct link to 解决方案">​</a></h2>
 <p><code>minio</code>在创建<code>client</code>的时候提供了<code>BucketLookup</code>选项, 用于指定<code>client</code>使用的请求方式, 但是<code>kopia</code>没有暴露这个选项.<br>
 目前已在<code>kopia</code>的<code>repo</code>中开了一个<a href="https://github.com/kopia/kopia/issues/3734" target="_blank" rel="noopener noreferrer">issue</a>, 需要等待后续的进展.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a href="https://www.geek66.cyou/blog/2024/03/14/kopia-integration-with-volcano-cloud-tos-access-denied-issue-investigation-and-fix#%E5%8F%82%E8%80%83" class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考">​</a></h2>
 <ul>
-<li><a href="https://www.volcengine.com/docs/6349/147050" target="_blank" rel="noopener noreferrer">AWS S3 协议兼容性说明</a></li>
+<li>
+<p><a href="https://github.com/kopia/kopia" target="_blank" rel="noopener noreferrer">kopia</a></p>
+</li>
+<li>
+<p><a href="https://www.volcengine.com/docs/6349" target="_blank" rel="noopener noreferrer">TOS</a></p>
+</li>
+<li>
+<p><a href="https://www.volcengine.com/docs/6349/147050" target="_blank" rel="noopener noreferrer">AWS S3 协议兼容性说明</a></p>
+</li>
 </ul>
 <blockquote>
 <p>TOS 仅支持使用虚拟主机（即 VirtualHostStyle）的请求方式，不支持路径样式（即 PathStyle）的请求方式。因此使用各种支持 S3 协议的
@@ -45,7 +53,12 @@ SDK 和工具访问 TOS 时，请务必确保配置了 VirtualHostStyle 的请�
 PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。</p>
 </blockquote>
 <ul>
-<li><a href="https://github.com/kopia/kopia/issues/3734" target="_blank" rel="noopener noreferrer">Custmize minio creation options</a></li>
+<li>
+<p><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html?spm=a2c4g.11186623.0.0.6b9d64012JMDoP" target="_blank" rel="noopener noreferrer">Virtual hosting of buckets</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kopia/kopia/issues/3734" target="_blank" rel="noopener noreferrer">Custmize minio creation options</a></p>
+</li>
 </ul>]]></content:encoded>
             <category>problem-solving</category>
             <category>golang</category>
