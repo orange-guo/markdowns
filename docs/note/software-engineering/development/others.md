@@ -20,7 +20,8 @@
 - [terraform-examples](https://github.com/futurice/terraform-examples)
   <br/>Terraform samples for all the major clouds you can copy and paste. The future, co-created.
 - [pulumi](https://github.com/pulumi/pulumi)
-  <br/>Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀
+  <br/>Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using
+  familiar languages 🚀
 
 ## Others
 
@@ -36,28 +37,30 @@
   <br/>HCL is the HashiCorp configuration language.
 
 ## Code Art
+
 - [“IDE 启动画面是如何诞生的？” | JetBrains AI 图形发展史](https://mp.weixin.qq.com/s/0HXmHpb658DvSQpAZUQWew)
 - [Intelligent Code Art](https://blog.jetbrains.com/blog/2020/09/29/intelligent-code-art/)
 - [Gradient](https://gradient-public.labs.jb.gg/)
-  <br/>We propose a rethinking of the gradient concept as a spatial expression of time, the fundamental basis of any dynamics, any movement and any drive.
+  <br/>We propose a rethinking of the gradient concept as a spatial expression of time, the fundamental basis of any
+  dynamics, any movement and any drive.
 - [dots.labs.jb.gg](https://dots.labs.jb.gg/)
 - [Eidos - Code2Art 2023](https://code2art.jetbrains.com/)
 - [Computational Arts](https://cai.jetbrains.com/)
 - [Desktop Art](https://www.jetbrains.com/company/brand/desktop-art/)
 - [Tiler](https://tiler.labs.jb.gg/)
-  <br/>We implemented a collaborative approach that combined individual artistic expression with a computational tiling algorithm.
+  <br/>We implemented a collaborative approach that combined individual artistic expression with a computational tiling
+  algorithm.
 
 ## OpenAPI
+
 - [openapi-generator-cli](https://github.com/OpenAPITools/openapi-generator-cli)
   <br/>A node package wrapper for https://github.com/OpenAPITools/openapi-generator
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
 
-
-
 ### Games
 
-- [awesome-PICO-8](https://github.com/pico-8/awesome-PICO-8) 
+- [awesome-PICO-8](https://github.com/pico-8/awesome-PICO-8)
   <br/>A curated list of awesome PICO-8 resources, carts, tools and more
 - [pyxel](https://github.com/kitao/pyxel)
   <br/>Retro Game Engine for Python

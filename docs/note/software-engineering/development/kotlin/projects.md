@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 ---
+
 # Curated list
 
 ## Learning
@@ -117,8 +118,6 @@ sidebar_position: 0
   <br/>Pure Kotlin implementation of a generic CLI parser.
 - [kotlin-argparser](https://github.com/xenomachina/kotlin-argparser)
   <br/>Easy to use and concise yet powerful and robust command line argument parsing for Kotlin
-
-
 
 ## Articles
 

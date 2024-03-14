@@ -36,7 +36,6 @@
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources)
   <br/>A curated list of awesome Kubernetes tools and resources.
 
-
 ## Reference
 
 - [Kubernetes – Desired State and Control Loops](https://theithollow.com/2019/09/16/kubernetes-desired-state-and-control-loops/)

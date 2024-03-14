@@ -23,7 +23,8 @@
 - [protobuf-ts](https://github.com/timostamm/protobuf-ts)\
   <br/>Protobuf and RPC for TypeScript
 - [protoc-gen-grpc-gateway-ts](https://github.com/grpc-ecosystem/protoc-gen-grpc-gateway-ts)
-  <br/>protoc-gen-grpc-gateway-ts is a Typescript client generator for the grpc-gateway project. It generates idiomatic Typescript clients that connect the web frontend and golang backend fronted by grpc-gateway.
+  <br/>protoc-gen-grpc-gateway-ts is a Typescript client generator for the grpc-gateway project. It generates idiomatic
+  Typescript clients that connect the web frontend and golang backend fronted by grpc-gateway.
 
 ## Gradle Plugins
 

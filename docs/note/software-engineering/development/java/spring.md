@@ -11,9 +11,11 @@
   fuss. It takes an opinionated view of the Spring platform so that new and existing users can quickly get to the bits
   they need.
 - [spring-framework](https://github.com/spring-projects/spring-framework)
-  <br/>This is the home of the Spring Framework: the foundation for all Spring projects. Collectively the Spring Framework and the family of Spring projects are often referred to simply as "Spring".
+  <br/>This is the home of the Spring Framework: the foundation for all Spring projects. Collectively the Spring
+  Framework and the family of Spring projects are often referred to simply as "Spring".
 - [spring-security](https://github.com/spring-projects/spring-security)
-  <br/>Spring Security provides security services for the Spring IO Platform. Spring Security 6.0 requires Spring 6.0 as a minimum and also requires Java 17.
+  <br/>Spring Security provides security services for the Spring IO Platform. Spring Security 6.0 requires Spring 6.0 as
+  a minimum and also requires Java 17.
 - [spring-petclinic](https://github.com/spring-projects/spring-petclinic)
   <br/>A sample Spring-based application
 - [spring-integration](https://github.com/spring-projects/spring-integration)
@@ -43,7 +45,6 @@
 
 - [awesome-spring](https://github.com/ThomasVitale/awesome-spring)
   <br/>A curated list of awesome books, tutorials, courses, and resources for the Spring framework ecosystem.
-
 
 ## Reference
 

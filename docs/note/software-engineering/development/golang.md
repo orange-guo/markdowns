@@ -46,7 +46,7 @@
 - [oauth2](https://github.com/golang/oauth2)
   <br/>Go OAuth2
 
-### Ldap 
+### Ldap
 
 - [ldap](https://github.com/go-ldap/ldap)
   <br/>Basic LDAP v3 functionality for the GO programming language.
