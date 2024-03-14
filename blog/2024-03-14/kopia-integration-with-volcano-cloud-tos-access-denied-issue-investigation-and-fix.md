@@ -44,4 +44,6 @@ unable to determine if bucket "xxxxx" exists: Access Denied.
 > SDK 和工具访问 TOS 时，请务必确保配置了 VirtualHostStyle 的请求方式。例如，使用 AWS S3 Java SDK 时，需要在客户端初始化时确保设置了禁用
 > PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 
+- [Virtual hosting of buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html?spm=a2c4g.11186623.0.0.6b9d64012JMDoP)
+
 - [Custmize minio creation options](https://github.com/kopia/kopia/issues/3734)
