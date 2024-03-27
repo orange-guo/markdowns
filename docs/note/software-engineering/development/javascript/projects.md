@@ -2,18 +2,14 @@
 sidebar_position: 0
 ---
 
-# Frontend
+# Projects
 
-<!--truncate-->
-
-## Projects
-
-### RPC
+## RPC
 
 - [connect-es](https://github.com/connectrpc/connect-es)
   <br/>The TypeScript implementation of Connect: Protobuf RPC that works.
 
-### Json Form
+## Json Form
 
 - [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form)
   <br/>A React component for building Web forms from JSON Schema.
@@ -29,7 +25,7 @@ sidebar_position: 0
   <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (
   RFC8927)
 
-### Design System
+## Design System
 
 - [ant-design](https://github.com/ant-design/ant-design)
   <br/>An enterprise-class UI design language and React UI library
@@ -46,7 +42,7 @@ sidebar_position: 0
 - [nutui](https://github.com/jd-opensource/nutui)
   <br/>京东风格的移动端 Vue2、Vue3 组件库 、支持多端小程序(A Vue.js UI Toolkit for Mobile Web)
 
-### Web Framework
+## Web Framework
 
 - [angular](https://github.com/angular/angular)
   <br/>Deliver web apps with confidence 🚀
@@ -67,7 +63,7 @@ sidebar_position: 0
 - [marko](https://github.com/marko-js/marko)
   <br/>A friendly (and fast!) UI library from eBay that makes building web apps fun
 
-### Server Side Rendering
+## Server Side Rendering
 
 - [next.js](https://github.com/vercel/next.js)
   <br/>The React Framework
@@ -76,7 +72,7 @@ sidebar_position: 0
 - [kit](https://github.com/sveltejs/kit)
   <br/>web development, streamlined
 
-### Editor
+## Editor
 
 - [monaco-react](https://github.com/suren-atoyan/monaco-react)
   <br/>Monaco Editor for React - use the monaco-editor in any React application without needing to use webpack (or
@@ -84,27 +80,27 @@ sidebar_position: 0
 - [react-codemirror](https://github.com/uiwjs/react-codemirror)
   <br/>CodeMirror component for React. @codemirror
 
-### Rendering
+## Rendering
 
 - [react-pdf](https://github.com/diegomura/react-pdf)
   <br/>📄 Create PDF files using React
 
-### Diagram Generation
+## Diagram Generation
 
 - [state-machine-cat](https://github.com/sverweij/state-machine-cat)
   <br/>write beautiful state charts 🙀
 
-### UI Library
+## UI Library
 
 - [fake-progress](https://github.com/piercus/fake-progress)
   <br/>Fake a progress bar using an exponential progress function
 
-### 8-bit
+## 8-bit
 
 - [NES.css](https://github.com/nostalgic-css/NES.css)
   <br/>NES-style CSS Framework | ファミコン風CSSフレームワーク
 
-### Avatar Generator
+## Avatar Generator
 
 - [boring-avatars](https://github.com/boringdesigners/boring-avatars)
   <br/>Boring avatars is a tiny JavaScript React library that generates custom, SVG-based avatars from any username and
@@ -120,7 +116,7 @@ sidebar_position: 0
 - [avatar-generator](https://github.com/arusanov/avatar-generator)
   <br/>8bit avatar generator. Inspired by https://github.com/matveyco/8biticon
 
-### Build
+## Build
 
 - [nx](https://github.com/nrwl/nx)
   <br/>Smart Monorepos · Fast CI
@@ -142,32 +138,32 @@ sidebar_position: 0
   <br/>Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the
   same repository.
 
-### Testing
+## Testing
 
 - [jest](https://github.com/jestjs/jest)
   <br/>Delightful JavaScript Testing.
 
-### Util Library
+## Util Library
 
 - [rxjs](https://github.com/ReactiveX/rxjs)
   <br/>A reactive programming library for JavaScript
 
-### Encryption
+## Encryption
 
 - [crypto-js](https://github.com/brix/crypto-js)
   <br/>JavaScript library of crypto standards.
 
-### Package Manager
+## Package Manager
 
 - [pnpm](https://github.com/pnpm/pnpm)
   <br/>Fast, disk space efficient package manager
 
-### Others
+## Others
 
 - [gitbeaker](https://github.com/jdalrymple/gitbeaker)
   <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
 
-### Docs
+## Docs
 
 - [vitepress](https://github.com/vuejs/vitepress)
   <br/>Vite & Vue powered static site generator.
@@ -191,25 +187,3 @@ sidebar_position: 0
   <br/>🃏 A magical documentation site generator.
 - [gitbook](https://github.com/GitbookIO/gitbook)
   <br/>📝 Modern documentation format and toolchain using Git and Markdown
-
-## Online IDE
-
-- [CodeSandbox](https://codesandbox.io/dashboard)
-  <br/>CodeSandbox is a cloud development platform that empowers developers to code, collaborate and ship projects of
-  any size from any device in record time.
-- [StackBlitz](https://stackblitz.com/)
-  <br/>StackBlitz is an online IDE where you can create Angular & React projects that are immediately online & shareable
-  via link… in just one click.
-- [CodePen](https://codepen.io/)
-  <br/>CodePen is a social development environment for front-end designers and developers. Build and deploy a website,
-  show off your work, build test cases to learn and debug, and find inspiration.
-- [JSFiddle](https://jsfiddle.net/)
-  <br/>Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.
-
-## References
-
-### Sites
-
-- [mdn](https://developer.mozilla.org/)
-  <br/>The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and
-  APIs for both Web sites and HTML5 Apps. It also documents Mozilla products, like Firefox OS.
