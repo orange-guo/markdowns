@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[52],{24534:a=>{a.exports=JSON.parse('{"label":"wayland","permalink":"/zh-CN/blog/tags/wayland","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);
