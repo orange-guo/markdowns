@@ -61,6 +61,8 @@ sidebar_position: 0
   <br/>GORM Gen is a code generation tool for GORM ORM library
 - [badger](https://github.com/dgraph-io/badger)
   <br/>Fast key-value DB in Go.
+- [go-sqlite3](https://github.com/mattn/go-sqlite3)
+  <br/>sqlite3 driver for go using database/sql
 
 ## Gprc & Protobuf
 

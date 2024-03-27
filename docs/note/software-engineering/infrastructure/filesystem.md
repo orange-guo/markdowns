@@ -1,4 +1,4 @@
-# File system
+# Filesystem
 
 - [rclone](https://github.com/rclone/rclone)<br/>
   "rsync for cloud storage"-Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud
