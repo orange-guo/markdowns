@@ -1,5 +1,9 @@
 # References
 
+## Articles
+
+- [Running Kotlin coroutines on Project Loom's virtual threads](https://kt.academy/article/dispatcher-loom)
+
 ## Learning
 
 - [kotlin.link](https://kotlin.link/)
