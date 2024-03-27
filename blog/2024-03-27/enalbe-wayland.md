@@ -8,6 +8,8 @@ tags: [ linux, wayland, gnome ]
 默认情况下, 图形应用和`display server`之间的通信协议是`X11`协议. `Wayland`是`X11`的替代品, 可以提供更好的性能和体验.
 下面将介绍如何启用`Wayland`协议.
 
+<!--truncate-->
+
 ## 确认当前的通信协议
 
 执行以下命令, 确认当前的通信协议:
