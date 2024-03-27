@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Map Structure
+
+- [konvert](https://github.com/mcarleio/konvert)
+  <br/>This kotlin compiler plugin is using KSP API and generates kotlin code to map one class to another
+
 ## Concurrency
 
 - [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)

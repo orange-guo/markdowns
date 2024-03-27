@@ -16,6 +16,8 @@
   <br/>[Deprecated] Protocol Buffers for Go with Gadgets
 - [googleapis](https://github.com/googleapis/googleapis)
   <br/>Public interface definitions of Google APIs.
+- [connectrpc](https://github.com/connectrpc)
+  <br/>Simple, reliable, interoperable. Protobuf RPC that works.
 - [connect-es](https://github.com/connectrpc/connect-es)
   <br/>The TypeScript implementation of Connect: Protobuf RPC that works.
 - [ts-protoc-gen](https://github.com/improbable-eng/ts-protoc-gen)
