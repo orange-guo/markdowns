@@ -1,8 +1,4 @@
-# Golang
-
-
-
-## Tutorial
+# Tutorials
 
 - [Go by Example](https://gobyexample.com/)
   <br/>Go by Example is a hands-on introduction to Go using annotated example programs. Check out the first example or
@@ -13,7 +9,3 @@
 - [enumflag](https://github.com/thediveo/enumflag)
   <br/>enumflag is a Go package for the Go standard library's flag package to support command-line flags of type enum.
 
-## Articles
-
-- [How to use Go channels](https://blog.logrocket.com/how-use-go-channels/)
-- [Testing with GoMock: A Tutorial](https://www.codecentric.de/wissens-hub/blog/gomock-tutorial)
