@@ -51,7 +51,7 @@ sidebar_position: 0
 - [vue](https://github.com/vuejs/core)
   🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 - [svelte](https://github.com/sveltejs/svelte)
-  <br/>Cybernetically enhanced web apps
+  <br/>Cyber##ically enhanced web apps
 - [preact](https://github.com/preactjs/preact)
   <br/>⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.
 - [inferno](https://github.com/infernojs/inferno)
@@ -62,6 +62,11 @@ sidebar_position: 0
   <br/>Lit is a simple library for building fast, lightweight web components.
 - [marko](https://github.com/marko-js/marko)
   <br/>A friendly (and fast!) UI library from eBay that makes building web apps fun
+
+## Net
+
+- [fetch-socks](https://github.com/Kaciras/fetch-socks)
+  <br/>Socks proxy for Node builtin `fetch`
 
 ## Server Side Rendering
 
