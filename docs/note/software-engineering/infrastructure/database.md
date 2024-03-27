@@ -1,7 +1,7 @@
-# Infrastructure
+# Database
 
-## Database
-
+- [rocksdb](https://rocksdb.org/)
+  <br/>A persistent key-value store for fast storage environments
 - [cassandra](https://github.com/apache/cassandra)
   <br/>Mirror of Apache Cassandra
 - [rocksdb](https://github.com/facebook/rocksdb)

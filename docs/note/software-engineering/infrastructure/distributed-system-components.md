@@ -161,8 +161,7 @@
 
 ## Database
 
-- [rocksdb](https://rocksdb.org/)
-  <br/>A persistent key-value store for fast storage environments
+
 
 ## Stream Processing
 
