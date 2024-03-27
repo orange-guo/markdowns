@@ -59,6 +59,7 @@ https://existentialtype.wordpress.com/2011/03/15/boolean-blindness/
 - chaos engineering：混沌工程，是一种软件工程实践，通过有意地在系统中引入故障，来测试系统的稳定性和可恢复性。
 
 ## tech
+
 https://makelinux.github.io/kernel/map/
 https://github.com/giscus/giscus
 https://github.com/utkuozdemir/nvidia_gpu_exporter
@@ -66,17 +67,19 @@ spring http interface
 https://www.h3c.com/cn/d_202104/1404155_30005_0.htm
 
 ## other
+
 https://openjdk.org/jeps/8302326
 康威定律
 https://copy.sh/v86/
 
 ## 书
+
 1984
 反脆弱
 https://github.com/LeonLi0102/cloud-native-spring-in-action-translate/tree/main/cn-translate/01-Introduction-to-cloud-native/1.1-What-is-cloud-native
 
-
 ## onecompile
+
 ```javascript
 var text = window.document.getElementsByClassName('ace_text-input')[0]
 var event = document.createEvent("Event");
@@ -86,7 +89,8 @@ text.dispatchEvent(event);
 
 ## kotlin-coroutines
 
-好的，我很乐意帮助你整理一下关于kotlin协程的细节。kotlin协程是一种并发设计模式，可以在Android平台上使用它来简化异步执行的代码1。kotlin协程是基于其他语言的既定概念，在kotlin 1.3版本中添加到语言中，但不是关键字或标准库的一部分2。kotlin协程提供了一些核心概念，例如：
+好的，我很乐意帮助你整理一下关于kotlin协程的细节。kotlin协程是一种并发设计模式，可以在Android平台上使用它来简化异步执行的代码1。kotlin协程是基于其他语言的既定概念，在kotlin
+1.3版本中添加到语言中，但不是关键字或标准库的一部分2。kotlin协程提供了一些核心概念，例如：
 
 挂起函数：可以在不阻塞线程的情况下暂停和恢复执行的函数，用suspend关键字标记。
 协程作用域：管理一个或多个相关协程的生命周期的对象，用CoroutineScope接口表示。
@@ -111,7 +115,9 @@ Select 表达式：实验性的特性，可以同时等待多个挂起操作，�
 1: Android 上的 Kotlin 协程 | Android Developers 2: 协程指南 - Kotlin 语言中文站 3: 协程 · Kotlin 官方文档 中文版
 
 ## others
+
 实现在docusaurus中执行代码的插件
+
 - [Judge0 CE - API Docs](https://ce.judge0.com/)
 - [Judge0 IDE](https://ide.judge0.com/)
 - [OneCompiler](https://onecompiler.com/)
@@ -120,8 +126,8 @@ Select 表达式：实验性的特性，可以同时等待多个挂起操作，�
 - [Ideone](https://www.ideone.com/F7mT6q)
 - [OnlineGDB](https://www.onlinegdb.com/online_java_compiler)
 
-
 ## 基于数据状态的并发模型和基于通道的模型的区别
+
 您好，这是必应。😊
 
 基于数据状态的并发模型和基于通道的模型的区别是一个复杂的话题，我不能完全解释，但我可以尝试给您一些基本的概念。
