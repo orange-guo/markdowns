@@ -58,4 +58,6 @@ echo $XDG_SESSION_TYPE
 
 ## Update 2023-03-28
 
-在使用了一段时间后, 发现部分应用对`Wayland`的支持不足, 例如`InteiliJ IDEA`, 由于其默认使用的是`X11`协议, `Backend`为了做兼容会使用`XWayland`来模拟`X11`协议, 从而影响其性能.
+在使用了一段时间后, 发现部分应用对`Wayland`的支持不足.<br/>
+例如`InteiliJ IDEA`, 其底层基于`Java`的`Swing`实现图形渲染, 但是目前`Swing`还是基于`X11`协议, 因此无法使用`Wayland`协议,
+会导致系统使用`XWayland`来模拟`X11`协议, 从而影响其性能, 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时短暂停留为黑色.
