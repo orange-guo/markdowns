@@ -41,7 +41,30 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-2023-03-28">Update 2023-03-28<a href="https://www.geek66.cyou/zh-CN/blog/2024/03/27/enalbe-wayland#update-2023-03-28" class="hash-link" aria-label="Update 2023-03-28的直接链接" title="Update 2023-03-28的直接链接">​</a></h2>
 <p>在使用了一段时间后, 发现部分应用对<code>Wayland</code>的支持不足.<br>
 例如<code>InteiliJ IDEA</code>, 其底层基于<code>Java</code>的<code>Swing</code>实现图形渲染, 但是目前<code>Swing</code>还是基于<code>X11</code>协议, 因此无法使用<code>Wayland</code>协议,
-会导致系统使用<code>XWayland</code>来模拟<code>X11</code>协议, 从而影响其性能, 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时短暂停留为黑色.</p>]]></content:encoded>
+会导致系统使用<code>XWayland</code>来模拟<code>X11</code>协议, 从而影响其性能,
+主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时会出现短暂的黑色背景.<br></p>
+<p><code>Jetbrains</code>去年发布过一个博客, 该博客详细介绍了基于<code>IntelliJ</code>的<code>IDE</code>对<code>Wayland</code>的支持.<br>
+<a href="https://blog.jetbrains.com/platform/2023/08/wayland-support/" target="_blank" rel="noopener noreferrer">Wayland Support for IntelliJ-based IDEs</a><br>
+该博客中首先对<code>Wayland</code>作出了介绍, 以及目前<code>Java</code>对<code>Wayland</code>的支持现状以及<code>Xwayland</code>目前的兼容过渡方案.<br>
+中间介绍了目前对于原生<code>Wayland</code>支持的挑战.<br>
+最后是对未来支持<code>Wayland</code>的展望.<br>
+该博客中提到了目前<code>OpenJDK</code>中的<code>Wakefield</code>项目致力于解决让在<code>JDK</code>中实现<code>Wayland display server</code>的支持<br></p>
+<p><strong>该项目有中短期和中长期两个目标:</strong></p>
+<blockquote>
+<p>短期到中期解决方案:<br>
+a short to medium term solution for JDK running on Wayland in X11 compatibility mode.<br>
+JDK在X11兼容模式下运行在Wayland上.<br></p>
+</blockquote>
+<blockquote>
+<p>中期到长期解决方案:<br>
+a medium to long term solution for JDK running as a native Wayland client. Pure Wayland toolkit plan proposal.<br>
+JDK作为原生Wayland客户端, 需要一个纯Wayland工具包方案.<br></p>
+</blockquote>
+<p>更多信息参考:</p>
+<ul>
+<li><a href="https://wiki.openjdk.org/display/wakefield" target="_blank" rel="noopener noreferrer">OpenJDK Project Wakefield - Wayland desktop support for JDK on Linux</a></li>
+<li><a href="https://cr.openjdk.org/~prr/javaone/2022/wakefield/wakefield_bof.pdf" target="_blank" rel="noopener noreferrer">Project Wakefield: A New Wayland Desktop for Java On Linux</a></li>
+</ul>]]></content:encoded>
             <category>linux</category>
             <category>wayland</category>
             <category>gnome</category>
