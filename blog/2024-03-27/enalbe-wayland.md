@@ -63,10 +63,10 @@ echo $XDG_SESSION_TYPE
 会导致系统使用`XWayland`来模拟`X11`协议, 从而影响其性能,
 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时会出现短暂的黑色背景.<br/>
 
-`Jetbrains`去年发布过一个博客, 该博客详细介绍了基于`IntelliJ`的`IDE`对`Wayland`的支持.<br/>
+`Jetbrains`去年发布过一个博客, 该博客详细介绍了基于`IDE`对`Wayland`的支持.<br/>
 [Wayland Support for IntelliJ-based IDEs](https://blog.jetbrains.com/platform/2023/08/wayland-support/)<br/>
-该博客中首先对`Wayland`作出了介绍, 以及目前`Java`对`Wayland`的支持现状以及`Xwayland`目前的兼容过渡方案.<br/>
-中间介绍了目前对于原生`Wayland`支持的挑战.<br/>
+该博客中首先对`Wayland`作出了介绍, 以及目前`Java`对`Wayland`的支持现状由于历史的原因, `Java`尚未支持`Wayland`而是采用`Xwayland`兼容性过渡方案.<br/>
+其次介绍了目前对于`Java`原生`Wayland`支持的挑战.<br/>
 最后是对未来支持`Wayland`的展望.<br/>
 该博客中提到了目前`OpenJDK`中的`Wakefield`项目致力于解决让在`JDK`中实现`Wayland display server`的支持<br/>
 
