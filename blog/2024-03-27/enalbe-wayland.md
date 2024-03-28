@@ -60,4 +60,27 @@ echo $XDG_SESSION_TYPE
 
 在使用了一段时间后, 发现部分应用对`Wayland`的支持不足.<br/>
 例如`InteiliJ IDEA`, 其底层基于`Java`的`Swing`实现图形渲染, 但是目前`Swing`还是基于`X11`协议, 因此无法使用`Wayland`协议,
-会导致系统使用`XWayland`来模拟`X11`协议, 从而影响其性能, 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时短暂停留为黑色.
+会导致系统使用`XWayland`来模拟`X11`协议, 从而影响其性能,
+主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时会出现短暂的黑色背景.<br/>
+
+`Jetbrains`去年发布过一个博客, 该博客详细介绍了基于`IntelliJ`的`IDE`对`Wayland`的支持.<br/>
+[Wayland Support for IntelliJ-based IDEs](https://blog.jetbrains.com/platform/2023/08/wayland-support/)<br/>
+该博客中首先对`Wayland`作出了介绍, 以及目前`Java`对`Wayland`的支持现状以及`Xwayland`目前的兼容过渡方案.<br/>
+中间介绍了目前对于原生`Wayland`支持的挑战.<br/>
+最后是对未来支持`Wayland`的展望.<br/>
+该博客中提到了目前`OpenJDK`中的`Wakefield`项目致力于解决让在`JDK`中实现`Wayland display server`的支持<br/>
+
+**该项目有中短期和中长期两个目标:**
+
+> 短期到中期解决方案:<br/>
+> a short to medium term solution for JDK running on Wayland in X11 compatibility mode.<br/>
+> JDK在X11兼容模式下运行在Wayland上.<br/>
+
+> 中期到长期解决方案:<br/>
+> a medium to long term solution for JDK running as a native Wayland client. Pure Wayland toolkit plan proposal.<br/>
+> JDK作为原生Wayland客户端, 需要一个纯Wayland工具包方案.<br/>
+
+更多信息参考:
+
+- [OpenJDK Project Wakefield - Wayland desktop support for JDK on Linux](https://wiki.openjdk.org/display/wakefield)
+- [Project Wakefield: A New Wayland Desktop for Java On Linux](https://cr.openjdk.org/~prr/javaone/2022/wakefield/wakefield_bof.pdf)
