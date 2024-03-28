@@ -42,10 +42,10 @@
 例如<code>InteiliJ IDEA</code>, 其底层基于<code>Java</code>的<code>Swing</code>实现图形渲染, 但是目前<code>Swing</code>还是基于<code>X11</code>协议, 因此无法使用<code>Wayland</code>协议,
 会导致系统使用<code>XWayland</code>来模拟<code>X11</code>协议, 从而影响其性能,
 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时会出现短暂的黑色背景.<br></p>
-<p><code>Jetbrains</code>去年发布过一个博客, 该博客详细介绍了基于<code>IntelliJ</code>的<code>IDE</code>对<code>Wayland</code>的支持.<br>
+<p><code>Jetbrains</code>去年发布过一个博客, 该博客详细介绍了基于<code>IDE</code>对<code>Wayland</code>的支持.<br>
 <a href="https://blog.jetbrains.com/platform/2023/08/wayland-support/" target="_blank" rel="noopener noreferrer">Wayland Support for IntelliJ-based IDEs</a><br>
-该博客中首先对<code>Wayland</code>作出了介绍, 以及目前<code>Java</code>对<code>Wayland</code>的支持现状以及<code>Xwayland</code>目前的兼容过渡方案.<br>
-中间介绍了目前对于原生<code>Wayland</code>支持的挑战.<br>
+该博客中首先对<code>Wayland</code>作出了介绍, 以及目前<code>Java</code>对<code>Wayland</code>的支持现状由于历史的原因, <code>Java</code>尚未支持<code>Wayland</code>而是采用<code>Xwayland</code>兼容性过渡方案.<br>
+其次介绍了目前对于<code>Java</code>原生<code>Wayland</code>支持的挑战.<br>
 最后是对未来支持<code>Wayland</code>的展望.<br>
 该博客中提到了目前<code>OpenJDK</code>中的<code>Wakefield</code>项目致力于解决让在<code>JDK</code>中实现<code>Wayland display server</code>的支持<br></p>
 <p><strong>该项目有中短期和中长期两个目标:</strong></p>
