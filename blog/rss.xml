@@ -13,8 +13,9 @@
             <link>https://www.geek66.cyou/blog/2024/03/27/enalbe-wayland</link>
             <guid>https://www.geek66.cyou/blog/2024/03/27/enalbe-wayland</guid>
             <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[默认情况下, 图形应用和display server之间的通信协议是X11协议. Wayland是X11的替代品, 可以提供更好的性能和体验.]]></description>
-            <content:encoded><![CDATA[<p>默认情况下, 图形应用和<code>display server</code>之间的通信协议是<code>X11</code>协议. <code>Wayland</code>是<code>X11</code>的替代品, 可以提供更好的性能和体验.
+            <description><![CDATA[默认情况下, 桌面应用和Backend通信协议是X11协议.]]></description>
+            <content:encoded><![CDATA[<p>默认情况下, 桌面应用和<code>Backend</code>通信协议是<code>X11</code>协议. <br>
+<code>Wayland</code>是<code>X11</code>的替代品, 可以提供更好的性能和体验.(绘图在Client侧而不是像<code>X11</code>一样由<code>XServer</code>负责).<br>
 下面将介绍如何启用<code>Wayland</code>协议.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="确认当前的通信协议">确认当前的通信协议<a href="https://www.geek66.cyou/blog/2024/03/27/enalbe-wayland#%E7%A1%AE%E8%AE%A4%E5%BD%93%E5%89%8D%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE" class="hash-link" aria-label="Direct link to 确认当前的通信协议" title="Direct link to 确认当前的通信协议">​</a></h2>
 <p>执行以下命令, 确认当前的通信协议:</p>
@@ -36,7 +37,11 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="https://www.geek66.cyou/blog/2024/03/27/enalbe-wayland#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99" class="hash-link" aria-label="Direct link to 参考资料" title="Direct link to 参考资料">​</a></h2>
 <ul>
 <li><a href="https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop" target="_blank" rel="noopener noreferrer">How to enable/disable wayland on Ubuntu 22.04 Desktop</a></li>
-</ul>]]></content:encoded>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-2023-03-28">Update 2023-03-28<a href="https://www.geek66.cyou/blog/2024/03/27/enalbe-wayland#update-2023-03-28" class="hash-link" aria-label="Direct link to Update 2023-03-28" title="Direct link to Update 2023-03-28">​</a></h2>
+<p>在使用了一段时间后, 发现部分应用对<code>Wayland</code>的支持不足.<br>
+例如<code>InteiliJ IDEA</code>, 其底层基于<code>Java</code>的<code>Swing</code>实现图形渲染, 但是目前<code>Swing</code>还是基于<code>X11</code>协议, 因此无法使用<code>Wayland</code>协议,
+会导致系统使用<code>XWayland</code>来模拟<code>X11</code>协议, 从而影响其性能, 主要的影响是打字输入的渲染会比较卡顿以及应用内部窗口初始化时短暂停留为黑色.</p>]]></content:encoded>
             <category>linux</category>
             <category>wayland</category>
             <category>gnome</category>
