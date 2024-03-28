@@ -5,7 +5,8 @@ tags: [ linux, wayland, gnome ]
 
 # 启用Wayland
 
-默认情况下, 图形应用和`display server`之间的通信协议是`X11`协议. `Wayland`是`X11`的替代品, 可以提供更好的性能和体验.
+默认情况下, 桌面应用和`Backend`通信协议是`X11`协议. <br/>
+`Wayland`是`X11`的替代品, 可以提供更好的性能和体验.(绘图在Client侧而不是像`X11`一样由`XServer`负责).<br/>
 下面将介绍如何启用`Wayland`协议.
 
 <!--truncate-->
@@ -55,4 +56,6 @@ echo $XDG_SESSION_TYPE
 
 - [How to enable/disable wayland on Ubuntu 22.04 Desktop](https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop)
 
+## Update 2023-03-28
 
+在使用了一段时间后, 发现部分应用对`Wayland`的支持不足, 例如`InteiliJ IDEA`, 由于其默认使用的是`X11`协议, `Backend`为了做兼容会使用`XWayland`来模拟`X11`协议, 从而影响其性能.
