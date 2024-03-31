@@ -21,3 +21,7 @@
   <br/>watch(1) periodically executes the given command - useful for auto-testing, auto-building, auto-anything
 - [neofetch](https://github.com/dylanaraps/neofetch)
   <br/>🖼️ A command-line system information tool written in bash 3.2+
+- [shellchecl](https://github.com/koalaman/shellcheck)
+  <br/>ShellCheck, a static analysis tool for shell scripts
+- [autojump](https://github.com/wting/autojump)
+  <br/>A cd command that learns - easily navigate directories from the command line
