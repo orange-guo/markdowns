@@ -41,6 +41,8 @@ sidebar_position: 0
 - [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
 - [nutui](https://github.com/jd-opensource/nutui)
   <br/>京东风格的移动端 Vue2、Vue3 组件库 、支持多端小程序(A Vue.js UI Toolkit for Mobile Web)
+- [ring-ui](https://github.com/JetBrains/ring-ui)
+  <br/>A collection of JetBrains Web UI components
 
 ## Web Framework
 
