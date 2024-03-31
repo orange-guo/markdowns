@@ -161,8 +161,6 @@
 
 ## Database
 
-
-
 ## Stream Processing
 
 - [flink](https://flink.apache.org/)
