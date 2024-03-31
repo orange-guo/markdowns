@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7863],{7173:e=>{e.exports=JSON.parse('{"title":"Kotlin","slug":"/category/kotlin","permalink":"/docs/category/kotlin","navigation":{"previous":{"title":"Articles","permalink":"/docs/note/languages/python/articles"},"next":{"title":"Projects","permalink":"/docs/note/languages/kotlin/projects"}}}')}}]);
