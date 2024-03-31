@@ -3,7 +3,7 @@
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
   <br/>Enjoy the mysteries of the sea from the safety of your own terminal!
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
-  <br.>Terminal based "The Matrix" like implementation
+  <br/>Terminal based "The Matrix" like implementation
 - [cowsay](https://github.com/piuccio/cowsay)
   <br/>cowsay is a configurable talking cow
 - [lolcat](https://github.com/busyloop/lolcat)
