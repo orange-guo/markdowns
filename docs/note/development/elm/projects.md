@@ -1,8 +1,4 @@
-# Elm
-
-## Projects
-
-### Libraries
+# Projects
 
 - [core](https://github.com/elm/core)
   <br/>Elm's core libraries
