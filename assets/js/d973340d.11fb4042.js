@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6500],{96599:o=>{o.exports=JSON.parse('{"title":"Book Notes","slug":"/category/book-notes","permalink":"/docs/category/book-notes","navigation":{"previous":{"title":"Introduction","permalink":"/docs/note/introduction"},"next":{"title":"Books","permalink":"/docs/note/booknotes/books"}}}')}}]);
