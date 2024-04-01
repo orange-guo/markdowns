@@ -2,10 +2,6 @@
 
 ## Projects
 
-### AI Generated Content
-
-### AI
-
 ### Compute Platforms
 
 - [huggingface](https://huggingface.co/)
