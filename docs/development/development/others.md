@@ -57,6 +57,3 @@
   <br/>A node package wrapper for https://github.com/OpenAPITools/openapi-generator
 - [openapi-typescript](https://github.com/drwpow/openapi-typescript)
   <br/>Generate TypeScript types from OpenAPI 3 specs
-
-### Games
-
