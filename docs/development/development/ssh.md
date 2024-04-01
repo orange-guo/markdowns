@@ -2,24 +2,7 @@
 
 ## Libraries
 
-- [ssh](https://github.com/gliderlabs/ssh)
-  <br/>Easy SSH servers in Golang
-- [ssh](https://github.com/charmbracelet/ssh)
-  <br/>https://github.com/charmbracelet/ssh
-- [sshr](https://github.com/tsurubee/sshr)
-  <br/>Proxy server for routing SSH connections
-- [reverse-ssh](https://github.com/Fahrj/reverse-ssh)
-  <br/>Statically-linked ssh server with reverse shell functionality for CTFs and such
-- [ssh-client-go](https://github.com/inatus/ssh-client-go)
-  <br/>Sample implementation of Interactive SSH client with Golang
-- [easyssh-proxy](https://github.com/appleboy/easyssh-proxy)
-  <br/>easyssh-proxy provides a simple implementation of some SSH protocol features in Go
-- [gliderlabs-ssh](https://github.com/tweag/gliderlabs-ssh)
-  <br/>Easy SSH servers in Golang
-- [sshpiper](https://github.com/tg123/sshpiper)
-  <br/>The missing reverse proxy for ssh scp
-- [reverse_ssh](https://github.com/NHAS/reverse_ssh)
-  <br/>SSH based reverse shell
+
 
 ## Articles
 
