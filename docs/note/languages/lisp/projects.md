@@ -17,7 +17,3 @@
   <br/>An implementation of a full fledged Lisp interpreter with Data Structure, Pattern Programming and High level
   Functions with Lazy Evaluation à la Haskell.
 
-## Articles
-
-- [How to Write a (Lisp) Interpreter (in Python)](https://norvig.com/lispy.html)
-  <br/>(How to Write a (Lisp) Interpreter (in Python))
