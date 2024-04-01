@@ -9,7 +9,6 @@ https://medium.com/
 
 ## 方法论
 
-ab testing
 故事框架法
 
 ## linux
