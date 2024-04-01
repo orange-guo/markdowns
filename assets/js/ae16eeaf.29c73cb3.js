@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1071],{13841:e=>{e.exports=JSON.parse('{"title":"Elm","slug":"/category/elm","permalink":"/docs/category/elm","navigation":{"previous":{"title":"Languages","permalink":"/docs/category/languages"},"next":{"title":"Projects","permalink":"/docs/note/languages/elm/projects"}}}')}}]);

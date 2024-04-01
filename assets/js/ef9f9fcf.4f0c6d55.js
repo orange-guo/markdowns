@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1590],{94259:a=>{a.exports=JSON.parse('{"label":"hibernate","permalink":"/blog/tags/hibernate","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
