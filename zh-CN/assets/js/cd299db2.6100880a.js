@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[8065],{57768:e=>{e.exports=JSON.parse('{"title":"Infra","slug":"/category/infra","permalink":"/zh-CN/docs/category/infra","navigation":{"previous":{"title":"Ssh","permalink":"/zh-CN/docs/development/development/ssh"},"next":{"title":"Kubernetes","permalink":"/zh-CN/docs/category/kubernetes"}}}')}}]);
