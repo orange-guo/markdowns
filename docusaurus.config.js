@@ -64,6 +64,12 @@ module.exports = {
 					docId: 'note/introduction',
 				},
 				{
+					type: 'doc',
+					position: 'left',
+					label: 'Notes',
+					docId: 'notes/introduction',
+				},
+				{
 					to: 'blog',
 					label: 'Blog',
 					position: 'left'
