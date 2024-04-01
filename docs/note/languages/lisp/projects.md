@@ -16,4 +16,3 @@
 - [lispe](https://github.com/naver/lispe)
   <br/>An implementation of a full fledged Lisp interpreter with Data Structure, Pattern Programming and High level
   Functions with Lazy Evaluation à la Haskell.
-
