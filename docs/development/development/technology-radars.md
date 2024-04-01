@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Technology Radar
+# Technology Radars
 
 - [thoughtworks](https://www.thoughtworks.com/radar)
 - [oreilly](https://www.oreilly.com/radar/)
