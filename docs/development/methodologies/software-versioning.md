@@ -9,3 +9,4 @@
 - [Software versioning](https://en.wikipedia.org/wiki/Software_versioning)
 - [Software Versioning Best Practices](https://cpl.thalesgroup.com/software-monetization/software-versioning-basics)
 - [Semantic Versioning](https://semver.org/)
+- [Alpha, Beta, Snapshot, Release, Nightly, Milestone, Release Candidate(RC)... When to use which terminology](https://stackoverflow.com/questions/46786486/alpha-beta-snapshot-release-nightly-milestone-release-candidaterc-whe)
