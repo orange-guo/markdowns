@@ -1,4 +1,4 @@
-# Scala
+# Projects
 
 - [zio](https://zio.dev/)
   <br/>Type-safe, composable asynchronous and concurrent programming for Scala
