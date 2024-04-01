@@ -1,4 +1,4 @@
-# HPC
+# Projects
 
 ## Job Scheduler
 
