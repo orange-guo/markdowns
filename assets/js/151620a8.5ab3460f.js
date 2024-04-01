@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2237],{30363:e=>{e.exports=JSON.parse('{"title":"Development","slug":"/category/development","permalink":"/docs/category/development","navigation":{"previous":{"title":"AIs","permalink":"/docs/note/ai/"},"next":{"title":"Technology Radar","permalink":"/docs/note/development/technology-radar"}}}')}}]);
