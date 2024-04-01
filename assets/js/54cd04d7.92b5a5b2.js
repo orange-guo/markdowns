@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9881],{17575:e=>{e.exports=JSON.parse('{"title":"Visual","slug":"/category/visual","permalink":"/docs/category/visual","navigation":{"previous":{"title":"Snowflake id generation","permalink":"/docs/note/tools/snowflake-id-generation"},"next":{"title":"UI","permalink":"/docs/note/visual/ui"}}}')}}]);
