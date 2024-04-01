@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[8274],{45313:e=>{e.exports=JSON.parse('{"title":"AI","slug":"/category/ai","permalink":"/zh-CN/docs/category/ai","navigation":{"previous":{"title":"Introduction","permalink":"/zh-CN/docs/development/introduction"},"next":{"title":"Projects","permalink":"/zh-CN/docs/development/ai/projects"}}}')}}]);
