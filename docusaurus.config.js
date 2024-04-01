@@ -60,14 +60,14 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Note',
-					docId: 'note/introduction',
+					label: 'Development',
+					docId: 'development/introduction',
 				},
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Notes',
-					docId: 'notes/introduction',
+					label: 'Note',
+					docId: 'note/introduction',
 				},
 				{
 					to: 'blog',
