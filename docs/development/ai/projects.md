@@ -1,8 +1,6 @@
-# AIs
+# Projects
 
-## Projects
-
-### Compute Platforms
+## Compute Platforms
 
 - [huggingface](https://huggingface.co/)
   <br/>Transformers, a state-of-the-art natural language processing library
@@ -17,7 +15,7 @@
 - [Lambda Labs](https://lambdalabs.com/)
   <br/>Lambda Labs is a platform that allows you to run AI models in the cloud, without writing any code.
 
-### Tools
+## Tools
 
 - [jupyter](https://jupyter.org/)
   <br/>Jupyter is a free, open-source, interactive web tool known as a computational notebook, which researchers can use
@@ -25,7 +23,11 @@
 - [Running a Container](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html)
 - [Common Features](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/common.html#user-related-configurations)
 
-### Book Repositories
+## Book Repositories
 
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
   <br/>Implementing a ChatGPT-like LLM from scratch, step by step
+
+## Toolkit
+
+- [LangChain](https://github.com/langchain-ai)
