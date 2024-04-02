@@ -49,3 +49,7 @@
 - [The Cloudflare Blog](https://blog.cloudflare.com/)
 - [AWS News Blog](https://aws.amazon.com/cn/blogs/aws/)
 - [nginx blog](https://www.nginx.com/blog/)
+- [梦殇918](https://mengshang918.github.io/blog/)
+- [Wener](https://wener.me/)
+- [manateelazycat](https://manateelazycat.github.io/)
+- [刘未鹏](https://mindhacks.cn/)
