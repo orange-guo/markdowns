@@ -14,3 +14,5 @@
 - [postgres](https://github.com/postgres/postgres)
 - [liquibase](https://github.com/liquibase/liquibase)
   <br/>Main Liquibase Source
+- [supabase](https://github.com/supabase/supabase)
+  <br/>The open source Firebase alternative.
