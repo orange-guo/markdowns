@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7266],{9736:e=>{e.exports=JSON.parse('{"title":"Ubuntu","slug":"/category/ubuntu","permalink":"/docs/category/ubuntu","navigation":{"previous":{"title":"Linux","permalink":"/docs/category/linux"},"next":{"title":"Projects","permalink":"/docs/development/infra/linux/ubuntu/projects"}}}')}}]);
