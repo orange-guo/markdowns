@@ -114,3 +114,16 @@ sidebar_position: 0
   and Nexus Repository, Sonatype knows that the integrity of your build is critical.
 - [maven.aliyun](https://maven.aliyun.com/mvn/guide)
   <br/>阿里云提供的maven仓库
+
+## Mirror
+
+- [阿里云](https://developer.aliyun.com/mirror/)
+- [华为云](https://mirrors.huaweicloud.com/home)
+- [腾讯云](https://mirrors.cloud.tencent.com/)
+- [网易](https://mirrors.163.com/)
+- [交通大学](https://mirror.sjtu.edu.cn/)
+- [清华大学](https://mirrors.tuna.tsinghua.edu.cn/)
+- [中国科技大学](https://mirrors.ustc.edu.cn/)
+- [大连东软信息学院](https://mirrors.neusoft.edu.cn/)
+- [北京交通大学](https://mirror.bjtu.edu.cn/)
+- [南京大学](http://mirror.nju.edu.cn/)
