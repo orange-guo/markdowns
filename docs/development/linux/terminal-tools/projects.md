@@ -1,4 +1,4 @@
-# Command Line Tools
+# Projects
 
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
   <br/>Enjoy the mysteries of the sea from the safety of your own terminal!
