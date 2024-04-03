@@ -29,6 +29,13 @@ sidebar_position: 0
   <br/>Easiest way to get started with Electric Clojure
 - [fulcro-electric-template](https://github.com/hyperfiddle/fulcro-electric-template)
   <br/>A sample project that could be used as a starting point for a Fulcro 3 + Electric project.
+- [ring](https://github.com/ring-clojure/ring)
+  <br/>Clojure HTTP server abstraction
+- [ring-middleware](https://github.com/puppetlabs/ring-middleware)
+- [ring-json](https://github.com/ring-clojure/ring-json)
+  <br/>Ring middleware for handling JSON
+- [compojure](https://github.com/weavejester/compojure)
+  <br/>A concise routing library for Ring/Clojure
 
 ## Serialization
 
@@ -48,11 +55,6 @@ sidebar_position: 0
   <br/>Bash-like shell based on Clojure
 - [lumo](https://github.com/anmonteiro/lumo)
   <br/>Fast, cross-platform, standalone ClojureScript environment
-- [ring](https://github.com/ring-clojure/ring)
-  <br/>Clojure HTTP server abstraction
-- [ring-middleware](https://github.com/puppetlabs/ring-middleware)
-- [ring-json](https://github.com/ring-clojure/ring-json)
-  <br/>Ring middleware for handling JSON
 - [cheshire](https://github.com/dakrone/cheshire)
   <br/>Clojure JSON and JSON SMILE (binary json format) encoding/decoding
 - [hugsql](https://www.hugsql.org/)
