@@ -4,6 +4,16 @@ sidebar_position: 0
 
 # Projects
 
+## Docs
+
+- [clojuredocs](https://github.com/zk/clojuredocs/)
+  <br/>clojuredocs.org web app
+
+## REPL
+
+- [replumb](https://github.com/arichiardi/replumb)
+  <br/>ClojureScript plumbing for your self-hosted REPLs.
+
 ## Curated list
 
 - [awesome-clojure](https://github.com/mbuczko/awesome-clojure)
