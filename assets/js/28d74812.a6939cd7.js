@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[416],{95321:t=>{t.exports=JSON.parse('{"title":"Distributions","slug":"/category/distributions","permalink":"/docs/category/distributions","navigation":{"previous":{"title":"Linux","permalink":"/docs/category/linux"},"next":{"title":"Ubuntu","permalink":"/docs/category/ubuntu"}}}')}}]);
