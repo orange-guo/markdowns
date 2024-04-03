@@ -36,16 +36,23 @@ sidebar_position: 0
   <br/>Ring middleware for handling JSON
 - [compojure](https://github.com/weavejester/compojure)
   <br/>A concise routing library for Ring/Clojure
+- [http-kit](https://github.com/http-kit/http-kit)
+  <br/>Simple, high-performance event-driven HTTP client+server for Clojure
 
 ## Serialization
 
 - [nippy](https://github.com/taoensso/nippy)
   <br/>The fastest serialization library for Clojure
+- [data.json](https://github.com/clojure/data.json)
+  <br/>JSON in Clojure
+
+## Data access
+
+- [toucan](https://github.com/metabase/toucan)
+  <br/>A classy high-level Clojure library for defining application models and retrieving them from a DB
 
 ## Others
 
-- [awesome-clojure](https://github.com/razum2um/awesome-clojure)
-  <br/>A curated list of awesome Clojure libraries and resources. Inspired by awesome-... stuff
 - [joker](https://joker-lang.org/)
   <br/>Joker is a small interpreted dialect of Clojure written in Go. It is also a Clojure(Script) linter.
 - [planck](https://planck-repl.org/)
@@ -61,8 +68,6 @@ sidebar_position: 0
   <br/>A Clojure library for embracing SQL.
 - [honeysql](https://github.com/seancorfield/honeysql)
   <br/>Turn Clojure data structures into SQL
-- [toucan](https://github.com/metabase/toucan)
-  <br/>A classy high-level Clojure library for defining application models and retrieving them from a DB
 - [leiningen](https://codeberg.org/leiningen/leiningen)
   <br/>Moved to Codeberg; this is a convenience mirror
 - [clj-ldap](https://github.com/pauldorman/clj-ldap)
