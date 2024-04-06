@@ -114,9 +114,8 @@ sidebar_position: 0
 - [micrometer](https://micrometer.io/)
   <br/>Micrometer provides a simple facade over the instrumentation clients for the most popular monitoring systems,
   allowing you to instrument your JVM-based application code without vendor lock-in. Think SLF4J, but for metrics.
-- [OpenTelemetry](https://opentelemetry.io/)
-  <br/>OpenTelemetry is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export
-  telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+- [opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
+  <br/>OpenTelemetry Java SDK
 
 ## Reactive
 
