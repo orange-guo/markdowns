@@ -30,3 +30,8 @@
   <br/>The AMD SMI Exporter exports AMD EPYC CPU & Datacenter GPU metrics to the Prometheus server.
 - [nvidia_gpu_exporter](https://github.com/utkuozdemir/nvidia_gpu_exporter)
   <br/>Nvidia GPU exporter for prometheus using nvidia-smi binary
+
+## Test Suite
+
+- [phoronix-test-suite](https://github.com/phoronix-test-suite/phoronix-test-suite/)
+  <br/>The Phoronix Test Suite open-source, cross-platform automated testing/benchmarking software.
