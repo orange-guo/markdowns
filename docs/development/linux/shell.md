@@ -20,9 +20,7 @@ echo "a b c" | awk '{print $1$2$3}' # abc
 ```
 
 - [How to trim string in bash](https://linuxhint.com/trim_string_bash/)
-- [Shell：用sed命令删除特定行](https://blog.csdn.net/weixin_42170236/article/details/119956202)
 - [Shell去除空格和空行的方法](https://blog.51cto.com/u_10742668/1944831)
-- [shell去掉文件中空行(空白行)的方法详解](https://blog.csdn.net/genghaihua/article/details/43308799)
 
 ### Bash函数返回值
 
