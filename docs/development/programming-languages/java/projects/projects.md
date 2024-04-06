@@ -131,8 +131,8 @@ sidebar_position: 0
 
 ## Data access
 
-- [jOOQ](https://www.jooq.org/)
-  <br/>jOOQ generates Java code from your database and lets you build type safe SQL queries through its fluent API.
+- [jOOQ](https://github.com/jOOQ/jOOQ)
+  <br/>jOOQ is the best way to write SQL in Java
 
 ## Curated list
 
