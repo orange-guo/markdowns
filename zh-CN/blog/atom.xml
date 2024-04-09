@@ -22,7 +22,11 @@
 <p>解决方案是修改<code>reverse proxy</code>的配置, 在转发时将<code>host</code>替换为<code>grafana</code>中配置的<code>server.domain</code>即可</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="dashboard中依赖的panel组件过">dashboard中依赖的panel组件过<a href="https://www.geek66.cyou/zh-CN/blog/2024/04/07/upgrading-grafana-issues-and-fixes#dashboard%E4%B8%AD%E4%BE%9D%E8%B5%96%E7%9A%84panel%E7%BB%84%E4%BB%B6%E8%BF%87" class="hash-link" aria-label="dashboard中依赖的panel组件过的直接链接" title="dashboard中依赖的panel组件过的直接链接">​</a></h2>
 <p>当<code>dashboard</code>中依赖的<code>panel</code>过时时, panel上会有警告图标提示需要更新, 解决方案是在<code>Dashboard</code>管理界面中点击<code>panel</code>
-的<code>edit</code>按钮, 替换为最新的<code>panel</code>组件, 然后保存<code>dashboard</code>即可.</p>]]></content>
+的<code>edit</code>按钮, 替换为最新的<code>panel</code>组件, 然后保存<code>dashboard</code>即可.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a href="https://www.geek66.cyou/zh-CN/blog/2024/04/07/upgrading-grafana-issues-and-fixes#%E5%8F%82%E8%80%83" class="hash-link" aria-label="参�考的直接链接" title="参考的直接链接">​</a></h2>
+<ul>
+<li><a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#cookie_samesite" target="_blank" rel="noopener noreferrer">Configure Grafana</a></li>
+</ul>]]></content>
         <author>
             <name>Xiangcheng Kuo</name>
             <uri>https://github.com/orange-guo</uri>
