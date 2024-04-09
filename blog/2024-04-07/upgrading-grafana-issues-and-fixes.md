@@ -16,7 +16,7 @@ tags: [ problem-solving, grafana, component-upgrade ]
 
 解决方案是修改`reverse proxy`的配置, 在转发时将`host`替换为`grafana`中配置的`server.domain`即可
 
-## dashboard中依赖的panel组件过
+## dashboard中依赖的panel组件过时
 
 当`dashboard`中依赖的`panel`过时时, panel上会有警告图标提示需要更新, 解决方案是在`Dashboard`管理界面中点击`panel`
 的`edit`按钮, 替换为最新的`panel`组件, 然后保存`dashboard`即可.
