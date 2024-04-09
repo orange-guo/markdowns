@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[629],{20123:a=>{a.exports=JSON.parse('{"label":"component-upgrade","permalink":"/zh-CN/blog/tags/component-upgrade","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);
