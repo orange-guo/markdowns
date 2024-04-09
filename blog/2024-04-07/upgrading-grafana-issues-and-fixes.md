@@ -20,3 +20,8 @@ tags: [ problem-solving, grafana, component-upgrade ]
 
 当`dashboard`中依赖的`panel`过时时, panel上会有警告图标提示需要更新, 解决方案是在`Dashboard`管理界面中点击`panel`
 的`edit`按钮, 替换为最新的`panel`组件, 然后保存`dashboard`即可.
+
+
+## 参考
+
+- [Configure Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#cookie_samesite)
