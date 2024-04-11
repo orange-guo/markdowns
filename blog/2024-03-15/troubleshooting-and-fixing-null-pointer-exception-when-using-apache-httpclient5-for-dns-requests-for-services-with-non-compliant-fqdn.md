@@ -1,3 +1,7 @@
+authors: [ xiangcheng.kuo ]
+tags: [ problem-solving, java, kotlin, FQDN ]
+---
+
 # 使用apache-httpclient5并通过DNS请求服务如果域名不符合FQDN规范导致报错`NullPointerException`的问题的排查及修复
 
 此问题是升级apache-httpclient5过程中遇到的问题.<br/>
