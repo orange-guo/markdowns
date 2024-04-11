@@ -13,7 +13,7 @@ tags: [ problem-solving, spring, spring-cloud, spring-cloud-gateway ]
 
 ### 问题原因
 
-这个问题是项目中的类继承了`org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping`
+这个问题的原因是项目中的类继承了`org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping`
 但是新版本不兼容导致的.<br/>
 在新版本中`RoutePredicateHandlerMapping`的`@Bean`定义增加了`@ConditionalOnMissingBean`.<br/>
 > 定义位于`org.springframework.cloud.gateway.config.GatewayAutoConfiguration`中.<br/>
