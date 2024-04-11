@@ -1,3 +1,4 @@
+---
 authors: [ xiangcheng.kuo ]
 tags: [ problem-solving, java, kotlin, FQDN ]
 ---
