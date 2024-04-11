@@ -3,9 +3,9 @@ authors: [ xiangcheng.kuo ]
 tags: [ linux, wayland, gnome ]
 ---
 
-# 启用Wayland
+# Gnome桌面环境启用Wayland
 
-默认情况下, 桌面应用和`Backend`通信协议是`X11`协议. <br/>
+默认情况下, Gnome桌面环境使用的协议是`X11`协议. <br/>
 `Wayland`是`X11`的替代品, 可以提供更好的性能和体验.(绘图在Client侧而不是像`X11`一样由`XServer`负责).<br/>
 下面将介绍如何启用`Wayland`协议.
 
