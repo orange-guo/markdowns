@@ -5,6 +5,8 @@ tags: [ problem-solving, grafana, component-upgrade ]
 
 # 升级grafana过程中遇到的问题的以及对应修复方案
 
+<!--truncate-->
+
 ## 访问grafana报错403 origin not allowed
 
 这个issue[Unable to Create/Save Dashboard after v8.3.5 Update](https://github.com/grafana/grafana/issues/45117)

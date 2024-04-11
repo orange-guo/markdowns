@@ -5,6 +5,10 @@ tags: [ problem-solving, spring, spring-cloud, spring-cloud-gateway ]
 
 # 升级spring-cloud-gateway到4.1.0的过程中遇到的问题的以及对应解决方案
 
+此文记录了升级spring-cloud-gateway到4.1.0的过程中遇到的问题以及对应的解决方案.
+
+<!--truncate-->
+
 ## `spring.cloud.gateway.routes`中定义的转发规则失效, 提示`404 NOT_FOUND "No static resource xxx."`
 
 ### 问题原因
