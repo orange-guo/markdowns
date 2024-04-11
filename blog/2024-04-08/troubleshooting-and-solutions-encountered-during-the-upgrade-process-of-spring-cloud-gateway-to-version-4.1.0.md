@@ -49,7 +49,8 @@ public RoutePredicateHandlerMapping routePredicateHandlerMapping(FilteringWebHan
 
 ### 解决方案
 
-修改继承类重写的`protected Mono<Route> lookupRoute(ServerWebExchange exchange)`方法的实现, 大致如下:
+修改继承类重写的`protected Mono<Route> lookupRoute(ServerWebExchange exchange)`方法的实现, 先调用父类的方法, 如果父类方法返回为空,
+则执行自定义的转发规则以确保`spring.cloud.gateway.routes`中定义的转发规则生效.
 
 ```java
 
