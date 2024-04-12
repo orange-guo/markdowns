@@ -40,3 +40,7 @@ git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOS
 ### 配置被依赖的仓库允许其他项目通过`CI_JOB_TOKEN`进行访问
 
 在`GitLab`中进入被依赖的仓库, 在`Settings > CI/CD > Token Access`中配置允许其他项目通过`CI_JOB_TOKEN`进行访问。
+
+## 参考
+
+- [Add a project to the job token allowlist](https://docs.gitlab.com/ee/ci/jobs/ci_job_token.html#add-a-project-to-the-job-token-allowlist)
