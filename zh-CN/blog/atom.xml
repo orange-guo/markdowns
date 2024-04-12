@@ -30,6 +30,14 @@
 认证凭证来自于<code>CI_JOB_TOKEN</code>, 这是CI/CD生命周期中自动生成的.<br></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置被依赖的仓库允许其他项目通过ci_job_token进行访问">配置被依赖的仓库允许其他项目通过<code>CI_JOB_TOKEN</code>进行访问<a href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%E9%85%8D%E7%BD%AE%E8%A2%AB%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BB%93%E5%BA%93%E5%85%81%E8%AE%B8%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E9%80%9A%E8%BF%87ci_job_token%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AE" class="hash-link" aria-label="配置被依赖的仓库允许其他项目通过ci_job_token进行访问的直接链接" title="配置被依赖的仓库允许其他项目通过ci_job_token进行访问的直接链接">​</a></h3>
 <p>在<code>GitLab</code>中进入被依赖的仓库, 在<code>Settings &gt; CI/CD &gt; Token Access</code>中配置允许其他项目通过<code>CI_JOB_TOKEN</code>进行访问。</p>]]></content>
+        <author>
+            <name>Xiangcheng Kuo</name>
+            <uri>https://github.com/orange-guo</uri>
+        </author>
+        <category label="golang" term="golang"/>
+        <category label="git" term="git"/>
+        <category label="gitlab" term="gitlab"/>
+        <category label="cicd" term="cicd"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[升级spring-cloud-gateway到4.1.0的过程中遇到的问题的以及对应解决方案]]></title>
