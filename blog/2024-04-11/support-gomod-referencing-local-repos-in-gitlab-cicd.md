@@ -1,3 +1,8 @@
+---
+authors: [ xiangcheng.kuo ]
+tags: [ golang, git, gitlab, cicd ]
+---
+
 # 在`GitLab`的`CI/CD`中支持`Go Module`引用同一代码库下的其他`Go`仓库
 
 在`Golang`中, 代码复用的实现方式是通过`git`方式引用代码.<br/>
