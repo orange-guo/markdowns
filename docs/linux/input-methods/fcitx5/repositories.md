@@ -9,5 +9,6 @@
 
 - [Fcitx5-Material-Color](https://github.com/hosxy/Fcitx5-Material-Color) 
   <br/>一款使用Material Design 配色的 fcitx5 皮肤，喜欢的话给个 star 吧 ヾ(≧へ≦)〃 😉
-- []()
+- [fcitx5-themes-candlelight](https://github.com/thep0y/fcitx5-themes-candlelight)
+  <br/>fcitx5的简约风格皮肤——烛光
 
