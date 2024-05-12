@@ -1,6 +1,7 @@
 # Repositories
 
 - [GNOME](https://gitlab.gnome.org/)
+- [alacarte](https://gitlab.gnome.org/GNOME/alacarte)
 
 ## Extensions
 
