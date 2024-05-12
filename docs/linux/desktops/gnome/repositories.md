@@ -1,6 +1,10 @@
-# Extensions
+# Repositories
 
-## Window management
+- [GNOME](https://gitlab.gnome.org/)
+
+## Extensions
+
+### Window management
 
 - [PaperWM](https://github.com/paperwm/PaperWM)
   <br/>Tiled scrollable window management for Gnome Shell
