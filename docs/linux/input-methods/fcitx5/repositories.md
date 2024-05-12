@@ -15,4 +15,8 @@
   <br/>A theme for fcitx5. 一款模仿Windows10 2004自带输入法的Fcitx5皮肤。
 - [fcitx5-sogou-themes](https://github.com/sxqsfun/fcitx5-sogou-themes)
   <br/>几款 极简风 搜狗皮肤转换的 fcitx5主题😄️😄️😄️
+- [ssf2fcitx](https://github.com/VOID001/ssf2fcitx)
+  <br/>Automagically convert your favorite sogou-pinyin skin to fcitx skin
+- [fcitx5](https://github.com/catppuccin/fcitx5)
+  <br/>🧃 Soothing pastel theme for Fcitx5
 
