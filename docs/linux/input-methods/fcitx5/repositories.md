@@ -13,4 +13,6 @@
   <br/>fcitx5的简约风格皮肤——烛光
 - [Fcitx5-Bing-Input-Color](https://github.com/skykeyjoker/Fcitx5-Bing-Input-Color)
   <br/>A theme for fcitx5. 一款模仿Windows10 2004自带输入法的Fcitx5皮肤。
+- [fcitx5-sogou-themes](https://github.com/sxqsfun/fcitx5-sogou-themes)
+  <br/>几款 极简风 搜狗皮肤转换的 fcitx5主题😄️😄️😄️
 
