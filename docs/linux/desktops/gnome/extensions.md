@@ -8,5 +8,3 @@
   <br/>A window tiling extension for Gnome.
 - [forge](https://github.com/forge-ext/forge?tab=readme-ov-file)
   <br/>Forge - Tiling and Window Manager for Gnome-Shell
-- []()
-  <br/>
