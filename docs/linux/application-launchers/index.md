@@ -1,7 +1,4 @@
-# Projects
-
-- []()
-  <br/>
+# Index
 
 ## Topics
 
