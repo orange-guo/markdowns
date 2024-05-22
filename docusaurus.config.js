@@ -60,14 +60,8 @@ module.exports = {
 				{
 					type: 'doc',
 					position: 'left',
-					label: 'Development',
-					docId: 'development/introduction',
-				},
-				{
-					type: 'doc',
-					position: 'left',
-					label: 'Linux',
-					docId: 'linux/introduction',
+					label: 'Software development',
+					docId: 'software-development/introduction',
 				},
 				{
 					type: 'doc',
