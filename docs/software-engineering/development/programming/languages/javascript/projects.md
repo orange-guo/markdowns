@@ -169,28 +169,3 @@ sidebar_position: 0
 
 - [gitbeaker](https://github.com/jdalrymple/gitbeaker)
   <br/>🦊🧪 A comprehensive and typed Gitlab SDK for Node.js, Browsers, Deno and CLI
-
-## Docs
-
-- [vitepress](https://github.com/vuejs/vitepress)
-  <br/>Vite & Vue powered static site generator.
-- [vuepress](https://github.com/vuejs/vuepress)
-  <br/>📝 Minimalistic Vue-powered static site generator
-- [docusaurus](https://github.com/facebook/docusaurus)
-  <br/>Easy to maintain open source documentation websites.
-- [docusaurus-prince-pdf](https://github.com/signcl/docusaurus-prince-pdf)
-  <br/>Docusaurus PDF generator using Prince XML
-- [docusaurus-protobuffet](https://github.com/protobuffet/docusaurus-protobuffet)
-  <br/>Docusaurus toolset for Protobuf contract documentation.
-- [docusaurus-openapi](https://github.com/cloud-annotations/docusaurus-openapi)
-  <br/>🦕 OpenAPI plugin for generating API reference docs in Docusaurus v2.
-- [mdBook](https://github.com/rust-lang/mdBook)
-  <br/>Create book from markdown files. Like Gitbook but implemented in Rust
-- [mkdocs](https://github.com/mkdocs/mkdocs)
-  <br/>Project documentation with Markdown.
-- [mkdocs-material](mkdocs-material)
-  <br/>Documentation that simply works
-- [docsify](https://github.com/docsifyjs/docsify/)
-  <br/>🃏 A magical documentation site generator.
-- [gitbook](https://github.com/GitbookIO/gitbook)
-  <br/>📝 Modern documentation format and toolchain using Git and Markdown
