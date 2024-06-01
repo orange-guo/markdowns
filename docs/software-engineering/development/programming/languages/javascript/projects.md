@@ -60,6 +60,8 @@ sidebar_position: 0
   <br/>🔥 An extremely fast, React-like JavaScript library for building modern user interfaces
 - [solid](https://github.com/solidjs/solid)
   <br/>A declarative, efficient, and flexible JavaScript library for building user interfaces.
+- [astro](https://github.com/withastro/astro)
+  <br/>The web framework for content-driven websites. ⭐️ Star to support our work!
 - [lit](https://github.com/lit/lit)
   <br/>Lit is a simple library for building fast, lightweight web components.
 - [marko](https://github.com/marko-js/marko)
@@ -149,6 +151,9 @@ sidebar_position: 0
 
 - [jest](https://github.com/jestjs/jest)
   <br/>Delightful JavaScript Testing.
+
+- [puppeteer](https://github.com/puppeteer/puppeteer)
+  <br/>Node.js API for Chrome
 
 ## Util Library
 
