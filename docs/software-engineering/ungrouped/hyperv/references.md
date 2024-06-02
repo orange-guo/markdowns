@@ -7,6 +7,8 @@
 - [GPU Paravirtualization Hyper-V with Linux Guest](https://forum.level1techs.com/t/gpu-paravirtualization-hyper-v-with-linux-guest/198336)
 - [Fedora34-VM.ps1](https://gist.github.com/PatrickLang/03dcda94a93b8b2960aa41c29ded057f)
 - [Ubuntu 21.04 VM with GPU acceleration under Hyper-V...?](https://gist.github.com/krzys-h/e2def49966aa42bbd3316dfb794f4d6a)
+- [DirectX is coming to the Windows Subsystem for Linux](https://devblogs.microsoft.com/directx/directx-heart-linux/)
+
 
 ## Screen resolution
 
