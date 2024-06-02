@@ -13,4 +13,3 @@
 ## Screen resolution
 
 - [Ubuntu 20.04 can't change screen resolution](https://www.reddit.com/r/HyperV/comments/gecqx6/ubuntu_2004_cant_change_screen_resolution/)
-- []()
