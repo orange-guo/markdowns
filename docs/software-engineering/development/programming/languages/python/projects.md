@@ -16,6 +16,11 @@ sidebar_position: 0
 - [flask](https://github.com/pallets/flask)
   <br/>The Python micro framework for building web applications.
 
+## Utils
+
+- [pytype](https://github.com/google/pytype)
+  <br/>A static type analyzer for Python code
+
 ## Template Engine
 
 - [jinja](https://github.com/pallets/jinja)
