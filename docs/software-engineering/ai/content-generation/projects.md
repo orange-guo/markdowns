@@ -30,3 +30,13 @@ sidebar_position: 0
 - [stable-diffusion-docker](https://github.com/fboulnois/stable-diffusion-docker)
   <br/>Run the official Stable Diffusion releases in a Docker container with txt2img, img2img, depth2img, pix2pix,
   upscale4x, and inpaint.`
+
+## Model
+
+- [ollama](https://github.com/ollama/ollama)
+  <br/>Get up and running with Llama 3, Mistral, Gemma, and other large language models.
+
+## Toolkit
+
+- [LangChain](https://github.com/langchain-ai)
+  <br/>Build context-aware, reasoning applications with LangChain’s flexible abstractions and AI-first toolkit.
