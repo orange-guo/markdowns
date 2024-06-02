@@ -1,0 +1,7 @@
+{
+	"label": "RSS",
+	"position": 1,
+	"link": {
+		"type": "generated-index"
+	}
+}
