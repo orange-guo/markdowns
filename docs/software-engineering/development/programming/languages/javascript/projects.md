@@ -50,6 +50,8 @@ sidebar_position: 0
   <br/>Deliver web apps with confidence 🚀
 - [react](https://github.com/facebook/react)
   <br/>The library for web and native user interfaces.
+- [react-router](https://github.com/remix-run/react-router)
+  <br/>Declarative routing for React
 - [vue](https://github.com/vuejs/core)
   🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 - [svelte](https://github.com/sveltejs/svelte)
