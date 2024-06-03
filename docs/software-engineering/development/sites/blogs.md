@@ -53,3 +53,12 @@
 - [Wener](https://wener.me/)
 - [manateelazycat](https://manateelazycat.github.io/)
 - [刘未鹏](https://mindhacks.cn/)
+
+- [DebuggerX's Blog](https://www.debuggerx.com/)
+- [yangsihan](https://www.yangsihan.com/)
+- [Bilal Elmoussaoui](https://belmoussaoui.com/)
+- [zxl19](https://zxl19.github.io/)
+- [muzing的杂货铺](https://muzing.top/)
+- [夜明的孤行灯](https://www.huangyunkun.com/)
+- [samwhelp](https://samwhelp.github.io/)
+- [hustlei](https://hustlei.github.io/)
