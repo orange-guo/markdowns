@@ -39,12 +39,6 @@
 - [yaml-spec](https://github.com/yaml/yaml-spec)
   <br/>YAML Specification
 
-## Data schema Language
-
-- [json-schema](https://github.com/json-schema-org/json-schema-spec)
-  <br/>The JSON Schema specification
-- [JSON Schema Docs](https://www.learnjsonschema.com/)
-
 ## Query Language
 
 - [graphql-spec](https://github.com/graphql/graphql-spec)

@@ -16,6 +16,11 @@ sidebar_position: 0
 - [flask](https://github.com/pallets/flask)
   <br/>The Python micro framework for building web applications.
 
+## Validation
+
+- [pydantic](https://github.com/pydantic/pydantic)
+  <br/>Data validation using Python type hints
+
 ## Utils
 
 - [pytype](https://github.com/google/pytype)
