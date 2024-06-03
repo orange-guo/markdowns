@@ -36,8 +36,6 @@
   <br/>Tom's Obvious, Minimal Language
 - [hcl](https://github.com/hashicorp/hcl)
   <br/>HCL is the HashiCorp configuration language.
-- [yaml-spec](https://github.com/yaml/yaml-spec)
-  <br/>YAML Specification
 
 ## Query Language
 
