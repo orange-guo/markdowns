@@ -118,7 +118,8 @@ code --ozone-platform=wayland
 
 启用后会有一些问题, 例如:
 
-- 输入法(`fcitx5`)不工作
+- Cannot use the input method (fcitx) to input chinese characters.
+- Cannot open dialog for renaming files.
 
 ### 启用步骤
 
