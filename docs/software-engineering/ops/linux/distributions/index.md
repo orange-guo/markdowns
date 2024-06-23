@@ -4,5 +4,5 @@
 - [wubuntu](https://www.wubuntu.org/)
 - [kubuntu](https://kubuntu.org/)
 - [Linux Mint](https://linuxmint.com/)
-- [MANJARO](https://manjaro.org/)
+- [manjaro](https://manjaro.org/)
 - [fedora](https://fedoraproject.org/)
