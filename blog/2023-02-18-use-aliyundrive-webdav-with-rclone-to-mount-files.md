@@ -45,7 +45,7 @@ sudo newgrp docker
 
 ### 配置`aliyundrive-webdav`
 
-下载并解压[aliyundrive.zip](/2023-02-18-aliyundrive.zip)`aliyundrive-webdav`, 这个压缩包中包含了相关服务的配置以及启动脚本.<br/>
+下载并解压[aliyundrive.zip](/blog/2023-02-18-aliyundrive.zip)`aliyundrive-webdav`, 这个压缩包中包含了相关服务的配置以及启动脚本.<br/>
 解压后的文件夹中存在`docker-compose.yml`文件, 编辑该文件.<br/>
 将`REFRESH_TOKEN: "<REFRESH_TOKEN>"`中的`<REFRESH_TOKEN>`
 改为上一步获取到的`refresh_token`.<br/>

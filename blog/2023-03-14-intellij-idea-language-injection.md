@@ -5,7 +5,7 @@ tags: [intellij-idea]
 
 # `IntelliJ IDEA`中实现自定义注解中的语法高亮
 
-这篇文章是[基于`clojure`表达式实现更加灵活的数据验证](/blog/2023/03/02/clojure-validation)的后续优化的文章.<br/>
+这篇文章是[基于`clojure`表达式实现更加灵活的数据验证](/blog/blog/2023/03/02/clojure-validation)的后续优化的文章.<br/>
 主要目的是为了实现在`IntelliJ IDEA`中实现自定义注解中`clojure`表达式的语法高亮问题.<br/>
 通过语法高亮, 可以更加直观的看到表达式的结构, 以及表达式中的错误. 从而更加便捷地实现表达式的编写.<br/>
 
@@ -36,7 +36,7 @@ annotation class ClojureExpressionConstraint(
 
 实现后的效果如下图所示
 
-![idea-clojure-syntax-highlighting](/2023-03-14-intellij-idea-language-injection.jpeg)
+![idea-clojure-syntax-highlighting](/blog/2023-03-14-intellij-idea-language-injection.jpeg)
 
 可以看到, 当鼠标悬浮到表达式引用的地方时, 会有相应的提示信息.<br/>
 
