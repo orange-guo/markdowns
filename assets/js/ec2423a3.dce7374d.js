@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7546],{43697:e=>{e.exports=JSON.parse('{"title":"Java","slug":"/category/java","permalink":"/docs/category/java","navigation":{"previous":{"title":"Projects","permalink":"/docs/development/programming-languages/elm/projects"},"next":{"title":"JVM","permalink":"/docs/category/jvm"}}}')}}]);

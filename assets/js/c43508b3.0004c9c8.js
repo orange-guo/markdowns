@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6053],{23209:s=>{s.exports=JSON.parse('{"label":"snap","permalink":"/blog/tags/snap","allTagsPath":"/blog/tags","count":3,"unlisted":false}')}}]);

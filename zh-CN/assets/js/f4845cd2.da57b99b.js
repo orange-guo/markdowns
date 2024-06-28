@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[6909],{12506:a=>{a.exports=JSON.parse('{"label":"grafana","permalink":"/zh-CN/blog/tags/grafana","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

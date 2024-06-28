@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2142],{63529:s=>{s.exports=JSON.parse('{"label":"vscode","permalink":"/zh-CN/blog/tags/vscode","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

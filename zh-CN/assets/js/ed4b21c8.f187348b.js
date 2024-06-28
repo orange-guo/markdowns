@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[76],{83821:a=>{a.exports=JSON.parse('{"label":"kopia","permalink":"/zh-CN/blog/tags/kopia","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

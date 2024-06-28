@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1981],{6656:s=>{s.exports=JSON.parse('{"label":"elm","permalink":"/zh-CN/blog/tags/elm","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);

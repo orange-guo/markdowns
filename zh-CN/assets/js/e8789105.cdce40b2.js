@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7075],{17839:e=>{e.exports=JSON.parse('{"title":"GRPC","slug":"/category/grpc","permalink":"/zh-CN/docs/category/grpc","navigation":{"previous":{"title":"Net","permalink":"/zh-CN/docs/category/net"},"next":{"title":"Articles","permalink":"/zh-CN/docs/development/net/grpc/articles"}}}')}}]);

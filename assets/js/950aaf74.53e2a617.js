@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3010],{59850:s=>{s.exports=JSON.parse('{"label":"openjdk","permalink":"/blog/tags/openjdk","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

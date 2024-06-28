@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7163],{39455:a=>{a.exports=JSON.parse('{"label":"intellij-idea","permalink":"/blog/tags/intellij-idea","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

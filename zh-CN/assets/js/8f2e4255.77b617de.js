@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4989],{40705:s=>{s.exports=JSON.parse('{"label":"gnome","permalink":"/zh-CN/blog/tags/gnome","allTagsPath":"/zh-CN/blog/tags","count":1,"unlisted":false}')}}]);
