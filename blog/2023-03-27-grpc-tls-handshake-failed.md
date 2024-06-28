@@ -92,7 +92,7 @@ Content-Length: 512
 
 访问该页面可以看到如下内容
 
-![页面截图](./screenshot.jpeg)
+![页面截图](/2023-03-27-screenshot.jpeg)
 
 ## 解决方案
 

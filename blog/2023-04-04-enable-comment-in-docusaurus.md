@@ -136,7 +136,7 @@ export default function BlogPostItemWrapper(props) {
 
 最终效果如下图所示:
 
-![enable-comment-in-docusaurus.png](enable-comment-in-docusaurus.png)
+![enable-comment-in-docusaurus.png](/2023-04-04-enable-comment-in-docusaurus.png)
 
 ## 参考资料
 

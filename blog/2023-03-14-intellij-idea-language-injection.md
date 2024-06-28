@@ -36,7 +36,7 @@ annotation class ClojureExpressionConstraint(
 
 实现后的效果如下图所示
 
-![idea-clojure-syntax-highlighting](./intellij-idea-language-injection.jpeg)
+![idea-clojure-syntax-highlighting](/2023-03-14-intellij-idea-language-injection.jpeg)
 
 可以看到, 当鼠标悬浮到表达式引用的地方时, 会有相应的提示信息.<br/>
 

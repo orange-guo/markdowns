@@ -49,5 +49,5 @@ unzip $DEST_DIRECTORY/$(basename $JAR_FILE_PATH) -d $DEST_DIRECTORY
 
 - [How to decompile to java files intellij idea](https://stackoverflow.com/questions/28389006/how-to-decompile-to-java-files-intellij-idea)
 - [java-decompiler](https://github.com/JetBrains/intellij-community/tree/master/plugins/java-decompiler/engine)
-- [java-decompiler](java-decompiler.jar)
-- [decompile.sh](decompile.sh)
+- [java-decompiler](/2023-03-13-java-decompiler.jar)
+- [decompile.sh](/2023-03-13-decompile.sh)
