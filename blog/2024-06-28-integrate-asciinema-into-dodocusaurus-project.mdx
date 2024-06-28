@@ -1,6 +1,6 @@
 ---
 authors: [ xiangcheng.kuo ]
-tags: [ docusaurus, react, mdx, asciinema ]
+tags: [ docusaurus, react, mdx, asciinema, remark, mdast, mdast-util-mdx-jsx, mdast-util-mdxjs-esm, rehype-katex, remark-math ]
 ---
 
 # 将Asciinema集成到Docusaurus项目中
@@ -27,7 +27,7 @@ tags: [ docusaurus, react, mdx, asciinema ]
 参考[getting-started](https://docs.asciinema.org/getting-started/)中提供的相关介绍.<br/>
 
 
-## Docusaurus集成
+## 实现在Docusaurus集成Asciinema
 
 我们应该尽量使用`markdown`提供的语法来完成终端操作文件的渲染.<br/>
 如果能够按照以下语法进行引用, 并且在`markdown`渲染时将动画文件渲染到页面中, 那么对编写文档来说将会特别方便.<br/>
@@ -51,7 +51,7 @@ tags: [ docusaurus, react, mdx, asciinema ]
 - 扩展`Docusaurus`的`Markdown`解析器, 使其支持将`Asciinema`动画文件转换为`React`组件.
 
 
-### 封装`Asciinema`库为`React`组件
+## 封装`Asciinema`库为`React`组件
 
 首先, 将`Asciinema`添加到项目中:
 
@@ -2522,7 +2522,7 @@ span.ap-marker-container:hover span.ap-marker {
 为了能够适配`Docusaurus`的主题, 我们需要确保组件能够适应不同的主题, 为了完成这个工作, 我们需要引入自定义的`CSS`样式, 在`Asciinema`提供的基本样式基础上, 我们添加了对`Docusaurus`主题的支持.
 
 
-### 自定义`Markdown`语法树解析
+## 自定义`Markdown`语法树解析
 
 首先, 我们需要将下面的依赖安装到项目中:
 
@@ -2535,7 +2535,7 @@ yarn add rehype-katex remark-math
 
 编写以下代码实现
 
-```ts title="src/components/asciinema/docusaurus/markdown.ts"
+```ts title="src/components/asciinema/markdown/markdown.ts"
 import {visit} from 'unist-util-visit';
 
 const plugin = (options) => {
@@ -2600,3 +2600,42 @@ export default plugin;
 
 在上述代码中, 我们对`link`进行了修改, 并将其转换为`Jsx`语法, 这样可以在`Markdown`中直接使用`Asciinema`组件.
 
+
+
+## Docusaurus集成
+
+参考以下配置配置`Docusaurus`:
+
+```js title="docusaurus.config.js"
+import rehypeKatex from 'rehype-katex';
+import asciinema from './src/components/asciinema/markdown/markdown';
+
+export default {
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          path: 'docs',
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
+        },
+        blog: {
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
+				}
+      },
+    ],
+  ],
+};
+```
+
+上述配置将对`Docusaurus`中的`Docs`和`Blog`进行了配置, 并将`Markdown`中的`Asciinema`组件进行解析.
+
+## 参考
+
+- [MDX Plugins](https://docusaurus.io/docs/markdown-features/plugins)
+- [remark](https://github.com/remarkjs/remark)
+- [mdast](https://github.com/syntax-tree/mdast)
+- [mdast-util-mdx-jsx](https://github.com/syntax-tree/mdast-util-mdx-jsx)
+- [mdast-util-mdxjs-esm](https://github.com/syntax-tree/mdast-util-mdxjs-esm?tab=readme-ov-file#mdxjsesm)
