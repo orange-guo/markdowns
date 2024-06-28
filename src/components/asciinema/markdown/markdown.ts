@@ -9,8 +9,6 @@ const plugin = (options) => {
 				return
 			}
 
-			console.log(node)
-
 			if (!importInserted) {
 				const importNode = {
 					type: 'mdxjsEsm',
