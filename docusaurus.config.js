@@ -1,6 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+import rehypeKatex from 'rehype-katex';
+import asciinema from './src/components/asciinema/markdown/markdown';
+
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
@@ -36,7 +39,9 @@ module.exports = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: editUrl,
 					showLastUpdateAuthor: true,
-					showLastUpdateTime: true
+					showLastUpdateTime: true,
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
@@ -44,6 +49,8 @@ module.exports = {
 				blog: {
 					blogSidebarTitle: 'All posts',
 					blogSidebarCount: 'ALL',
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
 				}
 			}),
 		],
