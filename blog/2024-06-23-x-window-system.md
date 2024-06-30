@@ -16,9 +16,10 @@ tags: [ linux,  desktop,  xorg,  x11 ]
 
 ## 架构概述
 
-`X`采用客户端/服务器(C/S)架构, 由`X Server`和多个`X Client`组成. 这意味着`X Server`和`X Client`
-可以分别在不同的设备上运行, 常见应用场景如`SSH X11 Forwarding`, 其中SSH客户端运行`X Server`
-, 图形应用则在SSH服务器上运行, 所有图形交互都在SSH客户端完成.
+`X`采用客户端/服务器(C/S)架构, 由`X Server`和多个`X Client`组成. <br/>
+这意味着`X Server`和`X Client`可以分别在不同的设备上运行. <br/>
+常见应用场景如`SSH X11 Forwarding`, 其中SSH客户端运行`X Server`
+, 图形应用则在SSH服务器上运行, 所有图形交互都在SSH客户端完成. <br/>
 
 ## 主要组件
 
@@ -51,8 +52,9 @@ tags: [ linux,  desktop,  xorg,  x11 ]
 
 ### X Display Manager
 
-`X Display Manager`负责用户登录控制, 验证用户身份(如用户名和密码或指纹), 决定是否启动图形系统. 常见的`Display Manager`
-包括:
+`X Display Manager`负责用户登录控制, 验证用户身份(如用户名和密码或指纹), 并决定是否启动图形系统. <br/>
+
+常见的`Display Manager`包括:
 
 - GDM
 - SDDM
@@ -64,7 +66,7 @@ tags: [ linux,  desktop,  xorg,  x11 ]
 图形系统的初始化通常从`startx`开始, 它负责:
 
 - 初始化`X Server`
-- 启动`X Client`, 包括桌面管理组件, 这是用户界面的入口点.
+- 启动`X Client`, 包括桌面管理组件, 这是用户界面的入口点
 
 ### CentOS (6.9, 7.5) 的初始化
 
