@@ -1,5 +1,5 @@
 ---
-authors: [ xiangcheng.kuo ]
+authors: [ orange ]
 tags: [ native-image, java-packager, gradle-plugin, github-pr ]
 ---
 

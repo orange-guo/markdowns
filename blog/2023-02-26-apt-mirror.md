@@ -1,5 +1,5 @@
 ---
-authors: [xiangcheng.kuo]
+authors: [ orange ]
 tags: [apt, ubuntu, linux]
 ---
 # `ubuntu`中常用的`apt`源

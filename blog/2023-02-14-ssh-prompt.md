@@ -1,5 +1,5 @@
 ---
-authors: [xiangcheng.kuo]
+authors: [ orange ]
 tags: [ssh]
 ---
 # 跳过`SSH`连接时的确认提示

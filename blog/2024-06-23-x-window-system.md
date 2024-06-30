@@ -1,5 +1,5 @@
 ---
-authors: [ xiangcheng.kuo ]
+authors: [ orange ]
 tags: [ linux,  desktop,  xorg,  x11 ]
 ---
 
