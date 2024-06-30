@@ -83,6 +83,7 @@
 </blockquote>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考" href="https://www.geek66.cyou/blog/2024/06/28/integrate-asciinema-into-dodocusaurus-project#%E5%8F%82%E8%80%83">​</a></h2>
 <ul>
+<li><a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a></li>
 <li><a href="https://docusaurus.io/docs/Markdown-features/plugins" target="_blank" rel="noopener noreferrer">MDX Plugins</a></li>
 <li><a href="https://github.com/remarkjs/remark" target="_blank" rel="noopener noreferrer">remark</a></li>
 <li><a href="https://github.com/syntax-tree/mdast" target="_blank" rel="noopener noreferrer">mdast</a></li>
