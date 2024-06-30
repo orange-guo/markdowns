@@ -5,69 +5,74 @@ tags: [ docusaurus, react, mdx, asciinema, remark, mdast, mdast-util-mdx-jsx, md
 
 # 将Asciinema集成到Docusaurus项目中
 
-在`Markdown`文档中, 会涉及到一些终端操作, 为了能够展示这些操作, 需要有一种方式来展示这些操作.
+在`Markdown`文档中, 涉及到一些终端操作时, 需要一种方式来展示这些操作.
 
 <!--truncate-->
 
 ## 常见的解决方案
 
-`codeblock`是`Markdown`提供的内置语法, 但是`codeblock`在一些场景下会有缺点.<br/>
-例如当终端操作步骤很长, 包含了大量的输入输出内容, 此时会导致文档内容占用太多空间, 影响阅读.<br/>
-将终端操作录制为视频, 并通过链接引用, 优点是终端操作视频被渲染到页面中, 但是缺点是视频占用空间比较大, 通常终端操作都是字符串.<br/>
+虽然`Markdown`内置的`codeblock`语法方便, 但在某些情况下, 它也有不足之处. <br/>
+比如, 当终端操作步骤过长, 包含大量输入输出内容时, 会导致文档占用过多空间, 影响阅读体验. <br/>
+另一种方法是将终端操作录制成视频并通过链接引用, 这样视频可以嵌入页面中展示操作过程. <br/>
+然而, 视频文件通常较大, 占用较多空间, 而终端操作本质上只是字符串.
 
 ## 工具介绍
 
 ### Asciinema
 
-[Asciinema](https://asciinema.org/)是一个开源的终端录制工具, 可以将终端操作记录下来并生成一个可播放的终端动作文件, 生成的文件中只包含了文本信息, 不会占用太多空间, 很适合用来展示终端操作的演示.<br/>
+[Asciinema](https://asciinema.org/)是一个开源的终端录制工具, 可以记录终端操作并生成可播放的文件.<br/>
+这个文件仅包含文本信息, 不占用太多空间, 非常适合展示终端操作演示.<br/>
 
-要生成终端操作的演示, 需要安装其命令行工具, 并使用其命令行工具将终端操作录制下来.<br/>
-
-[getting-started](https://docs.asciinema.org/getting-started/)提供了如何安装及使用的教程.<br/>
+要生成终端操作演示, 需要安装`Asciinema`的命令行工具, 并使用该工具进行录制.<br/>
+详细的安装和使用教程可以参考[getting-started](https://docs.asciinema.org/getting-started/)页面. 
 
 ### Docusaurus
 
-[Docusaurus](https://docusaurus.io/)是一个开源的静态网站生成器, 它基于`React`实现, 允许我们使用`Markdown`来编写文档, 并使用`React`来渲染文档.<br/>
-在`Docusaurus`中, 其支持通过`mdx`
+[Docusaurus](https://docusaurus.io/)是一个开源的静态网站生成器, 基于 `React` 实现, 允许使用`Markdown`编写文档, 并用`React`渲染. <br/>
+在`Docusaurus`中, 支持使用`MDX`扩展.<br/>
 
 ### MDX
 
-[MDX](https://mdxjs.com/)是`Markdown`的扩展, 它允许我们在`Markdown`中编写`Javascript`代码完成更为丰富的文档内容渲染.<br/>
+[MDX](https://mdxjs.com/)是`Markdown`的扩展, 允许我们在`Markdown`文档中使用`JavaScript`代码来实现更丰富的文档内容渲染.<br/>
 
 ## 功能设计
 
-`Docusaurus`支持`MDX`语法, 这意味着我们可以在文档中引入`Javascript`代码来渲染页面.<br/>
-`Asciinema`提供了`Javascript`库来渲染页面, 但是不幸的是, 目前只有`Javascript`基本实现, 由于`Docusaurus`是基于`React`实现, 这意味着我们需要将`Asciinema`提供的`Javascript`库封装为`Docusaurus`支持的`React`组件.<br/>
+`Docusaurus`支持`MDX`语法, 因此我们可以在文档中引入`JavaScript`代码来渲染页面.<br/>
+虽然`Asciinema`提供了用于页面渲染的`JavaScript`库, 但遗憾的是目前只有基本的`JavaScript`实现. <br/>
+由于`Docusaurus`是基于`React`实现的, 因此我们需要将`Asciinema`提供的`JavaScript`库封装为`Docusaurus`支持的`React`组件.<br/>
 
 ### 封装`React`组件
 
 如果我们需要在`Docusaurus`中集成`Asciinema`, 那么需要完成以下步骤:
 
-- 将`Asciinema`提供的`Javascript`库封装为`Docusaurus`支持的`React`组件.
+- 将`Asciinema`提供的`JavaScript`库封装为`Docusaurus`支持的`React`组件.
 
-当完成上述实现后, 我们就可以在`Markdown`文档中引入`Asciinema`动画文件, 并将其渲染到页面中, 当增加了如下的内容:<br/>
+完成上述实现后, 我们就可以在`Markdown`文档中引入`Asciinema`动画文件, 并将其渲染到页面中.
 
-```markdown
+例如：
+
+```mdxjs
 import AsciinemaPlayer from '@site/src/components/asciinema/react';
 
 <AsciinemaPlayer src="/blog/2024-06-28-demo.cast" />
 ```
 
-那么, 最终的渲染效果应该是:<br/>
+这样, 最终的渲染效果应该是:<br/>
 
 [x](/blog/2024-06-28-demo.cast)
 
 ### 扩展`Markdown`解析器并实现`link`语法的渲染
 
-上个步骤中, 最终的`Markdown`文件中需要编写`JS`代码来完成渲染, 但是对于文档编写者来说会有以下问题:
+在上一个步骤中, 最终的`Markdown`文件中需要编写`JavaScript`代码来完成渲染, 但对于文档编写者来说会面临以下问题:
 
-- 如果文档项目有多人编写的话, 那么语法上出现问题的概率会变大.
-- `Markdown`迁移难度会变大, 因为`Js`代码只是用来完成某件事情的实现方式, 而`Markdown`文件中不应该显式依赖属于`解决方案空间`中的细节.
+- 如果文档项目由多人编写, 语法问题的概率会增加.
+- `Markdown`迁移难度加大, 因为`JS`代码只是实现某个功能的一种方式, 而不应该在`Markdown`文件中显式依赖解决方案空间的细节.
 
-根据上述问题, 我们需要对使用方式进行优化, 来降低使用者的难度, 同时对于使用者来屏蔽底层的细节.<br/>
-对于最终的使用者来说, 他们可能更希望在`Markdown`中使用`link`语法来引入`Asciinema`动画文件, 而在底层我们需要通过`Docusaurus`提供的功能来进行扩展渲染.<br/>
+为了解决以上问题, 我们需要优化使用方式, 降低使用者的难度, 同时屏蔽底层的细节. <br/>
 
-例如, 当用户在文档中增加了如下的内容:
+最终的使用者可能更希望在`Markdown`中使用`link`语法来引入`Asciinema`动画文件, 而在底层我们需要通过`Docusaurus`提供的功能进行扩展渲染. 
+
+例如, 用户在文档中增加如下内容:
 
 ```markdown
 [x](/blog/2024-06-28-demo.cast)
@@ -77,13 +82,11 @@ import AsciinemaPlayer from '@site/src/components/asciinema/react';
 
 [x](/blog/2024-06-28-demo.cast)
 
-上述方式的实现思路主要是扩展`Docusaurus`的`Markdown`解析器, 并对其进行扩展, 最终转换为上个步骤中的`React`组件.<br/>
+上述实现思路主要是扩展`Docusaurus`的`Markdown`解析器, 并对其进行扩展, 最终转换为上一个步骤中的`React`组件.<br/>
+在`Docusaurus`中, 可以通过扩展`remark`和`rehype`来实现对`Markdown`语法解析的扩展. <br/>
+这种方法允许我们在`Markdown`解析为`AST`后进行修改, 从而实现对`Markdown`的扩展功能. <br/>
 
-在`Docusaurus`中, 其提供了对于`Markdown`语法解析的扩展, 它是基于`remark`和`rehype`来实现的, 我们需要扩展`remark`和`rehype`来实现这个功能.<br/>
-
-上述组件引入了一个机制, 允许我们在`markdown`解析为`AST`后进行修改, 这样我们就可以实现对`Markdown`的扩展.
-
-参考[MDX Plugins](https://docusaurus.io/docs/Markdown-features/plugins)获取更多信息.
+详细的文档和插件开发信息, 请参考[MDX Plugins](https://docusaurus.io/docs/Markdown-features/plugins).
 
 ## 功能实现
 
@@ -95,9 +98,9 @@ import AsciinemaPlayer from '@site/src/components/asciinema/react';
 yarn add asciinema-player
 ```
 
-接下来, 需要封装出`React`组件.
+接下来, 我们需要封装成`React`组件.
 
-```ts title="src/components/asciinema/react/index.js"
+```typescript title="src/components/asciinema/react/index.js"
 
 // import 'asciinema-player/dist/bundle/asciinema-player.css';
 import './asciinema-player.css'; // We hacked the CSS of the asciinema-player located at 'asciinema-player/dist/bundle/asciinema-player.css'.
@@ -150,11 +153,10 @@ export default AsciinemaPlayer;
 
 [src/components/asciinema/react/asciinema-player.css](/blog/2024-06-28-asciinema-player.css)
 
-上面的代码中, 我们将`Asciinema`的`Javascript`库封装为`React`组件.<br/>
-通过`React`提供的`Ref`功能, 将`Asciinema`操作的`DOM`组件和`React`组件进行关联, 这样就可以确保`React`能够集成对应组件.<br/>
-为了避免重复渲染, 需要确保组件被`dispose`.<br/>
-为了能够适配`Docusaurus`的主题, 我们需要确保组件能够适应不同的主题, 为了完成这个工作, 我们需要引入自定义的`CSS`样式, 在`Asciinema`提供的基本样式基础上, 我们添加了对`Docusaurus`主题的支持.
-
+上面的代码中, 我们将`Asciinema`的`JavaScript`库封装为`React`组件.<br/>
+利用`React`提供的`Ref`功能, 将`Asciinema`操作的`DOM`组件与`React`组件关联起来, 以确保`React`能够集成该组件. <br/>
+为了避免重复渲染, 需要确保组件在适当的时候被`dispose`.<br/>
+为了适配`Docusaurus`的主题, 我们需要引入自定义的`CSS`样式. 在`Asciinema`提供的基础样式上, 添加对`Docusaurus`主题的支持.
 
 ### 自定义`Markdown`语法树解析
 
@@ -164,12 +166,12 @@ export default AsciinemaPlayer;
 yarn add rehype-katex remark-math
 ```
 
-上面这两个库用作`Markdown`语法树解析, 并对语法树内容进行修改, 从而达到我们的目的.
+这两个库用于解析`Markdown`语法树, 并对语法树内容进行修改, 以实现我们的目的.<br/>
 
 
-编写以下代码实现
+现在可以开始编写下面的代码来实现
 
-```ts title="src/components/asciinema/Markdown/Markdown.ts"
+```typescript title="src/components/asciinema/Markdown/Markdown.ts"
 import {visit} from 'unist-util-visit';
 
 const plugin = (options) => {
@@ -230,11 +232,12 @@ const plugin = (options) => {
 export default plugin;
 ```
 
-在上述代码中, 我们对`link`进行了修改, 并将其转换为`Jsx`语法, 这样可以在`Markdown`中直接使用`Asciinema`组件, 完成了上述代码中, 我们还需要在`docusaurus`中进行配置以进行功能集成.<br/>
+在上述代码中, 我们对`link`进行了修改, 并将其转换为`JSX`语法, 这样可以在`Markdown`中直接使用`Asciinema`组件.
+除了上述代码, 我们还需要在`Docusaurus`中进行配置以进行功能集成.<br/>
 
-参考以下配置配置`Docusaurus`:
+参考以下配置来配置`Docusaurus`:
 
-```js title="docusaurus.config.js"
+```typescript title="docusaurus.config.js"
 import rehypeKatex from 'rehype-katex';
 import asciinema from './src/components/asciinema/Markdown/Markdown';
 
@@ -258,9 +261,10 @@ export default {
 };
 ```
 
-上述配置将对`Docusaurus`中的`Docs`和`Blog`进行了配置, 并将`Markdown`中的`Asciinema`组件进行解析.
+上述配置对`Docusaurus`中的`Docs`和`Blog`进行了配置, 并实现了`Markdown`中的`Asciinema`组件的解析.<br/>
 
-> 需要注意的一点是, 我们使用`beforeDefaultRemarkPlugins`而不是`remarkPlugins`配置的主要原因是因为`Docusaurus`本身会对`Markdown`语法树进行修改, 因此我们需要在其之前进行配置, 否则会导致最终的结果不正确.
+需要注意的一点是, 我们使用`beforeDefaultRemarkPlugins`而不是`remarkPlugins`进行配置的主要原因是, <br/>
+`Docusaurus`会对`Markdown`语法树进行修改, 因此我们需要在其修改之前进行配置, 以确保最终的结果正确.<br/>
 
 ## 参考
 
