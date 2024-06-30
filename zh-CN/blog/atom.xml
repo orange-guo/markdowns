@@ -94,7 +94,7 @@
 <li><a href="https://github.com/syntax-tree/mdast-util-mdxjs-esm?tab=readme-ov-file#mdxjsesm" target="_blank" rel="noopener noreferrer">mdast-util-mdxjs-esm</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="docusaurus" term="docusaurus"/>
@@ -178,7 +178,7 @@
 <li><a href="https://en.wikipedia.org/wiki/X_display_manager" target="_blank" rel="noopener noreferrer">X display manager</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="linux" term="linux"/>
@@ -196,11 +196,11 @@
 如果在<code>CI/CD</code>中引用同一代码库下的其他<code>Go</code>仓库, 由于<code>Gitlab</code>对仓库的访问权限限制, 还需要执行一些配置来确保<code>go mod</code>
 能够正确下载依赖项.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="操作步骤">操作步骤<a class="hash-link" aria-label="操作步骤的直接链接" title="操作步骤的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置goprivate环境变量">设置<code>GOPRIVATE</code>环境变量<a class="hash-link" aria-label="设置goprivate环境变量的直接链接" title="设置goprivate环境变量的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%E8%AE%BE%E7%BD%AEgoprivate%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置goprivate环境��变量">设置<code>GOPRIVATE</code>环境变量<a class="hash-link" aria-label="设置goprivate环境变量的直接链接" title="设置goprivate环境变量的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%E8%AE%BE%E7%BD%AEgoprivate%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">​</a></h3>
 <p>设置<code>GOPRIVATE</code>变量</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">export GOPRIVATE=${CI_SERVER_HOST}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>这里的<code>${CI_SERVER_HOST}</code>是gitlab代码库的域名.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用git-config的insteadof指令替换原始的https请求并添加认证信息">使用<code>git config</code>的<code>insteadOf</code>指令替换原始的<code>https</code>请求并添加认证信息<a class="hash-link" aria-label="使用git-config的insteadof指令替换原始的https请求并添加认证信息的直接链接" title="使用git-config的insteadof指令替换原始的https请求并添加认证信息的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%E4%BD%BF%E7%94%A8git-config%E7%9A%84insteadof%E6%8C%87%E4%BB%A4%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%A7%8B%E7%9A%84https%E8%AF%B7%E6%B1%82%E5%B9%B6%E6%B7%BB%E5%8A%A0%E8%AE%A4%E8%AF%81%E4%BF%A1%E6%81%AF">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用git-config的insteadof指令替换原始的https请求并添加认证信息">使用<code>git config</code>的<code>insteadOf</code>指令替换原始的<code>https</code>请求并添加认证信息<a class="hash-link" aria-label="使用git-config的insteadof指令替换原始的https请求并添加认证信息的直接链接" title="使用git-config的insteadof指令替换原始的https请求并添加认证信息的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/04/11/support-gomod-referencing-local-repos-in-gitlab-cicd#%EF%BF%BD%EF%BF%BD%E4%BD%BF%E7%94%A8git-config%E7%9A%84insteadof%E6%8C%87%E4%BB%A4%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%A7%8B%E7%9A%84https%E8%AF%B7%E6%B1%82%E5%B9%B6%E6%B7%BB%E5%8A%A0%E8%AE%A4%E8%AF%81%E4%BF%A1%E6%81%AF">​</a></h3>
 <p><code>go mod</code>通过<code>git</code>下载依赖项.<br>
 对于私有的git仓库, 如果不进行认证, 将会出现错误.<br></p>
 <p>使用下述命令替换原始的<code>https</code>请求并添加认证信息</p>
@@ -214,7 +214,7 @@
 <li><a href="https://docs.gitlab.com/ee/ci/jobs/ci_job_token.html#add-a-project-to-the-job-token-allowlist" target="_blank" rel="noopener noreferrer">Add a project to the job token allowlist</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="golang" term="golang"/>
@@ -250,7 +250,7 @@
 则执行自定义的转发规则以确保<code>spring.cloud.gateway.routes</code>中定义的转发规则生效.</p>
 <div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token annotation punctuation" style="color:#393A34">@Override</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">protected</span><span class="token plain"> </span><span class="token class-name">Mono</span><span class="token generics punctuation" style="color:#393A34">&lt;</span><span class="token generics class-name">Route</span><span class="token generics punctuation" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">lookupRoute</span><span class="token punctuation" style="color:#393A34">(</span><span class="token class-name">ServerWebExchange</span><span class="token plain"> exchange</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">super</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">lookupRoute</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">exchange</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">switchIfEmpty</span><span class="token punctuation" style="color:#393A34">(</span><span class="token class-name">Mono</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">defer</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			</span><span class="token comment" style="color:#999988;font-style:italic">// 此处为自定义的转发规则</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -279,7 +279,7 @@
 <li><a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#cookie_samesite" target="_blank" rel="noopener noreferrer">Configure Grafana</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -382,7 +382,7 @@ JDK作为原生Wayland客户端, 需要一个纯Wayland工具包方案.<br></p>
 <li><a href="https://github.com/JetBrains/JetBrainsRuntime/issues/242" target="_blank" rel="noopener noreferrer">testing wayland</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="linux" term="linux"/>
@@ -427,7 +427,7 @@ JDK作为原生Wayland客户端, 需要一个纯Wayland工具包方案.<br></p>
 <li><a href="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/" target="_blank" rel="noopener noreferrer">DNS for Services and Pods</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -488,7 +488,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 </li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -571,7 +571,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">	if (!this.queries.isEmpty()) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      /*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       * since we only want to keep resolved query values, reset any queries on the resolved copy</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       */</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      resolved.queries(Collections.emptyMap());</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      StringBuilder query = new StringBuilder();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      Iterator&lt;QueryTemplate&gt; queryTemplates = this.queries.values().iterator();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      while (queryTemplates.hasNext()) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        QueryTemplate queryTemplate = queryTemplates.next();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        String queryExpanded = queryTemplate.expand(variables);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        if (Util.isNotBlank(queryExpanded)) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          query.append(queryExpanded);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          if (queryTemplates.hasNext()) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            query.append("&amp;");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      String queryString = query.toString();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      if (!queryString.isEmpty()) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Matcher queryMatcher = QUERY_STRING_PATTERN.matcher(uri);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        if (queryMatcher.find()) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          /* the uri already has a query, so any additional queries should be appended */</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          uri.append("&amp;");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        } else {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          uri.append("?");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        uri.append(queryString);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>最终这个语句<code>String queryExpanded = queryTemplate.expand(variables);</code>会将参数转为字符串, 所以最终我们得到了参数的字符串形式,</p>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -618,12 +618,12 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <p>上面是我目前升级到<code>spring-boot-3.1.0</code>后遇到的问题, 总的来说这些问题都是因为框架内部的一些集成问题导致的.<br>
 目前<code>graalvm</code>的<code>native-image</code>插件还不是很完善, 有些问题还需要我们自己去解决, 但是相信随着<code>graalvm</code>的发展, 这些问题都会逐渐解决的.
 <code>oracle</code>维护了一个<code>graalvm</code>的<code>reachability-metadata</code>的项目, 用来解决一些框架集成的问题, 我们可以在这个项目中查看到一些框架的集成问题的解决方案.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料-1">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/06/01/upgrading-to-spring-boot-3.1.0-native-image-startup-errors-and-solutions#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-1">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料-1">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资�料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/06/01/upgrading-to-spring-boot-3.1.0-native-image-startup-errors-and-solutions#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-1">​</a></h2>
 <ul>
 <li><a href="https://github.com/oracle/graalvm-reachability-metadata" target="_blank" rel="noopener noreferrer">graalvm-reachability-metadata</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="problem-solving" term="problem-solving"/>
@@ -640,7 +640,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="摘要">摘要<a class="hash-link" aria-label="摘要的直接链接" title="摘要的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E6%91%98%E8%A6%81">​</a></h2>
 <p>默认情况下，<code>spring-data-jpa</code>使用<code>hibernate</code>作为<code>jpa</code>的实现, 当并发量较大时, 由于框架的一些默认配置可能会引发性能瓶颈,
 下面将介绍一些常见的配置项来改善并发量较大时的性能问题.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="禁用open-in-view">禁用<code>open-in-view</code><a class="hash-link" aria-label="��禁用open-in-view的直接链接" title="禁用open-in-view的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E7%A6%81%E7%94%A8open-in-view">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="禁用open-in-view">禁用<code>open-in-view</code><a class="hash-link" aria-label="禁用open-in-view的直接链接" title="禁用open-in-view的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E7%A6%81%E7%94%A8open-in-view">​</a></h2>
 <p>在<code>spring-boot</code>中默认开启了<code>open-in-view</code>，这个配置项的作用是在整个请求上下文复用同一个<code>EntityManager</code>.<br>
 该实现的好处是避免在同一个请求中多次创建一个<code>EntityManager</code>, 从而提高性能.<br>
 当系统并发较大时且系统相应较慢, 由于<code>EntityManager</code>会持有数据库链接直到整个请求处理完成, 如果没有特别的需求, 例如:</p>
@@ -690,7 +690,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案-1">解决方案<a class="hash-link" aria-label="解决方案的直接链接" title="解决方案的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-1">​</a></h3>
 <p>在<code>application.yml</code>中添加如下配置:</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">application.yml</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">spring</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">jpa</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">properties</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token key atrule" style="color:#00a4db">hibernate</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token key atrule" style="color:#00a4db">connection</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token key atrule" style="color:#00a4db">handling_mode</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> your_handling_mode</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a class="hash-link" aria-label="总结的直接链接" title="总结的�直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E6%80%BB%E7%BB%93">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a class="hash-link" aria-label="总结的直接链接" title="总结的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E6%80%BB%E7%BB%93">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="open-in-view">Open In View<a class="hash-link" aria-label="Open In View的直接链接" title="Open In View的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/05/26/performance-optimization-strategies-for-hibernate-in-concurrent-scenarios#open-in-view">​</a></h3>
 <ul>
@@ -710,7 +710,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <li><a href="https://docs.jboss.org/hibernate/orm/6.2/userguide/html_single/Hibernate_User_Guide.html#best-practices" target="_blank" rel="noopener noreferrer">Performance Tuning and Best Practices</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="spring-boot" term="spring-boot"/>
@@ -730,7 +730,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <li><a href="https://github.com/microsoft/vscode/issues/96041" target="_blank" rel="noopener noreferrer">unable to input chinese character</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="vscode" term="vscode"/>
@@ -786,7 +786,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <li><a href="https://www.baeldung.com/spring-open-session-in-view" target="_blank" rel="noopener noreferrer">A Guide to Spring’s Open Session in View</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="spring-boot" term="spring-boot"/>
@@ -831,7 +831,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <li><a href="https://wiki.archlinux.org/title/SSH_keys" target="_blank" rel="noopener noreferrer">SSH keys</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="jsch" term="jsch"/>
@@ -894,7 +894,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <li><a href="https://kind.sigs.k8s.io/" target="_blank" rel="noopener noreferrer">kind</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="kind" term="kind"/>
@@ -931,13 +931,13 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
 <div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	"Version": "2012-10-17",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	"Statement": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			"Sid": "PublicReadGetObject",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			"Effect": "Allow",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			"Principal": "*",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			"Action": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">				"s3:GetObject"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			"Resource": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">				"arn:aws:s3:::Bucket-Name/*"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="上传静态文件">上传静态文件<a class="hash-link" aria-label="上传静态文件的直接链接" title="上传静态文件的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/16/hosting-a-static-website-using-s3#%E4%B8%8A%E4%BC%A0%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6">​</a></h2>
 <p>通过<code>aws-cli</code>或者<code>web-console</code>上传静态文件到s3桶中.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的�直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/16/hosting-a-static-website-using-s3#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/16/hosting-a-static-website-using-s3#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
 <ul>
 <li><a href="https://docs.amazonaws.cn/en_us/AmazonS3/latest/userguide/WebsiteHosting.html" target="_blank" rel="noopener noreferrer">Hosting a static website using Amazon S3</a></li>
 <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html" target="_blank" rel="noopener noreferrer">Setting permissions for website access</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="aws" term="aws"/>
@@ -1035,7 +1035,7 @@ graalvm需要在编译时就知道这些信息来生成)
 <li><a href="https://github.com/fvarrui/JavaPackager/blob/master/src/main/java/io/github/fvarrui/javapackager/packagers/GenerateAppImage.java" target="_blank" rel="noopener noreferrer">GenerateAppImage.java</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="native-image" term="native-image"/>
@@ -1074,7 +1074,7 @@ graalvm需要在编译时就知道这些信息来生成)
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="stream-closed异常测试">Stream Closed异常测试<a class="hash-link" aria-label="Stream Closed异常测试的直接链接" title="Stream Closed异常测试的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/05/fix-stream-closed-exception-in-command-line-invocation-in-kotlin-coroutine#stream-closed%E5%BC%82%E5%B8%B8%E6%B5%8B%E8%AF%95">​</a></h3>
 <p>下面的代码是用来复现<code>Stream Closed</code>异常的测试代码:</p>
 <div class="language-kotlin codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-kotlin codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">runBlocking </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token keyword" style="color:#00009f">val</span><span class="token plain"> executor </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">CommandExecutorImpl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1</span><span class="token operator" style="color:#393A34">..</span><span class="token number" style="color:#36acaa">1000</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">map</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		</span><span class="token function" style="color:#d73a49">CoroutineScope</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">Dispatchers</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">IO</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">async</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			executor</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">execute</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">				options </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">CommandExecutionOptions</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">					command </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">listOf</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string-literal singleline string" style="color:#e3116c">"echo"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string-literal singleline string" style="color:#e3116c">"1"</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">				</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">			</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">		</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">awaitAll</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么不使用processwaitfor方法替代delay500方法">为什么不使用<code>Process.waitFor()</code>方法替代<code>delay(500)</code>方法<a class="hash-link" aria-label="为什么不使用processwaitfor方法替代delay500方法的直接链接" title="为什么不使用processwaitfor方法替代delay500方法的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/05/fix-stream-closed-exception-in-command-line-invocation-in-kotlin-coroutine#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E4%BD%BF%E7%94%A8processwaitfor%E6%96%B9%E6%B3%95%E6%9B%BF%E4%BB%A3delay500%E6%96%B9%E6%B3%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么不使用processwaitfor方法替代delay500方法">为什么不使用<code>Process.waitFor()</code>方法替代<code>delay(500)</code>方法<a class="hash-link" aria-label="为什么不使用processwaitfor方法��替代delay500方法的直接链接" title="为什么不使用processwaitfor方法替代delay500方法的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/05/fix-stream-closed-exception-in-command-line-invocation-in-kotlin-coroutine#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E4%BD%BF%E7%94%A8processwaitfor%E6%96%B9%E6%B3%95%E6%9B%BF%E4%BB%A3delay500%E6%96%B9%E6%B3%95">​</a></h3>
 <p>因为<code>waitFor</code>方法比较重量级会阻塞当前线程, 而我们的解决方案是协程目的是为了不阻塞当前线程, 所以才会采用<code>delay</code>方法.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/04/05/fix-stream-closed-exception-in-command-line-invocation-in-kotlin-coroutine#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
 <ul>
@@ -1082,7 +1082,7 @@ graalvm需要在编译时就知道这些信息来生成)
 <li><a href="https://kotlinlang.org/docs/cancellation-and-timeouts.html#run-non-cancellable-block" target="_blank" rel="noopener noreferrer">Run non-cancellable block</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="kotlin" term="kotlin"/>
@@ -1154,7 +1154,7 @@ graalvm需要在编译时就知道这些信息来生成)
 <li><a href="https://m19v.github.io/blog/how-to-add-giscus-to-docusaurus" target="_blank" rel="noopener noreferrer">How to add Giscus comments to Docusaurus</a></li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="docusaurus" term="docusaurus"/>
@@ -1178,7 +1178,7 @@ graalvm需要在编译时就知道这些信息来生成)
 We need to improve our product quality to meet the customer’s needs.(我们需要改善我们的产品质量, 以满足客户的需求.)<br></p><p>Enhancement: <br>
 表示对一个已经很好的事物进行增强或扩展, 使其更加优秀或有吸引力.<br>
 The new feature of this phone enhanced its competitiveness.(这款手机的新功能增强了它的竞争力.)<br></p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接��链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/03/31/common-tags-in-gitlab#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="��参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2023/03/31/common-tags-in-gitlab#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
 <ul>
 <li><a href="https://about.gitlab.com/handbook/marketing/project-management-guidelines/labels/" target="_blank" rel="noopener noreferrer">Labels project management guidelines | GitLab</a>
 <br>这是Gitlab关于标签项目管理指南的页面, 包含了一些创建和使用标签的规范和建议.</li>
@@ -1186,7 +1186,7 @@ The new feature of this phone enhanced its competitiveness.(这款手机的新�
 <br>这是Gitlab关于标签培训的页面, 包含了一些标签的最佳实践和示例.</li>
 </ul>]]></content>
         <author>
-            <name>Xiangcheng Kuo</name>
+            <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
         <category label="gitlab" term="gitlab"/>
