@@ -30,13 +30,6 @@
   languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order
   of priority).
 
-## Data Language
-
-- [toml](https://github.com/toml-lang/toml)
-  <br/>Tom's Obvious, Minimal Language
-- [hcl](https://github.com/hashicorp/hcl)
-  <br/>HCL is the HashiCorp configuration language.
-
 ## Query Language
 
 - [graphql-spec](https://github.com/graphql/graphql-spec)
