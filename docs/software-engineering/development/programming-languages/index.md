@@ -1,7 +1,5 @@
 # Index
 
-## Programming
-
 - [cuelang](https://cuelang.org/)
   <br/>Configure Unify Execute
   <br/>Validate, define, and use dynamic and text-based data
