@@ -27,6 +27,8 @@
   <br/>Nim is a statically typed compiled systems programming language. It combines successful concepts from mature
   languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order
   of priority).
+- [gleam](https://github.com/gleam-lang/gleam)
+  <br/>⭐️ A friendly language for building type-safe, scalable systems!
 
 ## Query Language
 
