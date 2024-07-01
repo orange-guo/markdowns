@@ -14,9 +14,6 @@
   <br/>ASCII art from your terminal
 - [bastet](https://github.com/fph/bastet)
   <br/>Evil falling block game.
-- [distrobox](https://github.com/89luca89/distrobox)
-  <br/>Use any linux distribution inside your terminal. Enable both backward and forward compatibility with software and
-  freedom to use whatever distribution you’re more comfortable with.
 - [watch](https://github.com/tj/watch)
   <br/>watch(1) periodically executes the given command - useful for auto-testing, auto-building, auto-anything
 - [neofetch](https://github.com/dylanaraps/neofetch)
