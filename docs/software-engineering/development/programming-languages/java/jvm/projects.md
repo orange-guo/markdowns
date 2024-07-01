@@ -1,5 +1,11 @@
 # Projects
 
+## Performance
+
+- [jvm-performance-benchmarks](https://github.com/ionutbalosin/jvm-performance-benchmarks)
+  <br/>Java Virtual Machine (JVM) Performance Benchmarks with a primary focus on top-tier Just-In-Time (JIT) Compilers,
+  such as C2 JIT, Graal JIT, and the Falcon JIT.
+
 ## Runtime
 
 - [Openjdk](https://openjdk.org/)
