@@ -81,8 +81,6 @@ text.dispatchEvent(event);
 - [Ideone](https://www.ideone.com/F7mT6q)
 - [OnlineGDB](https://www.onlinegdb.com/online_java_compiler)
 
-
-
 ```
 -Xms16g
 -Xmx16g

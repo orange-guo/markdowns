@@ -120,7 +120,8 @@ implementation("org.yaml:snakeyaml:2.0")
 - [JDK-8277166](https://bugs.openjdk.org/browse/JDK-8277166)
 - [JDK-8277123](https://bugs.openjdk.org/browse/JDK-8277123)
 
-### 构建过程中出现`java.lang.Exception: https://github.com/AppImage/AppImageKit/releases/download/13/appimagetool-x86_64.AppImagenot found! ... Unsupported OS architecture x86_64?`
+### 构建过程中出现
+`java.lang.Exception: https://github.com/AppImage/AppImageKit/releases/download/13/appimagetool-x86_64.AppImagenot found! ... Unsupported OS architecture x86_64?`
 
 这个问题的原因是在打包`linux`的`AppImage`时, 会去下载`appimagetool`来进行打包, 下载过程中可能会出现网络问题导致下载失败,
 从而导致打包失败.

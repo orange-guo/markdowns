@@ -76,9 +76,11 @@ code --ozone-platform=wayland
 
 ### `Wayland`的支持不足
 
-`InteiliJ IDEA`对`Wayland`的支持不足, 其底层基于`Java`的`Swing`实现图形渲染, 但是目前`Swing`还是基于`X11`协议, 因此无法使用`Wayland`协议,
+`InteiliJ IDEA`对`Wayland`的支持不足, 其底层基于`Java`的`Swing`实现图形渲染, 但是目前`Swing`还是基于`X11`协议, 因此无法使用
+`Wayland`协议,
 会导致系统使用`XWayland`来模拟`X11`协议, 从而影响其性能,
 主要的影响是:
+
 - 打字输入的渲染会比较卡顿
 - 应用内部窗口初始化时会出现短暂的黑色背景
 - 编辑器滑动会比较卡顿不够流畅
@@ -87,7 +89,8 @@ code --ozone-platform=wayland
 
 `Jetbrains`去年发布过一个博客, 该博客详细介绍了基于`IDE`对`Wayland`的支持.<br/>
 [Wayland Support for IntelliJ-based IDEs](https://blog.jetbrains.com/platform/2023/08/wayland-support/)<br/>
-该博客中首先对`Wayland`作出了介绍, 以及目前`Java`对`Wayland`的支持现状由于历史的原因, `Java`尚未支持`Wayland`而是采用`Xwayland`兼容性过渡方案.<br/>
+该博客中首先对`Wayland`作出了介绍, 以及目前`Java`对`Wayland`的支持现状由于历史的原因, `Java`尚未支持`Wayland`而是采用
+`Xwayland`兼容性过渡方案.<br/>
 其次介绍了目前对于`Java`原生`Wayland`支持的挑战.<br/>
 最后是对未来支持`Wayland`的展望.<br/>
 
@@ -112,7 +115,8 @@ code --ozone-platform=wayland
 
 ## Update 2024-06-04 (启用`InteiliJ IDEA`对`Wayland`的原生支持)
 
-`InteiliJ IDEA`底层的`Runtime`正在支持`Wayland`, 可以通过修改`Java Runtime`来启用`Wayland`原生支持, 启用后`UI`交互相较于`XWayland`会比较流畅
+`InteiliJ IDEA`底层的`Runtime`正在支持`Wayland`, 可以通过修改`Java Runtime`来启用`Wayland`原生支持, 启用后`UI`交互相较于
+`XWayland`会比较流畅
 
 ### 已知问题
 
@@ -125,6 +129,7 @@ code --ozone-platform=wayland
 
 1. 进入[Releases](https://github.com/JetBrains/JetBrainsRuntime/releases)下载最新的`JetBrains Runtime`
 2. 修改`idea64.vmoptions`增加以下内容
+
 ```
 --add-opens=java.base/java.io=ALL-UNNAMED \
 -ea \
@@ -169,10 +174,10 @@ code --ozone-platform=wayland
 --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED \
 --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED com.intellij.idea.Main
 ```
+
 3. 在`IDEA`内进入`Choose Boot Java Runtime for the IDE`修改`Runtime`为新下载的包.
 4. 重启`IDEA`
 5. 启动后执行`xlsclients`检查`IDEA`是否运行在`X`模式下, 进程名为`java`
-
 
 ### 参考
 

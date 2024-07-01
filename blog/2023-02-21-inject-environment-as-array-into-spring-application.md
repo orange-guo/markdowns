@@ -16,12 +16,14 @@ tags: [spring]
 推荐第二种, 因为下标的配置方式对于列表的数量是非固定的场景是不够灵活的
 
 **方式1: 下标配置**
+
 ```bash
 SPRING_LDAP_URLS[0]=ldap://host-1:389
 SPRING_LDAP_URLS[1]=ldap://host-2:389
 ```
 
 **方式2: 无下标配置**
+
 ```bash
 SPRING_LDAP_URLS=ldap://host-1:389,ldap://host-2:389
 ```

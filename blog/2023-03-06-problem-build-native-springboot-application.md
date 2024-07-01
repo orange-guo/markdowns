@@ -162,6 +162,7 @@ tasks.withType<BootBuildImage> {
 ```
 
 ### 参考
+
 - [Custom Image Builder and Run Image](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#build-image.examples.custom-image-builder)
 
 上面的代码是固定了`builder`和`run`镜像的版本, 从而避免下载最新的依赖.<br/>

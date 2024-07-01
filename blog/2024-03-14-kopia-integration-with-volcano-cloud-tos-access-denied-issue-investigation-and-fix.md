@@ -8,7 +8,8 @@ tags: [ problem-solving, golang, kopia, volcengine, tos, s3 ]
 `kopia`是一个备份工具, 支持多种存储后端, 包括`对象存储`, `文件系统`等,
 通过kopia可以将数据备份到不同的存储后端, 也可以从不同的存储后端恢复数据.
 火山云`TOS`是火山云提供的对象存储服务, 支持通过`S3`协议访问.
-最近在使用kopia接入火山云`TOS`时, 遇到了一个问题, 问题的现象是调用`kopia`提供的`s3_storage`接入火山云TOS时, 报错`Access Denied.`
+最近在使用kopia接入火山云`TOS`时, 遇到了一个问题, 问题的现象是调用`kopia`提供的`s3_storage`接入火山云TOS时, 报错
+`Access Denied.`
 
 ```log
 unable to determine if bucket "xxxxx" exists: Access Denied.

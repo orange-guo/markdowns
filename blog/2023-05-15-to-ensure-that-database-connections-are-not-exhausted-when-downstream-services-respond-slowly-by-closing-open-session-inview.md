@@ -30,11 +30,11 @@ spring:
   并调用`org.springframework.transaction.support.TransactionSynchronizationManager.bindResource`
   方法来绑定`EntityManager`到当前线程
 - 后续框架内部的调用例如`Repository.findAll()`的大致调用链路如下
-	- Repository.findAll()
-	- org.springframework.orm.jpa.SharedEntityManagerCreator.SharedEntityManagerInvocationHandler.invoke
-	- org.springframework.orm.jpa.EntityManagerFactoryUtils.doGetTransactionalEntityManager
-	- org.springframework.transaction.support.TransactionSynchronizationManager.getResource
-	  <br/>因为在请求开始时已经将`EntityManager`绑定到当前线程，所以这里会获取到之前创建的`EntityManager`
+    - Repository.findAll()
+    - org.springframework.orm.jpa.SharedEntityManagerCreator.SharedEntityManagerInvocationHandler.invoke
+    - org.springframework.orm.jpa.EntityManagerFactoryUtils.doGetTransactionalEntityManager
+    - org.springframework.transaction.support.TransactionSynchronizationManager.getResource
+      <br/>因为在请求开始时已经将`EntityManager`绑定到当前线程，所以这里会获取到之前创建的`EntityManager`
 
 - 后续执行`query`时会从`DataSource`中获取一个数据库连接，然后执行查询，查询完成后，数据库连接不会立即关闭，
   而是在`EntityManager`被关闭时关闭，而`EntityManager`会在`OpenEntityManagerInViewInterceptor`被关闭时关闭.

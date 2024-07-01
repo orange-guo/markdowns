@@ -24,22 +24,25 @@ tags: [ docusaurus, react, mdx, asciinema, remark, mdast, mdast-util-mdx-jsx, md
 这个文件仅包含文本信息, 不占用太多空间, 非常适合展示终端操作演示.<br/>
 
 要生成终端操作演示, 需要安装`Asciinema`的命令行工具, 并使用该工具进行录制.<br/>
-详细的安装和使用教程可以参考[getting-started](https://docs.asciinema.org/getting-started/)页面. 
+详细的安装和使用教程可以参考[getting-started](https://docs.asciinema.org/getting-started/)页面.
 
 ### Docusaurus
 
-[Docusaurus](https://docusaurus.io/)是一个开源的静态网站生成器, 基于 `React` 实现, 允许使用`Markdown`编写文档, 并用`React`渲染. <br/>
+[Docusaurus](https://docusaurus.io/)是一个开源的静态网站生成器, 基于 `React` 实现, 允许使用`Markdown`编写文档, 并用
+`React`渲染. <br/>
 在`Docusaurus`中, 支持使用`MDX`扩展.<br/>
 
 ### MDX
 
-[MDX](https://mdxjs.com/)是`Markdown`的扩展, 允许我们在`Markdown`文档中使用`JavaScript`代码来实现更丰富的文档内容渲染.<br/>
+[MDX](https://mdxjs.com/)是`Markdown`的扩展, 允许我们在`Markdown`文档中使用`JavaScript`
+代码来实现更丰富的文档内容渲染.<br/>
 
 ## 功能设计
 
 `Docusaurus`支持`MDX`语法, 因此我们可以在文档中引入`JavaScript`代码来渲染页面.<br/>
 虽然`Asciinema`提供了用于页面渲染的`JavaScript`库, 但遗憾的是目前只有基本的`JavaScript`实现. <br/>
-由于`Docusaurus`是基于`React`实现的, 因此我们需要将`Asciinema`提供的`JavaScript`库封装为`Docusaurus`支持的`React`组件.<br/>
+由于`Docusaurus`是基于`React`实现的, 因此我们需要将`Asciinema`提供的`JavaScript`库封装为`Docusaurus`支持的`React`
+组件.<br/>
 
 ### 封装`React`组件
 
@@ -70,7 +73,8 @@ import AsciinemaPlayer from '@site/src/components/asciinema/react';
 
 为了解决以上问题, 我们需要优化使用方式, 降低使用者的难度, 同时屏蔽底层的细节. <br/>
 
-最终的使用者可能更希望在`Markdown`中使用`link`语法来引入`Asciinema`动画文件, 而在底层我们需要通过`Docusaurus`提供的功能进行扩展渲染. 
+最终的使用者可能更希望在`Markdown`中使用`link`语法来引入`Asciinema`动画文件, 而在底层我们需要通过`Docusaurus`
+提供的功能进行扩展渲染.
 
 例如, 用户在文档中增加如下内容:
 
@@ -168,7 +172,6 @@ yarn add rehype-katex remark-math
 
 这两个库用于解析`Markdown`语法树, 并对语法树内容进行修改, 以实现我们的目的.<br/>
 
-
 现在可以开始编写下面的代码来实现
 
 ```typescript title="src/components/asciinema/Markdown/Markdown.ts"
@@ -196,10 +199,10 @@ const plugin = (options) => {
 									specifiers: [
 										{
 											type: 'ImportDefaultSpecifier',
-											local: { type: 'Identifier', name: 'AsciinemaPlayer' }
+											local: {type: 'Identifier', name: 'AsciinemaPlayer'}
 										}
 									],
-									source: { type: 'Literal', value: '@site/src/components/asciinema/react' }
+									source: {type: 'Literal', value: '@site/src/components/asciinema/react'}
 								}
 							]
 						}
@@ -214,11 +217,11 @@ const plugin = (options) => {
 				type: 'mdxJsxFlowElement',
 				name: 'AsciinemaPlayer',
 				attributes: [
-					{ type: 'mdxJsxAttribute', name: 'src', value: node.url },
-					{ type: 'mdxJsxAttribute', name: 'theme', value: 'docusaurus-classic-light' },
-					{ type: 'mdxJsxAttribute', name: 'rows', value: 30 },
-					{ type: 'mdxJsxAttribute', name: 'idleTimeLimit', value: 3 },
-					{ type: 'mdxJsxAttribute', name: 'preload', value: true }
+					{type: 'mdxJsxAttribute', name: 'src', value: node.url},
+					{type: 'mdxJsxAttribute', name: 'theme', value: 'docusaurus-classic-light'},
+					{type: 'mdxJsxAttribute', name: 'rows', value: 30},
+					{type: 'mdxJsxAttribute', name: 'idleTimeLimit', value: 3},
+					{type: 'mdxJsxAttribute', name: 'preload', value: true}
 				],
 				children: []
 			};
@@ -242,22 +245,22 @@ import rehypeKatex from 'rehype-katex';
 import asciinema from './src/components/asciinema/Markdown/Markdown';
 
 export default {
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          path: 'docs',
-          beforeDefaultRemarkPlugins: [asciinema],
-          rehypePlugins: [rehypeKatex],
-        },
-        blog: {
-          beforeDefaultRemarkPlugins: [asciinema],
-          rehypePlugins: [rehypeKatex],
-       }
-      },
-    ],
-  ],
+	presets: [
+		[
+			'@docusaurus/preset-classic',
+			{
+				docs: {
+					path: 'docs',
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
+				},
+				blog: {
+					beforeDefaultRemarkPlugins: [asciinema],
+					rehypePlugins: [rehypeKatex],
+				}
+			},
+		],
+	],
 };
 ```
 
