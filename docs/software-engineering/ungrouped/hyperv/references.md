@@ -9,7 +9,6 @@
 - [Ubuntu 21.04 VM with GPU acceleration under Hyper-V...?](https://gist.github.com/krzys-h/e2def49966aa42bbd3316dfb794f4d6a)
 - [DirectX is coming to the Windows Subsystem for Linux](https://devblogs.microsoft.com/directx/directx-heart-linux/)
 
-
 ## Screen resolution
 
 - [Ubuntu 20.04 can't change screen resolution](https://www.reddit.com/r/HyperV/comments/gecqx6/ubuntu_2004_cant_change_screen_resolution/)
