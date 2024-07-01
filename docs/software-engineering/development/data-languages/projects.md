@@ -1,4 +1,4 @@
-# Index
+# Projects
 
 - [toml](https://github.com/toml-lang/toml)
   <br/>Tom's Obvious, Minimal Language
