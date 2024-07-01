@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # Projects
 
+## JSON
+
+- [moshi](https://github.com/square/moshi)
+  <br/>A modern JSON library for Kotlin and Java.
+- [kotshi](https://github.com/ansman/kotshi)
+  <br/>An annotation processor that generates Moshi adapters from immutable Kotlin data classes.
+
 ## Map Structure
 
 - [konvert](https://github.com/mcarleio/konvert)
