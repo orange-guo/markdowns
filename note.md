@@ -226,11 +226,3 @@ timeout 1m do_resize &
 
 xdg-open /home/ubuntu/IdeaProjects/spring-framework/spring-core/src/jmh/java/org/springframework/core/codec/StringDecoderBenchmark.java
 ```
-
-## Desktops
-
-- [Cinnamon](https://wiki.archlinux.org/title/cinnamon)
-- [i3](https://wiki.archlinux.org/title/i3)
-- [dwm](https://wiki.archlinux.org/title/dwm)
-- [xfce](https://wiki.archlinux.org/title/xfce)
-- [KDE](https://wiki.archlinux.org/title/kde)
