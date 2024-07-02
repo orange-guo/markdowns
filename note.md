@@ -227,11 +227,6 @@ timeout 1m do_resize &
 xdg-open /home/ubuntu/IdeaProjects/spring-framework/spring-core/src/jmh/java/org/springframework/core/codec/StringDecoderBenchmark.java
 ```
 
-## Remote Desktop
-
-- [Xrdp](https://wiki.archlinux.org/title/Xrdp)
-- [TigerVNC](https://wiki.archlinux.org/title/TigerVNC)
-
 ## Desktops
 
 - [Cinnamon](https://wiki.archlinux.org/title/cinnamon)
