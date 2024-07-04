@@ -6,6 +6,8 @@
   <br/>Docusaurus toolset for Protobuf contract documentation.
 - [docusaurus-openapi](https://github.com/cloud-annotations/docusaurus-openapi)
   <br/>🦕 OpenAPI plugin for generating API reference docs in Docusaurus v2.
+- [trailing-slash-guide](https://github.com/slorber/trailing-slash-guide)
+  <br/>Understand and fix your static website trailing slash issues!
 
 ## PDF
 
