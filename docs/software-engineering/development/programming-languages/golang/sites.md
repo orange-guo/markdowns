@@ -1,7 +1,6 @@
-# References
+# Sites
 
-
-# Tutorials
+## Tutorials
 
 - [Go by Example](https://gobyexample.com/)
   <br/>Go by Example is a hands-on introduction to Go using annotated example programs. Check out the first example or
@@ -9,5 +8,3 @@
 - [Go Tutorials & Examples](https://gosamples.dev/)
   <br/>Learn Go programming by example. GOSAMPLES is a library of Go tutorials and examples that helps you solve
   everyday code problems.
-- [enumflag](https://github.com/thediveo/enumflag)
-  <br/>enumflag is a Go package for the Go standard library's flag package to support command-line flags of type enum.

@@ -144,6 +144,10 @@ sidebar_position: 0
   <br/>A simple, fast, and fun package for building command line apps in Go
 - [cobra](https://github.com/spf13/cobra)
   <br/>A Commander for modern Go CLI interactions
+- [pflag](https://github.com/spf13/pflag)
+  <br/>Drop-in replacement for Go's flag package, implementing POSIX/GNU-style --flags.
+- [enumflag](https://github.com/thediveo/enumflag)
+  <br/>enumflag is a Go package for the Go standard library's flag package to support command-line flags of type enum.
 
 ## Build
 
