@@ -64,8 +64,8 @@ done
 
 - [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)
   <br/>
-  The XDG Autostart specification defines a method for autostarting ordinary desktop entries on desktop environment startup and removable medium mounting, by placing them in specific #Directories.
-
+  The XDG Autostart specification defines a method for autostarting ordinary desktop entries on desktop environment
+  startup and removable medium mounting, by placing them in specific #Directories.
 
 **Utils**
 
