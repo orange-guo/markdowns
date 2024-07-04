@@ -9,7 +9,15 @@ sidebar_position: 0
 - [clojuredocs](https://github.com/zk/clojuredocs/)
   <br/>clojuredocs.org web app
 
+## Code Formatting
+
+- [cljfmt](https://github.com/weavejester/cljfmt)
+  <br/>A tool for formatting Clojure code
+
 ## REPL
+
+- [cider-nrepl](https://github.com/clojure-emacs/cider-nrepl)
+  <br/>A collection of nREPL middleware to enhance Clojure editors with common functionality like definition lookup, code completion, etc.
 
 - [replumb](https://github.com/arichiardi/replumb)
   <br/>ClojureScript plumbing for your self-hosted REPLs.
