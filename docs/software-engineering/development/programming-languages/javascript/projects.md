@@ -4,6 +4,21 @@ sidebar_position: 0
 
 # Projects
 
+## Markdown
+
+- [marked](https://github.com/markedjs/marked)
+  <br/>A markdown parser and compiler. Built for speed.
+- [remark](https://github.com/remarkjs/remark)
+  <br/>markdown processor powered by plugins part of the @unifiedjs collective
+- [mdast](https://github.com/syntax-tree/mdast)
+  <br/>Markdown Abstract Syntax Tree format
+- [mdast-util-mdx-jsx](https://github.com/syntax-tree/mdast-util-mdx-jsx)
+  <br/>mdast extension to parse and serialize MDX JSX
+- [mdast-util-mdx-jsx](https://github.com/syntax-tree/mdast-util-mdx-jsx)
+  <br/>mdast extension to parse and serialize MDX JSX
+- [mdast-util-mdxjs-esm](https://github.com/syntax-tree/mdast-util-mdxjs-esm)
+  <br/>mdast extension to parse and serialize MDX.js ESM (import/exports)
+
 ## RPC
 
 - [connect-es](https://github.com/connectrpc/connect-es)
