@@ -160,18 +160,54 @@
 <li>LightDM</li>
 <li>KDM</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="初始化流程">初始化流程<a class="hash-link" aria-label="初始化流程的直接链接" title="初始化流程的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B">​</a></h2>
-<p>图形系统的初始化通常从<code>startx</code>开始, 它负责:</p>
-<ul>
-<li>初始化<code>X Server</code></li>
-<li>启动<code>X Client</code>, 包括桌面管理组件, 这是用户界面的入口点</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="centos-69-75-的初始化">CentOS (6.9, 7.5) 的初始化<a class="hash-link" aria-label="CentOS (6.9, 7.5) 的初始化的直接链接" title="CentOS (6.9, 7.5) 的初始化的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#centos-69-75-%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96">​</a></h3>
-<p><code>CentOS</code>使用<code>/etc/X11/xinit/Xclients</code>进行初始化, 主要支持<code>GNOME</code>和<code>KDE</code>. <br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="启动流程">启动流程<a class="hash-link" aria-label="启动流程的直接链接" title="启动流程的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B">​</a></h2>
+<p><code>X</code>的启动入口为<code>startx</code>命令(此命令位于<code>/bin/startx</code>)</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">#</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># This is just a sample implementation of a slightly less primitive</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># interface than xinit. It looks for XINITRC and XSERVERRC environment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># variables, then user .xinitrc and .xserverrc files, and then system</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># xinitrc and xserverrc files, else lets xinit choose its default.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># The system xinitrc should probably do things like check for</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># .Xresources files and merge them in, start up a window manager, and</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># pop a clock and several xterms.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">#</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Site administrators are STRONGLY urged to write nicer versions.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">#</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>这个命令是对<code>xinit</code>命令的封装, 它会根据<code>X Server</code>和<code>X Client</code>的配置, 启动<code>X Server</code>和<code>X Client</code>.</p>
+<p><code>xinit</code>命令负责初始化<code>X Server</code>和<code>X Client</code>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="x-server-1"><code>X Server</code><a class="hash-link" aria-label="x-server-1的直接链接" title="x-server-1的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#x-server-1">​</a></h3>
+<p><code>X Server</code>初始化脚本位于<code>/etc/X11/xinit/xserverrc</code>, 内容比较简单, 只是启动<code>X Server</code>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="x-client-1"><code>X Client</code><a class="hash-link" aria-label="x-client-1的直接链接" title="x-client-1的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#x-client-1">​</a></h3>
+<p><code>X Client</code>初始化脚本位于<code>/etc/X11/xinit/xinitrc</code>(或<code>$HOME/.xinitrc</code>, 取决于用户目录是否有对应文件).<br>
+此脚本中负责初始化<code>X Client</code>, 这里要初始化的<code>X Client</code>通常为桌面.<br></p>
+<p>由于发行版的不同, <code>X Client</code>具体逻辑也会不同.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rehl">REHL<a class="hash-link" aria-label="REHL的直接链接" title="REHL的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#rehl">​</a></h4>
+<p>基于<code>RedHat</code>的发行版, 例如<code>CentOS</code>, 脚本内部调用<code>/etc/X11/xinit/Xclients</code>进行初始化,
+在较旧的系统中(<code>CentOS 6.9</code>, <code>CentOS 7.5</code>), 仅支持<code>GNOME</code>和<code>KDE</code>. <br>
 如果需要使用其他桌面, 需手动配置此文件, 将<code>PREFERRED</code>变量设置为相应桌面的完整二进制文件路径.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ubuntu-1804-2004-2204-的初始化">Ubuntu (18.04, 20.04, 22.04) 的初始化<a class="hash-link" aria-label="Ubuntu (18.04, 20.04, 22.04) 的初始化的直接链接" title="Ubuntu (18.04, 20.04, 22.04) 的初始化的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#ubuntu-1804-2004-2204-%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96">​</a></h3>
-<p>Ubuntu使用<code>/etc/X11/Xsession</code>进行初始化, 并通过<code>/etc/X11/Xsession.d/</code>目录下的脚本进行进一步的初始化, 最终启动
-<code>/etc/alternatives/x-session-manager</code>来启动桌面.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="debian">Debian<a class="hash-link" aria-label="Debian的直接链接" title="Debian的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#debian">​</a></h4>
+<p>基于<code>Debian</code>的发行版, 例如<code>Ubuntu</code>, 脚本内部调用<code>/etc/X11/Xsession</code>进行初始化,</p>
+<p>在这个脚本中会调用<code>/etc/X11/Xsession.d/</code>目录下的脚本进行初始化,
+在<code>/etc/X11/Xsession.d/50x11-common_determine-startup</code>中推断<code>STARTUP</code>变量, 值通常为<code>/usr/bin/x-session-manager</code></p>
+<blockquote>
+<p>这个文件是一个link, 通过<code>readlink /usr/bin/x-session-manager</code>可以看到<code>link</code>的位置为<code>/etc/alternatives/x-session-manager</code>
+而<code>/etc/alternatives/x-session-manager</code>也是一个link, 通过<code>readlink /etc/alternatives/x-session-manager</code>可以得到最终的<code>link</code>位置, 例如: <code>/usr/bin/startxfce4</code></p>
+</blockquote>
+<p>最终<code>/etc/X11/Xsession.d/99x11-common_start</code>通过<code>$STARTUP</code>变量启动桌面, 完成图形系统的初始化.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="arch">Arch<a class="hash-link" aria-label="Arch的直接链接" title="Arch的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#arch">​</a></h4>
+<p>基于<code>Arch</code>的发行版, 例如<code>Manjaro</code>,
+<code>xinitrc</code>位于<code>$HOME/.xinitrc</code>,</p>
+<p>脚本内部调用<code>/etc/X11/xinit/xinitrc.d</code>目录下的脚本进行初始化. <br>
+这个脚本内部的<code>get_session</code>函数用于获取桌面的启动路径, 支持常见的桌面, 例如:</p>
+<ul>
+<li>awesome</li>
+<li>bspwm</li>
+<li>budgie</li>
+<li>deepin</li>
+<li>enlightenment</li>
+<li>fluxbox</li>
+<li>gnome</li>
+<li>i3/i3wm</li>
+<li>jwm</li>
+<li>kde</li>
+<li>lxde</li>
+<li>lxqt</li>
+<li>mate</li>
+<li>xfce</li>
+<li>openbox</li>
+<li>gnome</li>
+</ul>
+<p>通过<code>DEFAULT_SESSION</code>变量可以设置默认的桌面, 此变量默认值为<code>gnome-session</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接" href="https://www.geek66.cyou/zh-CN/blog/2024/06/23/x-window-system#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">​</a></h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank" rel="noopener noreferrer">X Window System</a></li>
