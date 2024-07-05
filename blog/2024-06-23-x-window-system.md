@@ -61,22 +61,84 @@ tags: [ linux,  desktop,  xorg,  x11 ]
 - LightDM
 - KDM
 
-## 初始化流程
+## 启动流程
 
-图形系统的初始化通常从`startx`开始, 它负责:
 
-- 初始化`X Server`
-- 启动`X Client`, 包括桌面管理组件, 这是用户界面的入口点
+`X`的启动入口为`startx`命令(此命令位于`/bin/startx`)
 
-### CentOS (6.9, 7.5) 的初始化
 
-`CentOS`使用`/etc/X11/xinit/Xclients`进行初始化, 主要支持`GNOME`和`KDE`. <br/>
+```bash
+#
+# This is just a sample implementation of a slightly less primitive
+# interface than xinit. It looks for XINITRC and XSERVERRC environment
+# variables, then user .xinitrc and .xserverrc files, and then system
+# xinitrc and xserverrc files, else lets xinit choose its default.
+# The system xinitrc should probably do things like check for
+# .Xresources files and merge them in, start up a window manager, and
+# pop a clock and several xterms.
+#
+# Site administrators are STRONGLY urged to write nicer versions.
+#
+```
+
+这个命令是对`xinit`命令的封装, 它会根据`X Server`和`X Client`的配置, 启动`X Server`和`X Client`.
+
+`xinit`命令负责初始化`X Server`和`X Client`.
+
+### `X Server`
+
+`X Server`初始化脚本位于`/etc/X11/xinit/xserverrc`, 内容比较简单, 只是启动`X Server`.
+
+### `X Client`
+
+`X Client`初始化脚本位于`/etc/X11/xinit/xinitrc`(或`$HOME/.xinitrc`, 取决于用户目录是否有对应文件).<br/>
+此脚本中负责初始化`X Client`, 这里要初始化的`X Client`通常为桌面.<br/>
+
+由于发行版的不同, `X Client`具体逻辑也会不同.
+
+#### REHL
+
+基于`RedHat`的发行版, 例如`CentOS`, 脚本内部调用`/etc/X11/xinit/Xclients`进行初始化, 
+在较旧的系统中(`CentOS 6.9`, `CentOS 7.5`), 仅支持`GNOME`和`KDE`. <br/>
 如果需要使用其他桌面, 需手动配置此文件, 将`PREFERRED`变量设置为相应桌面的完整二进制文件路径.
 
-### Ubuntu (18.04, 20.04, 22.04) 的初始化
+#### Debian
 
-Ubuntu使用`/etc/X11/Xsession`进行初始化, 并通过`/etc/X11/Xsession.d/`目录下的脚本进行进一步的初始化, 最终启动
-`/etc/alternatives/x-session-manager`来启动桌面.
+基于`Debian`的发行版, 例如`Ubuntu`, 脚本内部调用`/etc/X11/Xsession`进行初始化, 
+
+在这个脚本中会调用`/etc/X11/Xsession.d/`目录下的脚本进行初始化, 
+在`/etc/X11/Xsession.d/50x11-common_determine-startup`中推断`STARTUP`变量, 值通常为`/usr/bin/x-session-manager`
+> 这个文件是一个link, 通过`readlink /usr/bin/x-session-manager`可以看到`link`的位置为`/etc/alternatives/x-session-manager`
+> 而`/etc/alternatives/x-session-manager`也是一个link, 通过`readlink /etc/alternatives/x-session-manager`可以得到最终的`link`位置, 例如: `/usr/bin/startxfce4`
+
+最终`/etc/X11/Xsession.d/99x11-common_start`通过`$STARTUP`变量启动桌面, 完成图形系统的初始化.
+
+#### Arch
+
+基于`Arch`的发行版, 例如`Manjaro`,
+`xinitrc`位于`$HOME/.xinitrc`, 
+
+脚本内部调用`/etc/X11/xinit/xinitrc.d`目录下的脚本进行初始化. <br/>
+这个脚本内部的`get_session`函数用于获取桌面的启动路径, 支持常见的桌面, 例如:
+
+- awesome
+- bspwm
+- budgie
+- deepin
+- enlightenment
+- fluxbox
+- gnome
+- i3/i3wm
+- jwm
+- kde
+- lxde
+- lxqt
+- mate
+- xfce
+- openbox
+- gnome
+
+通过`DEFAULT_SESSION`变量可以设置默认的桌面, 此变量默认值为`gnome-session`
 
 ## 参考资料
 
