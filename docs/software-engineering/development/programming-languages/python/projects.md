@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # Projects
 
+## Data science
+
+- [pandas](https://github.com/pandas-dev/pandas)
+  <br/>Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more
+- [streamlit](https://github.com/streamlit/streamlit)
+  <br/>Streamlit — A faster way to build and share data apps.
+
 ## Curated list
 
 - [awesome-python](https://github.com/vinta/awesome-python)
@@ -52,4 +59,5 @@ sidebar_position: 0
 
 - [pytudes](https://github.com/norvig/pytudes)
   <br/>Python programs, usually short, of considerable difficulty, to perfect particular skills.
+
 
