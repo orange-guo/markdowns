@@ -65,6 +65,7 @@
 - [Yates 0x00](https://www.yates0x00.com/)
 - [行思錄 | Travel Coder](https://liudanking.com)
 - [Zonowry 的博客](https://blog.zonowry.com/)
+- [颇忒脱的技术博客](https://chanjarster.github.io/)
 
 ## Books Reading
 
