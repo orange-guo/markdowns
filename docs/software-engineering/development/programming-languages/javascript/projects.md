@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Form State Management
+
+- [form](https://github.com/TanStack/form)
+  <br/>🤖 Powerful and type-safe form state management for the web. TS/JS, React Form, Solid Form, Lit Form and Vue Form.
+
 ## Markdown
 
 - [marked](https://github.com/markedjs/marked)

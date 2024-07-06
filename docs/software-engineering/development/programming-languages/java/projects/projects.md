@@ -10,6 +10,11 @@ sidebar_position: 0
   bypass the constructor code, or set final fields. There are numerous clever (but fiddly) approaches to getting around
   this…
 
+## Gtk
+
+- [java-gtk](https://github.com/bailuk/java-gtk)
+  <br/>GTK bindings for Java
+
 ## Deep Learning
 
 - [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j)
