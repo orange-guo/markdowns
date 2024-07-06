@@ -63,3 +63,9 @@
 - [samwhelp](https://samwhelp.github.io/)
 - [hustlei](https://hustlei.github.io/)
 - [Yates 0x00](https://www.yates0x00.com/)
+- [行思錄 | Travel Coder](https://liudanking.com)
+- [Zonowry 的博客](https://blog.zonowry.com/)
+
+## Books Reading
+
+- [Dailydreamer's Space](https://dailydreamer.me/)
