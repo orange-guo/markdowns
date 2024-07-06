@@ -70,7 +70,6 @@ sidebar_position: 0
 
 ## HTTP
 
-
 - [hoppscotch](https://github.com/hoppscotch/hoppscotch)
   <br/>👽 Open source API development ecosystem - https://hoppscotch.io
 - [insomnia](https://github.com/Kong/insomnia)
