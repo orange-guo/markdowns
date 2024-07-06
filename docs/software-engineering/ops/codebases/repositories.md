@@ -1,4 +1,4 @@
-# Code Repository
+# Repositories
 
 - [code-berg](https://codeberg.org/)
 - [github](https://github.com/)
