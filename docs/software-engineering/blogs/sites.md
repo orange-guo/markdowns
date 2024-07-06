@@ -1,4 +1,4 @@
-# Blog
+# Sites
 
 - [PegasusWang 的读书杂记](https://pegasuswang.readthedocs.io/)
 - [Thomas Vitale](https://www.thomasvitale.com/)
@@ -62,3 +62,4 @@
 - [夜明的孤行灯](https://www.huangyunkun.com/)
 - [samwhelp](https://samwhelp.github.io/)
 - [hustlei](https://hustlei.github.io/)
+- [Yates 0x00](https://www.yates0x00.com/)
