@@ -70,9 +70,7 @@ sidebar_position: 0
 
 ## HTTP
 
-- [httpie-cli](https://github.com/httpie/cli)
-  <br/>🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions,
-  downloads, plugins & more.
+
 - [hoppscotch](https://github.com/hoppscotch/hoppscotch)
   <br/>👽 Open source API development ecosystem - https://hoppscotch.io
 - [insomnia](https://github.com/Kong/insomnia)

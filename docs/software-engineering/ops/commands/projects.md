@@ -4,6 +4,9 @@
 
 - [hurl](https://github.com/Orange-OpenSource/hurl)
   <br/>Hurl, run and test HTTP requests with plain text.
+- [httpie-cli](https://github.com/httpie/cli)
+  <br/>🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions,
+  downloads, plugins & more.
 
 
 - [tmux](https://github.com/tmux/tmux)
