@@ -10,6 +10,8 @@ sidebar_position: 0
   <br/>A modern JSON library for Kotlin and Java.
 - [kotshi](https://github.com/ansman/kotshi)
   <br/>An annotation processor that generates Moshi adapters from immutable Kotlin data classes.
+- [MoshiX](https://github.com/ZacSweers/MoshiX)
+  <br/>Extensions for Moshi including IR plugins, moshi-sealed, and more.
 
 ## Map Structure
 
