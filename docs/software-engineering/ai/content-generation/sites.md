@@ -7,3 +7,4 @@
 - [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx)
 - [ChatGPT](https://chat.openai.com/)
 - [Poe](https://poe.com/)
+- [gemini](https://gemini.google.com/)
