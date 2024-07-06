@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Utils
+
+- [encore](https://github.com/taoensso/encore)
+  <br/>Core utils library for Clojure/Script
+
 ## Docs
 
 - [clojuredocs](https://github.com/zk/clojuredocs/)
