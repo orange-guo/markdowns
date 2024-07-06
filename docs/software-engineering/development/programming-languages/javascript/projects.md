@@ -8,6 +8,8 @@ sidebar_position: 0
 
 - [electron](https://github.com/electron/electron)
   <br/>:electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS
+- [tauri](https://github.com/tauri-apps/tauri)
+  <br/>Build smaller, faster, and more secure desktop applications with a web frontend.
 
 ## Form State Management
 
