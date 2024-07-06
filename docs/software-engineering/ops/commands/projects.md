@@ -1,5 +1,11 @@
 # Projects
 
+## HTTP
+
+- [hurl](https://github.com/Orange-OpenSource/hurl)
+  <br/>Hurl, run and test HTTP requests with plain text.
+
+
 - [tmux](https://github.com/tmux/tmux)
   <br/>tmux source code
 
