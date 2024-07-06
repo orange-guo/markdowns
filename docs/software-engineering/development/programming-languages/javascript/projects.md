@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Desktop Development
+
+- [electron](https://github.com/electron/electron)
+  <br/>:electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS
+
 ## Form State Management
 
 - [form](https://github.com/TanStack/form)
