@@ -10,6 +10,14 @@ sidebar_position: 0
   bypass the constructor code, or set final fields. There are numerous clever (but fiddly) approaches to getting around
   this…
 
+## Deep Learning
+
+- [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j)
+  <br/>Suite of tools for deploying and training deep learning models using the JVM. Highlights include model import for
+  keras, tensorflow, and onnx/pytorch, a modular and tiny c++ library for running math code and a java based math
+  library on top of the core c++ library. Also includes samediff: a pytorch/tensorflow like library for running deep
+  learni…
+
 ## Profiling
 
 - [async-profiler](https://github.com/async-profiler/async-profiler)
