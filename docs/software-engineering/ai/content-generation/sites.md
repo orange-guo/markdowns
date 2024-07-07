@@ -8,3 +8,4 @@
 - [ChatGPT](https://chat.openai.com/)
 - [Poe](https://poe.com/)
 - [gemini](https://gemini.google.com/)
+- [phind](https://www.phind.com/)
