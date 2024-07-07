@@ -4,6 +4,9 @@
 
 ## 启用步骤
 
+1. 下载最新的Chrome dev版本
+   <br/>https://www.google.com/chrome/dev/
+2. `feature flag`, 
 
 
 
