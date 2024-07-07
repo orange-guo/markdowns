@@ -1,6 +1,5 @@
 # Sites
 
-
 - [Thomas Vitale](https://www.thomasvitale.com/)
   <br/>Hello! I'm Thomas Vitale, I live in Denmark, and I'm a Software Engineer and Architect specialized in building
   cloud native, resilient, and secure enterprise applications. I'm the author of Cloud Native Spring in Action, I'm a
@@ -71,7 +70,6 @@
 
 - [Dailydreamer's Space](https://dailydreamer.me/)
 - [PegasusWang 的读书杂记](https://pegasuswang.readthedocs.io/)
-
 
 ## Knowledge Base
 
