@@ -7,6 +7,10 @@ sidebar_position: 0
 - [RAKKOTOOLS](https://zh.rakko.tools/)
   <br/>简单便捷的网络工具
 
+## Readme
+
+- [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg)
+
 ## JWT
 
 - [JWT Decoder](http://jwt.calebb.net/)
