@@ -52,25 +52,6 @@ sidebar_position: 0
   <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (
   RFC8927)
 
-## Design System
-
-- [ant-design](https://github.com/ant-design/ant-design)
-  <br/>An enterprise-class UI design language and React UI library
-- [material-ui](https://github.com/mui/material-ui)
-  <br/>MUI Core: Ready-to-use foundational React components, free forever. It includes Material UI, which implements
-  Google's Material Design.
-- [element](https://github.com/ElemeFE/element)
-  <br/>A Vue.js 2.0 UI Toolkit for Web
-- [arco-design](https://github.com/arco-design/arco-design)
-  <br/>A comprehensive React UI components library based on Arco Design
-- [weui](https://github.com/Tencent/weui)
-  <br/>A UI library by WeChat official design team, includes the most useful widgets/modules in mobile web applications.
-- [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
-- [nutui](https://github.com/jd-opensource/nutui)
-  <br/>京东风格的移动端 Vue2、Vue3 组件库 、支持多端小程序(A Vue.js UI Toolkit for Mobile Web)
-- [ring-ui](https://github.com/JetBrains/ring-ui)
-  <br/>A collection of JetBrains Web UI components
-
 ## Web Framework
 
 - [angular](https://github.com/angular/angular)
