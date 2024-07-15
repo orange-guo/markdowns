@@ -1,11 +1,10 @@
 # Online IDEs
 
 - [CodeSandbox](https://codesandbox.io/dashboard)
-  <br/>CodeSandbox is a cloud development platform that empowers developers to code, collaborate and ship projects of
-  any size from any device in record time.
+  <br/>CodeSandbox gives you 24/7 collaborative cloud development environments (CDEs) that resume in 2 seconds.
 - [StackBlitz](https://stackblitz.com/)
-  <br/>StackBlitz is an online IDE where you can create Angular & React projects that are immediately online & shareable
-  via link… in just one click.
+  <br/>Collaborate on web development without the hassle of setting up local environments. StackBlitz lets you write,
+  run, and debug frontend code directly in your browser.
 - [CodePen](https://codepen.io/)
   <br/>CodePen is a social development environment for front-end designers and developers. Build and deploy a website,
   show off your work, build test cases to learn and debug, and find inspiration.
