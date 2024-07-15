@@ -15,6 +15,9 @@
   <br/>A tiling window manager for X11
 - [dwm](https://git.suckless.org/dwm/)
   <br/>dynamic window manager
+- [dwm](https://dwm.suckless.org/)
+  <br/>wm is a dynamic window manager for X. It manages windows in tiled, monocle and floating layouts. All of the
+  layouts can be applied dynamically, optimising the environment for the application in use and the task performed.
 - [sway](https://github.com/swaywm/sway)
   <br/>i3-compatible Wayland compositor
 - [Hyprland](https://github.com/hyprwm/Hyprland)

@@ -8,7 +8,7 @@
 - [element](https://github.com/ElemeFE/element)
   <br/>A Vue.js 2.0 UI Toolkit for Web
 - [arco-design](https://github.com/arco-design/arco-design)
-  <br/>A comprehensive React UI components library based on Arco Design
+  <br/>A comprehensive Rea ct UI components library based on Arco Design
 - [weui](https://github.com/Tencent/weui)
   <br/>A UI library by WeChat official design team, includes the most useful widgets/modules in mobile web applications.
 - [Best 15 React UI Component Libraries of 2024](https://prismic.io/blog/react-component-libraries)
