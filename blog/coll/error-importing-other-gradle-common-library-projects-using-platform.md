@@ -1,17 +1,11 @@
-# Gradle
+---
+authors: [ orange ]
+tags: [ problem-solving, java, gradle, gradle-dependency ]
+---
 
-## implementation和api的区别
+# 在gradle项目中使用platform导入其他gradle公共库项目时报错
 
-- implementation
-  依赖不会传递并且生成的pom scope为runtime
-- api
-  依赖会传递，并且生成的pom scope为compile 其为maven中默认scope
-
-## fastone-dependencies在别的项目中使用platform导入时报错
-
-### 现象
-
-在别的项目中使用platform导入fastone-dependencies时报错, 报错信息如下:
+在别的项目中使用platform导入内部公共库时报错, 报错信息如下:
 
 ```log
 FAILURE: Build failed with an exception.
@@ -41,11 +35,13 @@ Execution failed for task ':extractIncludeProto'.
          project :
 ```
 
-### 原因
+<!--truncate-->
 
-fastone-dependencies应该使用`org.gradle.java-platform`插件而不是`java`, 这样才能使用`platform`导入
+## 原因
 
-### 解决方案
+公共库项目应该使用`org.gradle.java-platform`插件而不是`java`, 这样才能使用`platform`导入
+
+## 解决方案
 
 - 增加插件
 
@@ -81,6 +77,6 @@ when (!isPlatform()) {
 }
 ```
 
-### 备注
+## 备注
 
 - [The Java Platform Plugin](https://docs.gradle.org/current/userguide/java_platform_plugin.html)
