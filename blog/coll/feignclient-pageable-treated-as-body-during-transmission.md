@@ -1,8 +1,13 @@
+---
+authors: [ orange ]
+tags: [ problem-solving, java, openfeign, http ]
+---
+
 # FeignClient中Pageable被当作body传输
 
-## 现象
-
 调用FeignClient进行GET且分页请求时发现Pageable被生成为BODY
+
+<!--truncate-->
 
 ## 原因
 
