@@ -1,8 +1,9 @@
-# Kotlin
+---
+authors: [ orange ]
+tags: [ problem-solving, kotlin, jpa, spring-data-jpa, spring-data ]
+---
 
-## 非空参数当Json序列化时未包含该参数将抛错就算在构造器设置默认值也不行
-
-## `data class` JpaNull检查未生效
+# 在kotlin项目中`kotlin-jpa`插件导致导致`null`检查失效
 
 kotlin-jpa插件会为`data class`生成无参构造器，导致非空字段跳过了Null检查
 
