@@ -72,25 +72,12 @@ event.initEvent("input", true, false);
 text.dispatchEvent(event);
 ```
 
-## others
+## 实现在docusaurus中执行代码的插件
 
-实现在docusaurus中执行代码的插件
-
-- [Judge0 CE - API Docs](https://ce.judge0.com/)
-- [Judge0 IDE](https://ide.judge0.com/)
-- [OneCompiler](https://onecompiler.com/)
+- [OneCompiler](https://onecompiler.com)
 - [OneCompiler APIs Cheatsheet](https://onecompiler.com/cheatsheets/onecompiler-apis)
-- [OneCompiler Embedding Demos](https://onecompiler.github.io/editor-embed-demo/)
-- [Ideone](https://www.ideone.com/F7mT6q)
-- [OnlineGDB](https://www.onlinegdb.com/online_java_compiler)
+- [OneCompiler Embedding Demos](https://onecompiler.github.io/editor-embed-demo)
 
-
-
-## 书
-
-博弈论
-范畴论/集合论
-国富论 君主论
-1984
-反脆弱
-https://github.com/LeonLi0102/cloud-native-spring-in-action-translate/tree/main/cn-translate/01-Introduction-to-cloud-native/1.1-What-is-cloud-native
+- [Judge0 IDE](https://ide.judge0.com)
+- [ideone.com](https://www.ideone.com/F7mT6q)
+- [OnlineGDB](https://www.onlinegdb.com)
