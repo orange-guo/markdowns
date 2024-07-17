@@ -1,14 +1,17 @@
-# Camunda
+---
+authors: [ orange ]
+tags: [ problem-solving, java, bpmn, spring-boot, camunda, db-transaction ]
+---
 
-## JavaDelegate里调用Service的方法并且Service方法上有@Transactional注解但DB修改未生效
+# `JavaDelegate`里调用`Service`的方法并且`Service`方法上有`@Transactional`注解但DB修改未生效
 
-### 原因
+## 原因
 
 Camunda调用Delegate时会开启事务(为了保证失败时可以回滚数据), Spring的@Transaction propagation = Propagation.REQUIRED ,
 然后就用了Camunda的那个事务，
 Camunda的事务中修改是对DB不生效的所以你看不到事务过程中修改的数据提交的结果
 
-### 解决方案
+## 解决方案
 
 ```kotlin
 
@@ -85,34 +88,4 @@ class ClusterService(
 			Either.left(ClusterOperationError.NoSuchCluster(id))
 		}
 }
-
 ```
-
-## service task 执行过长导致被重试, 不符合预期
-
-```
-camunda:
-  bpm:
-    job-execution:
-      lock-time-in-millis: 999999999
-```
-
-## 如果task有assignee并且也有candidateGroup的话通过candidateGroupIn查询将查不到该task
-
-### 解决方案
-
-TaskQuery.taskCandidateGroupIn()
-Per default it only selects tasks which are not already assigned to a user.
-To also include assigned task in the result specify {@link #includeAssignedTasks()} in your query.
-
-## 测试代码无法被执行
-
-```
-"--glue", "gradle.cucumber"
-```
-
-在gradle task里 javaexec传入的args时去除该参数
-`"--glue", "gradle.cucumber"`
-
-## Should point to a running camunda engine rest api
-

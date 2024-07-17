@@ -57,3 +57,12 @@ println(endAt)
 - 等失败时进入老的页面点击delivery按钮对项目进行交付
 - 交付后执行后续步骤
 - 当所有步骤处理完时并且项目处于ACTIVE状态时, 对项目进行关闭, 则会发现项目一直处于`CLOSING`状态
+
+## service task 执行过长导致被重试, 不符合预期
+
+```
+camunda:
+  bpm:
+    job-execution:
+      lock-time-in-millis: 999999999
+```

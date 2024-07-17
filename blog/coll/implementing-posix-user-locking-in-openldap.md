@@ -1,22 +1,24 @@
-# LDAP
+---
+authors: [ orange ]
+tags: [ problem-solving, ldap, openldap, posix ]
+---
 
-## openldap中锁定posix用户
-
-### 现象
+# 研究在openldap中实现posix用户的锁定
 
 目前锁定用户能够达成的效果是禁止用户在portal中登录, 但是用户仍然可以在linux中进行登录.<br/>
 调研一下`AccountDisable`属性
 
-### 结果
+<!--truncate-->
 
-#### [AccountDisable](https://ldapwiki.com/wiki/ACCOUNTDISABLE)属性属于AD下的解决方案
 
-#### 在linux中没有比较优雅的办法实现锁定posixAccount
+## [AccountDisable](https://ldapwiki.com/wiki/ACCOUNTDISABLE)属性属于AD下的解决方案
+
+## 在linux中没有比较优雅的办法实现锁定posixAccount
 
 [posixAccount](https://ldapwiki.com/wiki/posixAccount)和[shadowAccount](https://ldapwiki.com/wiki/shadowAccount)
 以及[nslcd.conf](https://linux.die.net/man/5/nslcd.conf)中的`mapT`参数均没有相关的说明
 
-#### 替代方案
+## 替代方案的问题
 
 目前有以下替代方案以下替代方案都有一定的问题, 可以作为参考
 
@@ -24,7 +26,7 @@
 > 2. 修改`loginShell`为/usr/sbin/nologin, 缺点是对于远程桌面连接场景则可能覆盖不到
 > 3. `FreeIPA`中有`ipa user-disable`命令, 但不是主流的解决方案, 因为我们的ldap是openldap
 
-### 备注
+## 备注
 
 - [ACCOUNTDISABLE](https://ldapwiki.com/wiki/ACCOUNTDISABLE)
 - [PosixAccount](https://ldapwiki.com/wiki/posixAccount)
