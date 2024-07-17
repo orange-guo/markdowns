@@ -1,8 +1,6 @@
 ## link
 
-https://javaguide.cn
-www.javalearn.cn
-https://www.pdai.tech/
+
 https://github.com/livk-cloud/spring-boot-example
 一纸简历
 https://medium.com/
