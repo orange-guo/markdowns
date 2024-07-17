@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, spring-boot, spring-boot-configuration-properties ]
+tags: [ problem-solving, java, spring-boot, spring-boot-configuration-properties ]
 ---
 
 # spring-boot项目中yml配置文件对duration配置在不给定单位的情况下默认为毫秒
