@@ -1,5 +1,20 @@
 ## link
 
+## Java
+
+```
+-Xms16g
+-Xmx16g
+-XX:+UseZGC
+-XX:+ZGenerational
+-XX:ConcGCThreads=6
+-XX:+UseLargePages
+-XX:+UseTransparentHugePages
+-XX:MaxDirectMemorySize=4g
+-XX:MetaspaceSize=4g
+-XX:MaxMetaspaceSize=4g
+-Dsplash=true
+```
 
 https://github.com/livk-cloud/spring-boot-example
 一纸简历
@@ -15,10 +30,6 @@ netstat
 lsof
 linux中常见的故障排查命令学习(lsof, netstat, iptables, strace, journalctl, systemctl, service,
 linux中文件处理相关学习(cat输出重定向到文件通过ctrl+D结束输入, tee, head, tail, wc, sort, uniq, cut grep ...)
-
-博弈论
-范畴论/集合论
-国富论 君主论
 
 ## ldap
 
@@ -52,12 +63,6 @@ https://openjdk.org/jeps/8302326
 康威定律
 https://copy.sh/v86/
 
-## 书
-
-1984
-反脆弱
-https://github.com/LeonLi0102/cloud-native-spring-in-action-translate/tree/main/cn-translate/01-Introduction-to-cloud-native/1.1-What-is-cloud-native
-
 ## onecompile
 
 ```javascript
@@ -79,16 +84,13 @@ text.dispatchEvent(event);
 - [Ideone](https://www.ideone.com/F7mT6q)
 - [OnlineGDB](https://www.onlinegdb.com/online_java_compiler)
 
-```
--Xms16g
--Xmx16g
--XX:+UseZGC
--XX:+ZGenerational
--XX:ConcGCThreads=6
--XX:+UseLargePages
--XX:+UseTransparentHugePages
--XX:MaxDirectMemorySize=4g
--XX:MetaspaceSize=4g
--XX:MaxMetaspaceSize=4g
--Dsplash=true
-```
+
+
+## 书
+
+博弈论
+范畴论/集合论
+国富论 君主论
+1984
+反脆弱
+https://github.com/LeonLi0102/cloud-native-spring-in-action-translate/tree/main/cn-translate/01-Introduction-to-cloud-native/1.1-What-is-cloud-native
