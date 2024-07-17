@@ -49,9 +49,6 @@ https://github.com/giscus/giscus
 https://github.com/utkuozdemir/nvidia_gpu_exporter
 spring http interface
 https://www.h3c.com/cn/d_202104/1404155_30005_0.htm
-
-## other
-
 https://openjdk.org/jeps/8302326
 康威定律
 https://copy.sh/v86/
