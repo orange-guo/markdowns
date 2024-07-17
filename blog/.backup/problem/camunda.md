@@ -116,8 +116,3 @@ To also include assigned task in the result specify {@link #includeAssignedTasks
 
 ## Should point to a running camunda engine rest api
 
-添加rest依赖
-
-```
-implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:7.14.0")
-```
