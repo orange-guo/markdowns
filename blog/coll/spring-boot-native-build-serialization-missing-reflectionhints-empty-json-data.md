@@ -1,6 +1,9 @@
-# 调用`billing-sync`服务的`taskDefinition`接口返回的结果中的`triggerStrategy`字段的值为`{}`
+---
+authors: [ orange ]
+tags: [ problem-solving, java, spring-boot, aot, native-image ]
+---
 
-## 现象
+# `Spring Boot`项目启用`native`构建后由于序列化对象缺少`ReflectionHints`导致json数据为'{}'
 
 调用`/scheduling/api/v1/taskDefinitions`接口返回如下数据, 其中`triggerStrategy`字段是空`json`对象
 
@@ -23,6 +26,8 @@
 	}
 ]
 ```
+
+<!--truncate-->
 
 ## 原因
 
