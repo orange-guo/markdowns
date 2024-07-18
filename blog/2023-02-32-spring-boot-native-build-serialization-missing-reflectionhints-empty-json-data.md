@@ -5,7 +5,7 @@ tags: [ problem-solving, java, spring-boot, aot, native-image ]
 
 # `Spring Boot`项目启用`native`构建后由于序列化对象缺少`ReflectionHints`导致json数据为'{}'
 
-调用`/scheduling/api/v1/taskDefinitions`接口返回如下数据, 其中`triggerStrategy`字段是空`json`对象
+基于`graalvm`的`spring boot`项目打包好后调用`/scheduling/api/v1/taskDefinitions`接口返回如下数据, 其中`triggerStrategy`字段是空`json`对象
 
 ```json
 [
@@ -31,7 +31,7 @@ tags: [ problem-solving, java, spring-boot, aot, native-image ]
 
 ## 原因
 
-`triggerStrategy`字段对应的java中的类型是`interface`, 需要为spring-aot进行配置, 以便在运行时能够正确的序列化
+`triggerStrategy`字段对应的java中的类型是`interface`, 需要为spring-aot进行配置, 以便其能够在运行时被正确地序列化
 
 ## 解决方案
 
