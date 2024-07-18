@@ -3,12 +3,9 @@ authors: [ orange ]
 tags: [ problem-solving, linux, ubuntu, network ]
 ---
 
-
 # ubuntu网卡显示有线未托管
 
-## 原因
-
-因为Ubuntu没有管理该系统中的网卡
+原因是因为Ubuntu没有管理该系统中的网卡
 
 ## 解决方案
 
