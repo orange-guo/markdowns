@@ -26,10 +26,21 @@ https://medium.com/
 
 ## linux
 
-netstat
-lsof
-linux中常见的故障排查命令学习(lsof, netstat, iptables, strace, journalctl, systemctl, service,
-linux中文件处理相关学习(cat输出重定向到文件通过ctrl+D结束输入, tee, head, tail, wc, sort, uniq, cut grep ...)
+- netstat
+- lsof
+- iptables
+- strace
+- journalctl
+- systemctl
+- service
+- tee
+- head
+- tail
+- wc
+- sort
+- uniq
+- cut
+- grep
 
 ## ldap
 
