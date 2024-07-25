@@ -1,4 +1,4 @@
-# References
+# Solutions
 
 ## GPU Pass-through
 
@@ -12,3 +12,6 @@
 ## Screen resolution
 
 - [Ubuntu 20.04 can't change screen resolution](https://www.reddit.com/r/HyperV/comments/gecqx6/ubuntu_2004_cant_change_screen_resolution/)
+- [Wider screen resolution on Fedora running on Hyper-V in Windows 10](https://superuser.com/questions/1260062/wider-screen-resolution-on-fedora-running-on-hyper-v-in-windows-10)
+- [How can I increase the Hyper-V display resolution?](https://superuser.com/questions/518484/how-can-i-increase-the-hyper-v-display-resolution)
+- [Limitations of the video driver (hyperv_fb.c) in Linux Integration Services](https://github.com/LIS/lis-next/issues/318)
