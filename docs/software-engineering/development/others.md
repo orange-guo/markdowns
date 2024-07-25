@@ -50,10 +50,3 @@
 - [Tiler](https://tiler.labs.jb.gg/)
   <br/>We implemented a collaborative approach that combined individual artistic expression with a computational tiling
   algorithm.
-
-## OpenAPI
-
-- [openapi-generator-cli](https://github.com/OpenAPITools/openapi-generator-cli)
-  <br/>A node package wrapper for https://github.com/OpenAPITools/openapi-generator
-- [openapi-typescript](https://github.com/drwpow/openapi-typescript)
-  <br/>Generate TypeScript types from OpenAPI 3 specs
