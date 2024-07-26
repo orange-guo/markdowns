@@ -10,6 +10,22 @@ sidebar_position: 0
   bypass the constructor code, or set final fields. There are numerous clever (but fiddly) approaches to getting around
   this…
 
+## File System
+
+- [commons-vfs](https://github.com/apache/commons-vfs)
+  <br/>Commons VFS provides a single API for accessing various different file systems. It presents a uniform view of the
+  files from various different sources, such as the files on local disk, on an HTTP server, or inside a Zip archive.
+  <br/>Some of the features of Commons VFS are:
+  <br/>A single consistent API for accessing files of different types.
+  <br/>Support for numerous file system types .
+  <br/>Caching of file information. Caches information in-JVM, and optionally can cache remote file information on the
+  local file system (replicator).
+  <br/>Event delivery.
+  <br/>Support for logical file systems made up of files from various different file systems.
+  <br/>Utilities for integrating Commons VFS into applications, such as a VFS-aware ClassLoader and
+  URLStreamHandlerFactory.
+  <br/>A set of VFS-enabledAnt tasks.
+
 ## Gtk
 
 - [java-gtk](https://github.com/bailuk/java-gtk)
