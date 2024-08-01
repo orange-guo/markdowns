@@ -49,6 +49,7 @@ sidebar_position: 0
 
 - [Bcrypt Hash Generator](https://bcrypt.online/)
 - [Bcrypt密码生成工具](https://www.bejson.com/encrypt/bcrpyt_encode/)
+- [Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker](https://bcrypt-generator.com/)
 
 ## JSON
 
