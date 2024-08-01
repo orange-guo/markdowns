@@ -20,6 +20,8 @@ sidebar_position: 0
   <br/>:electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS
 - [tauri](https://github.com/tauri-apps/tauri)
   <br/>Build smaller, faster, and more secure desktop applications with a web frontend.
+- [expo](https://github.com/expo/expo)
+  <br/>An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.
 
 ## Form State Management
 
