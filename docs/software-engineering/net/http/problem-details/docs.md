@@ -1,4 +1,4 @@
-# RFCs
+# Docs
 
 ## Problem Details for HTTP APIs (RFC 7807, 9457)
 
