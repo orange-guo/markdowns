@@ -4,6 +4,10 @@ sidebar_position: 0
 
 # Projects
 
+## Authentication
+
+- [next-auth](https://github.com/nextauthjs/next-auth)
+
 ## Data Table
 
 - [ag-grid](https://github.com/ag-grid/ag-grid)
