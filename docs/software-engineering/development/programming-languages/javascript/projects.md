@@ -4,6 +4,12 @@ sidebar_position: 0
 
 # Projects
 
+## Data Table
+
+- [ag-grid](https://github.com/ag-grid/ag-grid)
+  <br/>The best JavaScript Data Table for building Enterprise Applications. Supports React / Angular / Vue / Plain
+  JavaScript.
+
 ## Desktop Development
 
 - [electron](https://github.com/electron/electron)
@@ -51,6 +57,11 @@ sidebar_position: 0
 - [ajv](https://github.com/ajv-validator/ajv)
   <br/>The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (
   RFC8927)
+
+## Open API
+
+- [openapi-typescript](https://github.com/openapi-ts/openapi-typescript)
+  <br/>Generate TypeScript types from OpenAPI 3 specs
 
 ## Web Framework
 
