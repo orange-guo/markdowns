@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Projects
 
+## Inspection
+
+- [wat](https://github.com/igrek51/wat)
+  <br/>Deep inspection of Python objects
+
 ## Data science
 
 - [pandas](https://github.com/pandas-dev/pandas)
