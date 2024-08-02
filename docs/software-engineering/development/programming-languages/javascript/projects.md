@@ -4,6 +4,15 @@ sidebar_position: 0
 
 # Projects
 
+## Diagram Generation
+
+- [flowchart.js](https://github.com/adrai/flowchart.js)
+  <br/>Draws simple SVG flow chart diagrams from textual representation of the diagram
+- [js-sequence-diagrams](https://github.com/bramp/js-sequence-diagrams)
+  <br/>Draws simple SVG sequence diagrams from textual representation of the diagram
+- [mermaid](https://github.com/mermaid-js/mermaid)
+  <br/>Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown
+
 ## Presentation
 
 - [slidev](https://github.com/slidevjs/slidev)
