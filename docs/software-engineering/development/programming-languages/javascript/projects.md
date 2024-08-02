@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # Projects
 
+## Presentation
+
+- [slidev](https://github.com/slidevjs/slidev)
+  <br/>Presentation Slides for Developers
+- [marp](https://github.com/marp-team/marp)
+  <br/>The entrance repository of Markdown presentation ecosystem
+
 ## Authentication
 
 - [next-auth](https://github.com/nextauthjs/next-auth)
