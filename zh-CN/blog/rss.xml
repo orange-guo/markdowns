@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <item>
-            <title><![CDATA[解决因ip_local_port_range配置的端口范围包含vnc会话端口导致建VNC会话时报错'A VNC server is already running as :xxx']]></title>
+            <title><![CDATA[解决因ip_local_port_range配置的端口范围包含VNC会话端口导致建VNC会话时报错'A VNC server is already running as :xxx']]></title>
             <link>https://www.geek66.cyou/zh-CN/blog/2024/09/18/fix-vnc-session-error-due-to-ip_local_port_range-overlapping-with-vnc-ports</link>
             <guid>https://www.geek66.cyou/zh-CN/blog/2024/09/18/fix-vnc-session-error-due-to-ip_local_port_range-overlapping-with-vnc-ports</guid>
             <pubDate>Wed, 18 Sep 2024 00:00:00 GMT</pubDate>

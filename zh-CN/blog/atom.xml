@@ -8,7 +8,7 @@
     <subtitle>Xiangcheng Kuo Blog</subtitle>
     <icon>https://www.geek66.cyou/zh-CN/https://github.com/orange-guo.png</icon>
     <entry>
-        <title type="html"><![CDATA[解决因ip_local_port_range配置的端口范围包含vnc会话端口导致建VNC会话时报错'A VNC server is already running as :xxx']]></title>
+        <title type="html"><![CDATA[解决因ip_local_port_range配置的端口范围包含VNC会话端口导致建VNC会话时报错'A VNC server is already running as :xxx']]></title>
         <id>https://www.geek66.cyou/zh-CN/blog/2024/09/18/fix-vnc-session-error-due-to-ip_local_port_range-overlapping-with-vnc-ports</id>
         <link href="https://www.geek66.cyou/zh-CN/blog/2024/09/18/fix-vnc-session-error-due-to-ip_local_port_range-overlapping-with-vnc-ports"/>
         <updated>2024-09-18T00:00:00.000Z</updated>
