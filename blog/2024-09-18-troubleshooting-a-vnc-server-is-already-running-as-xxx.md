@@ -72,8 +72,9 @@ sudo rm -rf /tmp/.X1-lock /tmp/.X11-unix/X1 /usr/spool/sockets/X11/1
   <br/>`VNC服务器`, 处理`VNC客户端`的连接请求.<br/>
 - `X Server`
   <br/>`X11服务器`，负责管理显示和处理`X客户端`的请求.<br/>
-  
-> 默认情况下, `X Server`部分不会监听端口, 而是监听Unix域套接字, 如果在创建VNC会话时给定了`-nolisten unix -listen tcp`那么`X Server`会监听端口
+
+> 默认情况下, `X Server`部分不会监听端口, 而是监听Unix域套接字, 如果在创建VNC会话时给定了`-nolisten unix -listen tcp`那么
+`X Server`会监听端口
 > 端口的计算规则如下: <br/>
 > VNC Server 端口 = 5900 + display_number(例如 :1 对应端口 5901) <br/>
 > X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)
@@ -105,7 +106,8 @@ xxx 8552 admin    7u  IPv4  57568      0t0  TCP *:6001 (LISTEN)
 
 `ip_local_port_range`是一个内核参数, 用于控制TCP客户端端口范围. <br/>
 
-默认配置为`32768 60999`, 如果定制了此配置, 并且配置的范围恰好与VNC会话使用的端口重叠, 则可能会导致`A VNC server is already running as :xxx`错误. <br/>
+默认配置为`32768 60999`, 如果定制了此配置, 并且配置的范围恰好与VNC会话使用的端口重叠, 则可能会导致
+`A VNC server is already running as :xxx`错误. <br/>
 
 如果存在重叠, 修改`/etc/sysctl.conf`中的`net.ipv4.ip_local_port_range`, 避开VNC会话使用的端口范围. <br/>
 
@@ -144,7 +146,6 @@ X11DisplayOffset 200
 ```
 
 这样, 通过`X11 Forwarding`创建的第一个`display number`将从200开始, 有效避免与VNC会话的冲突.<br/>
-
 
 ## 备注
 
