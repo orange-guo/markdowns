@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, kotlin, java, postgresql ]
+tags: [ troubleshooting, kotlin, java, postgresql ]
 ---
 
 # 当调度服务接口时报错提示`cannot execute UPDATE in a read-only transaction`问题解决

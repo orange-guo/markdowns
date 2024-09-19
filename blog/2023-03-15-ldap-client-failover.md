@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, java, ldap, failover, spring]
+tags: [troubleshooting, java, ldap, failover, spring]
 ---
 
 # 通过增加`timeout-control`以解决当`tcp`连接一直处于`SYN_SENT`状态导致`java`中的`ldap-client`的`failover`不工作的问题

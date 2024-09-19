@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, umount, fuse]
+tags: [troubleshooting, umount, fuse]
 ---
 
 # transport endpoint is not connected问题解决

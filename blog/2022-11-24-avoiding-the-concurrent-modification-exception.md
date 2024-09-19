@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, kotlin, java, consul ]
+tags: [ troubleshooting, kotlin, java, consul ]
 ---
 
 # 通过引入防御性复制以避免`ConcurrentModificationException`

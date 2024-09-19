@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, spring-boot, aot, native-image, graalvm ]
+tags: [ troubleshooting, java, spring-boot, aot, native-image, graalvm ]
 ---
 
 # `Spring Boot`项目启用`native`构建后由于序列化对象缺少`ReflectionHints`导致json数据为'{}'

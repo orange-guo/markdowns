@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, openfeign, http ]
+tags: [ troubleshooting, java, openfeign, http ]
 ---
 
 # FeignClient中Pageable被当作body传输

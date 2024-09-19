@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, linux, ubuntu, network ]
+tags: [ troubleshooting, linux, ubuntu, network ]
 ---
 
 # ubuntu网卡显示有线未托管

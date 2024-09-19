@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, ssh, ldap]
+tags: [troubleshooting, ssh, ldap]
 ---
 
 # SSH命令无法创建远程连接

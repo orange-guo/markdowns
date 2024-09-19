@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, grafana, component-upgrade ]
+tags: [ troubleshooting, grafana, component-upgrade ]
 ---
 
 # 升级grafana过程中遇到的问题的以及对应修复方案

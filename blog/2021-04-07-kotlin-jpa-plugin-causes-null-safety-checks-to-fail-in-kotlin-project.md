@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, kotlin, jpa, spring-data-jpa, spring-data ]
+tags: [ troubleshooting, kotlin, jpa, spring-data-jpa, spring-data ]
 ---
 
 # 在kotlin项目中`kotlin-jpa`插件导致导致`null`检查失效

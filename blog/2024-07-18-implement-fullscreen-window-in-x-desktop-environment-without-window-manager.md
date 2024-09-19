@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, linux,  vnc, tigervnc, desktop,  xorg,  x11, xdotool, xwininfo, xrandr, xprop, vncserver ]
+tags: [ troubleshooting, linux,  vnc, tigervnc, desktop,  xorg,  x11, xdotool, xwininfo, xrandr, xprop, vncserver ]
 ---
 
 # 实现在X桌面环境中在不引入窗口管理器的情况下实现窗口的全屏

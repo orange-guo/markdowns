@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, elm, jetbrains, code2art, open-radiant ]
+tags: [ troubleshooting, elm, jetbrains, code2art, open-radiant ]
 ---
 
 # 解决`elm`依赖下载失败的问题

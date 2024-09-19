@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, bpmn, spring-boot, camunda, db-transaction ]
+tags: [ troubleshooting, java, bpmn, spring-boot, camunda, db-transaction ]
 ---
 
 # `JavaDelegate`里调用`Service`的方法并且`Service`方法上有`@Transactional`注解但DB修改未生效

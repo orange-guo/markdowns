@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, spring, spring-cloud, spring-cloud-gateway ]
+tags: [ troubleshooting, spring, spring-cloud, spring-cloud-gateway ]
 ---
 
 # 升级spring-cloud-gateway到4.1.0的过程中遇到的问题的以及对应解决方案

@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, spring-boot, spring, github-pr]
+tags: [troubleshooting, spring-boot, spring, github-pr]
 ---
 
 # 升级`springboot3`遇到的问题

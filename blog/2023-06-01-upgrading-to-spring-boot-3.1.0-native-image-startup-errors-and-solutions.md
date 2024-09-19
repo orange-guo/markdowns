@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, spring-boot, spring-framework, native-image ]
+tags: [ troubleshooting, spring-boot, spring-framework, native-image ]
 ---
 
 # 升级到spring-boot-3.1.0后native-image启动报错以及问题解决

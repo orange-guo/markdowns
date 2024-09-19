@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, maven, maven-blocker, maven-dependency ]
+tags: [ troubleshooting, java, maven, maven-blocker, maven-dependency ]
 ---
 
 # maven下载依赖时出现报错Could not transfer artifact xxx from/to maven-default-http-blocker (http://0.0.0.0/)

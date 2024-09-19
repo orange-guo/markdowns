@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, golang, kopia, volcengine, tos, s3 ]
+tags: [ troubleshooting, golang, kopia, volcengine, tos, s3 ]
 ---
 
 # kopia接入火山云TOS报错Access Denied问题的排查及修复

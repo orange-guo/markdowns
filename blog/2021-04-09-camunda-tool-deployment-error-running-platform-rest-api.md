@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, bpmn, spring-boot, camunda ]
+tags: [ troubleshooting, java, bpmn, spring-boot, camunda ]
 ---
 
 # 使用camunda工具部署流程报错`should point to a running platform rest api`

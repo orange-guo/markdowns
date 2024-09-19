@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, bpmn, camunda, camunda-service-task ]
+tags: [ troubleshooting, java, bpmn, camunda, camunda-service-task ]
 ---
 
 # 在camunda项目中由于service task执行过长导致被重试

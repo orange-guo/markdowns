@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, linux,  vnc, tigervnc, vncserver, x11, xorg, xserver ]
+tags: [ troubleshooting, linux,  vnc, tigervnc, vncserver, x11, xorg, xserver ]
 ---
 
 # 解决因`ip_local_port_range`配置的端口范围包含VNC会话端口导致建VNC会话时报错'A VNC server is already running as :xxx'

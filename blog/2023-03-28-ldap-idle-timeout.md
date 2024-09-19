@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, ldap, nslcd]
+tags: [troubleshooting, ldap, nslcd]
 ---
 
 # 通过延长`olcIdleTimeout`以减少`nslcd`中的`Can't contact LDAP server`日志报错

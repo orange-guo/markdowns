@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, ldap, openldap, posix ]
+tags: [ troubleshooting, ldap, openldap, posix ]
 ---
 
 # 研究在openldap中实现posix用户的锁定

@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, protobuf, grpc ]
+tags: [ troubleshooting, java, protobuf, grpc ]
 ---
 
 # grpc服务protobuf编译报错Tried to write the same file twice.

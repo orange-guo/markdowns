@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, spring-cloud, spring-cloud-openfeign, openfeign ]
+tags: [ troubleshooting, spring-cloud, spring-cloud-openfeign, openfeign ]
 ---
 
 # 升级框架后发现Feign调用失败时间格式化问题的排查和解决

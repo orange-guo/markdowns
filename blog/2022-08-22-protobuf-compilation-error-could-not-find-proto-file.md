@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, protobuf, grpc ]
+tags: [ troubleshooting, java, protobuf, grpc ]
 ---
 
 # protobuf编译报错找不到proto文件

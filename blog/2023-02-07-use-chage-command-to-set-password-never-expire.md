@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, ansible, ssh ]
+tags: [ troubleshooting, ansible, ssh ]
 ---
 
 # 通过调用shell模块来解决旧版本ansible无法设置密码过期时间的问题

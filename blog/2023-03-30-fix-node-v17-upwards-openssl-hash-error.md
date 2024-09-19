@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, nodejs, openssl, compatibility, jetbrains, code2art, open-radiant ]
+tags: [ troubleshooting, nodejs, openssl, compatibility, jetbrains, code2art, open-radiant ]
 ---
 
 # node.js v17及以上版本使用openssl v3.0引发的哈希算法错误及其解决方法

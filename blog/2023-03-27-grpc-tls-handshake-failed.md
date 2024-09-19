@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, grpc, tls, aws, network-loadbalancer]
+tags: [troubleshooting, grpc, tls, aws, network-loadbalancer]
 ---
 
 # grpc服务tls连接握手失败问题排查

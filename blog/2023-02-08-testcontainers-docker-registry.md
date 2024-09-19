@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [problem-solving, testcontainers, docker]
+tags: [troubleshooting, testcontainers, docker]
 ---
 
 # 在`TestContainers`中实现`Docker registry`认证

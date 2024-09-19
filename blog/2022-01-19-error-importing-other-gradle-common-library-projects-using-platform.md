@@ -1,6 +1,6 @@
 ---
 authors: [ orange ]
-tags: [ problem-solving, java, gradle, gradle-dependency ]
+tags: [ troubleshooting, java, gradle, gradle-dependency ]
 ---
 
 # 在gradle项目中使用platform导入其他gradle公共库项目时报错
