@@ -8,7 +8,7 @@ tags: [ troubleshooting, linux,  vnc, tigervnc, vncserver, x11, xorg, xserver ]
 在执行`vncserver`命令时, 出现以下错误提示:
 
 ```bash
-vncserver :1
+vncserver -nolisten unix -listen tcp :1
 ```
 
 错误信息如下:
@@ -40,7 +40,31 @@ sudo ps -ef | grep Xtigervnc | grep :1
 sudo kill -9 <pid>
 ```
 
-### 检查端口冲突
+### 检查进程残留文件
+
+一个VNC会话会创建以下文件. 如果这些文件存在, 则说明VNC会话可能处于异常状态, 需要清理.<br/>
+
+```bash
+/tmp/.X$n-lock
+/tmp/.X11-unix/X$n
+/usr/spool/sockets/X11/$n
+```
+
+假设 display_number 为 1, 那么文件为. <br/>
+
+```bash
+/tmp/.X1-lock
+/tmp/.X11-unix/X1
+/usr/spool/sockets/X11/1
+```
+
+请删除以上文件以解决问题.
+
+```bash
+sudo rm -rf /tmp/.X1-lock /tmp/.X11-unix/X1 /usr/spool/sockets/X11/1
+```
+
+### 检查端口
 
 在`VNC`中, 每个`VNC`会话由两个主要组件组成:
 
@@ -48,33 +72,47 @@ sudo kill -9 <pid>
   <br/>`VNC服务器`, 处理`VNC客户端`的连接请求.<br/>
 - `X Server`
   <br/>`X11服务器`，负责管理显示和处理`X客户端`的请求.<br/>
-
-这两个组件分别占用各自的端口, 具体规则如下:
-
-端口的计算规则如下:
-
+  
+> 默认情况下, `X Server`部分不会监听端口, 而是监听Unix域套接字, 如果在创建VNC会话时给定了`-nolisten unix -listen tcp`那么`X Server`会监听端口
+> 端口的计算规则如下: <br/>
 > VNC Server 端口 = 5900 + display_number(例如 :1 对应端口 5901) <br/>
 > X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)
 
+#### 检查服务端口占用
 
 可以使用以下命令检查端口占用情况: <br/>
 
 ```bash
 # 假设 display_number 为 1
-lsof -i :5901
-lsof -i :6001
+sudo lsof -iTCP:5901 -sTCP:LISTEN -P -n
+sudo lsof -iTCP:6001 -sTCP:LISTEN -P -n
 ```
 
-### 检查ip_local_port_range配置的TCP客户端端口是否和VNC会话使用的端口重叠
+如果端口占用情况如下, 则说明存在残留进程.
 
-如果Linux系统为其他进程分配的端口(通过 ip_local_port_range 配置的范围)恰好与VNC会话使用的端口重叠, 则会导致`A VNC server is already running as :xxx`错误.
+```text
+$ sudo lsof -iTCP:5901 -sTCP:LISTEN -P -n
+COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xxx 8552 admin   10u  IPv4  57576      0t0  TCP *:5901 (LISTEN)
+xxx 8552 admin   11u  IPv6  57577      0t0  TCP *:5901 (LISTEN)
+$ sudo lsof -iTCP:6001 -sTCP:LISTEN -P -n
+COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xxx 8552 admin    6u  IPv6  57567      0t0  TCP *:6001 (LISTEN)
+xxx 8552 admin    7u  IPv4  57568      0t0  TCP *:6001 (LISTEN)
+```
 
-修改`/etc/sysctl.conf`中的`net.ipv4.ip_local_port_range`, 避开VNC会话使用的端口范围. <br/>
+#### 检查ip_local_port_range配置的TCP客户端端口是否和VNC会话使用的端口重叠
+
+`ip_local_port_range`是一个内核参数, 用于控制TCP客户端端口范围. <br/>
+
+默认配置为`32768 60999`, 如果定制了此配置, 并且配置的范围恰好与VNC会话使用的端口重叠, 则可能会导致`A VNC server is already running as :xxx`错误. <br/>
+
+如果存在重叠, 修改`/etc/sysctl.conf`中的`net.ipv4.ip_local_port_range`, 避开VNC会话使用的端口范围. <br/>
 
 示例如下: <br/>
 
 ```properties
-net.ipv4.ip_local_port_range=6500 65000
+net.ipv4.ip_local_port_range=32768 60999
 ```
 
 然后执行以下命令使配置生效:
@@ -83,25 +121,30 @@ net.ipv4.ip_local_port_range=6500 65000
 sysctl -p
 ```
 
-### 检查进程残留文件
+#### 检查sshd配置中的X11DisplayOffset配置
 
-一个VNC会话会创建以下文件. 如果这些文件存在, 则说明VNC会话可能处于异常状态, 需要清理.<br/>
+在`sshd`配置中, 提供了`X11DisplayOffset`参数，用于指定`X11`转发的起始`display number`.
 
-```
-/tmp/.X$n-lock
-/tmp/.X11-unix/X$n
-/usr/spool/sockets/X11/$n
-```
-
-假设 display_number 为 1, 那么文件为. <br/>
-
-```
-/tmp/.X1-lock
-/tmp/.X11-unix/X1
-/usr/spool/sockets/X11/1
+```text
+X11DisplayOffset
+         Specifies the first display number available for sshd(8)'s X11
+         forwarding.  This prevents sshd from interfering with real X11
+         servers.  The default is 10.
 ```
 
-请删除以上文件以解决问题.
+该配置位于`/etc/ssh/sshd_config`文件中, 默认值为`10`. <br/>
+
+如果通过`SSH`客户端连接并启用了`X11 Forwarding`功能, 系统会从`10`开始分配 display number`.<br/>
+这可能导致与VNC会话的`display number`(如 :10)产生冲突.<br/>
+
+为避免这种冲突, 可以将`X11DisplayOffset`设置为较大的值, 例如:
+
+```text
+X11DisplayOffset 200
+```
+
+这样, 通过`X11 Forwarding`创建的第一个`display number`将从200开始, 有效避免与VNC会话的冲突.<br/>
+
 
 ## 备注
 
