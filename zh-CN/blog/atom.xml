@@ -57,7 +57,7 @@ X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)</p>
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="linux" term="linux"/>
         <category label="vnc" term="vnc"/>
         <category label="tigervnc" term="tigervnc"/>
@@ -182,7 +182,7 @@ X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)</p>
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="linux" term="linux"/>
         <category label="vnc" term="vnc"/>
         <category label="tigervnc" term="tigervnc"/>
@@ -508,7 +508,7 @@ X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)</p>
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="spring" term="spring"/>
         <category label="spring-cloud" term="spring-cloud"/>
         <category label="spring-cloud-gateway" term="spring-cloud-gateway"/>
@@ -537,7 +537,7 @@ X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)</p>
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="grafana" term="grafana"/>
         <category label="component-upgrade" term="component-upgrade"/>
     </entry>
@@ -688,7 +688,7 @@ JDK作为原生Wayland客户端, 需要一个纯Wayland工具包方案.<br></p>
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="java" term="java"/>
         <category label="kotlin" term="kotlin"/>
         <category label="FQDN" term="FQDN"/>
@@ -750,7 +750,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="golang" term="golang"/>
         <category label="kopia" term="kopia"/>
         <category label="volcengine" term="volcengine"/>
@@ -833,7 +833,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="spring-cloud" term="spring-cloud"/>
         <category label="spring-cloud-openfeign" term="spring-cloud-openfeign"/>
         <category label="openfeign" term="openfeign"/>
@@ -885,7 +885,7 @@ PathStyle 的配置参数：AmazonS3Builder.withPathStyleAccessEnabled(false)。
             <name>orange</name>
             <uri>https://github.com/orange-guo</uri>
         </author>
-        <category label="problem-solving" term="problem-solving"/>
+        <category label="troubleshooting" term="troubleshooting"/>
         <category label="spring-boot" term="spring-boot"/>
         <category label="spring-framework" term="spring-framework"/>
         <category label="native-image" term="native-image"/>
