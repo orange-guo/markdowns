@@ -3,9 +3,9 @@ authors: [ orange ]
 tags: [ troubleshooting, linux,  vnc, tigervnc, vncserver, x11, xorg, xserver ]
 ---
 
-# 解决因`ip_local_port_range`配置的端口范围包含VNC会话端口导致建VNC会话时报错'A VNC server is already running as :xxx'
+# 创建VNC会话报错A VNC server is already running as :xxx
 
-执行`vncserver`命令时出现报错, 提示`A VNC server is already running as :xxx`, 命令示例如下:
+在执行`vncserver`命令时, 出现以下错误提示:
 
 ```bash
 vncserver :1
@@ -17,11 +17,32 @@ vncserver :1
 A VNC server is already running as :1
 ```
 
+该错误说明VNC会话已被占用.<br/>
+
+如果无法正常访问VNC会话, 可能是会话出现问题. 请按照以下步骤进行故障排除.
+
 <!--truncate-->
 
-## 问题原因
+## 排查步骤
 
-在`VNC`中, 每个`VNC会话`由两个主要组件组成:
+### 检查残留进程
+
+使用以下命令检查是否有残留的进程:
+
+```bash
+# 假设 display_number 为 1
+sudo ps -ef | grep Xtigervnc | grep :1
+```
+
+如果有残留进程, 请将其杀死.
+
+```bash
+sudo kill -9 <pid>
+```
+
+### 检查端口冲突
+
+在`VNC`中, 每个`VNC`会话由两个主要组件组成:
 
 - `VNC Server`
   <br/>`VNC服务器`, 处理`VNC客户端`的连接请求.<br/>
@@ -35,9 +56,18 @@ A VNC server is already running as :1
 > VNC Server 端口 = 5900 + display_number(例如 :1 对应端口 5901) <br/>
 > X Server 端口 = 6000 + display_number(例如 :1 对应端口 6001)
 
-如果Linux系统为其他进程分配的端口(通过 ip_local_port_range 配置的范围)恰好与VNC会话使用的端口重叠, 则会导致`A VNC server is already running as :xxx`错误.
 
-## 解决方案
+可以使用以下命令检查端口占用情况: <br/>
+
+```bash
+# 假设 display_number 为 1
+lsof -i :5901
+lsof -i :6001
+```
+
+### 检查ip_local_port_range配置的TCP客户端端口是否和VNC会话使用的端口重叠
+
+如果Linux系统为其他进程分配的端口(通过 ip_local_port_range 配置的范围)恰好与VNC会话使用的端口重叠, 则会导致`A VNC server is already running as :xxx`错误.
 
 修改`/etc/sysctl.conf`中的`net.ipv4.ip_local_port_range`, 避开VNC会话使用的端口范围. <br/>
 
@@ -53,7 +83,27 @@ net.ipv4.ip_local_port_range=6500 65000
 sysctl -p
 ```
 
-## 排查过程
+### 检查进程残留文件
+
+一个VNC会话会创建以下文件. 如果这些文件存在, 则说明VNC会话可能处于异常状态, 需要清理.<br/>
+
+```
+/tmp/.X$n-lock
+/tmp/.X11-unix/X$n
+/usr/spool/sockets/X11/$n
+```
+
+假设 display_number 为 1, 那么文件为. <br/>
+
+```
+/tmp/.X1-lock
+/tmp/.X11-unix/X1
+/usr/spool/sockets/X11/1
+```
+
+请删除以上文件以解决问题.
+
+## 备注
 
 通过查看`vncserver`源码, 搜索错误信息`A VNC server is already running as`确认代码位置, 相关代码如下: <br/>
 
@@ -129,16 +179,6 @@ sub CheckDisplayNumber
 ```
 
 `CheckDisplayNumber`函数检查`VNC Server`和`X Server`端口是否被占用. <br/>
-
-可以使用以下命令检查端口占用情况: <br/>
-
-```bash
-# 假设 display_number 为 1
-lsof -i :5901
-lsof -i :6001
-```
-
-如果端口没有被占用, 这些命令的输出应该为空
 
 ## 参考资料
 
