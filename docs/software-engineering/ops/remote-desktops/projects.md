@@ -11,7 +11,7 @@
 - [noVNC](https://github.com/novnc/noVNC)
   <br/>VNC client web application
 
-## protocotl
+## protocol
 
 - [FreeRDP](https://github.com/FreeRDP/FreeRDP)
   <br/>FreeRDP is a free remote desktop protocol library and clients
