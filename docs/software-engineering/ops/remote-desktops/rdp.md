@@ -10,9 +10,17 @@
 
 ## Solutions
 
+## RDS
+
+- [WIndows Server 远程桌面服务—RDS](https://blog.csdn.net/jxjdhdnd/article/details/134970764)
+
 ## Remote Desktop web client
 
 - [Set up the Remote Desktop web client for your users](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-web-client-admin)
 - [Updating PowerShellGet](https://loopednetwork.medium.com/updating-powershellget-ffc24d87e6d2)
 - [Install-Module](https://learn.microsoft.com/en-us/powershell/module/powershellget/install-module?view=powershellget-3.x)
 - [How to Install PowerShellGet and PSResourceGet](https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x)
+
+## Remote app
+
+- [Windows Server 2016 Standard RemoteApp应用发布配置举例](https://www.cnblogs.com/Magiclala/p/17769047.html)
