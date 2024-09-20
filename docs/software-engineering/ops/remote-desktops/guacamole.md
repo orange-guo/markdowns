@@ -1,3 +1,11 @@
+
+# Guacamole
+
+## Projects
+
+- [guacamole-server](https://github.com/apache/guacamole-server)
+- [guacamole-client](https://github.com/apache/guacamole-client)
+
 # Docs
 
 - [The Guacamole protocol](https://guacamole.apache.org/doc/gug/guacamole-protocol.html)
