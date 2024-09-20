@@ -7,3 +7,9 @@
 - [2.2.2.6.3 Client System Command PDU (TS_RAIL_ORDER_SYSCOMMAND)](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-rdperp/cdda9345-2f82-4e38-8814-1a932b934241)
 - [2.2.1.3.1.2.1 New or Existing Window](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-rdperp/2d36758d-3fb5-4823-8c4b-9b81a9c8ff3e)
 - [Window Styles](https://learn.microsoft.com/en-us/windows/win32/winmsg/window-styles?redirectedfrom=MSDN)
+
+## Solutions
+
+### Remote Desktop web client
+
+- [Set up the Remote Desktop web client for your users](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-web-client-admin)
