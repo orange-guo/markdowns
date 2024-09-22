@@ -4,7 +4,9 @@
 ## Projects
 
 - [guacamole-server](https://github.com/apache/guacamole-server)
+  <br/>Mirror of Apache Guacamole Server
 - [guacamole-client](https://github.com/apache/guacamole-client)
+  <br/>Mirror of Apache Guacamole Client
 
 # Docs
 
