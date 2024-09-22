@@ -15,6 +15,13 @@
 - [Lambda Labs](https://lambdalabs.com/)
   <br/>Lambda Labs is a platform that allows you to run AI models in the cloud, without writing any code.
 
+## Workflow
+
+- [dify](https://github.com/langgenius/dify)
+  <br/>Dify is an open-source LLM app development platform. Dify's intuitive interface combines AI workflow, RAG
+  pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype
+  to production.
+
 ## Tools
 
 - [jupyter](https://jupyter.org/)
