@@ -1,4 +1,6 @@
-# Projects
+# Search Engine
+
+## Projects
 
 - [typesense](https://github.com/typesense/typesense)
   <br/>Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo
