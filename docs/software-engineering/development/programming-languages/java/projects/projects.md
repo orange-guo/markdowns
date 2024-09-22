@@ -31,6 +31,11 @@ sidebar_position: 0
 - [java-gtk](https://github.com/bailuk/java-gtk)
   <br/>GTK bindings for Java
 
+## ORM
+
+- [hibernate-orm](https://github.com/hibernate/hibernate-orm)
+  <br/>Hibernate's core Object/Relational Mapping functionality
+
 ## Deep Learning
 
 - [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j)
