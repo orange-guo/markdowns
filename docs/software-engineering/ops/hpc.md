@@ -1,6 +1,8 @@
-# Projects
+# HPC
 
-## Job Scheduler
+## Projects
+
+### Job Scheduler
 
 - [slurm](https://github.com/SchedMD/slurm)
   <br/>Slurm: A Highly Scalable Workload Manager
