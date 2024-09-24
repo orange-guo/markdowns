@@ -25,7 +25,7 @@
 ### DB Proxy
 
 - [MaxScale](https://github.com/mariadb-corporation/MaxScale)
- <br/>An intelligent database proxy.
+  <br/>An intelligent database proxy.
 - [patroni](https://github.com/patroni/patroni)
   <br/>A template for PostgreSQL High Availability with Etcd, Consul, ZooKeeper, or Kubernetes
 

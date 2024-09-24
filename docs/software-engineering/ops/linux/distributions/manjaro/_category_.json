@@ -1,7 +1,7 @@
 {
-	"label": "Manjaro",
-	"position": 1,
-	"link": {
-		"type": "generated-index"
-	}
+  "label": "Manjaro",
+  "position": 1,
+  "link": {
+    "type": "generated-index"
+  }
 }

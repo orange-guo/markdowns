@@ -12,6 +12,7 @@
 ## RFC2307
 
 - [Setting up RFC2307 in AD](https://wiki.samba.org/index.php/Setting_up_RFC2307_in_AD)
-  <br/>The use of RFC 2307 attributes allows the storage of Unix user and group information in an LDAP directory. In an Active Directory (AD) with Linux integration, this has several advantages:
+  <br/>The use of RFC 2307 attributes allows the storage of Unix user and group information in an LDAP directory. In an
+  Active Directory (AD) with Linux integration, this has several advantages:
 - [An Approach for Using LDAP as a Network Information Service](https://www.rfc-editor.org/rfc/rfc2307.txt)
 - [An Approach for Using LDAP as a Network Information Service](https://datatracker.ietf.org/doc/html/rfc2307)

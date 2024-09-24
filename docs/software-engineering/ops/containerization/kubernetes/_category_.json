@@ -1,7 +1,7 @@
 {
-	"label": "Kubernetes",
-	"position": 1,
-	"link": {
-		"type": "generated-index"
-	}
+  "label": "Kubernetes",
+  "position": 1,
+  "link": {
+    "type": "generated-index"
+  }
 }

@@ -1,4 +1,3 @@
-
 # Guacamole
 
 ## Projects
