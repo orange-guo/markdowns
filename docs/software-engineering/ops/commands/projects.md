@@ -37,17 +37,6 @@
 - [autojump](https://github.com/wting/autojump)
   <br/>A cd command that learns - easily navigate directories from the command line
 
-## JSON
-
-- [jc](https://github.com/kellyjonbrazil/jc)
-  <br/>CLI tool and python library that converts the output of popular command-line tools, file-types, and common
-  strings to JSON, YAML, or Dictionaries. This allows piping of output to tools like jq and simplifying automation
-  scripts.
-- [jq](https://github.com/jqlang/jq)
-  <br/>Command-line JSON processor.
-- [yq](https://github.com/mikefarah/yq)
-  <br/>yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor.
-
 ## Others
 
 - [x-cmd](https://github.com/x-cmd/x-cmd)
