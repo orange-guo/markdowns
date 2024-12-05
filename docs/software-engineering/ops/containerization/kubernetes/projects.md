@@ -1,5 +1,10 @@
 # Projects
 
+## Deployment
+
+- [argo-cd](https://github.com/argoproj/argo-cd)
+  <br/>Declarative Continuous Deployment for Kubernetes
+
 ## Awesome
 
 - [awesome-k8s-resources](https://github.com/tomhuang12/awesome-k8s-resources)
