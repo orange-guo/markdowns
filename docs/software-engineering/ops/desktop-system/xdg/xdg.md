@@ -48,6 +48,7 @@ done
 - [freedesktop.org](https://en.wikipedia.org/wiki/Freedesktop.org)
 - [freedesktop.org](https://www.freedesktop.org/wiki/)
 - [Freedesktop.org Specifications](https://specifications.freedesktop.org/)
+- [xcb](https://xcb.freedesktop.org/)
 
 **Desktop Entry**
 
