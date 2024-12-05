@@ -11,3 +11,8 @@
 - [「Java学习 + 面试指南」涵盖 Java 程序员需要掌握的核心知识](https://javaguide.cn)
 - [Java面试小抄](https://www.javalearn.cn)
 - [Java 全栈知识体系](https://www.pdai.tech/)
+
+## Jdk
+
+- [foojay.io](https://foojay.io/)
+  <br/>foojay: Free Java & OpenJDK Info for Daily Java Usage
