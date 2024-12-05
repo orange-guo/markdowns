@@ -52,3 +52,6 @@
 
 - [x-cmd](https://github.com/x-cmd/x-cmd)
   <br/>X bootstrap 1000+ tools and scripts.
+
+- [shc](https://github.com/neurobin/shc)
+  <br/>Shell script compiler
