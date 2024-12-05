@@ -82,8 +82,6 @@ sidebar_position: 0
   <br/>A Clojure library for embracing SQL.
 - [honeysql](https://github.com/seancorfield/honeysql)
   <br/>Turn Clojure data structures into SQL
-- [leiningen](https://codeberg.org/leiningen/leiningen)
-  <br/>Moved to Codeberg; this is a convenience mirror
 - [clj-ldap](https://github.com/pauldorman/clj-ldap)
   <br/>Clojure LDAP client
 - [tools.cli](https://github.com/clojure/tools.cli)
