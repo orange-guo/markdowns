@@ -1,5 +1,10 @@
 # Projects
 
+## Prompt
+
+- [starship](https://github.com/starship/starship)
+  <br/>☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
 ## Shell compiler
 
 - [shc](https://github.com/neurobin/shc)

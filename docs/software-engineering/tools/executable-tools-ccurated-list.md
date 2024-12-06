@@ -55,15 +55,6 @@ sidebar_position: 0
 - [sdkman](https://github.com/sdkman/sdkman-cli)
   <br/>The SDKMAN! Command Line Interface
 
-## Terminal
-
-- [tabby](https://github.com/Eugeny/tabby)
-  <br/>A terminal for a more modern age
-- [asciinema](https://github.com/asciinema/asciinema)
-  <br/>Terminal session recorder 📹
-- [thefuck](https://github.com/nvbn/thefuck)
-  <br/>Magnificent app which corrects your previous console command.
-
 
 ## HTTP
 
