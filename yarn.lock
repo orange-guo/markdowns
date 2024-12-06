@@ -2073,9 +2073,9 @@
     globals "^11.1.0"
 
 "@babel/traverse@^7.25.9":
-  version "7.26.3"
-  resolved "https://registry.npmmirror.com/@babel/traverse/-/traverse-7.26.3.tgz#1ebfc75bd748d8f96b3cc63af5e82ebd4c37ba35"
-  integrity sha512-yTmc8J+Sj8yLzwr4PD5Xb/WF3bOYu2C2OoSZPzbuqRm4n98XirsbzaX+GloeO376UnSYIYJ4NCanwV5/ugZkwA==
+  version "7.26.4"
+  resolved "https://registry.npmmirror.com/@babel/traverse/-/traverse-7.26.4.tgz#ac3a2a84b908dde6d463c3bfa2c5fdc1653574bd"
+  integrity sha512-fH+b7Y4p3yqvApJALCPJcwb0/XaOSgtK4pzV6WVjPR5GLFQBRI7pfoX2V2iM48NXvX07NUxxm1Vw98YjqTcU5w==
   dependencies:
     "@babel/code-frame" "^7.26.2"
     "@babel/generator" "^7.26.3"
@@ -2672,7 +2672,7 @@
     webpack-merge "^5.9.0"
     webpackbar "^5.0.2"
 
-"@docusaurus/core@3.6.3", "@docusaurus/core@^3.4.0":
+"@docusaurus/core@3.6.3", "@docusaurus/core@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/core/-/core-3.6.3.tgz#6bf968ee26a36d71387bab293f27ccffc0e428b6"
   integrity sha512-xL7FRY9Jr5DWqB6pEnqgKqcMPJOX5V0pgWXi5lCiih11sUBmcFKM7c3+GyxcVeeWFxyYSDP3grLTWqJoP4P9Vw==
@@ -2830,7 +2830,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/module-type-aliases@3.6.3", "@docusaurus/module-type-aliases@^3.4.0":
+"@docusaurus/module-type-aliases@3.6.3", "@docusaurus/module-type-aliases@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.6.3.tgz#1f7030b1cf1f658cf664d41b6eadba93bbe51d87"
   integrity sha512-MjaXX9PN/k5ugNvfRZdWyKWq4FsrhN4LEXaj0pEmMebJuBNlFeGyKQUa9DRhJHpadNaiMLrbo9m3U7Ig5YlsZg==
@@ -2843,7 +2843,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/plugin-content-blog@3.6.3", "@docusaurus/plugin-content-blog@^3.4.0":
+"@docusaurus/plugin-content-blog@3.6.3", "@docusaurus/plugin-content-blog@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-3.6.3.tgz#d6a597e4bfdeb3f1f6ce06d2ac86207296988cc9"
   integrity sha512-k0ogWwwJU3pFRFfvW1kRVHxzf2DutLGaaLjAnHVEU6ju+aRP0Z5ap/13DHyPOfHeE4WKpn/M0TqjdwZAcY3kAw==
@@ -2892,7 +2892,7 @@
 
 "@docusaurus/plugin-content-docs@^2 || ^3":
   version "3.4.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/@docusaurus/plugin-content-docs/-/plugin-content-docs-3.4.0.tgz#3088973f72169a2a6d533afccec7153c8720d332"
+  resolved "https://registry.npmmirror.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-3.4.0.tgz#3088973f72169a2a6d533afccec7153c8720d332"
   integrity sha512-HkUCZffhBo7ocYheD9oZvMcDloRnGhBMOZRyVcAQRFmZPmNqSyISlXA1tQCIxW+r478fty97XXAGjNYzBjpCsg==
   dependencies:
     "@docusaurus/core" "3.4.0"
@@ -2984,7 +2984,7 @@
     sitemap "^7.1.1"
     tslib "^2.6.0"
 
-"@docusaurus/preset-classic@^3.4.0":
+"@docusaurus/preset-classic@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/preset-classic/-/preset-classic-3.6.3.tgz#072298b5b6d0de7d0346b1e9b550a30ef2add56d"
   integrity sha512-VHSYWROT3flvNNI1SrnMOtW1EsjeHNK9dhU6s9eY5hryZe79lUqnZJyze/ymDe2LXAqzyj6y5oYvyBoZZk6ErA==
@@ -3035,7 +3035,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-common@3.6.3", "@docusaurus/theme-common@^3.4.0":
+"@docusaurus/theme-common@3.6.3", "@docusaurus/theme-common@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-common/-/theme-common-3.6.3.tgz#a8a6ebd2b0fd7a5cca4d0c6a2f9ccff905fa7438"
   integrity sha512-b8ZkhczXHDxWWyvz+YJy4t/PlPbEogTTbgnHoflYnH7rmRtyoodTsu8WVM12la5LmlMJBclBXFl29OH8kPE7gg==
@@ -3053,7 +3053,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-live-codeblock@^3.4.0":
+"@docusaurus/theme-live-codeblock@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-3.6.3.tgz#7d32af51c510d753ec947dbc06a7109a690d6e87"
   integrity sha512-l6T+rpfiG5FT3kSWEtW7no2VMU7J0hqwNOXC2iubfzkQCLB+A5asP7kGTzBxSn6OKKsj9FY7p26A6CVvy4dvWQ==
@@ -3100,7 +3100,7 @@
 
 "@docusaurus/theme-translations@^2 || ^3":
   version "3.4.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/@docusaurus/theme-translations/-/theme-translations-3.4.0.tgz#e6355d01352886c67e38e848b2542582ea3070af"
+  resolved "https://registry.npmmirror.com/@docusaurus/theme-translations/-/theme-translations-3.4.0.tgz#e6355d01352886c67e38e848b2542582ea3070af"
   integrity sha512-zSxCSpmQCCdQU5Q4CnX/ID8CSUUI3fvmq4hU/GNP/XoAWtXo9SAVnM3TzpU8Gb//H3WCsT8mJcTfyOk3d9ftNg==
   dependencies:
     fs-extra "^11.1.1"
@@ -3121,7 +3121,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@3.6.3", "@docusaurus/types@^3.4.0":
+"@docusaurus/types@3.6.3", "@docusaurus/types@^3.6.3":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/types/-/types-3.6.3.tgz#e87592e31616da1b8dc473e4c8205c61885a1518"
   integrity sha512-xD9oTGDrouWzefkhe9ogB2fDV96/82cRpNGx2HIvI5L87JHNhQVIWimQ/3JIiiX/TEd5S9s+VO6FFguwKNRVow==
@@ -5914,9 +5914,9 @@ electron-to-chromium@^1.4.796:
   integrity sha512-EKH5X5oqC6hLmiS7/vYtZHZFTNdhsYG5NVPRN6Yn0kQHNBlT59+xSM8HBy66P5fxWpKgZbPqb+diC64ng295Jw==
 
 electron-to-chromium@^1.5.41:
-  version "1.5.69"
-  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.5.69.tgz#7268a4251e82fc83a7cdc9ab51e7154bb2813038"
-  integrity sha512-zz4e7EbJqqtdQtwt61ZYKrfEYlV0HpGbIGRVFGOO9YBZIhg0BDXtBcWxpqyAm6oyPl2Zp8tc5FrPpCZQH/Yazg==
+  version "1.5.71"
+  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.5.71.tgz#d8b5dba1e55b320f2f4e9b1ca80738f53fcfec2b"
+  integrity sha512-dB68l59BI75W1BUGVTAEJy45CEVuEGy9qPVVQ8pnHyHMn36PLPPoE1mjLH+lo9rKulO3HC2OhbACI/8tCqJBcA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -11457,7 +11457,7 @@ webidl-conversions@^3.0.0:
 
 webpack-bundle-analyzer@^4.10.2, webpack-bundle-analyzer@^4.9.0:
   version "4.10.2"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.10.2.tgz#633af2862c213730be3dbdf40456db171b60d5bd"
+  resolved "https://registry.npmmirror.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.10.2.tgz#633af2862c213730be3dbdf40456db171b60d5bd"
   integrity sha512-vJptkMm9pk5si4Bv922ZbKLV8UTT4zib4FPgXMhgzUny0bfDDkLXAVQs3ly3fS4/TN9ROFtb0NFrm04UXFE/Vw==
   dependencies:
     "@discoveryjs/json-ext" "0.5.7"
@@ -11486,7 +11486,7 @@ webpack-dev-middleware@^5.3.4:
 
 webpack-dev-server@^4.15.1, webpack-dev-server@^4.15.2:
   version "4.15.2"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/webpack-dev-server/-/webpack-dev-server-4.15.2.tgz#9e0c70a42a012560860adb186986da1248333173"
+  resolved "https://registry.npmmirror.com/webpack-dev-server/-/webpack-dev-server-4.15.2.tgz#9e0c70a42a012560860adb186986da1248333173"
   integrity sha512-0XavAZbNJ5sDrCbkpWL8mia0o5WPOd2YGtxrEiZkBK9FjLppIUK2TgxK6qGD2P3hUXTJNNPVibrerKcx5WkR1g==
   dependencies:
     "@types/bonjour" "^3.5.9"
@@ -11574,9 +11574,9 @@ webpack@^5.88.1:
     webpack-sources "^3.2.3"
 
 webpack@^5.95.0:
-  version "5.97.0"
-  resolved "https://registry.npmmirror.com/webpack/-/webpack-5.97.0.tgz#1c5e3b9319f8c6decb19b142e776d90e629d5c40"
-  integrity sha512-CWT8v7ShSfj7tGs4TLRtaOLmOCPWhoKEvp+eA7FVx8Xrjb3XfT0aXdxDItnRZmE8sHcH+a8ayDrJCOjXKxVFfQ==
+  version "5.97.1"
+  resolved "https://registry.npmmirror.com/webpack/-/webpack-5.97.1.tgz#972a8320a438b56ff0f1d94ade9e82eac155fa58"
+  integrity sha512-EksG6gFY3L1eFMROS/7Wzgrii5mBAFe4rIr3r2BTfo7bcc+DWwFZ4OJ/miOuHJO/A85HwyI4eQ0F6IKXesO7Fg==
   dependencies:
     "@types/eslint-scope" "^3.7.7"
     "@types/estree" "^1.0.6"
@@ -11671,7 +11671,7 @@ widest-line@^4.0.1:
 
 wildcard@^2.0.0, wildcard@^2.0.1:
   version "2.0.1"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/wildcard/-/wildcard-2.0.1.tgz#5ab10d02487198954836b6349f74fff961e10f67"
+  resolved "https://registry.npmmirror.com/wildcard/-/wildcard-2.0.1.tgz#5ab10d02487198954836b6349f74fff961e10f67"
   integrity sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==
 
 wordwrap@^1.0.0:

@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogPostItem from '@theme-original/BlogPostItem'
 import Giscus from "@giscus/react"
-import {useBlogPost} from '@docusaurus/theme-common/internal'
+import {useBlogPost} from '@docusaurus/plugin-content-blog/client'
 import {useColorMode} from '@docusaurus/theme-common'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
