@@ -66,6 +66,11 @@
 - [Zonowry 的博客](https://blog.zonowry.com/)
 - [颇忒脱的技术博客](https://chanjarster.github.io/)
 
+## Tech
+
+- [ehlxr](https://ehlxr.me/)
+- [游牧血液](https://www.jitao.tech/)
+
 ## Books Reading
 
 - [Dailydreamer's Space](https://dailydreamer.me/)
@@ -74,4 +79,5 @@
 ## Knowledge Base
 
 - [知识库](https://singee.atlassian.net/wiki/spaces/MAIN?homepageId=458754)
+
 
