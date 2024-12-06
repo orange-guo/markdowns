@@ -2672,7 +2672,7 @@
     webpack-merge "^5.9.0"
     webpackbar "^5.0.2"
 
-"@docusaurus/core@3.6.3", "@docusaurus/core@^3.6.3":
+"@docusaurus/core@3.6.3", "@docusaurus/core@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/core/-/core-3.6.3.tgz#6bf968ee26a36d71387bab293f27ccffc0e428b6"
   integrity sha512-xL7FRY9Jr5DWqB6pEnqgKqcMPJOX5V0pgWXi5lCiih11sUBmcFKM7c3+GyxcVeeWFxyYSDP3grLTWqJoP4P9Vw==
@@ -2830,7 +2830,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/module-type-aliases@3.6.3", "@docusaurus/module-type-aliases@^3.6.3":
+"@docusaurus/module-type-aliases@3.6.3", "@docusaurus/module-type-aliases@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.6.3.tgz#1f7030b1cf1f658cf664d41b6eadba93bbe51d87"
   integrity sha512-MjaXX9PN/k5ugNvfRZdWyKWq4FsrhN4LEXaj0pEmMebJuBNlFeGyKQUa9DRhJHpadNaiMLrbo9m3U7Ig5YlsZg==
@@ -2843,7 +2843,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/plugin-content-blog@3.6.3", "@docusaurus/plugin-content-blog@^3.6.3":
+"@docusaurus/plugin-content-blog@3.6.3", "@docusaurus/plugin-content-blog@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-3.6.3.tgz#d6a597e4bfdeb3f1f6ce06d2ac86207296988cc9"
   integrity sha512-k0ogWwwJU3pFRFfvW1kRVHxzf2DutLGaaLjAnHVEU6ju+aRP0Z5ap/13DHyPOfHeE4WKpn/M0TqjdwZAcY3kAw==
@@ -2984,7 +2984,7 @@
     sitemap "^7.1.1"
     tslib "^2.6.0"
 
-"@docusaurus/preset-classic@^3.6.3":
+"@docusaurus/preset-classic@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/preset-classic/-/preset-classic-3.6.3.tgz#072298b5b6d0de7d0346b1e9b550a30ef2add56d"
   integrity sha512-VHSYWROT3flvNNI1SrnMOtW1EsjeHNK9dhU6s9eY5hryZe79lUqnZJyze/ymDe2LXAqzyj6y5oYvyBoZZk6ErA==
@@ -3035,7 +3035,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-common@3.6.3", "@docusaurus/theme-common@^3.6.3":
+"@docusaurus/theme-common@3.6.3", "@docusaurus/theme-common@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-common/-/theme-common-3.6.3.tgz#a8a6ebd2b0fd7a5cca4d0c6a2f9ccff905fa7438"
   integrity sha512-b8ZkhczXHDxWWyvz+YJy4t/PlPbEogTTbgnHoflYnH7rmRtyoodTsu8WVM12la5LmlMJBclBXFl29OH8kPE7gg==
@@ -3053,7 +3053,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-live-codeblock@^3.6.3":
+"@docusaurus/theme-live-codeblock@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-live-codeblock/-/theme-live-codeblock-3.6.3.tgz#7d32af51c510d753ec947dbc06a7109a690d6e87"
   integrity sha512-l6T+rpfiG5FT3kSWEtW7no2VMU7J0hqwNOXC2iubfzkQCLB+A5asP7kGTzBxSn6OKKsj9FY7p26A6CVvy4dvWQ==
@@ -3121,7 +3121,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@3.6.3", "@docusaurus/types@^3.6.3":
+"@docusaurus/types@3.6.3", "@docusaurus/types@^3.4.0":
   version "3.6.3"
   resolved "https://registry.npmmirror.com/@docusaurus/types/-/types-3.6.3.tgz#e87592e31616da1b8dc473e4c8205c61885a1518"
   integrity sha512-xD9oTGDrouWzefkhe9ogB2fDV96/82cRpNGx2HIvI5L87JHNhQVIWimQ/3JIiiX/TEd5S9s+VO6FFguwKNRVow==
