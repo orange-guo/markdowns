@@ -5,6 +5,7 @@
 - [sway](https://github.com/swaywm/sway)
   <br/>i3-compatible Wayland compositor
 - [swayfx](https://github.com/WillPower3309/swayfx)
+  <br/>SwayFX: Sway, but with eye candy!
 
 ## References
 

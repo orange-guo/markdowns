@@ -23,8 +23,8 @@
 
 ## Wayland Compositors
 
-<br/>SwayFX: Sway, but with eye candy!
-
+- [labwc](https://github.com/labwc/labwc)
+  <br/>A Wayland window-stacking compositor
 - [Hyprland](https://github.com/hyprwm/Hyprland)
   <br/>Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - [wayfire](https://github.com/WayfireWM/wayfire)
