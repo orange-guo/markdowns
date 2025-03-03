@@ -34,3 +34,8 @@
   <br/>A modular and extensible wayland compositor
 - [river](https://github.com/riverwm/river)
   <br/>A dynamic tiling Wayland compositor
+
+## References
+
+- [Arch Linux on VMware: Setting Up Sway and Wayland](https://medium.com/@alfor93/arch-linux-on-vmware-setting-up-sway-and-wayland-710b233a7a97)
+- [Arch Linux on VMware: Setting Up Sway and Wayland](https://alfonsofortunato.com/posts/arch-linux-vmware/)
