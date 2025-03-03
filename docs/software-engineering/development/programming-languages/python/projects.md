@@ -67,3 +67,7 @@ sidebar_position: 0
   <br/>Python programs, usually short, of considerable difficulty, to perfect particular skills.
 
 
+## LLVM
+
+- [numba](https://github.com/numba/numba)
+  <br/>NumPy aware dynamic Python compiler using LLVM
