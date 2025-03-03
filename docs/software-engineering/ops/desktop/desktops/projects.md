@@ -23,7 +23,11 @@
 
 - [sway](https://github.com/swaywm/sway)
   <br/>i3-compatible Wayland compositor
+- [swayfx](https://github.com/WillPower3309/swayfx)
+  <br/>SwayFX: Sway, but with eye candy!
 - [Hyprland](https://github.com/hyprwm/Hyprland)
   <br/>Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - [wayfire](https://github.com/WayfireWM/wayfire)
   <br/>A modular and extensible wayland compositor
+- [river](https://github.com/riverwm/river)
+  <br/>A dynamic tiling Wayland compositor
