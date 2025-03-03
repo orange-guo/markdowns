@@ -11,3 +11,7 @@
   Maven for common workflows, Mill aims to make your project’s build process performant, maintainable, and flexible
 - [gradle](https://github.com/gradle/gradle)
   <br/>Adaptable, fast automation for all
+- [ninja](https://github.com/ninja-build/ninja)
+  <br/>a small build system with a focus on speed
+- [meson](https://github.com/mesonbuild/meson)
+  <br/>The Meson Build System
