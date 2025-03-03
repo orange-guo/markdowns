@@ -38,3 +38,12 @@
 
 - [phoronix-test-suite](https://github.com/phoronix-test-suite/phoronix-test-suite/)
   <br/>The Phoronix Test Suite open-source, cross-platform automated testing/benchmarking software.
+
+## Sway
+
+- [swayvnc-build](https://github.com/bbusse/swayvnc-build)
+  <br/>An alpine pkg build container for wayvnc/swayvnc
+- [swayvnc-firefox](https://github.com/bbusse/swayvnc-firefox)
+  <br/>Headless wayland browser vnc sessions in a container
+- [swayvnc](https://github.com/bbusse/swayvnc)
+  <br/>Headless wayland desktop vnc sessions in a container
