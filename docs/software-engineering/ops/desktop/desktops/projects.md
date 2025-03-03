@@ -21,21 +21,13 @@
   <br/>CLFSWM is a 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm. Many thanks to them).
   It can be driven only with the keyboard or with the mouse.
 
-
 ## Wayland Compositors
 
-- [sway](https://github.com/swaywm/sway)
-  <br/>i3-compatible Wayland compositor
-- [swayfx](https://github.com/WillPower3309/swayfx)
-  <br/>SwayFX: Sway, but with eye candy!
+<br/>SwayFX: Sway, but with eye candy!
+
 - [Hyprland](https://github.com/hyprwm/Hyprland)
   <br/>Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - [wayfire](https://github.com/WayfireWM/wayfire)
   <br/>A modular and extensible wayland compositor
 - [river](https://github.com/riverwm/river)
   <br/>A dynamic tiling Wayland compositor
-
-## References
-
-- [Arch Linux on VMware: Setting Up Sway and Wayland](https://medium.com/@alfor93/arch-linux-on-vmware-setting-up-sway-and-wayland-710b233a7a97)
-- [Arch Linux on VMware: Setting Up Sway and Wayland](https://alfonsofortunato.com/posts/arch-linux-vmware/)
