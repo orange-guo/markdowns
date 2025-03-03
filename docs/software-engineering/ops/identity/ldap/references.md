@@ -4,6 +4,7 @@
 
 - [Openldap setting up olcOverlay: ppolicy](https://serverfault.com/questions/847814/openldap-setting-up-olcoverlay-ppolicy)
 - [How do I define a password policy in LDAP?](https://kb.brightcomputing.com/knowledge-base/how-do-i-define-a-password-policy-in-ldap/)
+- [Chapter 6 OpenLDAP password policy overlay](https://www.zytrax.com/books/ldap/ch6/ppolicy.html)
 
 ## conf
 
