@@ -34,19 +34,3 @@
   <br/>A modular and extensible wayland compositor
 - [river](https://github.com/riverwm/river)
   <br/>A dynamic tiling Wayland compositor
-
-## Notification daemon
-
-- [mako](https://github.com/emersion/mako)
-  <br/>A lightweight Wayland notification daemon
-
-
-## Screen capture
-
-- [Satty](https://github.com/gabm/Satty)
-  <br/>Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
-
-## Wayland Screen Capture
-
-- [grim](https://sr.ht/~emersion/grim/)
-  <br/>Grab images from a Wayland compositor
