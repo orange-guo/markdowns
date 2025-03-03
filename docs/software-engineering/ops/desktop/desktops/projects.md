@@ -15,13 +15,15 @@
   <br/>A tiling window manager for X11
 - [dwm](https://git.suckless.org/dwm/)
   <br/>dynamic window manager
-- [dwm](https://dwm.suckless.org/)
-  <br/>wm is a dynamic window manager for X. It manages windows in tiled, monocle and floating layouts. All of the
-  layouts can be applied dynamically, optimising the environment for the application in use and the task performed.
+- [clfswm](https://gitlab.common-lisp.net/clfswm/clfswm/)
+  <br/>CLFSWM is a 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm. Many thanks to them).
+  It can be driven only with the keyboard or with the mouse.
+
+## Wayland Compositors
+
 - [sway](https://github.com/swaywm/sway)
   <br/>i3-compatible Wayland compositor
 - [Hyprland](https://github.com/hyprwm/Hyprland)
   <br/>Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
-- [clfswm](https://gitlab.common-lisp.net/clfswm/clfswm/)
-  <br/>CLFSWM is a 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm. Many thanks to them).
-  It can be driven only with the keyboard or with the mouse.
+- [wayfire](https://github.com/WayfireWM/wayfire)
+  <br/>A modular and extensible wayland compositor
