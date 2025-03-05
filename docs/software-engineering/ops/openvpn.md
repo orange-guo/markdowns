@@ -12,7 +12,6 @@
   IP subnet.<br/>By bridging a physical ethernet NIC with an OpenVPN-driven TAP interface at two separate locations, it
   is possible to logically merge both ethernet networks, as if they were a single ethernet subnet.
 
-
 ## Tutorial
 
 - [OpenVPN : Configure VPN Server](https://www.server-world.info/en/note?os=Rocky_Linux_8&p=openvpn&f=1)

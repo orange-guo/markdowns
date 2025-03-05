@@ -55,7 +55,6 @@ sidebar_position: 0
 - [sdkman](https://github.com/sdkman/sdkman-cli)
   <br/>The SDKMAN! Command Line Interface
 
-
 ## HTTP
 
 - [hoppscotch](https://github.com/hoppscotch/hoppscotch)

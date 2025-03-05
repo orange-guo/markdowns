@@ -18,4 +18,5 @@
 - [iconfinder](https://www.iconfinder.com/)
   <br/>Millions of graphics for your design projects. Created by independent designers.
 - [flaticon](https://www.flaticon.com/)
-  <br/>Download Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD and CSS formats.
+  <br/>Download Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD and
+  CSS formats.

@@ -66,7 +66,6 @@ sidebar_position: 0
 - [pytudes](https://github.com/norvig/pytudes)
   <br/>Python programs, usually short, of considerable difficulty, to perfect particular skills.
 
-
 ## LLVM
 
 - [numba](https://github.com/numba/numba)

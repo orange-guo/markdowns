@@ -2,8 +2,6 @@
 
 ## JSON
 
-
-
 ## Count Lines
 
 - [cloc](https://github.com/AlDanial/cloc)

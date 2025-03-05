@@ -10,7 +10,7 @@
 - [shc](https://github.com/neurobin/shc)
   <br/>Shell script compiler
 
-## Shell 
+## Shell
 
 - [fish-shell](https://github.com/fish-shell/fish-shell)
   <br/>The user-friendly command line shell.
