@@ -168,3 +168,8 @@ sidebar_position: 0
 
 - [pprof](https://github.com/google/pprof)
   <br/>pprof is a tool for visualization and analysis of profiling data
+
+## Open API
+
+- [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen)
+  <br/>Generate Go client and server boilerplate from OpenAPI 3 specifications
