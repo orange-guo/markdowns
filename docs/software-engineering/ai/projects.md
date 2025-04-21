@@ -2,8 +2,6 @@
 
 ## Compute Platforms
 
-- [huggingface](https://huggingface.co/)
-  <br/>Transformers, a state-of-the-art natural language processing library
 - [aiproxy](https://aiproxy.io/)
   <br/>AIProxy is a platform that allows you to run AI models in the cloud, without writing any code.
 - [runpod](https://runpod.io/)
@@ -15,12 +13,6 @@
 - [Lambda Labs](https://lambdalabs.com/)
   <br/>Lambda Labs is a platform that allows you to run AI models in the cloud, without writing any code.
 
-## Workflow
-
-- [dify](https://github.com/langgenius/dify)
-  <br/>Dify is an open-source LLM app development platform. Dify's intuitive interface combines AI workflow, RAG
-  pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype
-  to production.
 
 ## Tools
 
@@ -34,7 +26,3 @@
 
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
   <br/>Implementing a ChatGPT-like LLM from scratch, step by step
-
-## Toolkit
-
-- [LangChain](https://github.com/langchain-ai)
