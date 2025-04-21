@@ -2,49 +2,6 @@
 
 ## Projects
 
-### Spring Projects
-
-- [Spring](https://github.com/spring-projects)
-  <br/>Spring Projects
-- [spring-boot](https://spring.io/projects/spring-boot)
-  <br/>Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum
-  fuss. It takes an opinionated view of the Spring platform so that new and existing users can quickly get to the bits
-  they need.
-- [spring-framework](https://github.com/spring-projects/spring-framework)
-  <br/>This is the home of the Spring Framework: the foundation for all Spring projects. Collectively the Spring
-  Framework and the family of Spring projects are often referred to simply as "Spring".
-- [spring-security](https://github.com/spring-projects/spring-security)
-  <br/>Spring Security provides security services for the Spring IO Platform. Spring Security 6.0 requires Spring 6.0 as
-  a minimum and also requires Java 17.
-- [spring-petclinic](https://github.com/spring-projects/spring-petclinic)
-  <br/>A sample Spring-based application
-- [spring-integration](https://github.com/spring-projects/spring-integration)
-  <br/>Spring Integration provides an extension of the Spring programming model to support the well-known Enterprise
-  Integration Patterns (EIP)
-- [spring-modulith](https://spring.io/projects/spring-modulith)
-  <br/>Spring Modulith allows developers to build well-structured Spring Boot applications and guides developers in
-  finding and working with application modules driven by the domain. It supports the verification of such modular
-  arrangements, integration testing individual modules, observing the application’s behavior on the module level and
-  creating documentation snippets based on the arrangement created.
-
-### Spring Cloud
-
-- [Spring Cloud](https://github.com/spring-cloud)
-  <br/>Tools for building common patterns in distributed systems with Spring
-- [spring-cloud-gateway](https://github.com/spring-cloud/spring-cloud-gateway)
-  <br/>A Gateway built on Spring Framework and Spring Boot providing routing and more.
-- [spring-cloud-kubernetes](https://github.com/spring-cloud/spring-cloud-kubernetes)
-  <br/>Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc...
-- [spring-cloud-config](https://github.com/spring-cloud/spring-cloud-config)
-  <br/>External configuration (server and client) for Spring Cloud
-- [spring-cloud-openfeign](https://github.com/spring-cloud/spring-cloud-openfeign)
-  <br/>Support for using OpenFeign in Spring Cloud apps
-- [spring-cloud-function](https://github.com/spring-cloud/spring-cloud-function)
-
-### Third Party
-
-- [awesome-spring](https://github.com/ThomasVitale/awesome-spring)
-  <br/>A curated list of awesome books, tutorials, courses, and resources for the Spring framework ecosystem.
 
 ## Reference
 
