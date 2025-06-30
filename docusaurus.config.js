@@ -71,12 +71,6 @@ module.exports = {
 					docId: 'software-engineering/introduction',
 				},
 				{
-					type: 'doc',
-					position: 'left',
-					label: 'Note',
-					docId: 'note/introduction',
-				},
-				{
 					to: 'blog',
 					label: 'Blog',
 					position: 'left'

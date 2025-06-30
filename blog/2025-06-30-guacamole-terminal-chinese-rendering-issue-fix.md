@@ -8,9 +8,10 @@ tags: [ troubleshooting, guacamole, guacamole-server, guacd, ssh, linux, termina
 在将`Apache Guacamole`从`1.5.5`升级到`1.6.0`版本后，遇到了一个的问题：
 在使用SSH终端时，粘贴中文文本的第一个字符无法正常显示。
 
+从本地复制一段以中文字符开头的文本（例如：“我是人”）并粘贴到Guacamole终端中时，屏幕上显示的并非完整的`我是人`，而是`是人`，开头的`我`字不翼而飞。
+
 ![cfb396cc38020b333834ea53436e0ba7116734666aeeaa7766b031579fe28de0.png](/blog/cfb396cc38020b333834ea53436e0ba7116734666aeeaa7766b031579fe28de0.png)
 
-从本地复制一段以中文字符开头的文本（例如：“我是人”）并粘贴到Guacamole终端中时，屏幕上显示的并非完整的`我是人`，而是`是人`，开头的`我`字不翼而飞。
 经过一番排查和测试，最终找到了问题的根源并给出了解决方案。
 
 <!--truncate-->
