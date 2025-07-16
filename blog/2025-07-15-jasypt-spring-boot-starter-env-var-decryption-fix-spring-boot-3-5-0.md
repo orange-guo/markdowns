@@ -51,11 +51,6 @@ Boot 会直接调用其 `getSource()` 方法来获取原始的 `Map<String, Stri
 `getSource()` 方法进行相应的代理或处理。这种“直通”（`pass-through`）场景的遗漏，导致 jasypt 无法在 Spring Boot 3.5.0
 及以上版本中正确拦截和解密从环境变量中获取的加密字符串。
 
-自spring-boot 3.5.0的版本后，`SpringConfigurationPropertySource`发生了了变化，其内部对`PropertySource`进行了检查，若类型为
-`SystemEnvironmentPropertySource`的话（`SystemEnvironmentPropertySource`是对系统中环境变量的抽象），那么会直接调用
-`getSource`方法，而不会调用`getProperty`方法。
-jaspyt只代理了`getProperty`方法，而没有代理`getSource`方法。这会导致在Spring Boot 3.5.0及以上版本中，jasypt无法正确解析环境变量中的加密字符串。
-
 ## spring-boot为什么要这样修改
 
 spring-boot为了提高性能，通常来说，Environment在程序启动后是不会变化的，因此其值是不会变化的，因此`spring-boot`
