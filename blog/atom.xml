@@ -31,10 +31,6 @@ Boot 会直接调用其 <code>getSource()</code> 方法来获取原始的 <code>
 <p>然而，<code>jasypt-spring-boot-starter</code> 在设计之初，其加密代理逻辑主要集中在对 <code>getProperty()</code> 方法的封装和解析上，而没有对
 <code>getSource()</code> 方法进行相应的代理或处理。这种“直通”（<code>pass-through</code>）场景的遗漏，导致 jasypt 无法在 Spring Boot 3.5.0
 及以上版本中正确拦截和解密从环境变量中获取的加密字符串。</p>
-<p>自spring-boot 3.5.0的版本后，<code>SpringConfigurationPropertySource</code>发生了了变化，其内部对<code>PropertySource</code>进行了检查，若类型为
-<code>SystemEnvironmentPropertySource</code>的话（<code>SystemEnvironmentPropertySource</code>是对系统中环境变量的抽象），那么会直接调用
-<code>getSource</code>方法，而不会调用<code>getProperty</code>方法。
-jaspyt只代理了<code>getProperty</code>方法，而没有代理<code>getSource</code>方法。这会导致在Spring Boot 3.5.0及以上版本中，jasypt无法正确解析环境变量中的加密字符串。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="spring-boot为什么要这样修改">spring-boot为什么要这样修改<a href="https://www.geek66.cyou/blog/2025/07/15/jasypt-spring-boot-starter-env-var-decryption-fix-spring-boot-3-5-0#spring-boot%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E4%BF%AE%E6%94%B9" class="hash-link" aria-label="Direct link to spring-boot为什么要这样修改" title="Direct link to spring-boot为什么要这样修改">​</a></h2>
 <p>spring-boot为了提高性能，通常来说，Environment在程序启动后是不会变化的，因此其值是不会变化的，因此<code>spring-boot</code>
 的维护者为了减少不必要的方法调用直接调用<code>getSource()</code>方法获取原始的<code>Map&lt;String, String&gt;</code>，而不是每次都调用<code>getProperty()</code>
