@@ -82,8 +82,7 @@ Spring Cloud Config 的解密功能）。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="相关链接">相关链接<a href="https://www.geek66.cyou/blog/2025/07/15/jasypt-spring-boot-starter-env-var-decryption-fix-spring-boot-3-5-0#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5" class="hash-link" aria-label="Direct link to 相关链接" title="Direct link to 相关链接">​</a></h2>
 <ul>
 <li><a href="https://github.com/ulisesbocchio/jasypt-spring-boot" target="_blank" rel="noopener noreferrer">jasypt-spring-boot-starter GitHub 仓库</a></li>
-<li><a href="https://github.com/spring-projects/spring-boot/commit/d9d206a761d49aa216cd114d7d897326432b14d4" target="_blank" rel="noopener noreferrer">Spring Boot
-<code>SpringConfigurationPropertySource</code> 相关的 Git 提交记录</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/commit/d9d206a761d49aa216cd114d7d897326432b14d4" target="_blank" rel="noopener noreferrer">Spring Boot SpringConfigurationPropertySource 相关的 Git 提交记录</a></li>
 <li><a href="https://github.com/spring-projects/spring-boot/issues/44862" target="_blank" rel="noopener noreferrer">Spring Boot 相关 Issue</a></li>
 <li><a href="https://github.com/spring-projects/spring-boot/blob/main/core/spring-boot/src/main/java/org/springframework/boot/context/properties/source/SpringConfigurationPropertySource.java" target="_blank" rel="noopener noreferrer">SpringConfigurationPropertySource.java 源码</a></li>
 </ul>]]></content>
@@ -140,6 +139,7 @@ Spring Cloud Config 的解密功能）。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="https://www.geek66.cyou/blog/2025/06/30/guacamole-terminal-chinese-rendering-issue-fix#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99" class="hash-link" aria-label="Direct link to 参考资料" title="Direct link to 参考资料">​</a></h2>
 <ul>
 <li><a href="https://issues.apache.org/jira/projects/GUACAMOLE/issues/GUACAMOLE-2091" target="_blank" rel="noopener noreferrer">Guacamole Issue</a></li>
+<li><a href="https://github.com/apache/guacamole-server/pull/602" target="_blank" rel="noopener noreferrer">Github Pull Request</a></li>
 </ul>]]></content>
         <author>
             <name>orange</name>
