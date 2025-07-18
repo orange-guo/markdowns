@@ -14,6 +14,8 @@ tags: [ linux,  desktop,  xorg,  x11 ]
 
 在`Linux`环境下, `X Window System`的实现是`X.Org`.
 
+<!--truncate-->
+
 ## 架构概述
 
 `X`采用客户端/服务器(C/S)架构, 由`X Server`和多个`X Client`组成. <br/>

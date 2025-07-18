@@ -5,8 +5,6 @@ tags: [ troubleshooting, spring-cloud, spring-cloud-openfeign, openfeign ]
 
 # 升级框架后发现Feign调用失败时间格式化问题的排查和解决
 
-## 问题现象
-
 升级内部框架版本后，发现Feign调用失败，报错如下：
 
 ```log
@@ -31,6 +29,8 @@ public interface FeignClient {
 ```
 
 这个问题的现象是Feign调用时参数中的`ZonedDatetime`类型的时间格式化的结果服务端无法解析
+
+<!--truncate-->
 
 ## 问题原因
 
