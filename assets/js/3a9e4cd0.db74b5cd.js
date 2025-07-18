@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9462],{92860:e=>{e.exports=JSON.parse('{"tag":{"label":"openfeign","permalink":"/tags/openfeign","allTagsPath":"/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/tags/openfeign","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

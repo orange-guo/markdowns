@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[5122],{62294:a=>{a.exports=JSON.parse('{"tag":{"label":"mdast","permalink":"/tags/mdast","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/mdast","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

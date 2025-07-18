@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2612],{67252:a=>{a.exports=JSON.parse('{"tag":{"label":"posix","permalink":"/tags/posix","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/posix","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

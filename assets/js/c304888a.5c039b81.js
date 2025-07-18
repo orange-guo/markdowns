@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2228],{94650:a=>{a.exports=JSON.parse('{"tag":{"label":"spring","permalink":"/tags/spring","allTagsPath":"/tags","count":7,"unlisted":false},"listMetadata":{"permalink":"/tags/spring","page":1,"postsPerPage":10,"totalPages":1,"totalCount":7,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

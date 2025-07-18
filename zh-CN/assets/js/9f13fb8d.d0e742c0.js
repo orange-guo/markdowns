@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1922],{69264:a=>{a.exports=JSON.parse('{"tag":{"label":"c","permalink":"/zh-CN/tags/c","allTagsPath":"/zh-CN/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/zh-CN/tags/c","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

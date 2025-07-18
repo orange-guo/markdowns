@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[5719],{62800:e=>{e.exports=JSON.parse('{"tag":{"label":"xserver","permalink":"/tags/xserver","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/xserver","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

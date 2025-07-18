@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[3304],{18704:a=>{a.exports=JSON.parse('{"tag":{"label":"vnc","permalink":"/zh-CN/tags/vnc","allTagsPath":"/zh-CN/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/zh-CN/tags/vnc","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

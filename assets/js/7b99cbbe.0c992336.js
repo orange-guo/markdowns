@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[9142],{66543:a=>{a.exports=JSON.parse('{"tag":{"label":"xrandr","permalink":"/tags/xrandr","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/xrandr","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

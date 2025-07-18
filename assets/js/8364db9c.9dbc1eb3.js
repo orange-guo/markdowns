@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[4455],{93399:a=>{a.exports=JSON.parse('{"tag":{"label":"xwininfo","permalink":"/tags/xwininfo","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/xwininfo","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

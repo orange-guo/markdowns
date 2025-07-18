@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2376],{12851:a=>{a.exports=JSON.parse('{"tag":{"label":"xprop","permalink":"/tags/xprop","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/xprop","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

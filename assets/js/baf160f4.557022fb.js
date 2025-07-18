@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[1779],{24609:a=>{a.exports=JSON.parse('{"tag":{"label":"gradle","permalink":"/tags/gradle","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/gradle","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

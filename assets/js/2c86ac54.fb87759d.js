@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[7115],{81903:a=>{a.exports=JSON.parse('{"tag":{"label":"desktop","permalink":"/tags/desktop","allTagsPath":"/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/tags/desktop","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarkdowns=self.webpackChunkmarkdowns||[]).push([[2827],{24724:a=>{a.exports=JSON.parse('{"tag":{"label":"asciinema","permalink":"/tags/asciinema","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/asciinema","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
