@@ -200,7 +200,6 @@ SystemEnvironmentPropertySource 的内部处理方式发生了变化。为了解
 ## 相关链接
 
 - [jasypt-spring-boot-starter GitHub 仓库](https://github.com/ulisesbocchio/jasypt-spring-boot)
-- [Spring Boot
-  `SpringConfigurationPropertySource` 相关的 Git 提交记录](https://github.com/spring-projects/spring-boot/commit/d9d206a761d49aa216cd114d7d897326432b14d4)
+- [Spring Boot SpringConfigurationPropertySource 相关的 Git 提交记录](https://github.com/spring-projects/spring-boot/commit/d9d206a761d49aa216cd114d7d897326432b14d4)
 - [Spring Boot 相关 Issue](https://github.com/spring-projects/spring-boot/issues/44862)
 - [SpringConfigurationPropertySource.java 源码](https://github.com/spring-projects/spring-boot/blob/main/core/spring-boot/src/main/java/org/springframework/boot/context/properties/source/SpringConfigurationPropertySource.java)
