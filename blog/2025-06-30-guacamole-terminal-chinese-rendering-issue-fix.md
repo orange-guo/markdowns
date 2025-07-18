@@ -113,3 +113,4 @@ void guac_terminal_set_columns(guac_terminal* terminal, int row, int start_colum
 ## 参考资料
 
 - [Guacamole Issue](https://issues.apache.org/jira/projects/GUACAMOLE/issues/GUACAMOLE-2091)
+- [Github Pull Request](https://github.com/apache/guacamole-server/pull/602)
