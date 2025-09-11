@@ -3,18 +3,18 @@ authors: [ orange ]
 tags: [ troubleshooting, java, spring-boot, spring-data, spring-data-ldap, ldap ]
 ---
 
-# 解决在Spring Data Ldap中通过Projection查询Entity中存在@Attribute标注的字段得到的返回的字段值为空的问题
+# 解决Spring Data LDAP中Projection查询@Attribute字段返回空值的问题
 
-Spring Data Ldap项目是Spring Data 项目集中的一个子项目，它是一个面向Ldap存储库的Spring Data规范实现，
-因此可以在Spring Data Ldap中得到和Spring Data中其他项目（例如 Spring Data JPA）中一致的Repository使用体验。其中包括本次问题中相关的`Entity` `Repository` `Projection`
+Spring Data LDAP是Spring Data项目的子项目，提供了面向LDAP存储库的Spring Data规范实现。<br/>
+它让开发者可以像使用Spring Data JPA一样操作LDAP，支持Entity、Repository和Projection等功能。<br/>
 
-目前遇到的问题是在Spring Data Ldap中使用Projection投影机制查询存储库实体中定义的特定字段时，由于实体标注@Attribute字段存在实体字段到数据库字段的映射定义，导致查询得到相关字段值为空。
+问题出现在使用Projection投影查询实体的特定字段时：当实体字段使用@Attribute注解进行字段映射时，查询结果中相关字段值为空。
 
 <!--truncate-->
 
 ## 问题描述
 
-考虑以下场景
+以下场景演示了该问题：
 
 **Ldap数据库内容**
 
@@ -98,7 +98,7 @@ public final class LdapGroup {
 
 **Projection接口定义**
 
-此处定义了两个Spring Data Ldap中Projection实现，用作后续测试用，可以看到两个接口分别期望只查询groupId字段
+定义两个Projection接口进行测试，都只查询groupId字段：
 
 ```java
 interface LdapGroupRepositoryClassBasedProjection extends LdapRepository<LdapGroup> {
@@ -126,9 +126,7 @@ interface LdapGroupRepositoryInterfaceBasedProjection extends LdapRepository<Lda
 
 **测试类**
 
-下面是测试伪代码，预期Projection接口只查询groupId预期得到三个值分别为1001，1002，1003，但是实际情况是0个，测试报错。
-
-Projectin字段对应实体的字段上标注了@Attribute，导致查询不到结果
+测试代码期望通过Projection查询到三个groupId值`（1001、1002、1003）`，但实际返回0个结果：
 
 ```java
 class Test {
@@ -153,13 +151,16 @@ class Test {
 
 ## 原因分析
 
-首先需要打一个断点，来观察Spring Data Ldap在请求Ldap服务器进行查询时的传递参数，以分析是什么原因导致的，类似于分析SQL语句， 在Spring Data Ldap中，所有和Ldap服务器之间的交互都是通过LdapTemplate完成的，因此可以在`org.springframework.ldap.core.LdapTemplate`类中方法签名为`public <T> List<T> search(Name base, String filter, SearchControls controls, ContextMapper<T> mapper,
-			DirContextProcessor processor)`的方法中打上断点，分析其传递的请求上下文，截图如下所示
+通过断点调试Spring Data LDAP的查询过程来分析问题原因。在Spring Data LDAP中，所有与LDAP服务器的交互都通过LdapTemplate完成，因此在`org.springframework.ldap.core.LdapTemplate`类的search方法上设置断点：
 
+```java
+public <T> List<T> search(Name base, String filter, SearchControls controls, 
+    ContextMapper<T> mapper, DirContextProcessor processor)
+```
 
 ![a667049d7ea12a3153a1572ed5f6043c580f30cdf1104352b4303f3ebbdda3ba.png](/blog/a667049d7ea12a3153a1572ed5f6043c580f30cdf1104352b4303f3ebbdda3ba.png)
 
-> 从上图可以看到`controls.attributes`值为`["groupId"]`, 这很可以，因为`groupId`对应在Ldap中的字段名应该是`gidNumber`
+从调试信息可以看到`controls.attributes`值为`["groupId"]`，这是问题所在：`groupId`在LDAP中对应的字段名应该是`gidNumber`。
 
 ```java
     /**
@@ -171,9 +172,9 @@ class Test {
     private String[] attributesToReturn;
 ```
 
-通过查询`attributesToReturn`字段的定义可以看出该字段用来控制Ldap返回哪些字段，这说明上层在传递`attributesToReturn`时出现了问题，应该传递映射后的字段
+`attributesToReturn`字段用于控制LDAP返回哪些字段，问题在于上层传递该值时没有进行字段映射转换。
 
-查询该值的传递流程，锁定在`LdapTemplate.searchControlsForQuery`方法中, 该值来自于`query.attributes()`
+跟踪该值的传递流程，定位到`LdapTemplate.searchControlsForQuery`方法中的`query.attributes()`：
 
 
 ```java
@@ -197,10 +198,10 @@ public class LdapTemplate implements LdapOperations, InitializingBean {
 		return searchControls;
 	}
 
-}
+}	
 ```
 
-而`query.attributes()`中的数据是在`LdapQueryCreator.create`方法中被创建的，相关代码如下
+`query.attributes()`中的数据在`LdapQueryCreator.create`方法中创建：
 
 
 ```java
@@ -229,7 +230,7 @@ class LdapQueryCreator extends AbstractQueryCreator<LdapQuery, ContainerCriteria
 }
 ```
 
-可以看到，值来自于`inputProperties`, 因此还需要看这个值是从哪里来的， 经过上层函数栈的观察， 发现这个值是在`PartTreeLdapRepositoryQuery.createQuery`中被设置的， 相关代码如下
+值来自`inputProperties`，继续追踪发现它在`PartTreeLdapRepositoryQuery.createQuery`中设置：
 
 
 ```java
@@ -266,7 +267,7 @@ public class PartTreeLdapRepositoryQuery extends AbstractLdapRepositoryQuery {
 }
 ```
 
-在上面代码中，主要需要观察的是以下片段
+关键代码段：
 
 ```java
 if (returnedType.needsCustomConstruction()) {
@@ -274,9 +275,9 @@ if (returnedType.needsCustomConstruction()) {
 }
 ```
 
-其中returnedType为我们投影类型的定义，在Projection场景下`needsCustomConstruction()`方法永远返回True`，而`returnedType.getInputProperties()`返回的是Projection类型声明的字段， 因为Projection场景下只需要查询部分字段，因此这个集合是包含了要查询字段的值，
+在Projection场景下，`needsCustomConstruction()`返回`true`，`returnedType.getInputProperties()`返回Projection声明的字段名。
 
-从此可以推断， Spring Data Ldap中没有做实体字段到Ldap字段的映射， 我们的映射定义如下
+问题根源在于Spring Data LDAP没有对Projection字段进行实体到LDAP的字段映射。我们的映射定义：
 
 ```java
 @Attribute(name = "gidNumber")
@@ -286,7 +287,7 @@ private Integer groupId;
 
 ## 解决方案
 
-为了解决这个问题，我们需要修改代码来使其支持这一点， 经过相关代码的阅读后，发现应该在`LdapQueryCreator.create`中增加相关字段的映射处理，因为在这个类的`getAttribute`方法中做其他场景下的映射处理，代码如下
+解决方案是在`LdapQueryCreator.create`方法中添加字段映射处理。该类的`getAttribute`方法已经处理其他场景的映射：
 
 ```java
 private String getAttribute(Part part) {
@@ -299,7 +300,7 @@ private String getAttribute(Part part) {
 }
 ```
 
-通过`mapper.attributeFor`可以通过实体字段拿到映射后的Ldap字段名称，因此我们可以修改`create`来也使其支持映射
+通过`mapper.attributeFor`可以获取实体字段映射后的LDAP字段名。修改`create`方法来支持映射：
 
 ```java
 @Override
@@ -323,7 +324,7 @@ protected ContainerCriteria create(Part part, Iterator<Object> iterator) {
 }
 ```
 
-完成修改后的完整代码如下，如果需要在本地生效的话，可以建立一个同名类来覆盖Spring中的原始定义，以确保修改能够生效
+完整的修改代码如下。要在本地项目中应用此修复，可以创建同名类覆盖Spring的原始实现：
 
 
 ```java
