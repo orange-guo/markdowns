@@ -410,7 +410,7 @@ class LdapQueryCreator extends AbstractQueryCreator<LdapQuery, ContainerCriteria
 		}
 
 		if (!inputProperties.isEmpty()) {
-			query.attributes(inputProperties.toArray(new String[0]));
+			query.attributes(inputProperties.stream().map(prop -> mapper.attributeFor(entityType, prop)).toList().toArray(new String[0]));
 		}
 
 		ConditionCriteria criteria = query.where(getAttribute(part));
